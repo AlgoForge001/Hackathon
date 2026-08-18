@@ -3,13 +3,16 @@ import axios from "axios";
 // ─── OpenRouter Client Setup ─────────────────────────────────────────────────
 const openRouterClient = axios.create({
   baseURL: process.env.OPENROUTER_BASE_URL || "https://openrouter.ai/api/v1",
-  headers: {
-    Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
-    "HTTP-Referer": process.env.CLIENT_URL || "http://localhost:5173",
-    "X-Title": "AI Shopping Assistant",
-    "Content-Type": "application/json",
-  },
   timeout: 15000,
+});
+
+// Interceptor: inject the latest API key on every request (handles hot-reload)
+openRouterClient.interceptors.request.use((config) => {
+  config.headers["Authorization"] = `Bearer ${process.env.OPENROUTER_API_KEY}`;
+  config.headers["HTTP-Referer"] = process.env.CLIENT_URL || "http://localhost:5173";
+  config.headers["X-Title"] = "AI Shopping Assistant";
+  config.headers["Content-Type"] = "application/json";
+  return config;
 });
 
 const MODEL = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
