@@ -12,6 +12,70 @@ const GEMINI_API_KEY =
   "";
 
 /**
+ * Clean and extract a natural language reply and product IDs from Gemini output
+ */
+function cleanGeminiResponse(rawText) {
+  let reply = "";
+  let suggestedProductIds = [];
+  let searchQuery = "";
+
+  if (!rawText || typeof rawText !== "string") {
+    return { reply: "Here are the top product matches from our catalog:", suggestedProductIds: [] };
+  }
+
+  // 1. Try parsing raw text as direct JSON
+  try {
+    const directParsed = JSON.parse(rawText);
+    if (directParsed && typeof directParsed === "object") {
+      reply = directParsed.reply || "";
+      suggestedProductIds = directParsed.suggestedProductIds || [];
+      searchQuery = directParsed.searchQuery || "";
+    }
+  } catch {
+    // 2. Try finding ```json ... ``` block
+    const jsonMatch = rawText.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+    if (jsonMatch && jsonMatch[1]) {
+      try {
+        const blockParsed = JSON.parse(jsonMatch[1]);
+        reply = blockParsed.reply || "";
+        suggestedProductIds = blockParsed.suggestedProductIds || [];
+        searchQuery = blockParsed.searchQuery || "";
+      } catch {
+        // Fallback: strip the json block from the main text
+        reply = rawText.replace(/```(?:json)?[\s\S]*?```/gi, "").trim();
+      }
+    } else {
+      // 3. Try finding any {...} object
+      const bracketMatch = rawText.match(/\{[\s\S]*"reply"[\s\S]*\}/i);
+      if (bracketMatch) {
+        try {
+          const curlyParsed = JSON.parse(bracketMatch[0]);
+          reply = curlyParsed.reply || "";
+          suggestedProductIds = curlyParsed.suggestedProductIds || [];
+          searchQuery = curlyParsed.searchQuery || "";
+        } catch {
+          reply = rawText.replace(/\{[\s\S]*"reply"[\s\S]*\}/gi, "").trim();
+        }
+      } else {
+        reply = rawText;
+      }
+    }
+  }
+
+  // 4. Final sanitization: ensure no lingering raw JSON artifacts leak into the user message
+  if (!reply || reply.trim() === "") {
+    reply = rawText;
+  }
+
+  reply = reply
+    .replace(/```(?:json)?[\s\S]*?```/gi, "")
+    .replace(/\{[\s\S]*?"reply"[\s\S]*?\}/gi, "")
+    .trim();
+
+  return { reply, suggestedProductIds, searchQuery };
+}
+
+/**
  * Send a chat message with conversation history to Google Gemini 2.5 Flash
  */
 export const sendGeminiChatMessage = async ({ message, history = [] }) => {
@@ -35,49 +99,52 @@ export const sendGeminiChatMessage = async ({ message, history = [] }) => {
       whyBuy: p.why_buy || p.whyBuy,
     }));
 
-  const systemInstruction = `You are AlgoForge AI, an expert, witty, and objective personal shopping advisor for an Indian multi-platform e-commerce comparison app (Amazon, Flipkart, Myntra).
-You help shoppers make smart purchasing decisions, compare specs, find real discounts, and find the best value for money.
+  const systemInstruction = `You are AlgoForge AI, an expert, objective personal shopping advisor for an Indian multi-platform e-commerce price comparison application (Amazon, Flipkart, Myntra).
+You help shoppers make smart buying decisions, compare product specifications, discover discounts, and evaluate real value for money.
 
 Product Catalog:
 ${JSON.stringify(catalogSummary)}
 
-Instructions:
-1. Provide a direct, helpful, natural response in conversational English.
-2. If the user asks for a recommendation, product comparison, or products under a budget (e.g., "running shoes under 4000", "Sony XM5 vs AirPods Pro 2", "best laptop", "air fryer"):
-   - Recommend 1 to 4 exact matching products from the catalog above.
-   - Mention key specs, real price in INR (₹), and why it's a great choice.
-3. Return your response as a JSON object with this exact schema:
+Output Requirement:
+You MUST respond with a valid JSON object only. Do NOT output plain text outside the JSON object.
+Schema:
 {
-  "reply": "Your conversational response formatted with clean text/markdown bullets",
-  "suggestedProductIds": ["id1", "id2"],
-  "searchQuery": "optional short search keyword"
-}
-Return ONLY valid JSON. Do not wrap in extra commentary.`;
+  "reply": "Your helpful, conversational, nicely-formatted response explaining the recommendations and comparisons.",
+  "suggestedProductIds": ["exact_catalog_id_1", "exact_catalog_id_2"],
+  "searchQuery": "optional category or brand search term"
+}`;
 
   // Format previous history for Gemini
   const contents = [];
 
-  // Add system instruction as initial context
+  // Add system instruction
   contents.push({
     role: "user",
     parts: [{ text: systemInstruction }],
   });
   contents.push({
     role: "model",
-    parts: [{ text: "Understood. I am AlgoForge AI Shopping Advisor ready to help with product searches, comparisons, and deals from Amazon, Flipkart, and Myntra." }],
+    parts: [{ text: JSON.stringify({ reply: "I am AlgoForge AI Shopping Advisor, ready to provide comparison deals and recommendations.", suggestedProductIds: [] }) }],
   });
 
-  // Add previous turns
+  // Add previous conversational turns
   if (history && history.length > 0) {
-    history.slice(-8).forEach((h) => {
-      contents.push({
-        role: h.role === "assistant" ? "model" : "user",
-        parts: [{ text: h.content }],
-      });
+    history.slice(-6).forEach((h) => {
+      if (h.role === "assistant") {
+        contents.push({
+          role: "model",
+          parts: [{ text: JSON.stringify({ reply: h.content, suggestedProductIds: [] }) }],
+        });
+      } else {
+        contents.push({
+          role: "user",
+          parts: [{ text: h.content }],
+        });
+      }
     });
   }
 
-  // Add latest message
+  // Add latest user message
   contents.push({
     role: "user",
     parts: [{ text: message }],
@@ -91,8 +158,9 @@ Return ONLY valid JSON. Do not wrap in extra commentary.`;
       body: JSON.stringify({
         contents,
         generationConfig: {
+          responseMimeType: "application/json",
           temperature: 0.3,
-          maxOutputTokens: 1200,
+          maxOutputTokens: 1500,
         },
       }),
     });
@@ -101,31 +169,33 @@ Return ONLY valid JSON. Do not wrap in extra commentary.`;
       const data = await response.json();
       const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
       
-      const cleanJson = rawText.replace(/```json/gi, "").replace(/```/g, "").trim();
-      let parsed = null;
-      try {
-        parsed = JSON.parse(cleanJson);
-      } catch {
-        parsed = { reply: rawText, suggestedProductIds: [] };
-      }
+      const { reply, suggestedProductIds, searchQuery } = cleanGeminiResponse(rawText);
 
       let matchedProducts = [];
-      if (parsed.suggestedProductIds && Array.isArray(parsed.suggestedProductIds)) {
-        matchedProducts = parsed.suggestedProductIds
+      if (suggestedProductIds && Array.isArray(suggestedProductIds) && suggestedProductIds.length > 0) {
+        matchedProducts = suggestedProductIds
           .map((id) => mockProducts.find((p) => p.groupId === id || p.id === id || p.product_id === id))
           .filter(Boolean);
       }
 
-      // If no explicit product IDs matched, search based on message or query
+      // If no explicit IDs were returned, scan the catalog for matching mentions or search
       if (matchedProducts.length === 0) {
-        const queryTerm = parsed.searchQuery || message;
-        const searchRes = searchMockProducts({ query: queryTerm });
+        const lowerReply = (reply + " " + message).toLowerCase();
+        matchedProducts = mockProducts
+          .filter((p) => lowerReply.includes(p.brand.toLowerCase()) || lowerReply.includes(p.title.toLowerCase().slice(0, 15)))
+          .filter((v, i, a) => a.findIndex((t) => (t.groupId || t.group_id) === (v.groupId || v.group_id)) === i)
+          .slice(0, 3);
+      }
+
+      // Fallback search by query if still empty
+      if (matchedProducts.length === 0 && searchQuery) {
+        const searchRes = searchMockProducts({ query: searchQuery });
         matchedProducts = searchRes.results.slice(0, 3);
       }
 
       return {
         success: true,
-        reply: parsed.reply || rawText,
+        reply: reply || "Here are the best product matches I found across platforms:",
         suggestedProducts: matchedProducts,
         productCount: matchedProducts.length,
         source: "gemini-2.5-flash",
