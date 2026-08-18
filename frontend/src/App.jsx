@@ -3,7 +3,6 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import FloatingAIChat from "./components/chat/FloatingAIChat";
-import ProductModal from "./components/products/ProductModal";
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -11,10 +10,10 @@ import CategoryPage from "./pages/CategoryPage";
 import DealsPage from "./pages/DealsPage";
 import TrendingPage from "./pages/TrendingPage";
 import SearchResultsPage from "./pages/SearchResultsPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 export default function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const navigate = useNavigate();
 
   const handleSearch = (query) => {
@@ -47,7 +46,6 @@ export default function App() {
               <HomePage
                 onSearch={handleSearch}
                 onOpenChat={() => setIsChatOpen(true)}
-                onSelectProduct={(p) => setSelectedProduct(p)}
                 onSelectCategory={handleSelectCategory}
               />
             }
@@ -56,7 +54,6 @@ export default function App() {
             path="/category/:categoryId"
             element={
               <CategoryPage
-                onSelectProduct={(p) => setSelectedProduct(p)}
                 onOpenChat={() => setIsChatOpen(true)}
               />
             }
@@ -64,16 +61,13 @@ export default function App() {
           <Route
             path="/deals"
             element={
-              <DealsPage
-                onSelectProduct={(p) => setSelectedProduct(p)}
-              />
+              <DealsPage />
             }
           />
           <Route
             path="/trending"
             element={
               <TrendingPage
-                onSelectProduct={(p) => setSelectedProduct(p)}
                 onOpenChat={() => setIsChatOpen(true)}
               />
             }
@@ -82,7 +76,14 @@ export default function App() {
             path="/search"
             element={
               <SearchResultsPage
-                onSelectProduct={(p) => setSelectedProduct(p)}
+                onOpenChat={() => setIsChatOpen(true)}
+              />
+            }
+          />
+          <Route
+            path="/product/:productId"
+            element={
+              <ProductDetailPage
                 onOpenChat={() => setIsChatOpen(true)}
               />
             }
@@ -97,17 +98,7 @@ export default function App() {
       <FloatingAIChat
         isOpen={isChatOpen}
         onClose={() => setIsChatOpen(false)}
-        onSelectProduct={(p) => setSelectedProduct(p)}
       />
-
-      {/* Detailed Multi-Platform Comparison Modal */}
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-          onSelectAlternative={(p) => setSelectedProduct(p)}
-        />
-      )}
     </div>
   );
 }

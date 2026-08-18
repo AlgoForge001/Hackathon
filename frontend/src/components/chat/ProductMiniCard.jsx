@@ -1,110 +1,91 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { ExternalLink, Bell } from "lucide-react";
-import { useShopping } from "../../context/ShoppingContext.jsx";
+import { Link, useNavigate } from "react-router-dom";
+import { Star, Sparkles, ExternalLink } from "lucide-react";
 import PlatformBadge from "../products/PlatformBadge.jsx";
-
-const formatINR = (n) =>
-  new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(n);
+import { getCategoryFallbackImage } from "../../services/mockData.js";
 
 const ProductMiniCard = ({ product }) => {
-  const { openProduct, openAlertModal } = useShopping();
+  const navigate = useNavigate();
+  if (!product) return null;
+
+  const discountPercent = product.discount_percent || product.discountPercent || 0;
+  const isSale = discountPercent > 0;
+  const productId = product.product_id || product.id || product.groupId;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.01 }}
-      onClick={() => openProduct(product)}
+    <div
+      onClick={() => navigate(`/product/${productId}`)}
       style={{
         display: "flex",
-        gap: 10,
-        padding: "10px 12px",
-        borderRadius: 10,
-        background: "rgba(255,255,255,0.04)",
-        border: "1px solid rgba(255,255,255,0.08)",
+        gap: 12,
+        padding: 10,
+        borderRadius: "var(--radius-sm)",
+        background: "var(--color-canvas)",
+        border: "1px solid var(--color-hairline)",
         cursor: "pointer",
-        transition: "all 0.15s ease",
+        transition: "border-color 0.15s, box-shadow 0.15s",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = "var(--color-ink)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = "var(--color-hairline)";
       }}
     >
-      {/* Thumbnail */}
-      <div
+      <img
+        src={product.image_url || product.imageUrl || getCategoryFallbackImage(product.category)}
+        alt={product.title}
         style={{
-          width: 52,
-          height: 52,
-          borderRadius: 8,
-          overflow: "hidden",
+          width: 56,
+          height: 56,
+          objectFit: "cover",
+          borderRadius: 4,
           flexShrink: 0,
-          background: "rgba(255,255,255,0.05)",
+          background: "var(--color-soft-cloud)",
         }}
-      >
-        <img
-          src={product.imageUrl}
-          alt={product.title}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=100&q=60"; }}
-        />
-      </div>
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src = getCategoryFallbackImage(product.category);
+        }}
+      />
+      <div style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+        <div>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 4, marginBottom: 2 }}>
+            <PlatformBadge platform={product.platform} size="sm" />
+            {product.rating && (
+              <span style={{ fontSize: "0.7rem", fontWeight: 700, display: "flex", alignItems: "center", gap: 2, color: "var(--color-charcoal)" }}>
+                <Star size={10} fill="#F59E0B" color="#F59E0B" />
+                {Number(product.rating).toFixed(1)}
+              </span>
+            )}
+          </div>
+          <p
+            style={{
+              fontSize: "0.78rem",
+              fontWeight: 600,
+              color: "var(--color-ink)",
+              margin: 0,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {product.title}
+          </p>
+        </div>
 
-      {/* Info */}
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <p
-          style={{
-            fontSize: "0.78rem",
-            fontWeight: 600,
-            color: "#F8FAFC",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            marginBottom: 3,
-          }}
-        >
-          {product.title}
-        </p>
-        <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
-          <PlatformBadge platform={product.platform} />
-          <span style={{ fontSize: "0.85rem", fontWeight: 700, color: "#F8FAFC" }}>
-            {formatINR(product.price)}
+        <div style={{ display: "flex", alignItems: "baseline", gap: 6, marginTop: 4 }}>
+          <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "var(--color-ink)" }}>
+            ₹{Number(product.price).toLocaleString("en-IN")}
           </span>
-          {product.discountPercent > 0 && (
-            <span style={{ fontSize: "0.7rem", color: "#10B981", fontWeight: 600 }}>
-              -{product.discountPercent}%
+          {isSale && (
+            <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "var(--color-sale)" }}>
+              {discountPercent}% off
             </span>
           )}
         </div>
       </div>
-
-      {/* Actions */}
-      <div
-        style={{ display: "flex", flexDirection: "column", gap: 4, flexShrink: 0 }}
-        onClick={(e) => e.stopPropagation()}
-      >
-        <a
-          href={product.productUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            width: 26, height: 26, borderRadius: 6,
-            background: "rgba(56,189,248,0.1)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            textDecoration: "none",
-          }}
-        >
-          <ExternalLink size={11} color="#38BDF8" />
-        </a>
-        <button
-          onClick={() => openAlertModal(product)}
-          style={{
-            width: 26, height: 26, borderRadius: 6,
-            background: "rgba(245,158,11,0.1)",
-            border: "none", cursor: "pointer",
-            display: "flex", alignItems: "center", justifyContent: "center",
-          }}
-        >
-          <Bell size={11} color="#F59E0B" />
-        </button>
-      </div>
-    </motion.div>
+    </div>
   );
 };
 

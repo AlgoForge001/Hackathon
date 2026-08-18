@@ -61,7 +61,7 @@ export const getProductById = async (id) => {
   try {
     if (isOnline()) {
       const res = await apiClient.get(`/products/${id}`);
-      return res.data;
+      if (res.data) return res.data;
     }
   } catch (err) {
     console.warn("[API] /products/:id failed, using mock:", err.message);
@@ -69,7 +69,14 @@ export const getProductById = async (id) => {
 
   await _fakeDelay(200);
   const { mockProducts } = await import("./mockData.js");
-  return mockProducts.find((p) => p.id === id) || null;
+  const cleanId = id.replace(/-amazon$/, "").replace(/-flipkart$/, "").replace(/-myntra$/, "");
+  const product = mockProducts.find((p) => p.id === id || p.product_id === id || p.groupId === id || p.group_id === id || p.groupId === cleanId) || mockProducts[0];
+  const allPlatformVariants = mockProducts.filter((p) => (p.groupId || p.group_id) === (product.groupId || product.group_id));
+
+  return {
+    product,
+    allPlatformVariants: allPlatformVariants.length > 0 ? allPlatformVariants : [product],
+  };
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
