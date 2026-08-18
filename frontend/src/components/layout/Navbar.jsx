@@ -94,11 +94,11 @@ export default function Navbar({ onOpenChat }) {
                 justifyContent: "center",
                 color: "var(--color-canvas)",
                 fontWeight: 900,
-                fontSize: "16px",
+                fontSize: "18px",
                 letterSpacing: "-0.5px",
               }}
             >
-              AF
+              S
             </div>
             <span
               style={{
@@ -109,7 +109,7 @@ export default function Navbar({ onOpenChat }) {
                 color: "var(--color-ink)",
               }}
             >
-              ALGOFORGE
+              SHOPSY
             </span>
           </Link>
 
@@ -133,6 +133,18 @@ export default function Navbar({ onOpenChat }) {
               }}
             >
               All
+            </Link>
+
+            <Link
+              to="/landing"
+              style={{
+                fontSize: "14px",
+                fontWeight: location.pathname === "/landing" ? 700 : 500,
+                color: location.pathname === "/landing" ? "var(--color-ink)" : "var(--color-mute)",
+                transition: "color 0.15s ease",
+              }}
+            >
+              Overview
             </Link>
 
             {CATEGORY_DEFINITIONS.map((cat) => (

@@ -28,6 +28,7 @@ import PlatformBadge from "../components/products/PlatformBadge";
 import SentimentBadge from "../components/products/SentimentBadge";
 import ProductCard from "../components/products/ProductCard";
 import PriceHistoryGraph from "../components/products/PriceHistoryGraph";
+import BuySellSignalCard from "../components/products/BuySellSignalCard";
 import SpatialARViewerModal from "../components/tools/SpatialARViewerModal";
 import { getProductById, getProductAlternatives, exploreBudget, createPriceAlert } from "../services/api";
 import { getCategoryFallbackImage, mockProducts, CATEGORY_DEFINITIONS } from "../services/mockData";
@@ -379,34 +380,40 @@ export default function ProductDetailPage({ onOpenChat }) {
                     SAVE {bestVariant.discount_percent}%
                   </span>
                 )}
-                <span style={{ fontSize: "11px", fontWeight: 600, color: "var(--color-mute)", alignSelf: "flex-end", paddingBottom: "6px" }}>
-                  Indicative price
-                </span>
               </div>
 
               {maxSavings > 0 && (
                 <div style={{ marginTop: "8px", fontSize: "12px", fontWeight: 700, color: "#059669" }}>
-                  🎉 Estimated saving of up to ₹{maxSavings.toLocaleString("en-IN")} vs other platforms
+                  🎉 Save up to ₹{maxSavings.toLocaleString("en-IN")} by purchasing on {bestVariant.platform?.toUpperCase()} instead of other stores!
                 </div>
               )}
 
-              {/* Price disclaimer */}
-              <div
-                style={{
-                  marginTop: "12px",
-                  padding: "10px 14px",
-                  backgroundColor: "#FEF9C3",
-                  border: "1px solid #FDE047",
-                  borderRadius: "6px",
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: "8px",
-                }}
-              >
-                <span style={{ fontSize: "15px", flexShrink: 0 }}>⚠️</span>
-                <p style={{ margin: 0, fontSize: "12px", color: "#713F12", lineHeight: 1.5 }}>
-                  <strong>Prices shown are indicative and may differ from live platform prices.</strong> Platform prices change frequently due to sales, offers, and stock. Always verify the final price on the retailer's website before purchasing.
-                </p>
+              {/* Direct Buy on Best Platform CTA */}
+              <div style={{ marginTop: "16px", paddingTop: "14px", borderTop: "1px solid var(--color-hairline)" }}>
+                <a
+                  href={bestVariant.product_url || `https://www.amazon.in/s?k=${encodeURIComponent((product.title || product.product_name || product.name || "").replace(/\(.*?\)/g, "").trim())}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                    width: "100%",
+                    padding: "12px 20px",
+                    backgroundColor: "var(--color-ink)",
+                    color: "var(--color-canvas)",
+                    textDecoration: "none",
+                    fontSize: "14px",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    textAlign: "center",
+                  }}
+                >
+                  <ShoppingBag size={16} />
+                  <span>Buy on {bestVariant.platform?.toUpperCase()} for ₹{Number(bestVariant.price).toLocaleString("en-IN")}</span>
+                  <ExternalLink size={14} />
+                </a>
               </div>
             </div>
 
@@ -562,11 +569,8 @@ export default function ProductDetailPage({ onOpenChat }) {
 
                     {/* Price */}
                     <div style={{ marginBottom: "16px" }}>
-                      <div style={{ display: "flex", alignItems: "baseline", gap: "6px" }}>
-                        <div style={{ fontSize: "28px", fontWeight: 900, color: "var(--color-ink)" }}>
-                          ₹{Number(v.price).toLocaleString("en-IN")}
-                        </div>
-                        <span style={{ fontSize: "11px", color: "var(--color-mute)", fontWeight: 600, paddingBottom: "2px" }}>approx.</span>
+                      <div style={{ fontSize: "28px", fontWeight: 900, color: "var(--color-ink)" }}>
+                        ₹{Number(v.price).toLocaleString("en-IN")}
                       </div>
                       {v.original_price && (
                         <div style={{ fontSize: "13px", color: "var(--color-mute)", textDecoration: "line-through" }}>
@@ -594,11 +598,14 @@ export default function ProductDetailPage({ onOpenChat }) {
 
                   {/* Direct Store Button */}
                   {(() => {
-                    const directUrl = v.product_url || (v.platform === "amazon" 
-                      ? `https://www.amazon.in/s?k=${encodeURIComponent(product.product_name || product.name || "")}`
-                      : v.platform === "flipkart"
-                      ? `https://www.flipkart.com/search?q=${encodeURIComponent(product.product_name || product.name || "")}`
-                      : `https://www.myntra.com/search?rawQuery=${encodeURIComponent(product.product_name || product.name || "")}`);
+                    const cleanName = (product.title || product.product_name || product.name || "").replace(/\(.*?\)/g, "").trim();
+                    const enc = encodeURIComponent(cleanName);
+                    const plat = (v.platform || "amazon").toLowerCase();
+                    const directUrl = v.product_url || (plat === "amazon" 
+                      ? `https://www.amazon.in/s?k=${enc}&tag=algoforge-21`
+                      : plat === "flipkart"
+                      ? `https://www.flipkart.com/search?q=${enc}`
+                      : `https://www.myntra.com/${cleanName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`);
 
                     return (
                       <a
@@ -627,34 +634,19 @@ export default function ProductDetailPage({ onOpenChat }) {
                       </a>
                     );
                   })()}
-                  <p style={{ margin: "8px 0 0 0", fontSize: "11px", color: "var(--color-mute)", textAlign: "center", lineHeight: 1.4 }}>
-                    Price is indicative. Verify exact price on {v.platform}.
-                  </p>
                 </div>
               );
             })}
           </div>
 
-          {/* Price disclaimer banner below comparison grid */}
-          <div
-            style={{
-              marginTop: "20px",
-              padding: "12px 16px",
-              backgroundColor: "#F0F9FF",
-              border: "1px solid #BAE6FD",
-              borderRadius: "6px",
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "10px",
-            }}
-          >
-            <span style={{ fontSize: "16px", flexShrink: 0 }}>ℹ️</span>
-            <p style={{ margin: 0, fontSize: "12px", color: "#0C4A6E", lineHeight: 1.6 }}>
-              <strong>These are indicative prices based on our last recorded data.</strong> Actual prices on Amazon, Flipkart, and Myntra may vary due to live sales, flash deals, coupon codes, and dynamic pricing. Always click through to verify the final price on the retailer's website before completing your purchase.
-            </p>
-          </div>
+          {/* 4. Quantitative Buy/Sell/Hold Signal Engine (Python Algorithm) */}
+          <BuySellSignalCard 
+            product={product} 
+            variants={variants} 
+            onSetTargetPrice={(target) => setTargetPrice(target.toString())} 
+          />
 
-          {/* 4. Interactive 90-Day Price History Trend Graph (Point 5) */}
+          {/* 5. Interactive 90-Day Price History Trend Graph */}
           <PriceHistoryGraph product={product} priceHistory={product.price_history || product.priceHistory} />
         </section>
 

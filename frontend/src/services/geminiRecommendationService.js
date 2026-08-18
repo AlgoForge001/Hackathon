@@ -102,7 +102,7 @@ export const getGeminiPersonalizedRecommendations = async (personaOrId = "tech_a
       platform: p.platform,
     }));
 
-  const systemPrompt = `You are a brilliant AI Personal Shopping Intelligence engine for AlgoForge.
+  const systemPrompt = `You are a brilliant AI Personal Shopping Intelligence engine for Shopsy.
 Analyze the user's past purchase history, brand affinity, price bracket, and preferred platforms.
 Select the top 4 best-matched products from the provided catalog and return a JSON response.
 

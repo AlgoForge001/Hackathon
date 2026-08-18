@@ -99,35 +99,27 @@ export const sendGeminiChatMessage = async ({ message, history = [] }) => {
       whyBuy: p.why_buy || p.whyBuy,
     }));
 
-  const systemInstruction = `You are AlgoForge AI, an expert, objective personal shopping advisor for an Indian multi-platform e-commerce price comparison application (Amazon, Flipkart, Myntra).
-You help shoppers make smart buying decisions, compare product specifications, discover discounts, and evaluate real value for money.
-
-Product Catalog:
-${JSON.stringify(catalogSummary)}
-
-Output Requirement:
-You MUST respond with a valid JSON object only. Do NOT output plain text outside the JSON object.
-Schema:
+  const systemInstruction = `You are Shopsy AI, an expert, objective personal shopping advisor for an Indian multi-platform e-commerce price comparison application (Amazon, Flipkart, Myntra).
+You help users make informed buying decisions, find the best value for money, explain tradeoffs, recommend alternatives, and answer specific product queries.
+Always format output strictly as JSON with exactly two fields:
 {
-  "reply": "Your helpful, conversational, nicely-formatted response explaining the recommendations and comparisons.",
-  "suggestedProductIds": ["exact_catalog_id_1", "exact_catalog_id_2"],
-  "searchQuery": "optional category or brand search term"
+  "reply": "Your markdown-formatted advice string here",
+  "suggestedProductIds": ["id1", "id2"] // optional array of product group_ids from the catalog that match user intent
 }`;
 
-  // Format previous history for Gemini
-  const contents = [];
-
-  // Add system instruction
-  contents.push({
-    role: "user",
-    parts: [{ text: systemInstruction }],
-  });
-  contents.push({
-    role: "model",
-    parts: [{ text: JSON.stringify({ reply: "I am AlgoForge AI Shopping Advisor, ready to provide comparison deals and recommendations.", suggestedProductIds: [] }) }],
-  });
-
-  // Add previous conversational turns
+  const defaultHistory = [
+    {
+      role: "user",
+      parts: [{ text: "Hello! Who are you and how can you help me shop?" }],
+    },
+    {
+      role: "model",
+      parts: [{ text: JSON.stringify({ reply: "I am Shopsy AI Shopping Advisor, ready to provide comparison deals and recommendations.", suggestedProductIds: [] }) }],
+    },
+  ];// Add previous conversational turns
+  
+  const contents = [...defaultHistory];
+  
   if (history && history.length > 0) {
     history.slice(-6).forEach((h) => {
       if (h.role === "assistant") {

@@ -101,7 +101,7 @@ const ChatDrawer = () => {
                   <Sparkles size={15} color="#818CF8" />
                 </div>
                 <div>
-                  <p style={{ fontWeight: 700, fontSize: "0.9rem", color: "#F8FAFC" }}>ShopAI Assistant</p>
+                  <p style={{ fontWeight: 700, fontSize: "0.9rem", color: "#F8FAFC" }}>Shopsy AI Assistant</p>
                   <p style={{ fontSize: "0.7rem", color: "#10B981" }}>● Online · OpenRouter Powered</p>
                 </div>
               </div>

@@ -205,6 +205,24 @@ export const searchByImage = async (imageBase64) => {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// QUANTITATIVE PYTHON PRICE SIGNAL — GET /api/products/:id/signal
+// ─────────────────────────────────────────────────────────────────────────────
+export const fetchProductSignal = async (id) => {
+  try {
+    if (isOnline()) {
+      const res = await apiClient.get(`/products/${id}/signal`);
+      if (res.data && res.data.success) return res.data;
+    }
+  } catch (err) {
+    console.warn("[API] /products/:id/signal failed, using local algorithmic evaluator:", err.message);
+  }
+
+  const { computeProductPriceSignal } = await import("./signalAlgorithm.js");
+  const data = await getProductById(id);
+  return computeProductPriceSignal(data.product, data.allPlatformVariants);
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 // HELPERS
 // ─────────────────────────────────────────────────────────────────────────────
 const _fakeDelay = (ms) => new Promise((r) => setTimeout(r, ms));

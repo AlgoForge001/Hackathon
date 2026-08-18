@@ -1,19 +1,38 @@
 import React, { useState } from "react";
 import { TrendingDown, TrendingUp, Calendar, Info, ShieldCheck } from "lucide-react";
 
+// Helper to dynamically get the last 6 calendar months leading to current month
+function getRecentMonthLabels(count = 6) {
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const now = new Date();
+  const months = [];
+  for (let i = count - 1; i >= 0; i--) {
+    const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    months.push(monthNames[d.getMonth()]);
+  }
+  return months;
+}
+
 export default function PriceHistoryGraph({ product, priceHistory = [] }) {
   const [selectedRange, setSelectedRange] = useState("90d");
   const [hoveredPoint, setHoveredPoint] = useState(null);
 
-  // Fallback history points if none provided
-  const historyData = priceHistory && priceHistory.length > 0 ? priceHistory : [
-    { month: "May", amazon: Math.round((product?.price || 10000) * 1.12), flipkart: Math.round((product?.price || 10000) * 1.10), myntra: Math.round((product?.price || 10000) * 1.15) },
-    { month: "Jun", amazon: Math.round((product?.price || 10000) * 1.08), flipkart: Math.round((product?.price || 10000) * 1.07), myntra: Math.round((product?.price || 10000) * 1.10) },
-    { month: "Jul", amazon: Math.round((product?.price || 10000) * 1.05), flipkart: Math.round((product?.price || 10000) * 1.04), myntra: Math.round((product?.price || 10000) * 1.08) },
-    { month: "Aug", amazon: Math.round((product?.price || 10000) * 1.02), flipkart: Math.round((product?.price || 10000) * 1.06), myntra: Math.round((product?.price || 10000) * 1.04) },
-    { month: "Sep", amazon: Math.round((product?.price || 10000) * 0.98), flipkart: Math.round((product?.price || 10000) * 1.02), myntra: Math.round((product?.price || 10000) * 1.02) },
-    { month: "Current", amazon: product?.price || 10000, flipkart: Math.round((product?.price || 10000) * 1.03), myntra: Math.round((product?.price || 10000) * 1.05) },
+  const monthLabels = getRecentMonthLabels(6);
+
+  const rawHistory = priceHistory && priceHistory.length > 0 ? priceHistory : [
+    { amazon: Math.round((product?.price || 10000) * 1.12), flipkart: Math.round((product?.price || 10000) * 1.10), myntra: Math.round((product?.price || 10000) * 1.15) },
+    { amazon: Math.round((product?.price || 10000) * 1.08), flipkart: Math.round((product?.price || 10000) * 1.07), myntra: Math.round((product?.price || 10000) * 1.10) },
+    { amazon: Math.round((product?.price || 10000) * 1.05), flipkart: Math.round((product?.price || 10000) * 1.04), myntra: Math.round((product?.price || 10000) * 1.08) },
+    { amazon: Math.round((product?.price || 10000) * 1.02), flipkart: Math.round((product?.price || 10000) * 1.06), myntra: Math.round((product?.price || 10000) * 1.04) },
+    { amazon: Math.round((product?.price || 10000) * 0.98), flipkart: Math.round((product?.price || 10000) * 1.02), myntra: Math.round((product?.price || 10000) * 1.02) },
+    { amazon: product?.price || 10000, flipkart: Math.round((product?.price || 10000) * 1.03), myntra: Math.round((product?.price || 10000) * 1.05) },
   ];
+
+  // Assign accurate chronological calendar month labels to every point
+  const historyData = rawHistory.map((d, index) => ({
+    ...d,
+    month: monthLabels[index] || d.month || `M${index + 1}`,
+  }));
 
   const allPrices = historyData.flatMap((d) => [d.amazon, d.flipkart, d.myntra]).filter(Boolean);
   const minPrice = Math.min(...allPrices);

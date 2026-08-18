@@ -6,6 +6,7 @@ import FloatingAIChat from "./components/chat/FloatingAIChat";
 
 // Pages
 import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 import CategoryPage from "./pages/CategoryPage";
 import DealsPage from "./pages/DealsPage";
 import TrendingPage from "./pages/TrendingPage";
@@ -40,6 +41,14 @@ export default function App() {
       {/* Main Routed Content Area */}
       <main style={{ flex: 1 }}>
         <Routes>
+          <Route
+            path="/landing"
+            element={
+              <LandingPage
+                onOpenChat={() => setIsChatOpen(true)}
+              />
+            }
+          />
           <Route
             path="/"
             element={

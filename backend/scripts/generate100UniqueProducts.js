@@ -5,14 +5,29 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function genPriceHistory(baseAmz, baseFk, baseMyn) {
-  return [
-    { month: "May", amazon: Math.round(baseAmz * 1.12), flipkart: Math.round(baseFk * 1.10), myntra: Math.round(baseMyn * 1.15) },
-    { month: "Jun", amazon: Math.round(baseAmz * 1.08), flipkart: Math.round(baseFk * 1.07), myntra: Math.round(baseMyn * 1.10) },
-    { month: "Jul", amazon: Math.round(baseAmz * 1.05), flipkart: Math.round(baseFk * 1.04), myntra: Math.round(baseMyn * 1.08) },
-    { month: "Aug", amazon: Math.round(baseAmz * 1.02), flipkart: Math.round(baseFk * 1.06), myntra: Math.round(baseMyn * 1.04) },
-    { month: "Sep", amazon: Math.round(baseAmz * 0.98), flipkart: Math.round(baseFk * 1.02), myntra: Math.round(baseMyn * 1.02) },
-    { month: "Current", amazon: baseAmz, flipkart: baseFk, myntra: baseMyn },
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const now = new Date();
+  const months = [];
+  for (let i = 5; i >= 0; i--) {
+    const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    months.push(monthNames[d.getMonth()]);
+  }
+
+  const multipliers = [
+    { amz: 1.12, fk: 1.10, myn: 1.15 },
+    { amz: 1.08, fk: 1.07, myn: 1.10 },
+    { amz: 1.05, fk: 1.04, myn: 1.08 },
+    { amz: 1.02, fk: 1.06, myn: 1.04 },
+    { amz: 0.98, fk: 1.02, myn: 1.02 },
+    { amz: 1.00, fk: 1.00, myn: 1.00 },
   ];
+
+  return months.map((month, idx) => ({
+    month,
+    amazon: Math.round(baseAmz * multipliers[idx].amz),
+    flipkart: Math.round(baseFk * multipliers[idx].fk),
+    myntra: Math.round(baseMyn * multipliers[idx].myn),
+  }));
 }
 
 // 60+ DISTINCT, UNIQUE REAL PRODUCTS WITH DIRECT SINGLE PRODUCT DETAIL PAGE (PDP) URLS

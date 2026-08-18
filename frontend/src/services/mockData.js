@@ -115,37 +115,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 27989,
         "flipkart": 28049,
         "myntra": 31038
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 26989,
         "flipkart": 27284,
         "myntra": 29689
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 26240,
         "flipkart": 26519,
         "myntra": 29149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 25490,
         "flipkart": 27029,
         "myntra": 28070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 24490,
         "flipkart": 26009,
         "myntra": 27530
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 24990,
         "flipkart": 25499,
         "myntra": 26990
@@ -153,37 +153,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 27989,
         "flipkart": 28049,
         "myntra": 31038
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 26989,
         "flipkart": 27284,
         "myntra": 29689
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 26240,
         "flipkart": 26519,
         "myntra": 29149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 25490,
         "flipkart": 27029,
         "myntra": 28070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 24490,
         "flipkart": 26009,
         "myntra": 27530
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 24990,
         "flipkart": 25499,
         "myntra": 26990
@@ -261,37 +261,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 27989,
         "flipkart": 28049,
         "myntra": 31038
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 26989,
         "flipkart": 27284,
         "myntra": 29689
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 26240,
         "flipkart": 26519,
         "myntra": 29149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 25490,
         "flipkart": 27029,
         "myntra": 28070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 24490,
         "flipkart": 26009,
         "myntra": 27530
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 24990,
         "flipkart": 25499,
         "myntra": 26990
@@ -299,37 +299,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 27989,
         "flipkart": 28049,
         "myntra": 31038
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 26989,
         "flipkart": 27284,
         "myntra": 29689
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 26240,
         "flipkart": 26519,
         "myntra": 29149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 25490,
         "flipkart": 27029,
         "myntra": 28070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 24490,
         "flipkart": 26009,
         "myntra": 27530
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 24990,
         "flipkart": 25499,
         "myntra": 26990
@@ -401,37 +401,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 27989,
         "flipkart": 28049,
         "myntra": 31038
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 26989,
         "flipkart": 27284,
         "myntra": 29689
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 26240,
         "flipkart": 26519,
         "myntra": 29149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 25490,
         "flipkart": 27029,
         "myntra": 28070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 24490,
         "flipkart": 26009,
         "myntra": 27530
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 24990,
         "flipkart": 25499,
         "myntra": 26990
@@ -439,37 +439,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 27989,
         "flipkart": 28049,
         "myntra": 31038
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 26989,
         "flipkart": 27284,
         "myntra": 29689
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 26240,
         "flipkart": 26519,
         "myntra": 29149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 25490,
         "flipkart": 27029,
         "myntra": 28070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 24490,
         "flipkart": 26009,
         "myntra": 27530
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 24990,
         "flipkart": 25499,
         "myntra": 26990
@@ -541,37 +541,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 22399,
         "flipkart": 22539,
         "myntra": 25185
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 21599,
         "flipkart": 21924,
         "myntra": 24090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 20999,
         "flipkart": 21310,
         "myntra": 23652
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 20399,
         "flipkart": 21719,
         "myntra": 22776
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 19599,
         "flipkart": 20900,
         "myntra": 22338
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 19999,
         "flipkart": 20490,
         "myntra": 21900
@@ -579,37 +579,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 22399,
         "flipkart": 22539,
         "myntra": 25185
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 21599,
         "flipkart": 21924,
         "myntra": 24090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 20999,
         "flipkart": 21310,
         "myntra": 23652
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 20399,
         "flipkart": 21719,
         "myntra": 22776
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 19599,
         "flipkart": 20900,
         "myntra": 22338
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 19999,
         "flipkart": 20490,
         "myntra": 21900
@@ -687,37 +687,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 22399,
         "flipkart": 22539,
         "myntra": 25185
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 21599,
         "flipkart": 21924,
         "myntra": 24090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 20999,
         "flipkart": 21310,
         "myntra": 23652
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 20399,
         "flipkart": 21719,
         "myntra": 22776
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 19599,
         "flipkart": 20900,
         "myntra": 22338
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 19999,
         "flipkart": 20490,
         "myntra": 21900
@@ -725,37 +725,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 22399,
         "flipkart": 22539,
         "myntra": 25185
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 21599,
         "flipkart": 21924,
         "myntra": 24090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 20999,
         "flipkart": 21310,
         "myntra": 23652
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 20399,
         "flipkart": 21719,
         "myntra": 22776
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 19599,
         "flipkart": 20900,
         "myntra": 22338
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 19999,
         "flipkart": 20490,
         "myntra": 21900
@@ -827,37 +827,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 22399,
         "flipkart": 22539,
         "myntra": 25185
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 21599,
         "flipkart": 21924,
         "myntra": 24090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 20999,
         "flipkart": 21310,
         "myntra": 23652
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 20399,
         "flipkart": 21719,
         "myntra": 22776
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 19599,
         "flipkart": 20900,
         "myntra": 22338
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 19999,
         "flipkart": 20490,
         "myntra": 21900
@@ -865,37 +865,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 22399,
         "flipkart": 22539,
         "myntra": 25185
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 21599,
         "flipkart": 21924,
         "myntra": 24090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 20999,
         "flipkart": 21310,
         "myntra": 23652
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 20399,
         "flipkart": 21719,
         "myntra": 22776
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 19599,
         "flipkart": 20900,
         "myntra": 22338
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 19999,
         "flipkart": 20490,
         "myntra": 21900
@@ -967,37 +967,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 95189,
         "flipkart": 92389,
         "myntra": 101085
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 91789,
         "flipkart": 89869,
         "myntra": 96690
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 89240,
         "flipkart": 87350,
         "myntra": 94932
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 86690,
         "flipkart": 89029,
         "myntra": 91416
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 83290,
         "flipkart": 85670,
         "myntra": 89658
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 84990,
         "flipkart": 83990,
         "myntra": 87900
@@ -1005,37 +1005,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 95189,
         "flipkart": 92389,
         "myntra": 101085
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 91789,
         "flipkart": 89869,
         "myntra": 96690
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 89240,
         "flipkart": 87350,
         "myntra": 94932
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 86690,
         "flipkart": 89029,
         "myntra": 91416
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 83290,
         "flipkart": 85670,
         "myntra": 89658
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 84990,
         "flipkart": 83990,
         "myntra": 87900
@@ -1114,37 +1114,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 95189,
         "flipkart": 92389,
         "myntra": 101085
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 91789,
         "flipkart": 89869,
         "myntra": 96690
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 89240,
         "flipkart": 87350,
         "myntra": 94932
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 86690,
         "flipkart": 89029,
         "myntra": 91416
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 83290,
         "flipkart": 85670,
         "myntra": 89658
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 84990,
         "flipkart": 83990,
         "myntra": 87900
@@ -1152,37 +1152,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 95189,
         "flipkart": 92389,
         "myntra": 101085
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 91789,
         "flipkart": 89869,
         "myntra": 96690
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 89240,
         "flipkart": 87350,
         "myntra": 94932
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 86690,
         "flipkart": 89029,
         "myntra": 91416
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 83290,
         "flipkart": 85670,
         "myntra": 89658
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 84990,
         "flipkart": 83990,
         "myntra": 87900
@@ -1255,37 +1255,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 95189,
         "flipkart": 92389,
         "myntra": 101085
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 91789,
         "flipkart": 89869,
         "myntra": 96690
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 89240,
         "flipkart": 87350,
         "myntra": 94932
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 86690,
         "flipkart": 89029,
         "myntra": 91416
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 83290,
         "flipkart": 85670,
         "myntra": 89658
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 84990,
         "flipkart": 83990,
         "myntra": 87900
@@ -1293,37 +1293,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 95189,
         "flipkart": 92389,
         "myntra": 101085
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 91789,
         "flipkart": 89869,
         "myntra": 96690
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 89240,
         "flipkart": 87350,
         "myntra": 94932
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 86690,
         "flipkart": 89029,
         "myntra": 91416
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 83290,
         "flipkart": 85670,
         "myntra": 89658
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 84990,
         "flipkart": 83990,
         "myntra": 87900
@@ -1396,37 +1396,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 134399,
         "flipkart": 130349,
         "myntra": 141449
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 129599,
         "flipkart": 126794,
         "myntra": 135299
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 125999,
         "flipkart": 123239,
         "myntra": 132839
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 122399,
         "flipkart": 125609,
         "myntra": 127919
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 117599,
         "flipkart": 120869,
         "myntra": 125459
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 119999,
         "flipkart": 118499,
         "myntra": 122999
@@ -1434,37 +1434,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 134399,
         "flipkart": 130349,
         "myntra": 141449
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 129599,
         "flipkart": 126794,
         "myntra": 135299
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 125999,
         "flipkart": 123239,
         "myntra": 132839
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 122399,
         "flipkart": 125609,
         "myntra": 127919
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 117599,
         "flipkart": 120869,
         "myntra": 125459
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 119999,
         "flipkart": 118499,
         "myntra": 122999
@@ -1543,37 +1543,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 134399,
         "flipkart": 130349,
         "myntra": 141449
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 129599,
         "flipkart": 126794,
         "myntra": 135299
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 125999,
         "flipkart": 123239,
         "myntra": 132839
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 122399,
         "flipkart": 125609,
         "myntra": 127919
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 117599,
         "flipkart": 120869,
         "myntra": 125459
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 119999,
         "flipkart": 118499,
         "myntra": 122999
@@ -1581,37 +1581,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 134399,
         "flipkart": 130349,
         "myntra": 141449
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 129599,
         "flipkart": 126794,
         "myntra": 135299
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 125999,
         "flipkart": 123239,
         "myntra": 132839
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 122399,
         "flipkart": 125609,
         "myntra": 127919
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 117599,
         "flipkart": 120869,
         "myntra": 125459
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 119999,
         "flipkart": 118499,
         "myntra": 122999
@@ -1684,37 +1684,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 134399,
         "flipkart": 130349,
         "myntra": 141449
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 129599,
         "flipkart": 126794,
         "myntra": 135299
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 125999,
         "flipkart": 123239,
         "myntra": 132839
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 122399,
         "flipkart": 125609,
         "myntra": 127919
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 117599,
         "flipkart": 120869,
         "myntra": 125459
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 119999,
         "flipkart": 118499,
         "myntra": 122999
@@ -1722,37 +1722,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 134399,
         "flipkart": 130349,
         "myntra": 141449
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 129599,
         "flipkart": 126794,
         "myntra": 135299
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 125999,
         "flipkart": 123239,
         "myntra": 132839
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 122399,
         "flipkart": 125609,
         "myntra": 127919
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 117599,
         "flipkart": 120869,
         "myntra": 125459
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 119999,
         "flipkart": 118499,
         "myntra": 122999
@@ -1825,37 +1825,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 173589,
         "flipkart": 168289,
         "myntra": 183989
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 167389,
         "flipkart": 163699,
         "myntra": 175989
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 162740,
         "flipkart": 159110,
         "myntra": 172789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 158090,
         "flipkart": 162169,
         "myntra": 166390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 151890,
         "flipkart": 156050,
         "myntra": 163190
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 154990,
         "flipkart": 152990,
         "myntra": 159990
@@ -1863,37 +1863,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 173589,
         "flipkart": 168289,
         "myntra": 183989
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 167389,
         "flipkart": 163699,
         "myntra": 175989
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 162740,
         "flipkart": 159110,
         "myntra": 172789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 158090,
         "flipkart": 162169,
         "myntra": 166390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 151890,
         "flipkart": 156050,
         "myntra": 163190
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 154990,
         "flipkart": 152990,
         "myntra": 159990
@@ -1971,37 +1971,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 173589,
         "flipkart": 168289,
         "myntra": 183989
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 167389,
         "flipkart": 163699,
         "myntra": 175989
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 162740,
         "flipkart": 159110,
         "myntra": 172789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 158090,
         "flipkart": 162169,
         "myntra": 166390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 151890,
         "flipkart": 156050,
         "myntra": 163190
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 154990,
         "flipkart": 152990,
         "myntra": 159990
@@ -2009,37 +2009,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 173589,
         "flipkart": 168289,
         "myntra": 183989
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 167389,
         "flipkart": 163699,
         "myntra": 175989
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 162740,
         "flipkart": 159110,
         "myntra": 172789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 158090,
         "flipkart": 162169,
         "myntra": 166390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 151890,
         "flipkart": 156050,
         "myntra": 163190
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 154990,
         "flipkart": 152990,
         "myntra": 159990
@@ -2111,37 +2111,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 173589,
         "flipkart": 168289,
         "myntra": 183989
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 167389,
         "flipkart": 163699,
         "myntra": 175989
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 162740,
         "flipkart": 159110,
         "myntra": 172789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 158090,
         "flipkart": 162169,
         "myntra": 166390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 151890,
         "flipkart": 156050,
         "myntra": 163190
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 154990,
         "flipkart": 152990,
         "myntra": 159990
@@ -2149,37 +2149,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 173589,
         "flipkart": 168289,
         "myntra": 183989
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 167389,
         "flipkart": 163699,
         "myntra": 175989
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 162740,
         "flipkart": 159110,
         "myntra": 172789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 158090,
         "flipkart": 162169,
         "myntra": 166390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 151890,
         "flipkart": 156050,
         "myntra": 163190
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 154990,
         "flipkart": 152990,
         "myntra": 159990
@@ -2251,37 +2251,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 55989,
         "flipkart": 53889,
         "myntra": 59788
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 53989,
         "flipkart": 52419,
         "myntra": 57189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 52490,
         "flipkart": 50950,
         "myntra": 56149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 50990,
         "flipkart": 51929,
         "myntra": 54070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 48990,
         "flipkart": 49970,
         "myntra": 53030
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 49990,
         "flipkart": 48990,
         "myntra": 51990
@@ -2289,37 +2289,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 55989,
         "flipkart": 53889,
         "myntra": 59788
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 53989,
         "flipkart": 52419,
         "myntra": 57189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 52490,
         "flipkart": 50950,
         "myntra": 56149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 50990,
         "flipkart": 51929,
         "myntra": 54070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 48990,
         "flipkart": 49970,
         "myntra": 53030
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 49990,
         "flipkart": 48990,
         "myntra": 51990
@@ -2396,37 +2396,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 55989,
         "flipkart": 53889,
         "myntra": 59788
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 53989,
         "flipkart": 52419,
         "myntra": 57189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 52490,
         "flipkart": 50950,
         "myntra": 56149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 50990,
         "flipkart": 51929,
         "myntra": 54070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 48990,
         "flipkart": 49970,
         "myntra": 53030
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 49990,
         "flipkart": 48990,
         "myntra": 51990
@@ -2434,37 +2434,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 55989,
         "flipkart": 53889,
         "myntra": 59788
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 53989,
         "flipkart": 52419,
         "myntra": 57189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 52490,
         "flipkart": 50950,
         "myntra": 56149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 50990,
         "flipkart": 51929,
         "myntra": 54070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 48990,
         "flipkart": 49970,
         "myntra": 53030
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 49990,
         "flipkart": 48990,
         "myntra": 51990
@@ -2535,37 +2535,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 55989,
         "flipkart": 53889,
         "myntra": 59788
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 53989,
         "flipkart": 52419,
         "myntra": 57189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 52490,
         "flipkart": 50950,
         "myntra": 56149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 50990,
         "flipkart": 51929,
         "myntra": 54070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 48990,
         "flipkart": 49970,
         "myntra": 53030
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 49990,
         "flipkart": 48990,
         "myntra": 51990
@@ -2573,37 +2573,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 55989,
         "flipkart": 53889,
         "myntra": 59788
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 53989,
         "flipkart": 52419,
         "myntra": 57189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 52490,
         "flipkart": 50950,
         "myntra": 56149
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 50990,
         "flipkart": 51929,
         "myntra": 54070
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 48990,
         "flipkart": 49970,
         "myntra": 53030
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 49990,
         "flipkart": 48990,
         "myntra": 51990
@@ -2674,37 +2674,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 43679,
         "flipkart": 41789,
         "myntra": 45885
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 42119,
         "flipkart": 40649,
         "myntra": 43890
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 40949,
         "flipkart": 39510,
         "myntra": 43092
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 39779,
         "flipkart": 40269,
         "myntra": 41496
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 38219,
         "flipkart": 38750,
         "myntra": 40698
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 38999,
         "flipkart": 37990,
         "myntra": 39900
@@ -2712,37 +2712,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 43679,
         "flipkart": 41789,
         "myntra": 45885
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 42119,
         "flipkart": 40649,
         "myntra": 43890
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 40949,
         "flipkart": 39510,
         "myntra": 43092
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 39779,
         "flipkart": 40269,
         "myntra": 41496
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 38219,
         "flipkart": 38750,
         "myntra": 40698
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 38999,
         "flipkart": 37990,
         "myntra": 39900
@@ -2819,37 +2819,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 43679,
         "flipkart": 41789,
         "myntra": 45885
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 42119,
         "flipkart": 40649,
         "myntra": 43890
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 40949,
         "flipkart": 39510,
         "myntra": 43092
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 39779,
         "flipkart": 40269,
         "myntra": 41496
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 38219,
         "flipkart": 38750,
         "myntra": 40698
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 38999,
         "flipkart": 37990,
         "myntra": 39900
@@ -2857,37 +2857,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 43679,
         "flipkart": 41789,
         "myntra": 45885
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 42119,
         "flipkart": 40649,
         "myntra": 43890
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 40949,
         "flipkart": 39510,
         "myntra": 43092
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 39779,
         "flipkart": 40269,
         "myntra": 41496
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 38219,
         "flipkart": 38750,
         "myntra": 40698
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 38999,
         "flipkart": 37990,
         "myntra": 39900
@@ -2958,37 +2958,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 43679,
         "flipkart": 41789,
         "myntra": 45885
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 42119,
         "flipkart": 40649,
         "myntra": 43890
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 40949,
         "flipkart": 39510,
         "myntra": 43092
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 39779,
         "flipkart": 40269,
         "myntra": 41496
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 38219,
         "flipkart": 38750,
         "myntra": 40698
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 38999,
         "flipkart": 37990,
         "myntra": 39900
@@ -2996,37 +2996,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 43679,
         "flipkart": 41789,
         "myntra": 45885
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 42119,
         "flipkart": 40649,
         "myntra": 43890
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 40949,
         "flipkart": 39510,
         "myntra": 43092
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 39779,
         "flipkart": 40269,
         "myntra": 41496
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 38219,
         "flipkart": 38750,
         "myntra": 40698
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 38999,
         "flipkart": 37990,
         "myntra": 39900
@@ -3097,37 +3097,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 15679,
         "flipkart": 15949,
         "myntra": 17249
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 15119,
         "flipkart": 15514,
         "myntra": 16499
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 14699,
         "flipkart": 15079,
         "myntra": 16199
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 14279,
         "flipkart": 15369,
         "myntra": 15599
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 13719,
         "flipkart": 14789,
         "myntra": 15299
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 13999,
         "flipkart": 14499,
         "myntra": 14999
@@ -3135,37 +3135,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 15679,
         "flipkart": 15949,
         "myntra": 17249
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 15119,
         "flipkart": 15514,
         "myntra": 16499
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 14699,
         "flipkart": 15079,
         "myntra": 16199
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 14279,
         "flipkart": 15369,
         "myntra": 15599
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 13719,
         "flipkart": 14789,
         "myntra": 15299
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 13999,
         "flipkart": 14499,
         "myntra": 14999
@@ -3242,37 +3242,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 15679,
         "flipkart": 15949,
         "myntra": 17249
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 15119,
         "flipkart": 15514,
         "myntra": 16499
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 14699,
         "flipkart": 15079,
         "myntra": 16199
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 14279,
         "flipkart": 15369,
         "myntra": 15599
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 13719,
         "flipkart": 14789,
         "myntra": 15299
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 13999,
         "flipkart": 14499,
         "myntra": 14999
@@ -3280,37 +3280,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 15679,
         "flipkart": 15949,
         "myntra": 17249
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 15119,
         "flipkart": 15514,
         "myntra": 16499
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 14699,
         "flipkart": 15079,
         "myntra": 16199
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 14279,
         "flipkart": 15369,
         "myntra": 15599
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 13719,
         "flipkart": 14789,
         "myntra": 15299
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 13999,
         "flipkart": 14499,
         "myntra": 14999
@@ -3381,37 +3381,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 15679,
         "flipkart": 15949,
         "myntra": 17249
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 15119,
         "flipkart": 15514,
         "myntra": 16499
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 14699,
         "flipkart": 15079,
         "myntra": 16199
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 14279,
         "flipkart": 15369,
         "myntra": 15599
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 13719,
         "flipkart": 14789,
         "myntra": 15299
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 13999,
         "flipkart": 14499,
         "myntra": 14999
@@ -3419,37 +3419,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 15679,
         "flipkart": 15949,
         "myntra": 17249
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 15119,
         "flipkart": 15514,
         "myntra": 16499
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 14699,
         "flipkart": 15079,
         "myntra": 16199
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 14279,
         "flipkart": 15369,
         "myntra": 15599
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 13719,
         "flipkart": 14789,
         "myntra": 15299
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 13999,
         "flipkart": 14499,
         "myntra": 14999
@@ -3520,37 +3520,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 36949,
         "flipkart": 36849,
         "myntra": 40239
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 35629,
         "flipkart": 35844,
         "myntra": 38489
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 34640,
         "flipkart": 34839,
         "myntra": 37789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 33650,
         "flipkart": 35509,
         "myntra": 36390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 32330,
         "flipkart": 34169,
         "myntra": 35690
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 32990,
         "flipkart": 33499,
         "myntra": 34990
@@ -3558,37 +3558,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 36949,
         "flipkart": 36849,
         "myntra": 40239
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 35629,
         "flipkart": 35844,
         "myntra": 38489
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 34640,
         "flipkart": 34839,
         "myntra": 37789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 33650,
         "flipkart": 35509,
         "myntra": 36390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 32330,
         "flipkart": 34169,
         "myntra": 35690
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 32990,
         "flipkart": 33499,
         "myntra": 34990
@@ -3664,37 +3664,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 36949,
         "flipkart": 36849,
         "myntra": 40239
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 35629,
         "flipkart": 35844,
         "myntra": 38489
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 34640,
         "flipkart": 34839,
         "myntra": 37789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 33650,
         "flipkart": 35509,
         "myntra": 36390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 32330,
         "flipkart": 34169,
         "myntra": 35690
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 32990,
         "flipkart": 33499,
         "myntra": 34990
@@ -3702,37 +3702,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 36949,
         "flipkart": 36849,
         "myntra": 40239
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 35629,
         "flipkart": 35844,
         "myntra": 38489
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 34640,
         "flipkart": 34839,
         "myntra": 37789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 33650,
         "flipkart": 35509,
         "myntra": 36390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 32330,
         "flipkart": 34169,
         "myntra": 35690
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 32990,
         "flipkart": 33499,
         "myntra": 34990
@@ -3802,37 +3802,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 36949,
         "flipkart": 36849,
         "myntra": 40239
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 35629,
         "flipkart": 35844,
         "myntra": 38489
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 34640,
         "flipkart": 34839,
         "myntra": 37789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 33650,
         "flipkart": 35509,
         "myntra": 36390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 32330,
         "flipkart": 34169,
         "myntra": 35690
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 32990,
         "flipkart": 33499,
         "myntra": 34990
@@ -3840,37 +3840,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 36949,
         "flipkart": 36849,
         "myntra": 40239
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 35629,
         "flipkart": 35844,
         "myntra": 38489
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 34640,
         "flipkart": 34839,
         "myntra": 37789
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 33650,
         "flipkart": 35509,
         "myntra": 36390
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 32330,
         "flipkart": 34169,
         "myntra": 35690
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 32990,
         "flipkart": 33499,
         "myntra": 34990
@@ -3940,37 +3940,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 12874,
         "flipkart": 13195,
         "myntra": 12644
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 12415,
         "flipkart": 12835,
         "myntra": 12095
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 12070,
         "flipkart": 12475,
         "myntra": 11875
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 11725,
         "flipkart": 12715,
         "myntra": 11435
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 11265,
         "flipkart": 12235,
         "myntra": 11215
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 11495,
         "flipkart": 11995,
         "myntra": 10995
@@ -3978,37 +3978,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 12874,
         "flipkart": 13195,
         "myntra": 12644
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 12415,
         "flipkart": 12835,
         "myntra": 12095
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 12070,
         "flipkart": 12475,
         "myntra": 11875
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 11725,
         "flipkart": 12715,
         "myntra": 11435
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 11265,
         "flipkart": 12235,
         "myntra": 11215
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 11495,
         "flipkart": 11995,
         "myntra": 10995
@@ -4084,37 +4084,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 12874,
         "flipkart": 13195,
         "myntra": 12644
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 12415,
         "flipkart": 12835,
         "myntra": 12095
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 12070,
         "flipkart": 12475,
         "myntra": 11875
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 11725,
         "flipkart": 12715,
         "myntra": 11435
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 11265,
         "flipkart": 12235,
         "myntra": 11215
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 11495,
         "flipkart": 11995,
         "myntra": 10995
@@ -4122,37 +4122,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 12874,
         "flipkart": 13195,
         "myntra": 12644
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 12415,
         "flipkart": 12835,
         "myntra": 12095
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 12070,
         "flipkart": 12475,
         "myntra": 11875
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 11725,
         "flipkart": 12715,
         "myntra": 11435
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 11265,
         "flipkart": 12235,
         "myntra": 11215
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 11495,
         "flipkart": 11995,
         "myntra": 10995
@@ -4222,37 +4222,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 12874,
         "flipkart": 13195,
         "myntra": 12644
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 12415,
         "flipkart": 12835,
         "myntra": 12095
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 12070,
         "flipkart": 12475,
         "myntra": 11875
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 11725,
         "flipkart": 12715,
         "myntra": 11435
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 11265,
         "flipkart": 12235,
         "myntra": 11215
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 11495,
         "flipkart": 11995,
         "myntra": 10995
@@ -4260,37 +4260,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 12874,
         "flipkart": 13195,
         "myntra": 12644
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 12415,
         "flipkart": 12835,
         "myntra": 12095
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 12070,
         "flipkart": 12475,
         "myntra": 11875
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 11725,
         "flipkart": 12715,
         "myntra": 11435
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 11265,
         "flipkart": 12235,
         "myntra": 11215
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 11495,
         "flipkart": 11995,
         "myntra": 10995
@@ -4360,37 +4360,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 14559,
         "flipkart": 14849,
         "myntra": 14374
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 14039,
         "flipkart": 14444,
         "myntra": 13749
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 13649,
         "flipkart": 14039,
         "myntra": 13499
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 13259,
         "flipkart": 14309,
         "myntra": 12999
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 12739,
         "flipkart": 13769,
         "myntra": 12749
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 12999,
         "flipkart": 13499,
         "myntra": 12499
@@ -4398,37 +4398,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 14559,
         "flipkart": 14849,
         "myntra": 14374
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 14039,
         "flipkart": 14444,
         "myntra": 13749
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 13649,
         "flipkart": 14039,
         "myntra": 13499
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 13259,
         "flipkart": 14309,
         "myntra": 12999
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 12739,
         "flipkart": 13769,
         "myntra": 12749
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 12999,
         "flipkart": 13499,
         "myntra": 12499
@@ -4504,37 +4504,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 14559,
         "flipkart": 14849,
         "myntra": 14374
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 14039,
         "flipkart": 14444,
         "myntra": 13749
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 13649,
         "flipkart": 14039,
         "myntra": 13499
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 13259,
         "flipkart": 14309,
         "myntra": 12999
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 12739,
         "flipkart": 13769,
         "myntra": 12749
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 12999,
         "flipkart": 13499,
         "myntra": 12499
@@ -4542,37 +4542,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 14559,
         "flipkart": 14849,
         "myntra": 14374
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 14039,
         "flipkart": 14444,
         "myntra": 13749
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 13649,
         "flipkart": 14039,
         "myntra": 13499
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 13259,
         "flipkart": 14309,
         "myntra": 12999
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 12739,
         "flipkart": 13769,
         "myntra": 12749
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 12999,
         "flipkart": 13499,
         "myntra": 12499
@@ -4642,37 +4642,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 14559,
         "flipkart": 14849,
         "myntra": 14374
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 14039,
         "flipkart": 14444,
         "myntra": 13749
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 13649,
         "flipkart": 14039,
         "myntra": 13499
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 13259,
         "flipkart": 14309,
         "myntra": 12999
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 12739,
         "flipkart": 13769,
         "myntra": 12749
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 12999,
         "flipkart": 13499,
         "myntra": 12499
@@ -4680,37 +4680,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 14559,
         "flipkart": 14849,
         "myntra": 14374
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 14039,
         "flipkart": 14444,
         "myntra": 13749
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 13649,
         "flipkart": 14039,
         "myntra": 13499
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 13259,
         "flipkart": 14309,
         "myntra": 12999
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 12739,
         "flipkart": 13769,
         "myntra": 12749
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 12999,
         "flipkart": 13499,
         "myntra": 12499
@@ -4780,37 +4780,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3919,
         "flipkart": 4179,
         "myntra": 4196
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3779,
         "flipkart": 4065,
         "myntra": 4014
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3674,
         "flipkart": 3951,
         "myntra": 3941
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3569,
         "flipkart": 4027,
         "myntra": 3795
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3429,
         "flipkart": 3875,
         "myntra": 3722
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3499,
         "flipkart": 3799,
         "myntra": 3649
@@ -4818,37 +4818,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3919,
         "flipkart": 4179,
         "myntra": 4196
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3779,
         "flipkart": 4065,
         "myntra": 4014
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3674,
         "flipkart": 3951,
         "myntra": 3941
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3569,
         "flipkart": 4027,
         "myntra": 3795
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3429,
         "flipkart": 3875,
         "myntra": 3722
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3499,
         "flipkart": 3799,
         "myntra": 3649
@@ -4924,37 +4924,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3919,
         "flipkart": 4179,
         "myntra": 4196
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3779,
         "flipkart": 4065,
         "myntra": 4014
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3674,
         "flipkart": 3951,
         "myntra": 3941
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3569,
         "flipkart": 4027,
         "myntra": 3795
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3429,
         "flipkart": 3875,
         "myntra": 3722
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3499,
         "flipkart": 3799,
         "myntra": 3649
@@ -4962,37 +4962,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3919,
         "flipkart": 4179,
         "myntra": 4196
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3779,
         "flipkart": 4065,
         "myntra": 4014
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3674,
         "flipkart": 3951,
         "myntra": 3941
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3569,
         "flipkart": 4027,
         "myntra": 3795
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3429,
         "flipkart": 3875,
         "myntra": 3722
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3499,
         "flipkart": 3799,
         "myntra": 3649
@@ -5062,37 +5062,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3919,
         "flipkart": 4179,
         "myntra": 4196
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3779,
         "flipkart": 4065,
         "myntra": 4014
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3674,
         "flipkart": 3951,
         "myntra": 3941
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3569,
         "flipkart": 4027,
         "myntra": 3795
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3429,
         "flipkart": 3875,
         "myntra": 3722
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3499,
         "flipkart": 3799,
         "myntra": 3649
@@ -5100,37 +5100,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3919,
         "flipkart": 4179,
         "myntra": 4196
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3779,
         "flipkart": 4065,
         "myntra": 4014
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3674,
         "flipkart": 3951,
         "myntra": 3941
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3569,
         "flipkart": 4027,
         "myntra": 3795
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3429,
         "flipkart": 3875,
         "myntra": 3722
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3499,
         "flipkart": 3799,
         "myntra": 3649
@@ -5200,37 +5200,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2570,
         "flipkart": 2635,
         "myntra": 2524
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2479,
         "flipkart": 2563,
         "myntra": 2415
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2410,
         "flipkart": 2491,
         "myntra": 2371
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2341,
         "flipkart": 2539,
         "myntra": 2283
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2249,
         "flipkart": 2443,
         "myntra": 2239
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2295,
         "flipkart": 2395,
         "myntra": 2195
@@ -5238,37 +5238,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2570,
         "flipkart": 2635,
         "myntra": 2524
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2479,
         "flipkart": 2563,
         "myntra": 2415
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2410,
         "flipkart": 2491,
         "myntra": 2371
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2341,
         "flipkart": 2539,
         "myntra": 2283
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2249,
         "flipkart": 2443,
         "myntra": 2239
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2295,
         "flipkart": 2395,
         "myntra": 2195
@@ -5344,37 +5344,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2570,
         "flipkart": 2635,
         "myntra": 2524
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2479,
         "flipkart": 2563,
         "myntra": 2415
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2410,
         "flipkart": 2491,
         "myntra": 2371
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2341,
         "flipkart": 2539,
         "myntra": 2283
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2249,
         "flipkart": 2443,
         "myntra": 2239
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2295,
         "flipkart": 2395,
         "myntra": 2195
@@ -5382,37 +5382,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2570,
         "flipkart": 2635,
         "myntra": 2524
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2479,
         "flipkart": 2563,
         "myntra": 2415
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2410,
         "flipkart": 2491,
         "myntra": 2371
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2341,
         "flipkart": 2539,
         "myntra": 2283
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2249,
         "flipkart": 2443,
         "myntra": 2239
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2295,
         "flipkart": 2395,
         "myntra": 2195
@@ -5482,37 +5482,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2570,
         "flipkart": 2635,
         "myntra": 2524
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2479,
         "flipkart": 2563,
         "myntra": 2415
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2410,
         "flipkart": 2491,
         "myntra": 2371
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2341,
         "flipkart": 2539,
         "myntra": 2283
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2249,
         "flipkart": 2443,
         "myntra": 2239
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2295,
         "flipkart": 2395,
         "myntra": 2195
@@ -5520,37 +5520,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2570,
         "flipkart": 2635,
         "myntra": 2524
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2479,
         "flipkart": 2563,
         "myntra": 2415
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2410,
         "flipkart": 2491,
         "myntra": 2371
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2341,
         "flipkart": 2539,
         "myntra": 2283
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2249,
         "flipkart": 2443,
         "myntra": 2239
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2295,
         "flipkart": 2395,
         "myntra": 2195
@@ -5620,37 +5620,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2799,
         "flipkart": 2859,
         "myntra": 2759
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2699,
         "flipkart": 2781,
         "myntra": 2639
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2624,
         "flipkart": 2703,
         "myntra": 2591
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2549,
         "flipkart": 2755,
         "myntra": 2495
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2449,
         "flipkart": 2651,
         "myntra": 2447
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2499,
         "flipkart": 2599,
         "myntra": 2399
@@ -5658,37 +5658,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2799,
         "flipkart": 2859,
         "myntra": 2759
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2699,
         "flipkart": 2781,
         "myntra": 2639
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2624,
         "flipkart": 2703,
         "myntra": 2591
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2549,
         "flipkart": 2755,
         "myntra": 2495
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2449,
         "flipkart": 2651,
         "myntra": 2447
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2499,
         "flipkart": 2599,
         "myntra": 2399
@@ -5764,37 +5764,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2799,
         "flipkart": 2859,
         "myntra": 2759
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2699,
         "flipkart": 2781,
         "myntra": 2639
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2624,
         "flipkart": 2703,
         "myntra": 2591
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2549,
         "flipkart": 2755,
         "myntra": 2495
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2449,
         "flipkart": 2651,
         "myntra": 2447
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2499,
         "flipkart": 2599,
         "myntra": 2399
@@ -5802,37 +5802,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2799,
         "flipkart": 2859,
         "myntra": 2759
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2699,
         "flipkart": 2781,
         "myntra": 2639
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2624,
         "flipkart": 2703,
         "myntra": 2591
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2549,
         "flipkart": 2755,
         "myntra": 2495
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2449,
         "flipkart": 2651,
         "myntra": 2447
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2499,
         "flipkart": 2599,
         "myntra": 2399
@@ -5902,37 +5902,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2799,
         "flipkart": 2859,
         "myntra": 2759
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2699,
         "flipkart": 2781,
         "myntra": 2639
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2624,
         "flipkart": 2703,
         "myntra": 2591
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2549,
         "flipkart": 2755,
         "myntra": 2495
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2449,
         "flipkart": 2651,
         "myntra": 2447
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2499,
         "flipkart": 2599,
         "myntra": 2399
@@ -5940,37 +5940,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 2799,
         "flipkart": 2859,
         "myntra": 2759
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 2699,
         "flipkart": 2781,
         "myntra": 2639
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 2624,
         "flipkart": 2703,
         "myntra": 2591
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 2549,
         "flipkart": 2755,
         "myntra": 2495
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2449,
         "flipkart": 2651,
         "myntra": 2447
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2499,
         "flipkart": 2599,
         "myntra": 2399
@@ -6040,37 +6040,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3359,
         "flipkart": 3519,
         "myntra": 3334
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3239,
         "flipkart": 3423,
         "myntra": 3189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3149,
         "flipkart": 3327,
         "myntra": 3131
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3059,
         "flipkart": 3391,
         "myntra": 3015
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2939,
         "flipkart": 3263,
         "myntra": 2957
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2999,
         "flipkart": 3199,
         "myntra": 2899
@@ -6078,37 +6078,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3359,
         "flipkart": 3519,
         "myntra": 3334
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3239,
         "flipkart": 3423,
         "myntra": 3189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3149,
         "flipkart": 3327,
         "myntra": 3131
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3059,
         "flipkart": 3391,
         "myntra": 3015
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2939,
         "flipkart": 3263,
         "myntra": 2957
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2999,
         "flipkart": 3199,
         "myntra": 2899
@@ -6184,37 +6184,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3359,
         "flipkart": 3519,
         "myntra": 3334
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3239,
         "flipkart": 3423,
         "myntra": 3189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3149,
         "flipkart": 3327,
         "myntra": 3131
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3059,
         "flipkart": 3391,
         "myntra": 3015
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2939,
         "flipkart": 3263,
         "myntra": 2957
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2999,
         "flipkart": 3199,
         "myntra": 2899
@@ -6222,37 +6222,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3359,
         "flipkart": 3519,
         "myntra": 3334
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3239,
         "flipkart": 3423,
         "myntra": 3189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3149,
         "flipkart": 3327,
         "myntra": 3131
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3059,
         "flipkart": 3391,
         "myntra": 3015
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2939,
         "flipkart": 3263,
         "myntra": 2957
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2999,
         "flipkart": 3199,
         "myntra": 2899
@@ -6322,37 +6322,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3359,
         "flipkart": 3519,
         "myntra": 3334
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3239,
         "flipkart": 3423,
         "myntra": 3189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3149,
         "flipkart": 3327,
         "myntra": 3131
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3059,
         "flipkart": 3391,
         "myntra": 3015
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2939,
         "flipkart": 3263,
         "myntra": 2957
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2999,
         "flipkart": 3199,
         "myntra": 2899
@@ -6360,37 +6360,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 3359,
         "flipkart": 3519,
         "myntra": 3334
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3239,
         "flipkart": 3423,
         "myntra": 3189
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3149,
         "flipkart": 3327,
         "myntra": 3131
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3059,
         "flipkart": 3391,
         "myntra": 3015
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 2939,
         "flipkart": 3263,
         "myntra": 2957
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 2999,
         "flipkart": 3199,
         "myntra": 2899
@@ -6460,37 +6460,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 9509,
         "flipkart": 9669,
         "myntra": 9534
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 9169,
         "flipkart": 9405,
         "myntra": 9119
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 8915,
         "flipkart": 9142,
         "myntra": 8953
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 8660,
         "flipkart": 9317,
         "myntra": 8622
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 8320,
         "flipkart": 8966,
         "myntra": 8456
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 8490,
         "flipkart": 8790,
         "myntra": 8290
@@ -6498,37 +6498,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 9509,
         "flipkart": 9669,
         "myntra": 9534
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 9169,
         "flipkart": 9405,
         "myntra": 9119
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 8915,
         "flipkart": 9142,
         "myntra": 8953
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 8660,
         "flipkart": 9317,
         "myntra": 8622
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 8320,
         "flipkart": 8966,
         "myntra": 8456
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 8490,
         "flipkart": 8790,
         "myntra": 8290
@@ -6604,37 +6604,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 9509,
         "flipkart": 9669,
         "myntra": 9534
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 9169,
         "flipkart": 9405,
         "myntra": 9119
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 8915,
         "flipkart": 9142,
         "myntra": 8953
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 8660,
         "flipkart": 9317,
         "myntra": 8622
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 8320,
         "flipkart": 8966,
         "myntra": 8456
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 8490,
         "flipkart": 8790,
         "myntra": 8290
@@ -6642,37 +6642,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 9509,
         "flipkart": 9669,
         "myntra": 9534
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 9169,
         "flipkart": 9405,
         "myntra": 9119
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 8915,
         "flipkart": 9142,
         "myntra": 8953
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 8660,
         "flipkart": 9317,
         "myntra": 8622
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 8320,
         "flipkart": 8966,
         "myntra": 8456
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 8490,
         "flipkart": 8790,
         "myntra": 8290
@@ -6742,37 +6742,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 9509,
         "flipkart": 9669,
         "myntra": 9534
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 9169,
         "flipkart": 9405,
         "myntra": 9119
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 8915,
         "flipkart": 9142,
         "myntra": 8953
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 8660,
         "flipkart": 9317,
         "myntra": 8622
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 8320,
         "flipkart": 8966,
         "myntra": 8456
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 8490,
         "flipkart": 8790,
         "myntra": 8290
@@ -6780,37 +6780,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 9509,
         "flipkart": 9669,
         "myntra": 9534
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 9169,
         "flipkart": 9405,
         "myntra": 9119
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 8915,
         "flipkart": 9142,
         "myntra": 8953
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 8660,
         "flipkart": 9317,
         "myntra": 8622
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 8320,
         "flipkart": 8966,
         "myntra": 8456
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 8490,
         "flipkart": 8790,
         "myntra": 8290
@@ -6880,37 +6880,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 4143,
         "flipkart": 4179,
         "myntra": 4484
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3995,
         "flipkart": 4065,
         "myntra": 4289
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3884,
         "flipkart": 3951,
         "myntra": 4211
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3773,
         "flipkart": 4027,
         "myntra": 4055
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3625,
         "flipkart": 3875,
         "myntra": 3977
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3699,
         "flipkart": 3799,
         "myntra": 3899
@@ -6918,37 +6918,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 4143,
         "flipkart": 4179,
         "myntra": 4484
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3995,
         "flipkart": 4065,
         "myntra": 4289
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3884,
         "flipkart": 3951,
         "myntra": 4211
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3773,
         "flipkart": 4027,
         "myntra": 4055
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3625,
         "flipkart": 3875,
         "myntra": 3977
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3699,
         "flipkart": 3799,
         "myntra": 3899
@@ -7024,37 +7024,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 4143,
         "flipkart": 4179,
         "myntra": 4484
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3995,
         "flipkart": 4065,
         "myntra": 4289
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3884,
         "flipkart": 3951,
         "myntra": 4211
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3773,
         "flipkart": 4027,
         "myntra": 4055
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3625,
         "flipkart": 3875,
         "myntra": 3977
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3699,
         "flipkart": 3799,
         "myntra": 3899
@@ -7062,37 +7062,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 4143,
         "flipkart": 4179,
         "myntra": 4484
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3995,
         "flipkart": 4065,
         "myntra": 4289
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3884,
         "flipkart": 3951,
         "myntra": 4211
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3773,
         "flipkart": 4027,
         "myntra": 4055
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3625,
         "flipkart": 3875,
         "myntra": 3977
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3699,
         "flipkart": 3799,
         "myntra": 3899
@@ -7162,37 +7162,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 4143,
         "flipkart": 4179,
         "myntra": 4484
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3995,
         "flipkart": 4065,
         "myntra": 4289
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3884,
         "flipkart": 3951,
         "myntra": 4211
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3773,
         "flipkart": 4027,
         "myntra": 4055
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3625,
         "flipkart": 3875,
         "myntra": 3977
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3699,
         "flipkart": 3799,
         "myntra": 3899
@@ -7200,37 +7200,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 4143,
         "flipkart": 4179,
         "myntra": 4484
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 3995,
         "flipkart": 4065,
         "myntra": 4289
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 3884,
         "flipkart": 3951,
         "myntra": 4211
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 3773,
         "flipkart": 4027,
         "myntra": 4055
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 3625,
         "flipkart": 3875,
         "myntra": 3977
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 3699,
         "flipkart": 3799,
         "myntra": 3899
@@ -7300,37 +7300,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 7839,
         "flipkart": 8029,
         "myntra": 8624
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 7559,
         "flipkart": 7810,
         "myntra": 8249
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 7349,
         "flipkart": 7591,
         "myntra": 8099
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 7139,
         "flipkart": 7737,
         "myntra": 7799
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 6859,
         "flipkart": 7445,
         "myntra": 7649
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 6999,
         "flipkart": 7299,
         "myntra": 7499
@@ -7338,37 +7338,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 7839,
         "flipkart": 8029,
         "myntra": 8624
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 7559,
         "flipkart": 7810,
         "myntra": 8249
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 7349,
         "flipkart": 7591,
         "myntra": 8099
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 7139,
         "flipkart": 7737,
         "myntra": 7799
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 6859,
         "flipkart": 7445,
         "myntra": 7649
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 6999,
         "flipkart": 7299,
         "myntra": 7499
@@ -7444,37 +7444,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 7839,
         "flipkart": 8029,
         "myntra": 8624
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 7559,
         "flipkart": 7810,
         "myntra": 8249
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 7349,
         "flipkart": 7591,
         "myntra": 8099
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 7139,
         "flipkart": 7737,
         "myntra": 7799
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 6859,
         "flipkart": 7445,
         "myntra": 7649
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 6999,
         "flipkart": 7299,
         "myntra": 7499
@@ -7482,37 +7482,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 7839,
         "flipkart": 8029,
         "myntra": 8624
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 7559,
         "flipkart": 7810,
         "myntra": 8249
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 7349,
         "flipkart": 7591,
         "myntra": 8099
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 7139,
         "flipkart": 7737,
         "myntra": 7799
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 6859,
         "flipkart": 7445,
         "myntra": 7649
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 6999,
         "flipkart": 7299,
         "myntra": 7499
@@ -7582,37 +7582,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 7839,
         "flipkart": 8029,
         "myntra": 8624
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 7559,
         "flipkart": 7810,
         "myntra": 8249
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 7349,
         "flipkart": 7591,
         "myntra": 8099
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 7139,
         "flipkart": 7737,
         "myntra": 7799
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 6859,
         "flipkart": 7445,
         "myntra": 7649
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 6999,
         "flipkart": 7299,
         "myntra": 7499
@@ -7620,37 +7620,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 7839,
         "flipkart": 8029,
         "myntra": 8624
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 7559,
         "flipkart": 7810,
         "myntra": 8249
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 7349,
         "flipkart": 7591,
         "myntra": 8099
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 7139,
         "flipkart": 7737,
         "myntra": 7799
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 6859,
         "flipkart": 7445,
         "myntra": 7649
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 6999,
         "flipkart": 7299,
         "myntra": 7499
@@ -7720,37 +7720,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 33488,
         "flipkart": 33990,
         "myntra": 36685
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 32292,
         "flipkart": 33063,
         "myntra": 35090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 31395,
         "flipkart": 32136,
         "myntra": 34452
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 30498,
         "flipkart": 32754,
         "myntra": 33176
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 29302,
         "flipkart": 31518,
         "myntra": 32538
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 29900,
         "flipkart": 30900,
         "myntra": 31900
@@ -7758,37 +7758,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 33488,
         "flipkart": 33990,
         "myntra": 36685
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 32292,
         "flipkart": 33063,
         "myntra": 35090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 31395,
         "flipkart": 32136,
         "myntra": 34452
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 30498,
         "flipkart": 32754,
         "myntra": 33176
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 29302,
         "flipkart": 31518,
         "myntra": 32538
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 29900,
         "flipkart": 30900,
         "myntra": 31900
@@ -7864,37 +7864,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 33488,
         "flipkart": 33990,
         "myntra": 36685
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 32292,
         "flipkart": 33063,
         "myntra": 35090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 31395,
         "flipkart": 32136,
         "myntra": 34452
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 30498,
         "flipkart": 32754,
         "myntra": 33176
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 29302,
         "flipkart": 31518,
         "myntra": 32538
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 29900,
         "flipkart": 30900,
         "myntra": 31900
@@ -7902,37 +7902,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 33488,
         "flipkart": 33990,
         "myntra": 36685
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 32292,
         "flipkart": 33063,
         "myntra": 35090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 31395,
         "flipkart": 32136,
         "myntra": 34452
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 30498,
         "flipkart": 32754,
         "myntra": 33176
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 29302,
         "flipkart": 31518,
         "myntra": 32538
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 29900,
         "flipkart": 30900,
         "myntra": 31900
@@ -8002,37 +8002,37 @@ export const mockProducts = [
     },
     "price_history": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 33488,
         "flipkart": 33990,
         "myntra": 36685
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 32292,
         "flipkart": 33063,
         "myntra": 35090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 31395,
         "flipkart": 32136,
         "myntra": 34452
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 30498,
         "flipkart": 32754,
         "myntra": 33176
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 29302,
         "flipkart": 31518,
         "myntra": 32538
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 29900,
         "flipkart": 30900,
         "myntra": 31900
@@ -8040,37 +8040,37 @@ export const mockProducts = [
     ],
     "priceHistory": [
       {
-        "month": "May",
+        "month": "Mar",
         "amazon": 33488,
         "flipkart": 33990,
         "myntra": 36685
       },
       {
-        "month": "Jun",
+        "month": "Apr",
         "amazon": 32292,
         "flipkart": 33063,
         "myntra": 35090
       },
       {
-        "month": "Jul",
+        "month": "May",
         "amazon": 31395,
         "flipkart": 32136,
         "myntra": 34452
       },
       {
-        "month": "Aug",
+        "month": "Jun",
         "amazon": 30498,
         "flipkart": 32754,
         "myntra": 33176
       },
       {
-        "month": "Sep",
+        "month": "Jul",
         "amazon": 29302,
         "flipkart": 31518,
         "myntra": 32538
       },
       {
-        "month": "Current",
+        "month": "Aug",
         "amazon": 29900,
         "flipkart": 30900,
         "myntra": 31900

@@ -63,10 +63,10 @@ export default function Footer() {
           {/* Column 4 */}
           <div>
             <h4 style={{ fontSize: "14px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: "16px" }}>
-              About AlgoForge
+              About Shopsy
             </h4>
             <p style={{ fontSize: "13px", color: "var(--color-mute)", lineHeight: 1.5, marginBottom: "12px" }}>
-              Built for the Hackathon 2026. Powered by OpenRouter AI intelligence and real-time multi-platform aggregation.
+              AI-Powered Multi-Platform Shopping Intelligence. Powered by real-time aggregation across Amazon, Flipkart, and Myntra.
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", color: "var(--color-success)", fontWeight: 600 }}>
               <span style={{ width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "var(--color-success)" }}></span>
@@ -90,7 +90,7 @@ export default function Footer() {
           }}
         >
           <div>
-            © 2026 AlgoForge AI Personal Shopping Assistant. All rights reserved.
+            © 2026 Shopsy AI Personal Shopping Assistant. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: "20px" }}>
             <span>Privacy Policy</span>
