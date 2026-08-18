@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/layout/Navbar";
 import EditorialHero from "./components/hero/EditorialHero";
+import SolutionsOverview from "./components/landing/SolutionsOverview";
 import FeaturedGrid from "./components/products/FeaturedGrid";
 import CategoryRail from "./components/hero/CategoryRail";
 import FloatingAIChat from "./components/chat/FloatingAIChat";
@@ -23,7 +24,14 @@ export default function App() {
 
   const handleSelectCategory = (catId) => {
     setSelectedCategory(catId);
-    setSearchQuery(""); // Clear search query when selecting category pill
+    setSearchQuery("");
+    const element = document.getElementById("featured-grid");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleExploreDeals = () => {
     const element = document.getElementById("featured-grid");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -42,17 +50,23 @@ export default function App() {
 
       {/* Main Content Area */}
       <main style={{ flex: 1 }}>
-        {/* Editorial Campaign Hero */}
+        {/* 1. Editorial Hero */}
         <EditorialHero
           onSearch={handleSearch}
           onOpenChat={() => setIsChatOpen(true)}
           onSelectCategory={handleSelectCategory}
         />
 
-        {/* Shop By Category Rail */}
+        {/* 2. Solutions Overview & Problem vs Solution Matrix */}
+        <SolutionsOverview
+          onOpenChat={() => setIsChatOpen(true)}
+          onExploreDeals={handleExploreDeals}
+        />
+
+        {/* 3. Shop By Category Rail */}
         <CategoryRail onSelectCategory={handleSelectCategory} />
 
-        {/* Live Featured Products Grid */}
+        {/* 4. Live Featured Products Grid */}
         <FeaturedGrid
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
