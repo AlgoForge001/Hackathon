@@ -5,17 +5,9 @@ import DealsSection from "../components/home/DealsSection";
 import TrendingSection from "../components/home/TrendingSection";
 import CategoryShowcase from "../components/home/CategoryShowcase";
 import BudgetExplorerSection from "../components/home/BudgetExplorerSection";
-import SolutionsOverview from "../components/landing/SolutionsOverview";
 import FeaturedGrid from "../components/products/FeaturedGrid";
 
 export default function HomePage({ onSearch, onOpenChat, onSelectProduct, onSelectCategory }) {
-  const handleExploreDeals = () => {
-    const element = document.getElementById("featured-grid");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="home-page">
       {/* 1. Amazon-Style Category Top Subnav */}
@@ -40,13 +32,7 @@ export default function HomePage({ onSearch, onOpenChat, onSelectProduct, onSele
       {/* 6. Smart Budget Shopping Tiers */}
       <BudgetExplorerSection onSelectProduct={onSelectProduct} />
 
-      {/* 7. Solutions Overview & Problem vs Solution Matrix */}
-      <SolutionsOverview
-        onOpenChat={onOpenChat}
-        onExploreDeals={handleExploreDeals}
-      />
-
-      {/* 8. Live Featured Product Catalog Feed */}
+      {/* 7. Live Featured Product Catalog Feed */}
       <FeaturedGrid
         selectedCategory=""
         onSelectCategory={onSelectCategory}
