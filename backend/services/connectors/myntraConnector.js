@@ -1,21 +1,14 @@
-import { readFileSync } from "fs";
-import { fileURLToPath } from "url";
-import path from "path";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const mockData = JSON.parse(
-  readFileSync(path.join(__dirname, "../../data/mockProducts.json"), "utf-8")
-);
+import { getProductCatalog } from "../catalogService.js";
 
 /**
  * Fetch Myntra product listings matching query and filters.
  * Returns normalized product objects for the "myntra" platform only.
- * Note: Myntra primarily sells electronics, footwear, and fashion — not home appliances.
  */
 export async function fetchMyntraProducts({ query = "", category = "", minPrice = 0, maxPrice = Infinity }) {
+  const catalog = await getProductCatalog();
   const results = [];
 
-  for (const group of mockData) {
+  for (const group of catalog) {
     if (category && group.category !== category) continue;
 
     const platformEntry = group.platforms.find((p) => p.platform === "myntra");
