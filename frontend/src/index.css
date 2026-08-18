@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ─────────────────────────────────────────────────────────────
+   NIKE COMMERCE DESIGN SYSTEM TOKENS (ui.md)
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-ink: #111111;              /* Nike Black: primary CTA, active chips, headers */
+  --color-canvas: #ffffff;           /* Pure White: page background, on-image CTAs */
+  --color-soft-cloud: #f5f5f5;       /* Product image studio background, search pill, utility bar */
+  --color-hairline: #cacacb;         /* 1px dividers between rows/columns */
+  --color-hairline-soft: #e5e5e5;    /* Inset 1px line under sticky bars */
+  --color-charcoal: #39393b;        /* Secondary body */
+  --color-ash: #4b4b4d;             /* Low emphasis text */
+  --color-mute: #707072;            /* Subtitles, product category captions */
+  --color-stone: #9e9ea0;           /* Inverse secondary text */
+  
+  /* Semantic */
+  --color-sale: #d30005;            /* Discount price & % off (the ONLY red in chrome) */
+  --color-sale-deep: #780700;
+  --color-success: #007d48;         /* Best overall, in-stock */
+  --color-info: #1151ff;
+
+  /* Platforms */
+  --color-amazon: #FF9900;
+  --color-flipkart: #2874F0;
+  --color-myntra: #FF3F6C;
+
+  /* Typography */
+  --font-display: 'Bebas Neue', Impact, -apple-system, sans-serif;
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Radii */
+  --radius-none: 0px;               /* Product cards, images, containers */
+  --radius-sm: 18px;                /* Icons */
+  --radius-md: 24px;                /* Search pill, filter chips */
+  --radius-lg: 30px;                /* CTAs, primary pills */
+  --radius-full: 9999px;            /* Swatch dots, circular controls */
+
+  /* 8px Spacing Grid */
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 18px;
+  --space-xl: 24px;
+  --space-xxl: 30px;
+  --space-section: 48px;
+
+  /* Max Width */
+  --max-width: 1440px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   GLOBAL RESET & BASE
+   ───────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TYPOGRAPHY UTILITIES (ui.md)
+   ───────────────────────────────────────────────────────────── */
+.display-campaign {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 0.9;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.heading-xl {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.heading-lg {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.heading-md {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.body-strong {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.body-md {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-charcoal);
+}
+
+.caption-md {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-mute);
+}
+
+.caption-sm {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-mute);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BUTTONS (ui.md Spec)
+   ───────────────────────────────────────────────────────────── */
+/* Universal Primary CTA */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+  height: 48px;
+  padding: 0 32px;
+  border-radius: var(--radius-lg);
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}
+.btn-primary:active {
+  transform: scale(0.96);
+  opacity: 0.7;
+}
+
+/* Secondary CTA */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-soft-cloud);
+  color: var(--color-ink);
+  height: 48px;
+  padding: 0 32px;
+  border-radius: var(--radius-lg);
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.btn-secondary:hover {
+  background-color: #eaeaea;
+}
+.btn-secondary:active {
+  transform: scale(0.96);
+}
+
+/* White Pill On Photography */
+.btn-outline-on-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  height: 42px;
+  padding: 0 24px;
+  border-radius: var(--radius-lg);
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.btn-outline-on-image:hover {
+  background-color: var(--color-soft-cloud);
+}
+.btn-outline-on-image:active {
+  transform: scale(0.96);
+}
+
+/* Circular Icon Button */
+.btn-icon-circular {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-soft-cloud);
+  color: var(--color-ink);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.btn-icon-circular:hover {
+  background-color: #e8e8e8;
+}
+.btn-icon-circular:active {
+  transform: scale(0.92);
+}
+
+/* Filter Chip Pill */
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 38px;
+  padding: 0 20px;
+  border-radius: var(--radius-lg);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  border: 1px solid var(--color-hairline);
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+.filter-chip:hover {
+  border-color: var(--color-ink);
+}
+.filter-chip.active {
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+  border-color: var(--color-ink);
+}
+
+/* Search Pill Input */
+.search-pill-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-soft-cloud);
+  border-radius: var(--radius-md);
+  height: 40px;
+  padding: 0 16px;
+  transition: all 0.2s ease;
+  border: 1.5px solid transparent;
+}
+.search-pill-container:focus-within {
+  background-color: var(--color-canvas);
+  border-color: var(--color-ink);
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.06);
+}
+.search-pill-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-ink);
+  width: 100%;
+  font-family: inherit;
+}
+.search-pill-input::placeholder {
+  color: var(--color-mute);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYOUT & CONTAINER
+   ───────────────────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+
+.section-rhythm {
+  margin-top: var(--space-section);
+  margin-bottom: var(--space-section);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   PRODUCT CARD (ui.md Flat Card Specs)
+   ───────────────────────────────────────────────────────────── */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-canvas);
+  border-radius: var(--radius-none);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.product-card-image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-soft-cloud);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.product-card:hover .product-card-img {
+  transform: scale(1.03);
+}
+
+.product-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-ink);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-lg);
+  z-index: 2;
+}
+
+.product-card-badge.best-overall {
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+  border-color: var(--color-ink);
+}
+
+.product-card-content {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-ink);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-subtitle {
+  font-size: 13px;
+  color: var(--color-mute);
+  font-weight: 500;
+}
+
+.product-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.price-current {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.price-original {
+  font-size: 13px;
+  color: var(--color-mute);
+  text-decoration: line-through;
+}
+
+.price-discount {
+  font-size: 13px;
+  color: var(--color-sale);
+  font-weight: 700;
+}
+
+/* Swatch Dots */
+.swatch-dots-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+.swatch-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-hairline);
+  display: inline-block;
+}
+.swatch-dot.active {
+  box-shadow: 0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-ink);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CUSTOM SCROLLBAR
+   ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-soft-cloud);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-hairline);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-mute);
+}
