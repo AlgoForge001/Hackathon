@@ -322,7 +322,7 @@ export const mockGroups = [
     category: "home",
     subcategory: "appliances",
     brand: "Pigeon",
-    imageUrl: "https://images.unsplash.com/photo-1648546069-c6c5c2b2f7e6?w=800&auto=format&fit=crop&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=800&auto=format&fit=crop&q=80",
     specs: { "Capacity": "4.2 Litres Family Size", "Power": "1200 Watts", "Tech": "360° Rapid Air Circulation", "Presets": "8 Digital Cook Modes", "Basket": "Non-Stick Dishwasher Safe" },
     aiData: {
       sentiment: "green",
@@ -605,7 +605,7 @@ export const CATEGORY_DEFINITIONS = [
     badge: "Up to 50% Off",
     subcategories: ["All", "Appliances", "Kitchen", "Smart Living"],
     quadrantPreviews: [
-      { title: "Pigeon 4.2L Air Fryer", price: "₹2,999", image: "https://images.unsplash.com/photo-1648546069-c6c5c2b2f7e6?w=400&auto=format&fit=crop&q=80" },
+      { title: "Pigeon 4.2L Air Fryer", price: "₹2,999", image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=400&auto=format&fit=crop&q=80" },
       { title: "Atomberg BLDC Fan", price: "₹3,699", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=80" },
       { title: "Nutri-Blend Mixer", price: "₹2,599", image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=400&auto=format&fit=crop&q=80" },
       { title: "Digital Microwave", price: "₹4,999", image: "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400&auto=format&fit=crop&q=80" },
