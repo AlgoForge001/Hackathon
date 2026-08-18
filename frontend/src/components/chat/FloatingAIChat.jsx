@@ -18,6 +18,18 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
+  // Close on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape" && isOpen) {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
+
+  // Auto scroll to bottom
   useEffect(() => {
     if (isOpen) {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -77,56 +89,64 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
 
   return (
     <div
+      onClick={onClose}
       style={{
         position: "fixed",
         inset: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.45)",
+        backgroundColor: "rgba(0, 0, 0, 0.6)",
         backdropFilter: "blur(4px)",
-        zIndex: 200,
+        zIndex: 99999,
         display: "flex",
         justifyContent: "flex-end",
+        transition: "opacity 0.2s ease",
       }}
     >
       <div
+        onClick={(e) => e.stopPropagation()}
         style={{
           width: "100%",
-          maxWidth: "500px",
+          maxWidth: "520px",
           height: "100%",
           backgroundColor: "var(--color-canvas)",
           display: "flex",
           flexDirection: "column",
-          boxShadow: "-8px 0 30px rgba(0, 0, 0, 0.2)",
+          boxShadow: "-8px 0 30px rgba(0, 0, 0, 0.3)",
           animation: "slideIn 0.25s ease-out",
+          position: "relative",
         }}
       >
         {/* Chat Header */}
         <div
           style={{
-            padding: "18px 24px",
+            padding: "16px 20px",
             borderBottom: "1px solid var(--color-hairline)",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             backgroundColor: "var(--color-ink)",
             color: "var(--color-canvas)",
+            gap: "12px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0 }}>
             <div
               style={{
-                width: "34px",
-                height: "34px",
+                width: "36px",
+                height: "36px",
                 borderRadius: "var(--radius-full)",
                 backgroundColor: "rgba(255,255,255,0.15)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                flexShrink: 0,
               }}
             >
               <Sparkles size={18} color="#f59e0b" />
             </div>
-            <div>
-              <h3 style={{ fontSize: "15px", fontWeight: 700 }}>AI Shopping Advisor</h3>
+            <div style={{ minWidth: 0 }}>
+              <h3 style={{ fontSize: "15px", fontWeight: 700, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                AI Shopping Advisor
+              </h3>
               <span style={{ fontSize: "12px", color: "#4ade80", fontWeight: 600, display: "flex", alignItems: "center", gap: "4px" }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#4ade80" }}></span>
                 Live · Google Gemini 2.5 Flash
@@ -134,19 +154,36 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
             </div>
           </div>
 
+          {/* ❌ HIGH-VISIBILITY CLOSE BUTTON */}
           <button
             onClick={onClose}
+            aria-label="Close Chat"
             style={{
-              color: "var(--color-canvas)",
-              padding: "6px",
-              borderRadius: "var(--radius-full)",
+              backgroundColor: "rgba(255, 255, 255, 0.18)",
+              color: "#ffffff",
+              border: "1px solid rgba(255, 255, 255, 0.35)",
+              padding: "6px 14px",
+              borderRadius: "20px",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              gap: "6px",
               cursor: "pointer",
+              fontSize: "13px",
+              fontWeight: 700,
+              transition: "all 0.15s ease",
+              flexShrink: 0,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+              e.currentTarget.style.transform = "scale(1.05)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.18)";
+              e.currentTarget.style.transform = "scale(1)";
             }}
           >
-            <X size={20} />
+            <X size={16} strokeWidth={2.5} />
+            <span>Close</span>
           </button>
         </div>
 
