@@ -114,9 +114,19 @@ export const exploreBudget = async (productId, extraBudget) => {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CHAT — POST /api/chat
+// CHAT — GOOGLE GEMINI 2.5 FLASH AI CHAT ASSISTANT
 // ─────────────────────────────────────────────────────────────────────────────
 export const sendChatMessage = async ({ message, history = [] }) => {
+  try {
+    const { sendGeminiChatMessage } = await import("./geminiChatService.js");
+    const geminiRes = await sendGeminiChatMessage({ message, history });
+    if (geminiRes && geminiRes.success) {
+      return geminiRes;
+    }
+  } catch (err) {
+    console.warn("[API] Gemini direct chat error, trying backend:", err.message);
+  }
+
   try {
     if (isOnline()) {
       const res = await apiClient.post("/chat", { message, history });
