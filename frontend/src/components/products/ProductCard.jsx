@@ -11,7 +11,7 @@ export default function ProductCard({ product, onSelectProduct }) {
 
   const discountPercent = product.discount_percent || product.discountPercent || 0;
   const isSale = discountPercent > 0;
-  const isBestOverall = product.is_best_overall || product.isBestOverall || (product.best_overall_score || product.bestOverallScore) >= 90;
+  const isBestOverall = product.is_best_overall || product.isBestOverall || (product.best_overall_score || product.bestOverallScore) >= 80;
   const originalPrice = product.original_price || product.originalPrice;
   const productId = product.product_id || product.id || product.groupId;
 
