@@ -105,7 +105,7 @@ export default function CategoryShowcase() {
                   margin: "16px 0",
                 }}
               >
-                {cat.quadrantPreviews.map((item, idx) => (
+                {(cat.quadrantPreviews || []).map((item, idx) => (
                   <Link
                     key={idx}
                     to={`/category/${cat.id}`}

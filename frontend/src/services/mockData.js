@@ -8,6 +8,12 @@ export const CATEGORY_DEFINITIONS = [
     coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
     badge: "Verified Tech Deals",
     subcategories: ["All", "Headphones", "TWS Earbuds", "Laptops", "Smartphones", "Smartwatches", "Gaming"],
+    quadrantPreviews: [
+      { title: "Headphones", subtext: "Sony & JBL", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80" },
+      { title: "Earbuds", subtext: "AirPods Pro 2", image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80" },
+      { title: "Smartphones", subtext: "Galaxy S24", image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80" },
+      { title: "Laptops", subtext: "MacBook Air", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80" },
+    ],
   },
   {
     id: "footwear",
@@ -17,6 +23,12 @@ export const CATEGORY_DEFINITIONS = [
     coverImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
     badge: "Performance & Comfort",
     subcategories: ["All", "Running", "Sneakers", "Clogs", "Trekking Boots", "Walking"],
+    quadrantPreviews: [
+      { title: "Air Max 270", subtext: "Lifestyle", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80" },
+      { title: "Ultraboost", subtext: "Marathon", image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80" },
+      { title: "Classic Clogs", subtext: "Waterproof", image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80" },
+      { title: "Trek Boots", subtext: "Nubuck Leather", image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80" },
+    ],
   },
   {
     id: "fashion",
@@ -26,6 +38,12 @@ export const CATEGORY_DEFINITIONS = [
     coverImage: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
     badge: "Apparel & Accessories",
     subcategories: ["All", "Jeans", "Polos", "Jackets", "Sunglasses", "Kurtas", "Trousers"],
+    quadrantPreviews: [
+      { title: "Slim Denim", subtext: "Levi's 511", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80" },
+      { title: "Pique Polo", subtext: "Tommy Hilfiger", image: "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80" },
+      { title: "Aviators", subtext: "Ray-Ban Polarized", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80" },
+      { title: "Biker Jacket", subtext: "Zara Luxe", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80" },
+    ],
   },
   {
     id: "home",
@@ -35,6 +53,12 @@ export const CATEGORY_DEFINITIONS = [
     coverImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
     badge: "Kitchen & Home Upgrades",
     subcategories: ["All", "Ceiling Fans", "Air Fryers", "Vacuums", "Coffee Machines", "Mixer Grinders", "Air Purifiers"],
+    quadrantPreviews: [
+      { title: "BLDC Fan", subtext: "Atomberg 28W", image: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80" },
+      { title: "Air Fryer", subtext: "Philips 4.1L", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80" },
+      { title: "Cordless Vac", subtext: "Dyson V8", image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80" },
+      { title: "Espresso Mini", subtext: "Nespresso 19-Bar", image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80" },
+    ],
   },
 ];
 
