@@ -1,9 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Headphones, Footprints, Shirt, Home, Sparkles } from "lucide-react";
 import { CATEGORY_DEFINITIONS } from "../../services/mockData";
 
 export default function CategoryShowcase() {
+  const getCategoryIcon = (id) => {
+    switch (id) {
+      case "electronics":
+        return <Headphones size={20} color="var(--color-ink)" />;
+      case "footwear":
+        return <Footprints size={20} color="var(--color-ink)" />;
+      case "fashion":
+        return <Shirt size={20} color="var(--color-ink)" />;
+      case "home":
+        return <Home size={20} color="var(--color-ink)" />;
+      default:
+        return <Sparkles size={20} color="var(--color-ink)" />;
+    }
+  };
+
   return (
     <section className="section-rhythm" style={{ padding: "48px 0", backgroundColor: "var(--color-canvas)" }}>
       <div className="container">
@@ -57,7 +72,20 @@ export default function CategoryShowcase() {
                   <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--color-sale)" }}>
                     {cat.badge}
                   </span>
-                  <span style={{ fontSize: "18px" }}>{cat.emoji}</span>
+                  <div
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      borderRadius: "var(--radius-sm)",
+                      backgroundColor: "var(--color-canvas)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      border: "1px solid var(--color-hairline)",
+                    }}
+                  >
+                    {getCategoryIcon(cat.id)}
+                  </div>
                 </div>
 
                 <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", letterSpacing: "0.5px", lineHeight: 1.1, color: "var(--color-ink)" }}>
@@ -68,7 +96,7 @@ export default function CategoryShowcase() {
                 </p>
               </div>
 
-              {/* 4-Item Mini Quadrant Grid (Signature Amazon Design) */}
+              {/* 4-Item Mini Quadrant Grid */}
               <div
                 style={{
                   display: "grid",

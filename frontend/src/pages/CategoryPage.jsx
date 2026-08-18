@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, SlidersHorizontal, Sparkles, ShieldCheck, Star, Zap } from "lucide-react";
+import { ArrowLeft, SlidersHorizontal, Sparkles, ShieldCheck, Star, Zap, Headphones, Footprints, Shirt, Home } from "lucide-react";
 import CategoryNavRail from "../components/home/CategoryNavRail";
 import ProductCard from "../components/products/ProductCard";
 import { CATEGORY_DEFINITIONS, searchMockProducts, mockProducts } from "../services/mockData";
@@ -21,11 +21,25 @@ export default function CategoryPage({ onSelectProduct, onOpenChat }) {
     id: categoryId || "electronics",
     label: (categoryId || "Electronics").toUpperCase(),
     shortLabel: categoryId || "Electronics",
-    emoji: "🛍️",
     tagline: "Compare verified product listings across Amazon, Flipkart & Myntra",
     coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
     badge: "Verified Live Deals",
     subcategories: ["All"],
+  };
+
+  const getCategoryHeroIcon = (id) => {
+    switch (id) {
+      case "electronics":
+        return <Headphones size={28} color="#ffffff" />;
+      case "footwear":
+        return <Footprints size={28} color="#ffffff" />;
+      case "fashion":
+        return <Shirt size={28} color="#ffffff" />;
+      case "home":
+        return <Home size={28} color="#ffffff" />;
+      default:
+        return <Sparkles size={28} color="#ffffff" />;
+    }
   };
 
   // Reset subcategory when category changes
@@ -112,8 +126,22 @@ export default function CategoryPage({ onSelectProduct, onOpenChat }) {
           </div>
 
           <div style={{ maxWidth: "700px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-              <span style={{ fontSize: "28px" }}>{currentCategory.emoji}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
+              <div
+                style={{
+                  width: "44px",
+                  height: "44px",
+                  borderRadius: "var(--radius-sm)",
+                  backgroundColor: "rgba(255,255,255,0.15)",
+                  backdropFilter: "blur(8px)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  border: "1px solid rgba(255,255,255,0.25)",
+                }}
+              >
+                {getCategoryHeroIcon(currentCategory.id)}
+              </div>
               <span
                 style={{
                   backgroundColor: "var(--color-sale)",
@@ -121,7 +149,7 @@ export default function CategoryPage({ onSelectProduct, onOpenChat }) {
                   fontSize: "11px",
                   fontWeight: 800,
                   textTransform: "uppercase",
-                  padding: "3px 10px",
+                  padding: "4px 10px",
                   borderRadius: "4px",
                   letterSpacing: "0.5px",
                 }}
@@ -184,7 +212,7 @@ export default function CategoryPage({ onSelectProduct, onOpenChat }) {
           </div>
         )}
 
-        {/* Layout Grid: Sidebar Filters + Products */}
+        {/* Layout Grid: Toolbar Controls + Products */}
         <div
           style={{
             display: "grid",
@@ -193,7 +221,6 @@ export default function CategoryPage({ onSelectProduct, onOpenChat }) {
             alignItems: "start",
           }}
         >
-          {/* Products Grid Header & Content */}
           <div style={{ gridColumn: "1 / -1" }}>
             <div
               style={{

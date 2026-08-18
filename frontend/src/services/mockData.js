@@ -399,7 +399,7 @@ const flattenProducts = () => {
     const platformKeys = Object.keys(group.platforms);
     platformKeys.forEach((platform) => {
       const p = group.platforms[platform];
-      if (!p.inStock && p.price === 0) return; // Skip unavailable platforms
+      if (!p.inStock && p.price === 0) return;
       products.push({
         id: generateId(group.groupId, platform),
         product_id: generateId(group.groupId, platform),
@@ -548,14 +548,13 @@ export const budgetExplorer = (productId, extraBudget) => {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CATEGORY DEFINITIONS
+// CATEGORY DEFINITIONS (Clean metadata, no emojis)
 // ─────────────────────────────────────────────────────────────────────────────
 export const CATEGORY_DEFINITIONS = [
   {
     id: "electronics",
     label: "Audio & Electronics",
     shortLabel: "Electronics",
-    emoji: "🎧",
     tagline: "Active Noise Cancelling, TWS Earbuds, Smartphones & Computing",
     coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
     badge: "Up to 45% Off",
@@ -571,7 +570,6 @@ export const CATEGORY_DEFINITIONS = [
     id: "footwear",
     label: "Athletic & Footwear",
     shortLabel: "Footwear",
-    emoji: "👟",
     tagline: "Performance Road Runners, Street Classics & All-Terrain Boots",
     coverImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
     badge: "Up to 50% Off",
@@ -587,7 +585,6 @@ export const CATEGORY_DEFINITIONS = [
     id: "fashion",
     label: "Denim & Apparel",
     shortLabel: "Fashion",
-    emoji: "👕",
     tagline: "Slim Fit Indigo Jeans, Luxury Polos & Wrinkle-Free Formals",
     coverImage: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80",
     badge: "Min 40% Off",
@@ -603,7 +600,6 @@ export const CATEGORY_DEFINITIONS = [
     id: "home",
     label: "Smart Home & Living",
     shortLabel: "Home & Living",
-    emoji: "🏠",
     tagline: "Rapid Air Fryers, 28W BLDC Fans & High-Speed Kitchen Blenders",
     coverImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
     badge: "Up to 50% Off",

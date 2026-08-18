@@ -21,62 +21,10 @@ export default function Navbar({ onOpenChat }) {
 
   return (
     <header style={{ position: "sticky", top: 0, zIndex: 100, backgroundColor: "var(--color-canvas)" }}>
-      {/* ─── 1. UTILITY BAR ─────────────────────────────────────── */}
+      {/* ─── PRIMARY NAV BAR (Clean Header) ─────────────────────── */}
       <div
         style={{
-          backgroundColor: "var(--color-soft-cloud)",
-          fontSize: "12px",
-          fontWeight: 500,
-          color: "var(--color-ink)",
-          height: "36px",
-          display: "flex",
-          alignItems: "center",
-          borderBottom: "1px solid var(--color-hairline-soft)",
-        }}
-      >
-        <div
-          className="container"
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "16px", color: "var(--color-charcoal)" }}>
-            <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-success)" }}></span>
-              Live Cross-Platform AI Engine Connected
-            </span>
-          </div>
-
-          <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
-            <span style={{ color: "var(--color-charcoal)" }}>Amazon · Flipkart · Myntra</span>
-            <span style={{ color: "var(--color-hairline)" }}>|</span>
-            <Link to="/deals" style={{ color: "var(--color-sale)", fontWeight: 700 }}>
-              ⚡ Lightning Deals
-            </Link>
-            <span style={{ color: "var(--color-hairline)" }}>|</span>
-            <button
-              onClick={onOpenChat}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "5px",
-                fontWeight: 600,
-                color: "var(--color-ink)",
-              }}
-            >
-              <Sparkles size={13} color="#f59e0b" />
-              AI Assistant
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* ─── 2. PRIMARY NAV ─────────────────────────────────────── */}
-      <div
-        style={{
-          height: "64px",
+          height: "68px",
           display: "flex",
           alignItems: "center",
           borderBottom: "1px solid var(--color-hairline-soft)",
@@ -96,8 +44,8 @@ export default function Navbar({ onOpenChat }) {
             <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <div
                 style={{
-                  width: "32px",
-                  height: "32px",
+                  width: "34px",
+                  height: "34px",
                   backgroundColor: "var(--color-ink)",
                   borderRadius: "var(--radius-sm)",
                   display: "flex",

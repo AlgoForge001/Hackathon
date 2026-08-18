@@ -1,10 +1,25 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Flame, Sparkles, Zap, Tag, ShieldCheck } from "lucide-react";
+import { Zap, Sparkles, ShieldCheck, Headphones, Footprints, Shirt, Home } from "lucide-react";
 import { CATEGORY_DEFINITIONS } from "../../services/mockData";
 
 export default function CategoryNavRail() {
   const location = useLocation();
+
+  const getCategoryIcon = (id) => {
+    switch (id) {
+      case "electronics":
+        return <Headphones size={14} />;
+      case "footwear":
+        return <Footprints size={14} />;
+      case "fashion":
+        return <Shirt size={14} />;
+      case "home":
+        return <Home size={14} />;
+      default:
+        return <Sparkles size={14} />;
+    }
+  };
 
   return (
     <nav
@@ -69,7 +84,7 @@ export default function CategoryNavRail() {
 
         <span style={{ color: "rgba(255,255,255,0.2)", margin: "0 4px" }}>|</span>
 
-        {/* Direct Category Page Links */}
+        {/* Direct Category Page Links with Clean SVG Icons */}
         {CATEGORY_DEFINITIONS.map((cat) => {
           const isActive = location.pathname === `/category/${cat.id}`;
           return (
@@ -89,7 +104,7 @@ export default function CategoryNavRail() {
                 transition: "all 0.15s ease",
               }}
             >
-              <span>{cat.emoji}</span>
+              {getCategoryIcon(cat.id)}
               <span>{cat.shortLabel}</span>
             </Link>
           );
