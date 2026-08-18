@@ -4,6 +4,7 @@ import {
   getProduct,
   getProductAlternatives,
   budgetExplorerHandler,
+  getProductSignal,
 } from "../controllers/productController.js";
 
 const router = express.Router();
@@ -19,5 +20,8 @@ router.get("/products/:id/alternatives", getProductAlternatives);
 
 // POST /api/budget-explorer  — "what unlocks if I spend X more?"
 router.post("/budget-explorer", budgetExplorerHandler);
+
+// GET /api/products/:id/signal  — quantitative Python buy/sell signal
+router.get("/products/:id/signal", getProductSignal);
 
 export default router;

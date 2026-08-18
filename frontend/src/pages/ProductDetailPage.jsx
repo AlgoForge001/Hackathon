@@ -28,6 +28,7 @@ import PlatformBadge from "../components/products/PlatformBadge";
 import SentimentBadge from "../components/products/SentimentBadge";
 import ProductCard from "../components/products/ProductCard";
 import PriceHistoryGraph from "../components/products/PriceHistoryGraph";
+import BuySellSignalCard from "../components/products/BuySellSignalCard";
 import SpatialARViewerModal from "../components/tools/SpatialARViewerModal";
 import { getProductById, getProductAlternatives, exploreBudget, createPriceAlert } from "../services/api";
 import { getCategoryFallbackImage, mockProducts, CATEGORY_DEFINITIONS } from "../services/mockData";
@@ -607,7 +608,14 @@ export default function ProductDetailPage({ onOpenChat }) {
             })}
           </div>
 
-          {/* 4. Interactive 90-Day Price History Trend Graph (Point 5) */}
+          {/* 4. Quantitative Buy/Sell/Hold Signal Engine (Python Algorithm) */}
+          <BuySellSignalCard 
+            product={product} 
+            variants={variants} 
+            onSetTargetPrice={(target) => setTargetPrice(target.toString())} 
+          />
+
+          {/* 5. Interactive 90-Day Price History Trend Graph */}
           <PriceHistoryGraph product={product} priceHistory={product.price_history || product.priceHistory} />
         </section>
 
