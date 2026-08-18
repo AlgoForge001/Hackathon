@@ -26,15 +26,23 @@ const seedDatabase = async () => {
     const catalogPath = path.join(__dirname, "../data/mockProducts.json");
     const productsData = JSON.parse(fs.readFileSync(catalogPath, "utf-8"));
 
-    console.log(`📦 Seeding ${productsData.length} product groups into MongoDB Atlas...`);
+    console.log(`📦 Seeding ${productsData.length} product groups (${productsData.length * 3} platform listings) into MongoDB Atlas...`);
 
     // Clean existing products collection
     await Product.deleteMany({});
     console.log("🧹 Cleared existing products collection in MongoDB Atlas.");
 
-    // Insert all product groups
-    const result = await Product.insertMany(productsData);
-    console.log(`🎉 Successfully seeded ${result.length} product groups (${result.length * 3} platform listings) to MongoDB Atlas!`);
+    // Chunk insertion for high performance (chunks of 250)
+    const chunkSize = 250;
+    let insertedTotal = 0;
+    for (let i = 0; i < productsData.length; i += chunkSize) {
+      const chunk = productsData.slice(i, i + chunkSize);
+      await Product.insertMany(chunk, { ordered: false });
+      insertedTotal += chunk.length;
+      console.log(`  ↪ Inserted batch ${Math.floor(i / chunkSize) + 1} (${insertedTotal}/${productsData.length} product groups)`);
+    }
+
+    console.log(`🎉 Successfully seeded all ${productsData.length} product groups (${productsData.length * 3} platform listings) to MongoDB Atlas!`);
 
     const count = await Product.countDocuments();
     console.log(`📊 Verified count in MongoDB Atlas 'products' collection: ${count}`);

@@ -568,30 +568,40 @@ export default function ProductDetailPage({ onOpenChat }) {
                   </div>
 
                   {/* Direct Store Button */}
-                  <a
-                    href={v.product_url || `https://www.${v.platform}.in`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "8px",
-                      width: "100%",
-                      padding: "12px",
-                      backgroundColor: isLowest ? "var(--color-ink)" : "var(--color-soft-cloud)",
-                      color: isLowest ? "#ffffff" : "var(--color-ink)",
-                      textDecoration: "none",
-                      fontSize: "13px",
-                      fontWeight: 700,
-                      border: isLowest ? "none" : "1px solid var(--color-hairline)",
-                      cursor: "pointer",
-                      textAlign: "center",
-                    }}
-                  >
-                    <span>Buy on {v.platform?.toUpperCase()}</span>
-                    <ExternalLink size={14} />
-                  </a>
+                  {(() => {
+                    const directUrl = v.product_url || (v.platform === "amazon" 
+                      ? `https://www.amazon.in/s?k=${encodeURIComponent(product.product_name || product.name || "")}`
+                      : v.platform === "flipkart"
+                      ? `https://www.flipkart.com/search?q=${encodeURIComponent(product.product_name || product.name || "")}`
+                      : `https://www.myntra.com/search?rawQuery=${encodeURIComponent(product.product_name || product.name || "")}`);
+
+                    return (
+                      <a
+                        href={directUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: "8px",
+                          width: "100%",
+                          padding: "12px",
+                          backgroundColor: isLowest ? "var(--color-ink)" : "var(--color-soft-cloud)",
+                          color: isLowest ? "#ffffff" : "var(--color-ink)",
+                          textDecoration: "none",
+                          fontSize: "13px",
+                          fontWeight: 700,
+                          border: isLowest ? "none" : "1px solid var(--color-hairline)",
+                          cursor: "pointer",
+                          textAlign: "center",
+                        }}
+                      >
+                        <span>Buy on {v.platform?.toUpperCase()}</span>
+                        <ExternalLink size={14} />
+                      </a>
+                    );
+                  })()}
                 </div>
               );
             })}

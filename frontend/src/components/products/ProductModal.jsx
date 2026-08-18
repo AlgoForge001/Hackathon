@@ -265,7 +265,11 @@ export default function ProductModal({ product, onClose, onSelectAlternative }) 
                           ₹{Number(v.price).toLocaleString("en-IN")}
                         </span>
                         <a
-                          href={v.product_url || "#"}
+                          href={v.product_url || (v.platform === "amazon" 
+                            ? `https://www.amazon.in/s?k=${encodeURIComponent(product.product_name || product.name || "")}`
+                            : v.platform === "flipkart"
+                            ? `https://www.flipkart.com/search?q=${encodeURIComponent(product.product_name || product.name || "")}`
+                            : `https://www.myntra.com/search?rawQuery=${encodeURIComponent(product.product_name || product.name || "")}`)}
                           target="_blank"
                           rel="noreferrer"
                           className="btn-primary"

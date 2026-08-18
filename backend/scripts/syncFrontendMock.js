@@ -8,7 +8,7 @@ const backendCatalog = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../data/mockProducts.json"), "utf-8")
 );
 
-// Flatten into mockProducts array for frontend
+// Flatten into mockProducts array for frontend (3,000 platform product listings)
 const mockProducts = [];
 
 backendCatalog.forEach((group) => {
@@ -43,9 +43,9 @@ backendCatalog.forEach((group) => {
       review_count: platformData.review_count,
       deliveryEstimate: platformData.delivery_estimate,
       delivery_estimate: platformData.delivery_estimate,
-      imageUrl: platformData.image_url,
-      image_url: platformData.image_url,
-      images,
+      imageUrl: images[0],
+      image_url: images[0],
+      images: images,
       dimensions: group.dimensions || { width: "20 cm", height: "15 cm", depth: "10 cm", weight: "500g" },
       price_history: group.price_history || [],
       priceHistory: group.price_history || [],
@@ -78,12 +78,12 @@ export const CATEGORY_DEFINITIONS = [
     tagline: "Compare verified tech listings across Amazon, Flipkart & Myntra",
     coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
     badge: "Verified Tech Deals",
-    subcategories: ["All", "Headphones", "TWS Earbuds", "Laptops", "Smartphones", "Smartwatches", "Gaming"],
+    subcategories: ["All", "Smartphones", "Laptops", "Headphones", "Earbuds", "Smartwatches", "Gaming"],
     quadrantPreviews: [
-      { title: "Headphones", subtext: "Sony & JBL", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80" },
+      { title: "Headphones", subtext: "Sony & Bose", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80" },
       { title: "Earbuds", subtext: "AirPods Pro 2", image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80" },
-      { title: "Smartphones", subtext: "Galaxy S24", image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80" },
-      { title: "Laptops", subtext: "MacBook Air", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80" },
+      { title: "Smartphones", subtext: "Galaxy S24 & iPhone", image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80" },
+      { title: "Laptops", subtext: "MacBook Air & ROG", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80" },
     ],
   },
   {
@@ -93,7 +93,7 @@ export const CATEGORY_DEFINITIONS = [
     tagline: "Performance running shoes, sneakers & trekking boots",
     coverImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
     badge: "Performance & Comfort",
-    subcategories: ["All", "Running", "Sneakers", "Clogs", "Trekking Boots", "Walking"],
+    subcategories: ["All", "Running", "Sneakers", "Clogs", "Trekking Boots", "Formal"],
     quadrantPreviews: [
       { title: "Air Max 270", subtext: "Lifestyle", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80" },
       { title: "Ultraboost", subtext: "Marathon", image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80" },
@@ -108,7 +108,7 @@ export const CATEGORY_DEFINITIONS = [
     tagline: "Denim, casual polos, jackets & traditional kurtas",
     coverImage: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
     badge: "Apparel & Accessories",
-    subcategories: ["All", "Jeans", "Polos", "Jackets", "Sunglasses", "Kurtas", "Trousers"],
+    subcategories: ["All", "Jeans", "Polos", "Jackets", "Sunglasses", "Kurtas"],
     quadrantPreviews: [
       { title: "Slim Denim", subtext: "Levi's 511", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80" },
       { title: "Pique Polo", subtext: "Tommy Hilfiger", image: "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80" },
@@ -123,7 +123,7 @@ export const CATEGORY_DEFINITIONS = [
     tagline: "Energy-saving BLDC fans, air fryers, vacuum cleaners & coffee machines",
     coverImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
     badge: "Kitchen & Home Upgrades",
-    subcategories: ["All", "Ceiling Fans", "Air Fryers", "Vacuums", "Coffee Machines", "Mixer Grinders", "Air Purifiers"],
+    subcategories: ["All", "Ceiling Fans", "Air Fryers", "Vacuums", "Coffee Machines", "Mixer Grinders"],
     quadrantPreviews: [
       { title: "BLDC Fan", subtext: "Atomberg 28W", image: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80" },
       { title: "Air Fryer", subtext: "Philips 4.1L", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80" },
@@ -150,7 +150,7 @@ export const getCategoryFallbackImage = (category) => {
 
 export const mockProducts = ${JSON.stringify(mockProducts, null, 2)};
 
-export const searchMockProducts = ({ query = "", category = "", minPrice = 0, maxPrice = 10000000, platforms = [], sortBy = "relevance" }) => {
+export const searchMockProducts = ({ query = "", category = "", minPrice = 0, maxPrice = 10000000, platforms = [], sortBy = "best_value" }) => {
   let filtered = [...mockProducts];
 
   if (category) {
@@ -158,13 +158,11 @@ export const searchMockProducts = ({ query = "", category = "", minPrice = 0, ma
   }
 
   if (query) {
-    const q = query.toLowerCase();
-    filtered = filtered.filter((p) =>
-      p.title.toLowerCase().includes(q) ||
-      p.name.toLowerCase().includes(q) ||
-      p.brand.toLowerCase().includes(q) ||
-      p.category.toLowerCase().includes(q)
-    );
+    const qTokens = query.toLowerCase().split(/\\s+/).filter(Boolean);
+    filtered = filtered.filter((p) => {
+      const searchTarget = \`\${p.title} \${p.name} \${p.brand} \${p.category} \${p.platform}\`.toLowerCase();
+      return qTokens.every((token) => searchTarget.includes(token));
+    });
   }
 
   if (minPrice) {
@@ -182,6 +180,7 @@ export const searchMockProducts = ({ query = "", category = "", minPrice = 0, ma
   else if (sortBy === "price_desc") filtered.sort((a, b) => b.price - a.price);
   else if (sortBy === "rating") filtered.sort((a, b) => b.rating - a.rating);
   else if (sortBy === "discount") filtered.sort((a, b) => b.discount_percent - a.discount_percent);
+  else if (sortBy === "best_value") filtered.sort((a, b) => (b.best_overall_score || 0) - (a.best_overall_score || 0));
 
   return {
     success: true,
@@ -237,4 +236,4 @@ export const budgetExplorer = (productId, extraBudget) => {
 
 const frontendPath = path.join(__dirname, "../../frontend/src/services/mockData.js");
 fs.writeFileSync(frontendPath, fileContent, "utf-8");
-console.log(`✅ Synchronized mockData.js with 4-image arrays & price history`);
+console.log(`✅ Synchronized mockData.js with ${mockProducts.length} multi-platform product listings, 4-angle verified images & price history!`);
