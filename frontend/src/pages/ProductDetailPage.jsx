@@ -387,6 +387,34 @@ export default function ProductDetailPage({ onOpenChat }) {
                   🎉 Save up to ₹{maxSavings.toLocaleString("en-IN")} by purchasing on {bestVariant.platform?.toUpperCase()} instead of other stores!
                 </div>
               )}
+
+              {/* Direct Buy on Best Platform CTA */}
+              <div style={{ marginTop: "16px", paddingTop: "14px", borderTop: "1px solid var(--color-hairline)" }}>
+                <a
+                  href={bestVariant.product_url || `https://www.amazon.in/s?k=${encodeURIComponent((product.title || product.product_name || product.name || "").replace(/\(.*?\)/g, "").trim())}&tag=algoforge-21`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                    width: "100%",
+                    padding: "12px 20px",
+                    backgroundColor: "var(--color-ink)",
+                    color: "var(--color-canvas)",
+                    textDecoration: "none",
+                    fontSize: "14px",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    textAlign: "center",
+                  }}
+                >
+                  <ShoppingBag size={16} />
+                  <span>Buy on {bestVariant.platform?.toUpperCase()} for ₹{Number(bestVariant.price).toLocaleString("en-IN")}</span>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
             </div>
 
             {/* AI Summary Recommendation Box */}
@@ -570,11 +598,14 @@ export default function ProductDetailPage({ onOpenChat }) {
 
                   {/* Direct Store Button */}
                   {(() => {
-                    const directUrl = v.product_url || (v.platform === "amazon" 
-                      ? `https://www.amazon.in/s?k=${encodeURIComponent(product.product_name || product.name || "")}`
-                      : v.platform === "flipkart"
-                      ? `https://www.flipkart.com/search?q=${encodeURIComponent(product.product_name || product.name || "")}`
-                      : `https://www.myntra.com/search?rawQuery=${encodeURIComponent(product.product_name || product.name || "")}`);
+                    const cleanName = (product.title || product.product_name || product.name || "").replace(/\(.*?\)/g, "").trim();
+                    const enc = encodeURIComponent(cleanName);
+                    const plat = (v.platform || "amazon").toLowerCase();
+                    const directUrl = v.product_url || (plat === "amazon" 
+                      ? `https://www.amazon.in/s?k=${enc}&tag=algoforge-21`
+                      : plat === "flipkart"
+                      ? `https://www.flipkart.com/search?q=${enc}`
+                      : `https://www.myntra.com/${cleanName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`);
 
                     return (
                       <a

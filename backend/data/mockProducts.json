@@ -133,7 +133,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 28990,
+    "original_price": 34990,
+    "originalPrice": 34990,
+    "discount_percent": 17,
+    "discountPercent": 17,
+    "product_url": "https://www.amazon.in/s?k=Sony%20WH-1000XM5%20Wireless%20Noise%20Cancelling%20Headphones&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Sony%20WH-1000XM5%20Wireless%20Noise%20Cancelling%20Headphones&tag=algoforge-21"
   },
   {
     "group_id": "apple-airpods-pro-2",
@@ -269,7 +276,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 24900,
+    "original_price": 29900,
+    "originalPrice": 29900,
+    "discount_percent": 17,
+    "discountPercent": 17,
+    "product_url": "https://www.amazon.in/s?k=Apple%20AirPods%20Pro%20(2nd%20Generation)%20with%20MagSafe%20Case%20(USB-C)&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Apple%20AirPods%20Pro%20(2nd%20Generation)%20with%20MagSafe%20Case%20(USB-C)&tag=algoforge-21"
   },
   {
     "group_id": "apple-macbook-air-m2",
@@ -406,7 +420,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 89990,
+    "original_price": 99900,
+    "originalPrice": 99900,
+    "discount_percent": 10,
+    "discountPercent": 10,
+    "product_url": "https://www.amazon.in/s?k=Apple%20MacBook%20Air%2013.6-inch%20with%20M2%20Chip%20256GB&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Apple%20MacBook%20Air%2013.6-inch%20with%20M2%20Chip%20256GB&tag=algoforge-21"
   },
   {
     "group_id": "samsung-galaxy-s24-ultra",
@@ -543,7 +564,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 121999,
+    "original_price": 134999,
+    "originalPrice": 134999,
+    "discount_percent": 10,
+    "discountPercent": 10,
+    "product_url": "https://www.amazon.in/s?k=Samsung%20Galaxy%20S24%20Ultra%205G&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Samsung%20Galaxy%20S24%20Ultra%205G&tag=algoforge-21"
   },
   {
     "group_id": "asus-rog-zephyrus-g14",
@@ -679,7 +707,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 154990,
+    "original_price": 189990,
+    "originalPrice": 189990,
+    "discount_percent": 18,
+    "discountPercent": 18,
+    "product_url": "https://www.amazon.in/s?k=ASUS%20ROG%20Zephyrus%20G14%202024%20OLED%20Gaming%20Laptop&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=ASUS%20ROG%20Zephyrus%20G14%202024%20OLED%20Gaming%20Laptop&tag=algoforge-21"
   },
   {
     "group_id": "playstation-5-slim",
@@ -814,7 +849,12 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 54990,
+    "original_price": 54990,
+    "originalPrice": 54990,
+    "product_url": "https://www.amazon.in/s?k=Sony%20PlayStation%205%20Console%20Slim%20Disc%20Edition&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Sony%20PlayStation%205%20Console%20Slim%20Disc%20Edition&tag=algoforge-21"
   },
   {
     "group_id": "apple-watch-series-9",
@@ -949,7 +989,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 41900,
+    "original_price": 44900,
+    "originalPrice": 44900,
+    "discount_percent": 7,
+    "discountPercent": 7,
+    "product_url": "https://www.amazon.in/s?k=Apple%20Watch%20Series%209%20GPS%2045mm&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Apple%20Watch%20Series%209%20GPS%2045mm&tag=algoforge-21"
   },
   {
     "group_id": "kindle-paperwhite-16gb",
@@ -1084,7 +1131,12 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 14999,
+    "original_price": 14999,
+    "originalPrice": 14999,
+    "product_url": "https://www.amazon.in/s?k=Amazon%20Kindle%20Paperwhite%2016%20GB%206.8%20inch%20display&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Amazon%20Kindle%20Paperwhite%2016%20GB%206.8%20inch%20display&tag=algoforge-21"
   },
   {
     "group_id": "bose-quietcomfort-ultra",
@@ -1218,7 +1270,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 35900,
+    "original_price": 39900,
+    "originalPrice": 39900,
+    "discount_percent": 10,
+    "discountPercent": 10,
+    "product_url": "https://www.amazon.in/s?k=Bose%20QuietComfort%20Ultra%20Wireless%20Noise%20Cancelling%20Headphones&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Bose%20QuietComfort%20Ultra%20Wireless%20Noise%20Cancelling%20Headphones&tag=algoforge-21"
   },
   {
     "group_id": "nike-air-max-270",
@@ -1352,7 +1411,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 11495,
+    "original_price": 13995,
+    "originalPrice": 13995,
+    "discount_percent": 18,
+    "discountPercent": 18,
+    "product_url": "https://www.amazon.in/s?k=Nike%20Air%20Max%20270%20Mens%20Running%20Shoes&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Nike%20Air%20Max%20270%20Mens%20Running%20Shoes&tag=algoforge-21"
   },
   {
     "group_id": "adidas-ultraboost-light",
@@ -1486,7 +1552,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 14999,
+    "original_price": 18999,
+    "originalPrice": 18999,
+    "discount_percent": 21,
+    "discountPercent": 21,
+    "product_url": "https://www.amazon.in/s?k=Adidas%20Ultraboost%20Light%20Running%20Shoes&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Adidas%20Ultraboost%20Light%20Running%20Shoes&tag=algoforge-21"
   },
   {
     "group_id": "woodland-brown-boots",
@@ -1620,7 +1693,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 3995,
+    "original_price": 5495,
+    "originalPrice": 5495,
+    "discount_percent": 27,
+    "discountPercent": 27,
+    "product_url": "https://www.amazon.in/s?k=Woodland%20Mens%20Camel%20Brown%20Leather%20Outdoor%20Trekking%20Boots&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Woodland%20Mens%20Camel%20Brown%20Leather%20Outdoor%20Trekking%20Boots&tag=algoforge-21"
   },
   {
     "group_id": "crocs-classic-clogs",
@@ -1754,7 +1834,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 2495,
+    "original_price": 2995,
+    "originalPrice": 2995,
+    "discount_percent": 17,
+    "discountPercent": 17,
+    "product_url": "https://www.amazon.in/s?k=Crocs%20Unisex%20Adult%20Classic%20Clogs&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Crocs%20Unisex%20Adult%20Classic%20Clogs&tag=algoforge-21"
   },
   {
     "group_id": "levis-511-slim-fit-jeans",
@@ -1888,7 +1975,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 2499,
+    "original_price": 3999,
+    "originalPrice": 3999,
+    "discount_percent": 38,
+    "discountPercent": 38,
+    "product_url": "https://www.amazon.in/s?k=Levis%20511%20Slim%20Fit%20Stretch%20Denim%20Jeans&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Levis%20511%20Slim%20Fit%20Stretch%20Denim%20Jeans&tag=algoforge-21"
   },
   {
     "group_id": "tommy-hilfiger-pique-polo",
@@ -2022,7 +2116,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 2999,
+    "original_price": 3999,
+    "originalPrice": 3999,
+    "discount_percent": 25,
+    "discountPercent": 25,
+    "product_url": "https://www.amazon.in/s?k=Tommy%20Hilfiger%20Mens%20Classic%20Pique%20Cotton%20Polo%20Shirt&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Tommy%20Hilfiger%20Mens%20Classic%20Pique%20Cotton%20Polo%20Shirt&tag=algoforge-21"
   },
   {
     "group_id": "rayban-aviator-classic",
@@ -2156,7 +2257,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 8490,
+    "original_price": 9990,
+    "originalPrice": 9990,
+    "discount_percent": 15,
+    "discountPercent": 15,
+    "product_url": "https://www.amazon.in/s?k=Ray-Ban%20Aviator%20Classic%20Polarized%20Sunglasses%20RB3025&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Ray-Ban%20Aviator%20Classic%20Polarized%20Sunglasses%20RB3025&tag=algoforge-21"
   },
   {
     "group_id": "atomberg-renesa-bldc-fan",
@@ -2290,7 +2398,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 3699,
+    "original_price": 4990,
+    "originalPrice": 4990,
+    "discount_percent": 26,
+    "discountPercent": 26,
+    "product_url": "https://www.amazon.in/s?k=Atomberg%20Renesa%201200mm%20BLDC%20Smart%20Ceiling%20Fan%20with%20Remote&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Atomberg%20Renesa%201200mm%20BLDC%20Smart%20Ceiling%20Fan%20with%20Remote&tag=algoforge-21"
   },
   {
     "group_id": "philips-digital-airfryer-xl",
@@ -2424,7 +2539,14 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 7999,
+    "original_price": 12995,
+    "originalPrice": 12995,
+    "discount_percent": 38,
+    "discountPercent": 38,
+    "product_url": "https://www.amazon.in/s?k=Philips%20Digital%20Air%20Fryer%20XL%204.1L%20Capacity&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Philips%20Digital%20Air%20Fryer%20XL%204.1L%20Capacity&tag=algoforge-21"
   },
   {
     "group_id": "dyson-v8-absolute-vacuum",
@@ -2558,6 +2680,13 @@
           }
         ]
       }
-    ]
+    ],
+    "price": 32900,
+    "original_price": 43900,
+    "originalPrice": 43900,
+    "discount_percent": 25,
+    "discountPercent": 25,
+    "product_url": "https://www.amazon.in/s?k=Dyson%20V8%20Absolute%20Cordless%20Stick%20Vacuum%20Cleaner&tag=algoforge-21",
+    "url": "https://www.amazon.in/s?k=Dyson%20V8%20Absolute%20Cordless%20Stick%20Vacuum%20Cleaner&tag=algoforge-21"
   }
 ]
