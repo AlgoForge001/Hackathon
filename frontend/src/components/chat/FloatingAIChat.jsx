@@ -1,12 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
-import { X, Send, Sparkles, Loader2, ExternalLink, Bot, User } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { X, Send, Sparkles, Loader2, ExternalLink, Bot, User, Zap, Star } from "lucide-react";
 import { sendChatMessage } from "../../services/api";
+import { getCategoryFallbackImage } from "../../services/mockData";
+import PlatformBadge from "../products/PlatformBadge";
 
 export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
+  const navigate = useNavigate();
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hello! I'm your AI Shopping Assistant. Ask me to compare products, find deals, or recommend items based on your budget.",
+      content: "Hello! I'm your Gemini AI Shopping Assistant. Ask me to compare products, find deals across Amazon/Flipkart/Myntra, evaluate specs, or recommend top items for your budget.",
       products: [],
     },
   ]);
@@ -14,6 +18,18 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
+  // Close on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape" && isOpen) {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
+
+  // Auto scroll to bottom
   useEffect(() => {
     if (isOpen) {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -37,7 +53,7 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
         history: newHistory.map((m) => ({ role: m.role, content: m.content })),
       });
 
-      const reply = response?.reply || "Here are the best product matches I found across platforms:";
+      const reply = response?.reply || "Here are the best product matches I found across Amazon, Flipkart, and Myntra:";
       const products = response?.suggestedProducts || [];
 
       setMessages((prev) => [
@@ -53,7 +69,7 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I had trouble processing that request. Please try again.",
+          content: "Sorry, I had trouble processing that request with Gemini AI. Please try again.",
           products: [],
         },
       ]);
@@ -73,72 +89,101 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
 
   return (
     <div
+      onClick={onClose}
       style={{
         position: "fixed",
         inset: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.45)",
+        backgroundColor: "rgba(0, 0, 0, 0.6)",
         backdropFilter: "blur(4px)",
-        zIndex: 200,
+        zIndex: 99999,
         display: "flex",
         justifyContent: "flex-end",
+        transition: "opacity 0.2s ease",
       }}
     >
       <div
+        onClick={(e) => e.stopPropagation()}
         style={{
           width: "100%",
-          maxWidth: "480px",
+          maxWidth: "520px",
           height: "100%",
           backgroundColor: "var(--color-canvas)",
           display: "flex",
           flexDirection: "column",
-          boxShadow: "-8px 0 30px rgba(0, 0, 0, 0.2)",
+          boxShadow: "-8px 0 30px rgba(0, 0, 0, 0.3)",
           animation: "slideIn 0.25s ease-out",
+          position: "relative",
         }}
       >
         {/* Chat Header */}
         <div
           style={{
-            padding: "18px 24px",
+            padding: "16px 20px",
             borderBottom: "1px solid var(--color-hairline)",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             backgroundColor: "var(--color-ink)",
             color: "var(--color-canvas)",
+            gap: "12px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0 }}>
             <div
               style={{
-                width: "32px",
-                height: "32px",
+                width: "36px",
+                height: "36px",
                 borderRadius: "var(--radius-full)",
-                backgroundColor: "rgba(255,255,255,0.2)",
+                backgroundColor: "rgba(255,255,255,0.15)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                flexShrink: 0,
               }}
             >
-              <Sparkles size={16} />
+              <Sparkles size={18} color="#f59e0b" />
             </div>
-            <div>
-              <h3 style={{ fontSize: "15px", fontWeight: 700 }}>AI Shopping Advisor</h3>
-              <span style={{ fontSize: "12px", color: "#4ade80", fontWeight: 500 }}>Live · OpenRouter Powered</span>
+            <div style={{ minWidth: 0 }}>
+              <h3 style={{ fontSize: "15px", fontWeight: 700, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                AI Shopping Advisor
+              </h3>
+              <span style={{ fontSize: "12px", color: "#4ade80", fontWeight: 600, display: "flex", alignItems: "center", gap: "4px" }}>
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#4ade80" }}></span>
+                Live · Google Gemini 2.5 Flash
+              </span>
             </div>
           </div>
 
+          {/* ❌ HIGH-VISIBILITY CLOSE BUTTON */}
           <button
             onClick={onClose}
+            aria-label="Close Chat"
             style={{
-              color: "var(--color-canvas)",
-              padding: "6px",
-              borderRadius: "var(--radius-full)",
+              backgroundColor: "rgba(255, 255, 255, 0.18)",
+              color: "#ffffff",
+              border: "1px solid rgba(255, 255, 255, 0.35)",
+              padding: "6px 14px",
+              borderRadius: "20px",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              gap: "6px",
+              cursor: "pointer",
+              fontSize: "13px",
+              fontWeight: 700,
+              transition: "all 0.15s ease",
+              flexShrink: 0,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+              e.currentTarget.style.transform = "scale(1.05)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.18)";
+              e.currentTarget.style.transform = "scale(1)";
             }}
           >
-            <X size={20} />
+            <X size={16} strokeWidth={2.5} />
+            <span>Close</span>
           </button>
         </div>
 
@@ -166,7 +211,7 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
             >
               <div
                 style={{
-                  maxWidth: "85%",
+                  maxWidth: "88%",
                   padding: "12px 16px",
                   borderRadius: msg.role === "user" ? "18px 18px 2px 18px" : "18px 18px 18px 2px",
                   backgroundColor: msg.role === "user" ? "var(--color-ink)" : "var(--color-canvas)",
@@ -174,6 +219,7 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
                   fontSize: "14px",
                   lineHeight: 1.45,
                   boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+                  whiteSpace: "pre-wrap",
                 }}
               >
                 {msg.content}
@@ -190,112 +236,131 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
                     marginTop: "4px",
                   }}
                 >
-                  {msg.products.map((p) => (
-                    <div
-                      key={p.product_id || p.id}
-                      onClick={() => {
-                        if (onSelectProduct) onSelectProduct(p);
-                        onClose();
-                      }}
-                      style={{
-                        backgroundColor: "var(--color-canvas)",
-                        padding: "10px",
-                        borderRadius: "8px",
-                        display: "flex",
-                        gap: "12px",
-                        alignItems: "center",
-                        cursor: "pointer",
-                        border: "1px solid var(--color-hairline)",
-                        transition: "border-color 0.15s ease",
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--color-ink)")}
-                      onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--color-hairline)")}
-                    >
-                      <img
-                        src={p.image_url}
-                        alt={p.title}
-                        style={{
-                          width: "52px",
-                          height: "52px",
-                          objectFit: "cover",
-                          borderRadius: "4px",
-                          backgroundColor: "var(--color-soft-cloud)",
+                  {msg.products.map((p) => {
+                    const productId = p.groupId || p.product_id || p.id;
+                    return (
+                      <div
+                        key={productId}
+                        onClick={() => {
+                          if (onSelectProduct) onSelectProduct(p);
+                          navigate(`/product/${productId}`);
+                          onClose();
                         }}
-                      />
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <h4
+                        style={{
+                          backgroundColor: "var(--color-canvas)",
+                          padding: "10px 12px",
+                          borderRadius: "var(--radius-sm)",
+                          display: "flex",
+                          gap: "12px",
+                          alignItems: "center",
+                          cursor: "pointer",
+                          border: "1px solid var(--color-hairline)",
+                          transition: "border-color 0.15s ease, box-shadow 0.15s ease",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.borderColor = "var(--color-ink)";
+                          e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.06)";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.borderColor = "var(--color-hairline)";
+                          e.currentTarget.style.boxShadow = "none";
+                        }}
+                      >
+                        <img
+                          src={p.image_url || p.imageUrl || getCategoryFallbackImage(p.category)}
+                          alt={p.title}
                           style={{
-                            fontSize: "13px",
-                            fontWeight: 600,
-                            color: "var(--color-ink)",
-                            whiteSpace: "nowrap",
-                            overflow: "hidden",
-                            textOverflow: "ellipsis",
+                            width: "54px",
+                            height: "54px",
+                            objectFit: "cover",
+                            borderRadius: "4px",
+                            backgroundColor: "var(--color-soft-cloud)",
+                            flexShrink: 0,
                           }}
-                        >
-                          {p.title}
-                        </h4>
-                        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "2px" }}>
-                          <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--color-ink)" }}>
-                            ₹{Number(p.price).toLocaleString("en-IN")}
-                          </span>
-                          <span
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = getCategoryFallbackImage(p.category);
+                          }}
+                        />
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "6px" }}>
+                            <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-mute)", textTransform: "uppercase" }}>
+                              {p.brand}
+                            </span>
+                            {p.platform && <PlatformBadge platform={p.platform} size="sm" />}
+                          </div>
+                          <h4
                             style={{
-                              fontSize: "10px",
-                              fontWeight: 700,
-                              textTransform: "uppercase",
-                              backgroundColor: "var(--color-soft-cloud)",
-                              padding: "2px 6px",
-                              borderRadius: "4px",
+                              fontSize: "13px",
+                              fontWeight: 600,
+                              color: "var(--color-ink)",
+                              whiteSpace: "nowrap",
+                              overflow: "hidden",
+                              textOverflow: "ellipsis",
+                              marginTop: "2px",
                             }}
                           >
-                            {p.platform}
-                          </span>
+                            {p.title}
+                          </h4>
+                          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "2px" }}>
+                            <span style={{ fontSize: "13px", fontWeight: 800, color: "var(--color-ink)" }}>
+                              ₹{Number(p.price).toLocaleString("en-IN")}
+                            </span>
+                            {p.rating && (
+                              <span style={{ fontSize: "11px", color: "var(--color-mute)", display: "flex", alignItems: "center", gap: "2px", fontWeight: 600 }}>
+                                <Star size={11} fill="#f59e0b" color="#f59e0b" />
+                                {Number(p.rating).toFixed(1)}
+                              </span>
+                            )}
+                          </div>
                         </div>
+                        <ExternalLink size={15} color="var(--color-mute)" />
                       </div>
-                      <ExternalLink size={15} color="var(--color-mute)" />
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
             </div>
           ))}
 
           {loading && (
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--color-mute)", fontSize: "13px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--color-mute)", fontSize: "13px", padding: "8px 0" }}>
               <Loader2 size={16} className="animate-spin" style={{ animation: "spin 1s linear infinite" }} />
-              <span>AI is thinking & comparing platform listings...</span>
+              <span>Gemini AI is analyzing real-time prices & specs...</span>
             </div>
           )}
 
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Quick Sample Prompts */}
+        {/* Quick Suggestion Chips */}
         <div
           style={{
             padding: "10px 16px",
             backgroundColor: "var(--color-canvas)",
-            borderTop: "1px solid var(--color-hairline-soft)",
+            borderTop: "1px solid var(--color-hairline)",
             display: "flex",
             gap: "8px",
             overflowX: "auto",
+            whiteSpace: "nowrap",
           }}
         >
-          {samplePrompts.map((prompt) => (
+          {samplePrompts.map((prompt, idx) => (
             <button
-              key={prompt}
+              key={idx}
               onClick={() => {
                 setInputMessage(prompt);
               }}
               style={{
                 fontSize: "12px",
-                fontWeight: 500,
-                color: "var(--color-charcoal)",
+                padding: "6px 12px",
+                borderRadius: "var(--radius-full)",
+                border: "1px solid var(--color-hairline)",
                 backgroundColor: "var(--color-soft-cloud)",
-                padding: "4px 12px",
-                borderRadius: "var(--radius-lg)",
-                whiteSpace: "nowrap",
+                color: "var(--color-charcoal)",
+                cursor: "pointer",
+                flexShrink: 0,
+                fontWeight: 500,
               }}
             >
               {prompt}
@@ -303,58 +368,60 @@ export default function FloatingAIChat({ isOpen, onClose, onSelectProduct }) {
           ))}
         </div>
 
-        {/* Input Bar */}
+        {/* Chat Input */}
         <form
           onSubmit={handleSend}
           style={{
-            padding: "16px",
+            padding: "16px 20px",
             borderTop: "1px solid var(--color-hairline)",
-            backgroundColor: "var(--color-canvas)",
             display: "flex",
             gap: "10px",
+            backgroundColor: "var(--color-canvas)",
           }}
         >
           <input
             type="text"
-            placeholder="Ask about specs, price deals, or upgrades..."
             value={inputMessage}
             onChange={(e) => setInputMessage(e.target.value)}
+            placeholder="Ask Gemini to find deals, compare, or recommend..."
             disabled={loading}
             style={{
               flex: 1,
-              backgroundColor: "var(--color-soft-cloud)",
-              border: "1px solid transparent",
+              padding: "12px 16px",
+              border: "1px solid var(--color-hairline)",
               borderRadius: "var(--radius-md)",
-              padding: "10px 16px",
               fontSize: "14px",
               outline: "none",
+              backgroundColor: "var(--color-soft-cloud)",
+              color: "var(--color-ink)",
               fontFamily: "var(--font-ui)",
             }}
-            onFocus={(e) => (e.currentTarget.style.borderColor = "var(--color-ink)")}
-            onBlur={(e) => (e.currentTarget.style.borderColor = "transparent")}
           />
           <button
             type="submit"
-            className="btn-primary"
-            disabled={loading || !inputMessage.trim()}
+            disabled={!inputMessage.trim() || loading}
             style={{
               width: "44px",
               height: "44px",
-              padding: 0,
-              borderRadius: "var(--radius-full)",
-              opacity: loading || !inputMessage.trim() ? 0.5 : 1,
+              borderRadius: "var(--radius-md)",
+              backgroundColor: inputMessage.trim() ? "var(--color-ink)" : "var(--color-hairline)",
+              color: "var(--color-canvas)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              cursor: inputMessage.trim() && !loading ? "pointer" : "not-allowed",
+              border: "none",
+              transition: "background-color 0.15s ease",
             }}
           >
-            <Send size={16} />
+            <Send size={18} />
           </button>
         </form>
       </div>
 
       <style>{`
-        @keyframes slideIn {
-          from { transform: translateX(100%); }
-          to { transform: translateX(0); }
-        }
+        @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
       `}</style>
     </div>
   );

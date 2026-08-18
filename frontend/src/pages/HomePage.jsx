@@ -1,6 +1,7 @@
 import React from "react";
 import EditorialHero from "../components/hero/EditorialHero";
 import CategoryNavRail from "../components/home/CategoryNavRail";
+import PersonalizedHistorySection from "../components/home/PersonalizedHistorySection";
 import DealsSection from "../components/home/DealsSection";
 import TrendingSection from "../components/home/TrendingSection";
 import CategoryShowcase from "../components/home/CategoryShowcase";
@@ -18,19 +19,22 @@ export default function HomePage({ onSearch, onOpenChat, onSelectProduct, onSele
         onSelectCategory={onSelectCategory}
       />
 
-      {/* 3. Amazon-Style 4-Quadrant Category Showcase Cards */}
+      {/* 3. Personalized History & AI Recommendations (Powered by Gemini AI) */}
+      <PersonalizedHistorySection onSelectProduct={onSelectProduct} />
+
+      {/* 4. Amazon-Style 4-Quadrant Category Showcase Cards */}
       <CategoryShowcase />
 
-      {/* 4. Lightning Deals & Mega Clearance Section */}
+      {/* 5. Lightning Deals & Mega Clearance Section */}
       <DealsSection onSelectProduct={onSelectProduct} />
 
-      {/* 5. Trending & AI Best Overall Picks */}
+      {/* 6. Trending & AI Best Overall Picks */}
       <TrendingSection onSelectProduct={onSelectProduct} />
 
-      {/* 6. Smart Budget Shopping Tiers */}
+      {/* 7. Smart Budget Shopping Tiers */}
       <BudgetExplorerSection onSelectProduct={onSelectProduct} />
 
-      {/* 7. Live Featured Product Catalog Feed */}
+      {/* 8. Live Featured Product Catalog Feed */}
       <FeaturedGrid
         selectedCategory=""
         onSelectCategory={onSelectCategory}

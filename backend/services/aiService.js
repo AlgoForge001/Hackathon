@@ -15,11 +15,11 @@ openRouterClient.interceptors.request.use((config) => {
   return config;
 });
 
-const MODEL = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY || "";
 
 // ─── Core LLM Caller ─────────────────────────────────────────────────────────
 /**
- * Send a prompt to OpenRouter. Returns parsed JSON or raw text.
+ * Send a prompt to Google Gemini 2.5 Flash or OpenRouter. Returns parsed JSON or raw text.
  * Returns null on any failure — callers must handle with fallback logic.
  * @param {string} systemPrompt
  * @param {string} userMessage
@@ -27,6 +27,38 @@ const MODEL = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
  * @returns {any|null}
  */
 async function callLLM(systemPrompt, userMessage, jsonMode = false) {
+  // 1. Try Google Gemini First
+  if (GEMINI_API_KEY) {
+    try {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+      const response = await axios.post(url, {
+        contents: [
+          { role: "user", parts: [{ text: `${systemPrompt}\n\n${userMessage}` }] }
+        ],
+        generationConfig: {
+          temperature: 0.2,
+          maxOutputTokens: jsonMode ? 1000 : 500,
+        },
+      }, { timeout: 12000 });
+
+      const raw = response.data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+      if (raw) {
+        if (jsonMode) {
+          const cleaned = raw
+            .replace(/^```json\s*/i, "")
+            .replace(/^```\s*/i, "")
+            .replace(/```\s*$/i, "")
+            .trim();
+          return JSON.parse(cleaned);
+        }
+        return raw;
+      }
+    } catch (gErr) {
+      console.warn("Google Gemini call failed in backend:", gErr.message);
+    }
+  }
+
+  // 2. Fallback to OpenRouter
   try {
     const response = await openRouterClient.post("/chat/completions", {
       model: MODEL,
@@ -41,7 +73,6 @@ async function callLLM(systemPrompt, userMessage, jsonMode = false) {
     const raw = response.data.choices[0].message.content.trim();
 
     if (jsonMode) {
-      // Strip markdown code fences if the model wraps JSON in ```json ... ```
       const cleaned = raw
         .replace(/^```json\s*/i, "")
         .replace(/^```\s*/i, "")
@@ -52,13 +83,12 @@ async function callLLM(systemPrompt, userMessage, jsonMode = false) {
 
     return raw;
   } catch (err) {
-    // Log but never throw — always return null to trigger fallback
     if (err.response?.status === 402) {
       console.warn("⚠️  OpenRouter: Insufficient credits. Using rule-based fallback.");
     } else if (err.response?.status === 401) {
       console.warn("⚠️  OpenRouter: Invalid API key. Using rule-based fallback.");
     } else {
-      console.error("OpenRouter LLM call failed:", err.message);
+      console.error("LLM call failed:", err.message);
     }
     return null;
   }

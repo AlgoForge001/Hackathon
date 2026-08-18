@@ -9,8 +9,9 @@ export default function TrendingPage({ onSelectProduct, onOpenChat }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const trending = mockProducts
-    .filter((p) => (p.best_overall_score || p.bestOverallScore) >= 86)
-    .filter((p) => selectedCategory === "all" || p.category === selectedCategory);
+    .filter((v, i, a) => a.findIndex((t) => (t.groupId || t.group_id) === (v.groupId || v.group_id)) === i)
+    .filter((p) => selectedCategory === "all" || p.category === selectedCategory)
+    .sort((a, b) => (b.best_overall_score || b.bestOverallScore || 0) - (a.best_overall_score || a.bestOverallScore || 0));
 
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "var(--color-canvas)" }}>
@@ -58,7 +59,7 @@ export default function TrendingPage({ onSelectProduct, onOpenChat }) {
             AI-RANKED BEST OVERALL PICKS
           </h1>
           <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.85)", marginTop: "12px", maxWidth: "600px" }}>
-            Products with 88%+ AI Confidence score based on verified customer sentiment, price-to-spec ratio, and returns rate.
+            Products ranked by AI Confidence score based on verified customer sentiment, price-to-spec ratio, multi-platform deals, and delivery speeds.
           </p>
         </div>
       </div>

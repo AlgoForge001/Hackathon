@@ -5,10 +5,10 @@ import ProductCard from "../products/ProductCard";
 import { mockProducts } from "../../services/mockData";
 
 export default function TrendingSection({ onSelectProduct }) {
-  // Products with best overall score >= 91
+  // Deduplicate and get top products ranked by AI best overall score
   const topAIProducts = mockProducts
-    .filter((p) => (p.best_overall_score || p.bestOverallScore) >= 91)
     .filter((v, i, a) => a.findIndex((t) => (t.groupId || t.group_id) === (v.groupId || v.group_id)) === i)
+    .sort((a, b) => (b.best_overall_score || b.bestOverallScore || 0) - (a.best_overall_score || a.bestOverallScore || 0))
     .slice(0, 4);
 
   return (

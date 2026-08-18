@@ -7,8 +7,10 @@ import { CATEGORY_DEFINITIONS, mockProducts } from "../../services/mockData";
 export default function Navbar({ onOpenChat }) {
   const [searchValue, setSearchValue] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isSearchHovered, setIsSearchHovered] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const searchContainerRef = useRef(null);
+  const searchInputRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
   const { user, logout } = useAuth ? useAuth() : { user: null, logout: () => {} };
@@ -16,7 +18,6 @@ export default function Navbar({ onOpenChat }) {
   // Filter recommendations in real time as user types
   const searchSuggestions = React.useMemo(() => {
     if (!searchValue.trim()) {
-      // Show trending top picks when input is empty & focused
       return mockProducts.slice(0, 4);
     }
     const q = searchValue.toLowerCase().trim();
@@ -53,9 +54,11 @@ export default function Navbar({ onOpenChat }) {
   const handleSelectRecommendation = (product) => {
     setIsSearchFocused(false);
     setSearchValue("");
-    const targetId = product.product_id || product.id;
+    const targetId = product.product_id || product.id || product.groupId;
     navigate(`/product/${targetId}`);
   };
+
+  const searchWidth = isSearchFocused ? "460px" : isSearchHovered ? "330px" : "210px";
 
   return (
     <header style={{ position: "sticky", top: 0, zIndex: 1000, backgroundColor: "var(--color-canvas)" }}>
@@ -75,7 +78,7 @@ export default function Navbar({ onOpenChat }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "20px",
+            gap: "16px",
           }}
         >
           {/* 1. Brand Logo */}
@@ -116,6 +119,7 @@ export default function Navbar({ onOpenChat }) {
               display: "flex",
               alignItems: "center",
               gap: "18px",
+              flexShrink: 0,
             }}
             className="desktop-nav"
           >
@@ -162,26 +166,56 @@ export default function Navbar({ onOpenChat }) {
             </Link>
           </nav>
 
-          {/* 3. Predictive Search Bar with Live Recommendations Dropdown */}
-          <div ref={searchContainerRef} style={{ position: "relative", flex: "1", maxWidth: "420px" }}>
+          {/* 3. Dynamic Animated Expanding Search Bar */}
+          <div
+            ref={searchContainerRef}
+            onMouseEnter={() => setIsSearchHovered(true)}
+            onMouseLeave={() => setIsSearchHovered(false)}
+            style={{
+              position: "relative",
+              width: searchWidth,
+              maxWidth: "100%",
+              transition: "width 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease",
+            }}
+          >
             <form onSubmit={handleSearchSubmit}>
               <div
+                onClick={() => searchInputRef.current?.focus()}
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  backgroundColor: "var(--color-soft-cloud)",
+                  backgroundColor: isSearchFocused ? "var(--color-canvas)" : isSearchHovered ? "#f1f3f5" : "var(--color-soft-cloud)",
                   borderRadius: "var(--radius-pill)",
                   padding: "0 16px",
                   height: "42px",
-                  border: isSearchFocused ? "1.5px solid var(--color-ink)" : "1.5px solid transparent",
-                  transition: "border-color 0.2s ease, box-shadow 0.2s ease",
-                  boxShadow: isSearchFocused ? "0 4px 16px rgba(0,0,0,0.06)" : "none",
+                  border: isSearchFocused
+                    ? "1.5px solid var(--color-ink)"
+                    : isSearchHovered
+                    ? "1.5px solid var(--color-hairline)"
+                    : "1.5px solid transparent",
+                  transition: "all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)",
+                  boxShadow: isSearchFocused
+                    ? "0 8px 24px rgba(0,0,0,0.1)"
+                    : isSearchHovered
+                    ? "0 4px 14px rgba(0,0,0,0.05)"
+                    : "none",
+                  cursor: "text",
                 }}
               >
-                <Search size={17} color="var(--color-mute)" style={{ marginRight: "10px", flexShrink: 0 }} />
+                <Search
+                  size={16}
+                  color={isSearchFocused ? "var(--color-ink)" : "var(--color-mute)"}
+                  style={{
+                    marginRight: "10px",
+                    flexShrink: 0,
+                    transition: "color 0.2s ease, transform 0.2s ease",
+                    transform: isSearchFocused ? "scale(1.1)" : "scale(1)",
+                  }}
+                />
                 <input
+                  ref={searchInputRef}
                   type="text"
-                  placeholder="Search products across Amazon, Flipkart..."
+                  placeholder={isSearchFocused ? "Search products across Amazon, Flipkart, Myntra..." : isSearchHovered ? "Search 33+ products..." : "Search..."}
                   value={searchValue}
                   onChange={(e) => setSearchValue(e.target.value)}
                   onFocus={() => setIsSearchFocused(true)}
@@ -193,12 +227,16 @@ export default function Navbar({ onOpenChat }) {
                     fontSize: "13px",
                     fontWeight: 500,
                     color: "var(--color-ink)",
+                    fontFamily: "var(--font-ui)",
                   }}
                 />
                 {searchValue && (
                   <button
                     type="button"
-                    onClick={() => setSearchValue("")}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSearchValue("");
+                    }}
                     style={{ background: "none", border: "none", cursor: "pointer", padding: "2px", color: "var(--color-mute)" }}
                   >
                     <X size={14} />
@@ -221,6 +259,7 @@ export default function Navbar({ onOpenChat }) {
                   boxShadow: "0 16px 40px rgba(0,0,0,0.12)",
                   zIndex: 2000,
                   overflow: "hidden",
+                  animation: "fadeIn 0.2s ease-out",
                 }}
               >
                 <div
@@ -259,14 +298,14 @@ export default function Navbar({ onOpenChat }) {
                       onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
                     >
                       <img
-                        src={prod.imageUrl || prod.image_url || prod.images?.[0]}
-                        alt={prod.title}
+                        src={prod.image_url || prod.imageUrl}
+                        alt={prod.title || prod.name}
                         style={{
-                          width: "44px",
-                          height: "44px",
-                          objectFit: "cover",
+                          width: "36px",
+                          height: "36px",
                           borderRadius: "var(--radius-sm)",
-                          backgroundColor: "#f5f5f5",
+                          objectFit: "cover",
+                          backgroundColor: "var(--color-soft-cloud)",
                           flexShrink: 0,
                         }}
                       />
@@ -281,17 +320,12 @@ export default function Navbar({ onOpenChat }) {
                             textOverflow: "ellipsis",
                           }}
                         >
-                          {prod.name || prod.product_name || prod.title}
+                          {prod.title || prod.name}
                         </div>
                         <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "2px" }}>
                           <span style={{ fontSize: "12px", fontWeight: 700, color: "var(--color-ink)" }}>
                             ₹{Number(prod.price).toLocaleString("en-IN")}
                           </span>
-                          {prod.discountPercent > 0 && (
-                            <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-sale)" }}>
-                              {prod.discountPercent}% OFF
-                            </span>
-                          )}
                           <span
                             style={{
                               fontSize: "10px",
@@ -334,6 +368,7 @@ export default function Navbar({ onOpenChat }) {
 
           {/* 4. Action Buttons (Ask AI + Profile) */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
+            {/* Ask AI Button */}
             <button
               onClick={onOpenChat}
               style={{
@@ -399,6 +434,7 @@ export default function Navbar({ onOpenChat }) {
                       {user ? user.email : "Sign in to sync alerts"}
                     </p>
                   </div>
+
                   <Link
                     to="/trending"
                     onClick={() => setProfileOpen(false)}
