@@ -1,33 +1,72 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Search, Heart, ShoppingBag, Sparkles, User, LogOut } from "lucide-react";
+import { Search, Sparkles, User, LogOut, ChevronRight, Zap, TrendingUp, X } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
-import { CATEGORY_DEFINITIONS } from "../../services/mockData";
+import { CATEGORY_DEFINITIONS, mockProducts } from "../../services/mockData";
 
 export default function Navbar({ onOpenChat }) {
   const [searchValue, setSearchValue] = useState("");
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+  const searchContainerRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
   const { user, logout } = useAuth ? useAuth() : { user: null, logout: () => {} };
 
+  // Filter recommendations in real time as user types
+  const searchSuggestions = React.useMemo(() => {
+    if (!searchValue.trim()) {
+      // Show trending top picks when input is empty & focused
+      return mockProducts.slice(0, 4);
+    }
+    const q = searchValue.toLowerCase().trim();
+    return mockProducts
+      .filter((p) =>
+        p.title?.toLowerCase().includes(q) ||
+        p.name?.toLowerCase().includes(q) ||
+        p.brand?.toLowerCase().includes(q) ||
+        p.category?.toLowerCase().includes(q)
+      )
+      .slice(0, 6);
+  }, [searchValue]);
+
+  // Close search recommendations dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(e.target)) {
+        setIsSearchFocused(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (searchValue.trim()) {
+      setIsSearchFocused(false);
       navigate(`/search?q=${encodeURIComponent(searchValue.trim())}`);
       setSearchValue("");
     }
   };
 
+  const handleSelectRecommendation = (product) => {
+    setIsSearchFocused(false);
+    setSearchValue("");
+    const targetId = product.product_id || product.id;
+    navigate(`/product/${targetId}`);
+  };
+
   return (
-    <header style={{ position: "sticky", top: 0, zIndex: 100, backgroundColor: "var(--color-canvas)" }}>
-      {/* ─── PRIMARY NAV BAR (Clean Header) ─────────────────────── */}
+    <header style={{ position: "sticky", top: 0, zIndex: 1000, backgroundColor: "var(--color-canvas)" }}>
+      {/* ─── SINGLE UNIFIED NAVBAR ──────────────────────────────────────── */}
       <div
         style={{
           height: "68px",
           display: "flex",
           alignItems: "center",
           borderBottom: "1px solid var(--color-hairline-soft)",
+          boxShadow: "0 2px 10px rgba(0,0,0,0.03)",
         }}
       >
         <div
@@ -36,181 +75,348 @@ export default function Navbar({ onOpenChat }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "24px",
+            gap: "20px",
           }}
         >
-          {/* Logo */}
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <div
-                style={{
-                  width: "34px",
-                  height: "34px",
-                  backgroundColor: "var(--color-ink)",
-                  borderRadius: "var(--radius-sm)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "var(--color-canvas)",
-                  fontWeight: 900,
-                  fontSize: "15px",
-                  letterSpacing: "-1px",
-                }}
-              >
-                AF
-              </div>
-              <span
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "26px",
-                  letterSpacing: "0.5px",
-                  lineHeight: 1,
-                  color: "var(--color-ink)",
-                }}
-              >
-                ALGOFORGE
-              </span>
-            </Link>
-          </div>
+          {/* 1. Brand Logo */}
+          <Link to="/" style={{ display: "flex", alignItems: "center", gap: "10px", flexShrink: 0 }}>
+            <div
+              style={{
+                width: "36px",
+                height: "36px",
+                backgroundColor: "var(--color-ink)",
+                borderRadius: "var(--radius-sm)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "var(--color-canvas)",
+                fontWeight: 900,
+                fontSize: "16px",
+                letterSpacing: "-0.5px",
+              }}
+            >
+              AF
+            </div>
+            <span
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "26px",
+                letterSpacing: "0.5px",
+                lineHeight: 1,
+                color: "var(--color-ink)",
+              }}
+            >
+              ALGOFORGE
+            </span>
+          </Link>
 
-          {/* Center Nav Category Links */}
+          {/* 2. Category Navigation Links */}
           <nav
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "24px",
+              gap: "18px",
             }}
             className="desktop-nav"
           >
             <Link
               to="/"
               style={{
-                fontSize: "15px",
-                fontWeight: 600,
+                fontSize: "14px",
+                fontWeight: location.pathname === "/" ? 700 : 500,
                 color: location.pathname === "/" ? "var(--color-ink)" : "var(--color-mute)",
-                padding: "8px 0",
-                position: "relative",
+                transition: "color 0.15s ease",
               }}
             >
-              All Deals
-              {location.pathname === "/" && (
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: "-12px",
-                    left: 0,
-                    right: 0,
-                    height: "2px",
-                    backgroundColor: "var(--color-ink)",
-                  }}
-                />
-              )}
+              All
             </Link>
 
-            {CATEGORY_DEFINITIONS.map((cat) => {
-              const isActive = location.pathname === `/category/${cat.id}`;
-              return (
-                <Link
-                  key={cat.id}
-                  to={`/category/${cat.id}`}
-                  style={{
-                    fontSize: "15px",
-                    fontWeight: 600,
-                    color: isActive ? "var(--color-ink)" : "var(--color-mute)",
-                    padding: "8px 0",
-                    position: "relative",
-                    transition: "color 0.15s ease",
-                  }}
-                >
-                  {cat.shortLabel}
-                  {isActive && (
-                    <div
-                      style={{
-                        position: "absolute",
-                        bottom: "-12px",
-                        left: 0,
-                        right: 0,
-                        height: "2px",
-                        backgroundColor: "var(--color-ink)",
-                      }}
-                    />
-                  )}
-                </Link>
-              );
-            })}
+            {CATEGORY_DEFINITIONS.map((cat) => (
+              <Link
+                key={cat.id}
+                to={`/category/${cat.id}`}
+                style={{
+                  fontSize: "14px",
+                  fontWeight: location.pathname === `/category/${cat.id}` ? 700 : 500,
+                  color: location.pathname === `/category/${cat.id}` ? "var(--color-ink)" : "var(--color-mute)",
+                  transition: "color 0.15s ease",
+                }}
+              >
+                {cat.shortLabel}
+              </Link>
+            ))}
+
+            <Link
+              to="/deals"
+              style={{
+                fontSize: "14px",
+                fontWeight: location.pathname === "/deals" ? 700 : 600,
+                color: "var(--color-sale)",
+                display: "flex",
+                alignItems: "center",
+                gap: "4px",
+              }}
+            >
+              <Zap size={14} color="var(--color-sale)" />
+              Deals
+            </Link>
           </nav>
 
-          {/* Right Action Cluster */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            {/* Search Pill Input */}
-            <form onSubmit={handleSearchSubmit} style={{ width: "240px" }}>
-              <div className="search-pill-container">
-                <Search size={16} color="var(--color-mute)" style={{ marginRight: "8px", flexShrink: 0 }} />
+          {/* 3. Predictive Search Bar with Live Recommendations Dropdown */}
+          <div ref={searchContainerRef} style={{ position: "relative", flex: "1", maxWidth: "420px" }}>
+            <form onSubmit={handleSearchSubmit}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  backgroundColor: "var(--color-soft-cloud)",
+                  borderRadius: "var(--radius-pill)",
+                  padding: "0 16px",
+                  height: "42px",
+                  border: isSearchFocused ? "1.5px solid var(--color-ink)" : "1.5px solid transparent",
+                  transition: "border-color 0.2s ease, box-shadow 0.2s ease",
+                  boxShadow: isSearchFocused ? "0 4px 16px rgba(0,0,0,0.06)" : "none",
+                }}
+              >
+                <Search size={17} color="var(--color-mute)" style={{ marginRight: "10px", flexShrink: 0 }} />
                 <input
                   type="text"
-                  placeholder="Search products or ask AI..."
-                  className="search-pill-input"
+                  placeholder="Search products across Amazon, Flipkart..."
                   value={searchValue}
                   onChange={(e) => setSearchValue(e.target.value)}
+                  onFocus={() => setIsSearchFocused(true)}
+                  style={{
+                    border: "none",
+                    background: "transparent",
+                    outline: "none",
+                    width: "100%",
+                    fontSize: "13px",
+                    fontWeight: 500,
+                    color: "var(--color-ink)",
+                  }}
                 />
+                {searchValue && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchValue("")}
+                    style={{ background: "none", border: "none", cursor: "pointer", padding: "2px", color: "var(--color-mute)" }}
+                  >
+                    <X size={14} />
+                  </button>
+                )}
               </div>
             </form>
 
-            {/* AI Assistant Pill Button */}
+            {/* Predictive Recommendations Dropdown */}
+            {isSearchFocused && searchSuggestions.length > 0 && (
+              <div
+                style={{
+                  position: "absolute",
+                  top: "48px",
+                  left: 0,
+                  right: 0,
+                  backgroundColor: "var(--color-canvas)",
+                  borderRadius: "var(--radius-md)",
+                  border: "1px solid var(--color-hairline)",
+                  boxShadow: "0 16px 40px rgba(0,0,0,0.12)",
+                  zIndex: 2000,
+                  overflow: "hidden",
+                }}
+              >
+                <div
+                  style={{
+                    padding: "8px 16px",
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.5px",
+                    color: "var(--color-mute)",
+                    backgroundColor: "var(--color-soft-cloud)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <span>{searchValue ? "Matching Products" : "Trending Recommendations"}</span>
+                  <span style={{ fontSize: "10px", fontWeight: 500 }}>Live Comparison</span>
+                </div>
+
+                <div style={{ maxHeight: "360px", overflowY: "auto" }}>
+                  {searchSuggestions.map((prod) => (
+                    <div
+                      key={prod.id || prod.product_id}
+                      onClick={() => handleSelectRecommendation(prod)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "12px",
+                        padding: "10px 16px",
+                        cursor: "pointer",
+                        borderBottom: "1px solid var(--color-hairline-soft)",
+                        transition: "background-color 0.15s ease",
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--color-soft-cloud)")}
+                      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
+                    >
+                      <img
+                        src={prod.imageUrl || prod.image_url || prod.images?.[0]}
+                        alt={prod.title}
+                        style={{
+                          width: "44px",
+                          height: "44px",
+                          objectFit: "cover",
+                          borderRadius: "var(--radius-sm)",
+                          backgroundColor: "#f5f5f5",
+                          flexShrink: 0,
+                        }}
+                      />
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div
+                          style={{
+                            fontSize: "13px",
+                            fontWeight: 600,
+                            color: "var(--color-ink)",
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                          }}
+                        >
+                          {prod.name || prod.product_name || prod.title}
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "2px" }}>
+                          <span style={{ fontSize: "12px", fontWeight: 700, color: "var(--color-ink)" }}>
+                            ₹{Number(prod.price).toLocaleString("en-IN")}
+                          </span>
+                          {prod.discountPercent > 0 && (
+                            <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-sale)" }}>
+                              {prod.discountPercent}% OFF
+                            </span>
+                          )}
+                          <span
+                            style={{
+                              fontSize: "10px",
+                              fontWeight: 700,
+                              textTransform: "uppercase",
+                              padding: "1px 6px",
+                              borderRadius: "4px",
+                              backgroundColor: "rgba(0,0,0,0.05)",
+                              color: "var(--color-mute)",
+                            }}
+                          >
+                            {prod.platform || "Amazon"}
+                          </span>
+                        </div>
+                      </div>
+                      <ChevronRight size={14} color="var(--color-mute)" />
+                    </div>
+                  ))}
+                </div>
+
+                {searchValue && (
+                  <div
+                    onClick={handleSearchSubmit}
+                    style={{
+                      padding: "10px 16px",
+                      textAlign: "center",
+                      backgroundColor: "var(--color-soft-cloud)",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      color: "var(--color-ink)",
+                      cursor: "pointer",
+                    }}
+                  >
+                    View all results for "{searchValue}" →
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* 4. Action Buttons (Ask AI + Profile) */}
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
             <button
               onClick={onOpenChat}
-              className="btn-primary"
               style={{
-                height: "40px",
-                padding: "0 18px",
-                fontSize: "14px",
+                display: "flex",
+                alignItems: "center",
                 gap: "6px",
+                padding: "8px 18px",
+                backgroundColor: "var(--color-ink)",
+                color: "var(--color-canvas)",
+                borderRadius: "var(--radius-pill)",
+                fontSize: "13px",
+                fontWeight: 700,
+                cursor: "pointer",
+                border: "none",
+                transition: "opacity 0.2s ease, transform 0.1s ease",
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
             >
-              <Sparkles size={15} />
+              <Sparkles size={15} color="#FFD700" />
               <span>Ask AI</span>
             </button>
 
-            {/* User Profile */}
-            {user ? (
-              <div style={{ position: "relative" }}>
-                <button
-                  onClick={() => setProfileOpen(!profileOpen)}
+            {/* Profile Dropdown */}
+            <div style={{ position: "relative" }}>
+              <button
+                onClick={() => setProfileOpen(!profileOpen)}
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  borderRadius: "50%",
+                  backgroundColor: "var(--color-soft-cloud)",
+                  border: "1px solid var(--color-hairline)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                }}
+              >
+                <User size={18} color="var(--color-ink)" />
+              </button>
+
+              {profileOpen && (
+                <div
                   style={{
-                    width: "36px",
-                    height: "36px",
-                    borderRadius: "var(--radius-full)",
-                    overflow: "hidden",
-                    border: "2px solid var(--color-ink)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
+                    position: "absolute",
+                    right: 0,
+                    top: "48px",
+                    width: "220px",
+                    backgroundColor: "var(--color-canvas)",
+                    borderRadius: "var(--radius-md)",
+                    boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+                    border: "1px solid var(--color-hairline)",
+                    padding: "12px",
+                    zIndex: 1000,
                   }}
                 >
-                  <img
-                    src={user.picture || "https://ui-avatars.com/api/?name=" + encodeURIComponent(user.name || "User")}
-                    alt={user.name}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  />
-                </button>
-                {profileOpen && (
-                  <div
+                  <div style={{ paddingBottom: "8px", borderBottom: "1px solid var(--color-hairline-soft)", marginBottom: "8px" }}>
+                    <p style={{ fontSize: "13px", fontWeight: 700, margin: 0, color: "var(--color-ink)" }}>
+                      {user ? user.name : "Guest Shopper"}
+                    </p>
+                    <p style={{ fontSize: "11px", color: "var(--color-mute)", margin: 0 }}>
+                      {user ? user.email : "Sign in to sync alerts"}
+                    </p>
+                  </div>
+                  <Link
+                    to="/trending"
+                    onClick={() => setProfileOpen(false)}
                     style={{
-                      position: "absolute",
-                      top: "calc(100% + 8px)",
-                      right: 0,
-                      width: "200px",
-                      backgroundColor: "var(--color-canvas)",
-                      border: "1px solid var(--color-hairline)",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      padding: "8px",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      color: "var(--color-ink)",
                       borderRadius: "var(--radius-sm)",
-                      padding: "12px",
-                      boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
-                      zIndex: 110,
                     }}
                   >
-                    <p style={{ fontSize: "14px", fontWeight: 700 }}>{user.name}</p>
-                    <p style={{ fontSize: "12px", color: "var(--color-mute)", marginBottom: "8px" }}>{user.email}</p>
+                    <TrendingUp size={14} />
+                    <span>Trending Deals</span>
+                  </Link>
+                  {user && (
                     <button
                       onClick={() => {
                         logout();
@@ -219,21 +425,26 @@ export default function Navbar({ onOpenChat }) {
                       style={{
                         display: "flex",
                         alignItems: "center",
-                        gap: "6px",
-                        color: "var(--color-sale)",
-                        fontSize: "13px",
-                        fontWeight: 600,
+                        gap: "8px",
                         width: "100%",
-                        padding: "6px 0",
+                        padding: "8px",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        color: "var(--color-sale)",
+                        border: "none",
+                        background: "none",
+                        cursor: "pointer",
+                        borderRadius: "var(--radius-sm)",
+                        marginTop: "4px",
                       }}
                     >
                       <LogOut size={14} />
                       <span>Sign Out</span>
                     </button>
-                  </div>
-                )}
-              </div>
-            ) : null}
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

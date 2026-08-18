@@ -10,8 +10,6 @@ import FeaturedGrid from "../components/products/FeaturedGrid";
 export default function HomePage({ onSearch, onOpenChat, onSelectProduct, onSelectCategory }) {
   return (
     <div className="home-page">
-      {/* 1. Amazon-Style Category Top Subnav */}
-      <CategoryNavRail />
 
       {/* 2. Editorial Campaign Hero with AI Search & Verified Badges */}
       <EditorialHero

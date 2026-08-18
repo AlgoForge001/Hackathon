@@ -17,6 +17,11 @@ backendCatalog.forEach((group) => {
     const sentiment = platformData.rating >= 4.4 ? "green" : platformData.rating >= 4.0 ? "yellow" : "red";
     const sentimentScore = Math.min(98, Math.round(platformData.rating * 19 + 5));
 
+    // Ensure 4 images exist
+    const images = group.images && group.images.length >= 4 
+      ? group.images 
+      : [platformData.image_url, platformData.image_url, platformData.image_url, platformData.image_url];
+
     mockProducts.push({
       id: `${group.group_id}-${platformData.platform}`,
       product_id: `${group.group_id}-${platformData.platform}`,
@@ -40,6 +45,10 @@ backendCatalog.forEach((group) => {
       delivery_estimate: platformData.delivery_estimate,
       imageUrl: platformData.image_url,
       image_url: platformData.image_url,
+      images,
+      dimensions: group.dimensions || { width: "20 cm", height: "15 cm", depth: "10 cm", weight: "500g" },
+      price_history: group.price_history || [],
+      priceHistory: group.price_history || [],
       productUrl: platformData.product_url,
       product_url: platformData.product_url,
       seller: platformData.seller,
@@ -152,6 +161,7 @@ export const searchMockProducts = ({ query = "", category = "", minPrice = 0, ma
     const q = query.toLowerCase();
     filtered = filtered.filter((p) =>
       p.title.toLowerCase().includes(q) ||
+      p.name.toLowerCase().includes(q) ||
       p.brand.toLowerCase().includes(q) ||
       p.category.toLowerCase().includes(q)
     );
@@ -183,11 +193,21 @@ export const searchMockProducts = ({ query = "", category = "", minPrice = 0, ma
 
 export const getAlternatives = (productId) => {
   const current = mockProducts.find((p) => p.id === productId || p.product_id === productId) || mockProducts[0];
-  const sameCategory = mockProducts.filter((p) => p.category === current.category && p.groupId !== current.groupId);
+  const sameCategory = mockProducts.filter((p) => p.category === current.category && (p.groupId || p.group_id) !== (current.groupId || current.group_id));
 
-  const cheaper = sameCategory.filter((p) => p.price < current.price * 0.85).slice(0, 3);
-  const similar = sameCategory.filter((p) => p.price >= current.price * 0.85 && p.price <= current.price * 1.15).slice(0, 3);
-  const premium = sameCategory.filter((p) => p.price > current.price * 1.15).slice(0, 3);
+  // Deduplicate by product group
+  const uniqueGroupMap = new Map();
+  sameCategory.forEach((item) => {
+    const gid = item.groupId || item.group_id;
+    if (!uniqueGroupMap.has(gid)) {
+      uniqueGroupMap.set(gid, item);
+    }
+  });
+  const uniqueList = Array.from(uniqueGroupMap.values());
+
+  const cheaper = uniqueList.filter((p) => p.price < current.price * 0.9).slice(0, 3);
+  const similar = uniqueList.filter((p) => p.price >= current.price * 0.85 && p.price <= current.price * 1.15).slice(0, 3);
+  const premium = uniqueList.filter((p) => p.price > current.price * 1.10).slice(0, 3);
 
   return { currentProduct: current, cheaper, similar, premium };
 };
@@ -202,7 +222,7 @@ export const budgetExplorer = (productId, extraBudget) => {
     .map((p) => ({
       ...p,
       priceDifference: p.price - current.price,
-      upgradeReason: \`For +\u20B9\${p.price - current.price}, get \${p.brand} with superior specs and higher ratings.\`,
+      upgradeReason: \`For +\u20B9\${(p.price - current.price).toLocaleString("en-IN")}, get \${p.brand} with superior specs and higher ratings.\`,
     }));
 
   return {
@@ -217,4 +237,4 @@ export const budgetExplorer = (productId, extraBudget) => {
 
 const frontendPath = path.join(__dirname, "../../frontend/src/services/mockData.js");
 fs.writeFileSync(frontendPath, fileContent, "utf-8");
-console.log(`✅ Synchronized ${mockProducts.length} listings with quadrantPreviews into frontend mockData.js`);
+console.log(`✅ Synchronized mockData.js with 4-image arrays & price history`);

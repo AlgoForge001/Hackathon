@@ -1,4 +1,4 @@
-// Auto-generated synchronized mock product catalog (99 platform listings)
+// Auto-generated synchronized mock product catalog (51 platform listings)
 export const CATEGORY_DEFINITIONS = [
   {
     id: "electronics",
@@ -94,21 +94,109 @@ export const mockProducts = [
     "original_price": 29990,
     "discountPercent": 17,
     "discount_percent": 17,
-    "rating": 4.5,
+    "rating": 4.6,
     "reviewCount": 12847,
     "review_count": 12847,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "1-2 days (Prime)",
+    "delivery_estimate": "1-2 days (Prime)",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "18.5 cm",
+      "height": "24.0 cm",
+      "depth": "7.2 cm",
+      "weight": "250g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B09XS7JWHH",
     "product_url": "https://www.amazon.in/dp/B09XS7JWHH",
-    "seller": "Amazon Fulfilled",
+    "seller": "Appario Retail (Amazon Fulfilled)",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 74,
+    "sentimentScore": 92,
+    "best_overall_score": 76,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated electronics pick with 17% off and verified fast shipping.",
@@ -117,23 +205,24 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
     "specs": {
       "type": "Over-ear",
-      "battery_life": "30 hours",
+      "battery_life": "30 hours with ANC",
       "weight": "250g",
-      "connectivity": "Bluetooth 5.2",
-      "noise_cancellation": "Industry-leading ANC with 8 microphones",
-      "multipoint_connection": true
+      "connectivity": "Bluetooth 5.2 & LDAC",
+      "noise_cancellation": "Industry-leading ANC with 8 microphones & Auto NC Optimizer",
+      "multipoint_connection": true,
+      "fast_charging": "3 min charge = 3 hours playback"
     },
     "reviews": [
       {
         "author": "Rahul K",
         "rating": 5,
-        "text": "Best noise cancellation headphones. Sound quality is crystal clear.",
+        "text": "Unmatched noise cancellation and crystal clear calls.",
         "date": "2024-10-15"
       },
       {
         "author": "Priya M",
         "rating": 4,
-        "text": "Superb ANC and call quality. Slightly bulky carrying case.",
+        "text": "Extremely lightweight and comfortable on long flights.",
         "date": "2024-09-22"
       }
     ]
@@ -154,21 +243,109 @@ export const mockProducts = [
     "original_price": 29990,
     "discountPercent": 15,
     "discount_percent": 15,
-    "rating": 4.4,
+    "rating": 4.5,
     "reviewCount": 8230,
     "review_count": 8230,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "2-3 days",
+    "delivery_estimate": "2-3 days",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "18.5 cm",
+      "height": "24.0 cm",
+      "depth": "7.2 cm",
+      "weight": "250g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
     "productUrl": "https://www.flipkart.com/sony-wh-1000xm5",
     "product_url": "https://www.flipkart.com/sony-wh-1000xm5",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 72,
+    "sentimentScore": 91,
+    "best_overall_score": 74,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated electronics pick with 15% off and verified fast shipping.",
@@ -177,17 +354,18 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
     "specs": {
       "type": "Over-ear",
-      "battery_life": "30 hours",
+      "battery_life": "30 hours with ANC",
       "weight": "250g",
-      "connectivity": "Bluetooth 5.2",
-      "noise_cancellation": "Industry-leading ANC with 8 microphones",
-      "multipoint_connection": true
+      "connectivity": "Bluetooth 5.2 & LDAC",
+      "noise_cancellation": "Industry-leading ANC with 8 microphones & Auto NC Optimizer",
+      "multipoint_connection": true,
+      "fast_charging": "3 min charge = 3 hours playback"
     },
     "reviews": [
       {
         "author": "Karan B",
         "rating": 5,
-        "text": "Awesome sound and very comfortable for long flights.",
+        "text": "Awesome soundstage with deep sub-bass and LDAC support.",
         "date": "2024-11-12"
       }
     ]
@@ -211,10 +389,98 @@ export const mockProducts = [
     "rating": 4.6,
     "reviewCount": 1120,
     "review_count": 1120,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "3-4 days",
+    "delivery_estimate": "3-4 days",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "18.5 cm",
+      "height": "24.0 cm",
+      "depth": "7.2 cm",
+      "weight": "250g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
     "productUrl": "https://www.myntra.com/headphones/sony-xm5",
     "product_url": "https://www.myntra.com/headphones/sony-xm5",
     "seller": "Myntra Premium Tech",
@@ -231,17 +497,18 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
     "specs": {
       "type": "Over-ear",
-      "battery_life": "30 hours",
+      "battery_life": "30 hours with ANC",
       "weight": "250g",
-      "connectivity": "Bluetooth 5.2",
-      "noise_cancellation": "Industry-leading ANC with 8 microphones",
-      "multipoint_connection": true
+      "connectivity": "Bluetooth 5.2 & LDAC",
+      "noise_cancellation": "Industry-leading ANC with 8 microphones & Auto NC Optimizer",
+      "multipoint_connection": true,
+      "fast_charging": "3 min charge = 3 hours playback"
     },
     "reviews": [
       {
         "author": "Tanvi S",
         "rating": 5,
-        "text": "Fast delivery from Myntra, pristine packaging.",
+        "text": "Original sealed package with full Sony India 1-year warranty.",
         "date": "2024-10-02"
       }
     ]
@@ -262,21 +529,109 @@ export const mockProducts = [
     "original_price": 24900,
     "discountPercent": 20,
     "discount_percent": 20,
-    "rating": 4.7,
+    "rating": 4.8,
     "reviewCount": 24190,
     "review_count": 24190,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "Tomorrow",
+    "delivery_estimate": "Tomorrow",
+    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "6.0 cm",
+      "height": "4.5 cm",
+      "depth": "2.1 cm",
+      "weight": "50.8g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0CHWRXH8B",
     "product_url": "https://www.amazon.in/dp/B0CHWRXH8B",
-    "seller": "Appario Retail (Amazon Fulfilled)",
+    "seller": "Appario Retail (Amazon Prime)",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 79,
+    "sentimentScore": 96,
+    "best_overall_score": 80,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated electronics pick with 20% off and verified fast shipping.",
@@ -285,16 +640,16 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
       "type": "In-ear TWS",
-      "battery_life": "6h (30h with case)",
-      "chip": "Apple H2",
-      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
+      "battery_life": "6h (30h with MagSafe Case)",
+      "chip": "Apple H2 Headphone Chip",
+      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio + Transparency",
       "water_resistance": "IP54 dust, sweat, and water resistant"
     },
     "reviews": [
       {
         "author": "Arjun V",
         "rating": 5,
-        "text": "Transparency mode feels like magic. Spatial audio is phenomenal.",
+        "text": "Transparency mode is incredible. Spatial audio with head tracking is mind blowing.",
         "date": "2024-11-20"
       }
     ]
@@ -315,21 +670,109 @@ export const mockProducts = [
     "original_price": 24900,
     "discountPercent": 18,
     "discount_percent": 18,
-    "rating": 4.6,
+    "rating": 4.7,
     "reviewCount": 14200,
     "review_count": 14200,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "6.0 cm",
+      "height": "4.5 cm",
+      "depth": "2.1 cm",
+      "weight": "50.8g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
     "productUrl": "https://www.flipkart.com/apple-airpods-pro-2",
     "product_url": "https://www.flipkart.com/apple-airpods-pro-2",
     "seller": "IndiFlashMart (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 76,
+    "sentimentScore": 94,
+    "best_overall_score": 78,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated electronics pick with 18% off and verified fast shipping.",
@@ -338,16 +781,16 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
       "type": "In-ear TWS",
-      "battery_life": "6h (30h with case)",
-      "chip": "Apple H2",
-      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
+      "battery_life": "6h (30h with MagSafe Case)",
+      "chip": "Apple H2 Headphone Chip",
+      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio + Transparency",
       "water_resistance": "IP54 dust, sweat, and water resistant"
     },
     "reviews": [
       {
         "author": "Meera K",
         "rating": 5,
-        "text": "Seamless switching between iPhone and MacBook.",
+        "text": "USB-C case makes charging with Mac and iPad effortless.",
         "date": "2024-10-18"
       }
     ]
@@ -371,10 +814,98 @@ export const mockProducts = [
     "rating": 4.7,
     "reviewCount": 2150,
     "review_count": 2150,
-    "deliveryEstimate": "1-3 days",
-    "delivery_estimate": "1-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "2-3 days",
+    "delivery_estimate": "2-3 days",
+    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "6.0 cm",
+      "height": "4.5 cm",
+      "depth": "2.1 cm",
+      "weight": "50.8g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
     "productUrl": "https://www.myntra.com/apple-airpods-pro-2",
     "product_url": "https://www.myntra.com/apple-airpods-pro-2",
     "seller": "Apple Authorised Store",
@@ -391,329 +922,17 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
       "type": "In-ear TWS",
-      "battery_life": "6h (30h with case)",
-      "chip": "Apple H2",
-      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
+      "battery_life": "6h (30h with MagSafe Case)",
+      "chip": "Apple H2 Headphone Chip",
+      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio + Transparency",
       "water_resistance": "IP54 dust, sweat, and water resistant"
     },
     "reviews": [
       {
         "author": "Rohan D",
         "rating": 5,
-        "text": "Authentic product with full Apple warranty.",
+        "text": "Authentic item with AppleCare activation.",
         "date": "2024-12-01"
-      }
-    ]
-  },
-  {
-    "id": "boat-rockerz-550-amazon",
-    "product_id": "boat-rockerz-550-amazon",
-    "groupId": "boat-rockerz-550",
-    "group_id": "boat-rockerz-550",
-    "title": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones (AMAZON)",
-    "name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "brand": "boAt",
-    "category": "electronics",
-    "platform": "amazon",
-    "price": 1299,
-    "originalPrice": 4999,
-    "original_price": 4999,
-    "discountPercent": 74,
-    "discount_percent": 74,
-    "rating": 4.1,
-    "reviewCount": 67320,
-    "review_count": 67320,
-    "deliveryEstimate": "1 day",
-    "delivery_estimate": "1 day",
-    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0863TXGM3",
-    "product_url": "https://www.amazon.in/dp/B0863TXGM3",
-    "seller": "Imagine Marketing (Amazon Fulfilled)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 91,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 74% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 74% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "20 hours",
-      "driver_size": "50mm dynamic drivers",
-      "connectivity": "Bluetooth 5.0 + AUX"
-    },
-    "reviews": [
-      {
-        "author": "Deepak S",
-        "rating": 4,
-        "text": "Great bass for EDM. Excellent value for ₹1299.",
-        "date": "2024-11-05"
-      }
-    ]
-  },
-  {
-    "id": "boat-rockerz-550-flipkart",
-    "product_id": "boat-rockerz-550-flipkart",
-    "groupId": "boat-rockerz-550",
-    "group_id": "boat-rockerz-550",
-    "title": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones (FLIPKART)",
-    "name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "brand": "boAt",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 1199,
-    "originalPrice": 4999,
-    "original_price": 4999,
-    "discountPercent": 76,
-    "discount_percent": 76,
-    "rating": 4,
-    "reviewCount": 51200,
-    "review_count": 51200,
-    "deliveryEstimate": "2 days",
-    "delivery_estimate": "2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/boat-rockerz-550",
-    "product_url": "https://www.flipkart.com/boat-rockerz-550",
-    "seller": "RetailNet (Flipkart Assured)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 81,
-    "best_overall_score": 90,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 76% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 76% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "20 hours",
-      "driver_size": "50mm dynamic drivers",
-      "connectivity": "Bluetooth 5.0 + AUX"
-    },
-    "reviews": [
-      {
-        "author": "Akash R",
-        "rating": 4,
-        "text": "Battery backup is solid around 18-20 hours.",
-        "date": "2024-10-14"
-      }
-    ]
-  },
-  {
-    "id": "boat-rockerz-550-myntra",
-    "product_id": "boat-rockerz-550-myntra",
-    "groupId": "boat-rockerz-550",
-    "group_id": "boat-rockerz-550",
-    "title": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones (MYNTRA)",
-    "name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "brand": "boAt",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 1399,
-    "originalPrice": 4999,
-    "original_price": 4999,
-    "discountPercent": 72,
-    "discount_percent": 72,
-    "rating": 4.1,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/boat-rockerz-550",
-    "product_url": "https://www.myntra.com/boat-rockerz-550",
-    "seller": "boAt Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 90,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 72% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 72% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "20 hours",
-      "driver_size": "50mm dynamic drivers",
-      "connectivity": "Bluetooth 5.0 + AUX"
-    },
-    "reviews": [
-      {
-        "author": "Sunil N",
-        "rating": 4,
-        "text": "Good cushioning around the ears.",
-        "date": "2024-09-30"
-      }
-    ]
-  },
-  {
-    "id": "jbl-tune-770nc-amazon",
-    "product_id": "jbl-tune-770nc-amazon",
-    "groupId": "jbl-tune-770nc",
-    "group_id": "jbl-tune-770nc",
-    "title": "JBL Tune 770NC Wireless Over-Ear ANC Headphones (AMAZON)",
-    "name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "brand": "JBL",
-    "category": "electronics",
-    "platform": "amazon",
-    "price": 6999,
-    "originalPrice": 9999,
-    "original_price": 9999,
-    "discountPercent": 30,
-    "discount_percent": 30,
-    "rating": 4.3,
-    "reviewCount": 5410,
-    "review_count": 5410,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CB8GLTYG",
-    "product_url": "https://www.amazon.in/dp/B0CB8GLTYG",
-    "seller": "Appario Retail",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 77,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 30% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 30% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "70 hours (44h with ANC)",
-      "connectivity": "Bluetooth 5.3",
-      "noise_cancellation": "Adaptive ANC with Smart Ambient"
-    },
-    "reviews": [
-      {
-        "author": "Manish P",
-        "rating": 5,
-        "text": "Insane 70h battery life. Balanced JBL signature sound.",
-        "date": "2024-11-25"
-      }
-    ]
-  },
-  {
-    "id": "jbl-tune-770nc-flipkart",
-    "product_id": "jbl-tune-770nc-flipkart",
-    "groupId": "jbl-tune-770nc",
-    "group_id": "jbl-tune-770nc",
-    "title": "JBL Tune 770NC Wireless Over-Ear ANC Headphones (FLIPKART)",
-    "name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "brand": "JBL",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 7299,
-    "originalPrice": 9999,
-    "original_price": 9999,
-    "discountPercent": 27,
-    "discount_percent": 27,
-    "rating": 4.2,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/jbl-tune-770nc",
-    "product_url": "https://www.flipkart.com/jbl-tune-770nc",
-    "seller": "HARMAN Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 27% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 27% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "70 hours (44h with ANC)",
-      "connectivity": "Bluetooth 5.3",
-      "noise_cancellation": "Adaptive ANC with Smart Ambient"
-    },
-    "reviews": [
-      {
-        "author": "Ravi G",
-        "rating": 4,
-        "text": "Solid ANC for this price range.",
-        "date": "2024-10-19"
-      }
-    ]
-  },
-  {
-    "id": "jbl-tune-770nc-myntra",
-    "product_id": "jbl-tune-770nc-myntra",
-    "groupId": "jbl-tune-770nc",
-    "group_id": "jbl-tune-770nc",
-    "title": "JBL Tune 770NC Wireless Over-Ear ANC Headphones (MYNTRA)",
-    "name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "brand": "JBL",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 7499,
-    "originalPrice": 9999,
-    "original_price": 9999,
-    "discountPercent": 25,
-    "discount_percent": 25,
-    "rating": 4.3,
-    "reviewCount": 850,
-    "review_count": 850,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/jbl-tune-770nc",
-    "product_url": "https://www.myntra.com/jbl-tune-770nc",
-    "seller": "Myntra Electronics",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "70 hours (44h with ANC)",
-      "connectivity": "Bluetooth 5.3",
-      "noise_cancellation": "Adaptive ANC with Smart Ambient"
-    },
-    "reviews": [
-      {
-        "author": "Snehal D",
-        "rating": 5,
-        "text": "Very lightweight and punchy bass.",
-        "date": "2024-11-08"
       }
     ]
   },
@@ -738,8 +957,96 @@ export const mockProducts = [
     "review_count": 9480,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "30.4 cm",
+      "height": "21.5 cm",
+      "depth": "1.13 cm",
+      "weight": "1.24 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0B3C5Q8N1",
     "product_url": "https://www.amazon.in/dp/B0B3C5Q8N1",
     "seller": "Amazon Prime Seller",
@@ -756,15 +1063,17 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
       "processor": "Apple M2 8-core CPU / 8-core GPU",
-      "display": "13.6-inch Liquid Retina Display (500 nits)",
+      "display": "13.6-inch Liquid Retina Display with True Tone (500 nits)",
       "battery_life": "Up to 18 hours",
-      "weight": "1.24 kg"
+      "memory": "8GB Unified Memory",
+      "storage": "256GB Superfast SSD",
+      "weight": "1.24 kg lightweight fanless design"
     },
     "reviews": [
       {
         "author": "Kunal J",
         "rating": 5,
-        "text": "Best laptop for developers and students. Battery is unbelievable.",
+        "text": "Fast compilation and 16 hours real world battery life. Perfect machine.",
         "date": "2024-11-10"
       }
     ]
@@ -785,21 +1094,109 @@ export const mockProducts = [
     "original_price": 99900,
     "discountPercent": 16,
     "discount_percent": 16,
-    "rating": 4.7,
+    "rating": 4.8,
     "reviewCount": 6720,
     "review_count": 6720,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "30.4 cm",
+      "height": "21.5 cm",
+      "depth": "1.13 cm",
+      "weight": "1.24 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
     "productUrl": "https://www.flipkart.com/apple-macbook-air-m2",
     "product_url": "https://www.flipkart.com/apple-macbook-air-m2",
     "seller": "SuperComNet",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 77,
+    "sentimentScore": 96,
+    "best_overall_score": 78,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated electronics pick with 16% off and verified fast shipping.",
@@ -808,15 +1205,17 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
       "processor": "Apple M2 8-core CPU / 8-core GPU",
-      "display": "13.6-inch Liquid Retina Display (500 nits)",
+      "display": "13.6-inch Liquid Retina Display with True Tone (500 nits)",
       "battery_life": "Up to 18 hours",
-      "weight": "1.24 kg"
+      "memory": "8GB Unified Memory",
+      "storage": "256GB Superfast SSD",
+      "weight": "1.24 kg lightweight fanless design"
     },
     "reviews": [
       {
         "author": "Ananya P",
         "rating": 5,
-        "text": "Super sleek midnight color. Whisper quiet with no fan noise.",
+        "text": "Midnight finish is gorgeous. Fanless design means zero noise.",
         "date": "2024-10-28"
       }
     ]
@@ -842,8 +1241,96 @@ export const mockProducts = [
     "review_count": 540,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "30.4 cm",
+      "height": "21.5 cm",
+      "depth": "1.13 cm",
+      "weight": "1.24 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
     "productUrl": "https://www.myntra.com/laptops/apple-macbook-air-m2",
     "product_url": "https://www.myntra.com/laptops/apple-macbook-air-m2",
     "seller": "Apple Official Store",
@@ -860,15 +1347,17 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
       "processor": "Apple M2 8-core CPU / 8-core GPU",
-      "display": "13.6-inch Liquid Retina Display (500 nits)",
+      "display": "13.6-inch Liquid Retina Display with True Tone (500 nits)",
       "battery_life": "Up to 18 hours",
-      "weight": "1.24 kg"
+      "memory": "8GB Unified Memory",
+      "storage": "256GB Superfast SSD",
+      "weight": "1.24 kg lightweight fanless design"
     },
     "reviews": [
       {
         "author": "Devendra R",
         "rating": 5,
-        "text": "Received brand new sealed box with AppleCare eligibility.",
+        "text": "Original packaging and verified battery health.",
         "date": "2024-11-15"
       }
     ]
@@ -889,21 +1378,109 @@ export const mockProducts = [
     "original_price": 134999,
     "discountPercent": 11,
     "discount_percent": 11,
-    "rating": 4.6,
+    "rating": 4.7,
     "reviewCount": 4890,
     "review_count": 4890,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "7.9 cm",
+      "height": "16.2 cm",
+      "depth": "0.86 cm",
+      "weight": "232g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0CS5XNFXZ",
     "product_url": "https://www.amazon.in/dp/B0CS5XNFXZ",
-    "seller": "STPL Exclusive",
+    "seller": "STPL Exclusive (Amazon Prime)",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 73,
+    "sentimentScore": 94,
+    "best_overall_score": 75,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated electronics pick with 11% off and verified fast shipping.",
@@ -911,16 +1488,17 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
     "specs": {
-      "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
+      "display": "6.8-inch Dynamic AMOLED 2X 120Hz Anti-Reflective (2600 nits)",
       "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "camera": "200MP Quad Camera with Galaxy AI",
-      "battery": "5000mAh with 45W Fast Charging"
+      "camera": "200MP Quad Camera with 5x Optical Periscope & Galaxy AI",
+      "battery": "5000mAh with 45W Super Fast Charging",
+      "s_pen": "Built-in S-Pen with Air Actions"
     },
     "reviews": [
       {
         "author": "Sameer N",
         "rating": 5,
-        "text": "Galaxy AI features and zoom photography are jaw dropping.",
+        "text": "Galaxy AI zoom photography and Circle to Search work flawlessly.",
         "date": "2024-11-18"
       }
     ]
@@ -941,21 +1519,109 @@ export const mockProducts = [
     "original_price": 134999,
     "discountPercent": 12,
     "discount_percent": 12,
-    "rating": 4.5,
+    "rating": 4.6,
     "reviewCount": 3120,
     "review_count": 3120,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "7.9 cm",
+      "height": "16.2 cm",
+      "depth": "0.86 cm",
+      "weight": "232g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
     "productUrl": "https://www.flipkart.com/samsung-galaxy-s24-ultra",
     "product_url": "https://www.flipkart.com/samsung-galaxy-s24-ultra",
     "seller": "FSAssured Mobile Store",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 72,
+    "sentimentScore": 92,
+    "best_overall_score": 74,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated electronics pick with 12% off and verified fast shipping.",
@@ -963,16 +1629,17 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
     "specs": {
-      "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
+      "display": "6.8-inch Dynamic AMOLED 2X 120Hz Anti-Reflective (2600 nits)",
       "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "camera": "200MP Quad Camera with Galaxy AI",
-      "battery": "5000mAh with 45W Fast Charging"
+      "camera": "200MP Quad Camera with 5x Optical Periscope & Galaxy AI",
+      "battery": "5000mAh with 45W Super Fast Charging",
+      "s_pen": "Built-in S-Pen with Air Actions"
     },
     "reviews": [
       {
         "author": "Deepak G",
         "rating": 5,
-        "text": "Anti-reflective screen is the best display ever made on a smartphone.",
+        "text": "Flat display with anti-reflective glass makes outdoor viewing crystal clear.",
         "date": "2024-10-30"
       }
     ]
@@ -996,10 +1663,98 @@ export const mockProducts = [
     "rating": 4.6,
     "reviewCount": 320,
     "review_count": 320,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "3-4 days",
+    "delivery_estimate": "3-4 days",
+    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "7.9 cm",
+      "height": "16.2 cm",
+      "depth": "0.86 cm",
+      "weight": "232g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
     "productUrl": "https://www.myntra.com/smartphones/samsung-s24-ultra",
     "product_url": "https://www.myntra.com/smartphones/samsung-s24-ultra",
     "seller": "Samsung Luxe Authorised",
@@ -1015,173 +1770,18 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
     "specs": {
-      "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
+      "display": "6.8-inch Dynamic AMOLED 2X 120Hz Anti-Reflective (2600 nits)",
       "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "camera": "200MP Quad Camera with Galaxy AI",
-      "battery": "5000mAh with 45W Fast Charging"
+      "camera": "200MP Quad Camera with 5x Optical Periscope & Galaxy AI",
+      "battery": "5000mAh with 45W Super Fast Charging",
+      "s_pen": "Built-in S-Pen with Air Actions"
     },
     "reviews": [
       {
         "author": "Pradeep T",
-        "rating": 4,
-        "text": "Premium build, flat screen is much easier to write on with S-Pen.",
+        "rating": 5,
+        "text": "Titanium build feels luxurious in the hand.",
         "date": "2024-11-04"
-      }
-    ]
-  },
-  {
-    "id": "oneplus-12-5g-amazon",
-    "product_id": "oneplus-12-5g-amazon",
-    "groupId": "oneplus-12-5g",
-    "group_id": "oneplus-12-5g",
-    "title": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage) (AMAZON)",
-    "name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "brand": "OnePlus",
-    "category": "electronics",
-    "platform": "amazon",
-    "price": 64999,
-    "originalPrice": 69999,
-    "original_price": 69999,
-    "discountPercent": 7,
-    "discount_percent": 7,
-    "rating": 4.6,
-    "reviewCount": 8120,
-    "review_count": 8120,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CQPPY23T",
-    "product_url": "https://www.amazon.in/dp/B0CQPPY23T",
-    "seller": "OnePlus Official India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 72,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 7% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 7% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "specs": {
-      "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
-      "processor": "Snapdragon 8 Gen 3 Mobile Platform",
-      "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
-      "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
-    },
-    "reviews": [
-      {
-        "author": "Rohit V",
-        "rating": 5,
-        "text": "100W fast charger charges 0 to 100% in 26 minutes. Phenomenal battery life.",
-        "date": "2024-11-19"
-      }
-    ]
-  },
-  {
-    "id": "oneplus-12-5g-flipkart",
-    "product_id": "oneplus-12-5g-flipkart",
-    "groupId": "oneplus-12-5g",
-    "group_id": "oneplus-12-5g",
-    "title": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage) (FLIPKART)",
-    "name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "brand": "OnePlus",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 64499,
-    "originalPrice": 69999,
-    "original_price": 69999,
-    "discountPercent": 8,
-    "discount_percent": 8,
-    "rating": 4.5,
-    "reviewCount": 4200,
-    "review_count": 4200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/oneplus-12",
-    "product_url": "https://www.flipkart.com/oneplus-12",
-    "seller": "FSAssured Mobiles",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 71,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 8% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 8% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "specs": {
-      "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
-      "processor": "Snapdragon 8 Gen 3 Mobile Platform",
-      "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
-      "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
-    },
-    "reviews": [
-      {
-        "author": "Mayank S",
-        "rating": 5,
-        "text": "Smooth OxygenOS and the Hasselblad periscope portrait shots look like DSLR.",
-        "date": "2024-10-22"
-      }
-    ]
-  },
-  {
-    "id": "oneplus-12-5g-myntra",
-    "product_id": "oneplus-12-5g-myntra",
-    "groupId": "oneplus-12-5g",
-    "group_id": "oneplus-12-5g",
-    "title": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage) (MYNTRA)",
-    "name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "brand": "OnePlus",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 66999,
-    "originalPrice": 69999,
-    "original_price": 69999,
-    "discountPercent": 4,
-    "discount_percent": 4,
-    "rating": 4.6,
-    "reviewCount": 410,
-    "review_count": 410,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/smartphones/oneplus-12",
-    "product_url": "https://www.myntra.com/smartphones/oneplus-12",
-    "seller": "OnePlus Brand Hub",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 71,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 4% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 4% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "specs": {
-      "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
-      "processor": "Snapdragon 8 Gen 3 Mobile Platform",
-      "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
-      "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
-    },
-    "reviews": [
-      {
-        "author": "Kiran D",
-        "rating": 4,
-        "text": "Top notch flagship performance.",
-        "date": "2024-11-03"
       }
     ]
   },
@@ -1206,8 +1806,96 @@ export const mockProducts = [
     "review_count": 2410,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "31.1 cm",
+      "height": "22.0 cm",
+      "depth": "1.59 cm",
+      "weight": "1.50 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0CSG6K8L1",
     "product_url": "https://www.amazon.in/dp/B0CSG6K8L1",
     "seller": "Appario Retail",
@@ -1232,7 +1920,7 @@ export const mockProducts = [
       {
         "author": "Varun K",
         "rating": 5,
-        "text": "The 3K OLED display is unmatched. Cyberpunk 2077 runs over 75fps with DLSS 3.5.",
+        "text": "OLED panel is breathtaking. Runs Cyberpunk over 75fps with DLSS.",
         "date": "2024-11-15"
       }
     ]
@@ -1258,8 +1946,96 @@ export const mockProducts = [
     "review_count": 1890,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "31.1 cm",
+      "height": "22.0 cm",
+      "depth": "1.59 cm",
+      "weight": "1.50 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
     "productUrl": "https://www.flipkart.com/asus-rog-zephyrus-g14",
     "product_url": "https://www.flipkart.com/asus-rog-zephyrus-g14",
     "seller": "SuperComNet Gaming",
@@ -1284,7 +2060,7 @@ export const mockProducts = [
       {
         "author": "Aditya N",
         "rating": 5,
-        "text": "CNC aluminum body feels as premium as a MacBook Pro.",
+        "text": "CNC aluminum body is rock solid and very portable.",
         "date": "2024-10-25"
       }
     ]
@@ -1310,8 +2086,96 @@ export const mockProducts = [
     "review_count": 180,
     "deliveryEstimate": "3-5 days",
     "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "31.1 cm",
+      "height": "22.0 cm",
+      "depth": "1.59 cm",
+      "weight": "1.50 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
     "productUrl": "https://www.myntra.com/laptops/asus-rog-g14",
     "product_url": "https://www.myntra.com/laptops/asus-rog-g14",
     "seller": "ROG Exclusive Store",
@@ -1336,7 +2200,7 @@ export const mockProducts = [
       {
         "author": "Kunal M",
         "rating": 5,
-        "text": "Slash lighting strip on lid looks stunning.",
+        "text": "Slash lighting strip looks amazing.",
         "date": "2024-11-20"
       }
     ]
@@ -1360,10 +2224,98 @@ export const mockProducts = [
     "rating": 4.9,
     "reviewCount": 8700,
     "review_count": 8700,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "1-2 days",
+    "delivery_estimate": "1-2 days",
+    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592840496073-6701b22e11d0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.8 cm",
+      "height": "9.6 cm",
+      "depth": "21.6 cm",
+      "weight": "3.2 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0CY5Q2N1W",
     "product_url": "https://www.amazon.in/dp/B0CY5Q2N1W",
     "seller": "Electronics Bazaar",
@@ -1388,7 +2340,7 @@ export const mockProducts = [
       {
         "author": "Nikhil K",
         "rating": 5,
-        "text": "Spider-Man 2 and God of War Ragnarok look breathtaking in 4K 60fps.",
+        "text": "Spider-Man 2 and God of War look incredible at 4K 60fps.",
         "date": "2024-11-14"
       }
     ]
@@ -1414,8 +2366,96 @@ export const mockProducts = [
     "review_count": 5400,
     "deliveryEstimate": "2-4 days",
     "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592840496073-6701b22e11d0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.8 cm",
+      "height": "9.6 cm",
+      "depth": "21.6 cm",
+      "weight": "3.2 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
     "productUrl": "https://www.flipkart.com/sony-playstation-5-slim",
     "product_url": "https://www.flipkart.com/sony-playstation-5-slim",
     "seller": "RetailNet Gaming",
@@ -1440,7 +2480,7 @@ export const mockProducts = [
       {
         "author": "Siddharth B",
         "rating": 5,
-        "text": "Much lighter and compact than original launch PS5.",
+        "text": "Much smaller and lighter than original launch PS5.",
         "date": "2024-10-25"
       }
     ]
@@ -1466,8 +2506,96 @@ export const mockProducts = [
     "review_count": 450,
     "deliveryEstimate": "3-5 days",
     "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592840496073-6701b22e11d0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.8 cm",
+      "height": "9.6 cm",
+      "depth": "21.6 cm",
+      "weight": "3.2 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
     "productUrl": "https://www.myntra.com/gaming/sony-playstation-5-slim",
     "product_url": "https://www.myntra.com/gaming/sony-playstation-5-slim",
     "seller": "Myntra Gaming Studio",
@@ -1492,7 +2620,7 @@ export const mockProducts = [
       {
         "author": "Gaurav S",
         "rating": 5,
-        "text": "Fast shipping with secure tamper-proof packaging.",
+        "text": "Fast delivery with secure seal intact.",
         "date": "2024-11-20"
       }
     ]
@@ -1518,8 +2646,96 @@ export const mockProducts = [
     "review_count": 6120,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "3.8 cm",
+      "height": "4.5 cm",
+      "depth": "1.07 cm",
+      "weight": "38.7g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0CHWZ8H7H",
     "product_url": "https://www.amazon.in/dp/B0CHWZ8H7H",
     "seller": "Appario Retail",
@@ -1535,16 +2751,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
-      "display": "Always-On Retina OLED (2000 nits)",
+      "display": "Always-On Retina OLED (2000 nits peak brightness)",
       "chip": "S9 SiP with Double Tap gesture",
-      "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
+      "health_sensors": "ECG, Blood Oxygen, Temperature sensor, Crash Detection",
       "battery": "18 hours all-day battery life (36h in Low Power Mode)"
     },
     "reviews": [
       {
         "author": "Vishal M",
         "rating": 5,
-        "text": "Double tap gesture to take calls is super convenient while cooking or driving.",
+        "text": "Double tap gesture is super useful while cooking or driving.",
         "date": "2024-11-09"
       }
     ]
@@ -1570,8 +2786,96 @@ export const mockProducts = [
     "review_count": 4200,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "3.8 cm",
+      "height": "4.5 cm",
+      "depth": "1.07 cm",
+      "weight": "38.7g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
     "productUrl": "https://www.flipkart.com/apple-watch-series-9",
     "product_url": "https://www.flipkart.com/apple-watch-series-9",
     "seller": "FSAssured Wearables",
@@ -1587,16 +2891,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
-      "display": "Always-On Retina OLED (2000 nits)",
+      "display": "Always-On Retina OLED (2000 nits peak brightness)",
       "chip": "S9 SiP with Double Tap gesture",
-      "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
+      "health_sensors": "ECG, Blood Oxygen, Temperature sensor, Crash Detection",
       "battery": "18 hours all-day battery life (36h in Low Power Mode)"
     },
     "reviews": [
       {
         "author": "Kavita S",
         "rating": 5,
-        "text": "Accurate fitness metrics and ECG capability give great peace of mind.",
+        "text": "Fitness tracking is unmatched.",
         "date": "2024-10-15"
       }
     ]
@@ -1622,8 +2926,96 @@ export const mockProducts = [
     "review_count": 980,
     "deliveryEstimate": "2-4 days",
     "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "3.8 cm",
+      "height": "4.5 cm",
+      "depth": "1.07 cm",
+      "weight": "38.7g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
     "productUrl": "https://www.myntra.com/smartwatches/apple-watch-s9",
     "product_url": "https://www.myntra.com/smartwatches/apple-watch-s9",
     "seller": "Apple Official Store",
@@ -1639,173 +3031,17 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
     "specs": {
-      "display": "Always-On Retina OLED (2000 nits)",
+      "display": "Always-On Retina OLED (2000 nits peak brightness)",
       "chip": "S9 SiP with Double Tap gesture",
-      "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
+      "health_sensors": "ECG, Blood Oxygen, Temperature sensor, Crash Detection",
       "battery": "18 hours all-day battery life (36h in Low Power Mode)"
     },
     "reviews": [
       {
         "author": "Varun P",
         "rating": 4,
-        "text": "Battery lasts a day and a half easily on moderate use.",
+        "text": "Fast charging gets it to 80% in 45 mins.",
         "date": "2024-11-02"
-      }
-    ]
-  },
-  {
-    "id": "marshall-kilburn-2-amazon",
-    "product_id": "marshall-kilburn-2-amazon",
-    "groupId": "marshall-kilburn-2",
-    "group_id": "marshall-kilburn-2",
-    "title": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass) (AMAZON)",
-    "name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "brand": "Marshall",
-    "category": "electronics",
-    "platform": "amazon",
-    "price": 24999,
-    "originalPrice": 31999,
-    "original_price": 31999,
-    "discountPercent": 22,
-    "discount_percent": 22,
-    "rating": 4.6,
-    "reviewCount": 3840,
-    "review_count": 3840,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B07H8VTFLT",
-    "product_url": "https://www.amazon.in/dp/B07H8VTFLT",
-    "seller": "Marshall Audio Direct",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 22% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 22% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "specs": {
-      "battery_life": "20+ hours portable playtime",
-      "connectivity": "Bluetooth 5.0 aptX",
-      "water_resistance": "IPX2 water resistant design",
-      "sound": "Multi-directional Blumlein Stereo sound"
-    },
-    "reviews": [
-      {
-        "author": "Rishi T",
-        "rating": 5,
-        "text": "Vintage rock guitar amp design with thunderous bass and crystal highs.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "marshall-kilburn-2-flipkart",
-    "product_id": "marshall-kilburn-2-flipkart",
-    "groupId": "marshall-kilburn-2",
-    "group_id": "marshall-kilburn-2",
-    "title": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass) (FLIPKART)",
-    "name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "brand": "Marshall",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 23999,
-    "originalPrice": 31999,
-    "original_price": 31999,
-    "discountPercent": 25,
-    "discount_percent": 25,
-    "rating": 4.5,
-    "reviewCount": 2100,
-    "review_count": 2100,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/marshall-kilburn-2",
-    "product_url": "https://www.flipkart.com/marshall-kilburn-2",
-    "seller": "SoundKart SuperStore",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "specs": {
-      "battery_life": "20+ hours portable playtime",
-      "connectivity": "Bluetooth 5.0 aptX",
-      "water_resistance": "IPX2 water resistant design",
-      "sound": "Multi-directional Blumlein Stereo sound"
-    },
-    "reviews": [
-      {
-        "author": "Abhishek C",
-        "rating": 5,
-        "text": "Analogue knobs for bass and treble are tactile and satisfying.",
-        "date": "2024-10-18"
-      }
-    ]
-  },
-  {
-    "id": "marshall-kilburn-2-myntra",
-    "product_id": "marshall-kilburn-2-myntra",
-    "groupId": "marshall-kilburn-2",
-    "group_id": "marshall-kilburn-2",
-    "title": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass) (MYNTRA)",
-    "name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "brand": "Marshall",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 26999,
-    "originalPrice": 31999,
-    "original_price": 31999,
-    "discountPercent": 16,
-    "discount_percent": 16,
-    "rating": 4.6,
-    "reviewCount": 420,
-    "review_count": 420,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/speakers/marshall-kilburn-2",
-    "product_url": "https://www.myntra.com/speakers/marshall-kilburn-2",
-    "seller": "Myntra Audio Luxe",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 16% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 16% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "specs": {
-      "battery_life": "20+ hours portable playtime",
-      "connectivity": "Bluetooth 5.0 aptX",
-      "water_resistance": "IPX2 water resistant design",
-      "sound": "Multi-directional Blumlein Stereo sound"
-    },
-    "reviews": [
-      {
-        "author": "Shruti D",
-        "rating": 5,
-        "text": "Stunning aesthetic on my living room bookshelf.",
-        "date": "2024-11-12"
       }
     ]
   },
@@ -1828,10 +3064,98 @@ export const mockProducts = [
     "rating": 4.8,
     "reviewCount": 18450,
     "review_count": 18450,
-    "deliveryEstimate": "1 day",
-    "delivery_estimate": "1 day",
-    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+    "deliveryEstimate": "1 day (Prime)",
+    "delivery_estimate": "1 day (Prime)",
+    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.5 cm",
+      "height": "17.4 cm",
+      "depth": "0.81 cm",
+      "weight": "205g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B08N41Y4Q2",
     "product_url": "https://www.amazon.in/dp/B08N41Y4Q2",
     "seller": "Amazon Device Store",
@@ -1848,15 +3172,15 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
     "specs": {
       "display": "6.8-inch 300 ppi glare-free Paperwhite display",
-      "battery_life": "Up to 10 weeks",
-      "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
-      "storage": "16 GB (holds thousands of books)"
+      "battery_life": "Up to 10 weeks battery life",
+      "water_resistance": "IPX8 waterproof rating",
+      "storage": "16 GB storage (holds 10,000+ books)"
     },
     "reviews": [
       {
         "author": "Nandita S",
         "rating": 5,
-        "text": "The warm light feature allows reading for hours at night without eye strain.",
+        "text": "Adjustable warm light makes bedtime reading effortless.",
         "date": "2024-11-22"
       }
     ]
@@ -1882,8 +3206,96 @@ export const mockProducts = [
     "review_count": 3200,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.5 cm",
+      "height": "17.4 cm",
+      "depth": "0.81 cm",
+      "weight": "205g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
     "productUrl": "https://www.flipkart.com/amazon-kindle-paperwhite",
     "product_url": "https://www.flipkart.com/amazon-kindle-paperwhite",
     "seller": "E-Reader Express",
@@ -1900,15 +3312,15 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
     "specs": {
       "display": "6.8-inch 300 ppi glare-free Paperwhite display",
-      "battery_life": "Up to 10 weeks",
-      "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
-      "storage": "16 GB (holds thousands of books)"
+      "battery_life": "Up to 10 weeks battery life",
+      "water_resistance": "IPX8 waterproof rating",
+      "storage": "16 GB storage (holds 10,000+ books)"
     },
     "reviews": [
       {
         "author": "Aman G",
         "rating": 5,
-        "text": "Battery life is legendary. Haven't charged it in 3 weeks.",
+        "text": "Battery lasts for weeks on a single charge.",
         "date": "2024-10-09"
       }
     ]
@@ -1934,8 +3346,96 @@ export const mockProducts = [
     "review_count": 380,
     "deliveryEstimate": "3-5 days",
     "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.5 cm",
+      "height": "17.4 cm",
+      "depth": "0.81 cm",
+      "weight": "205g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
     "productUrl": "https://www.myntra.com/gadgets/amazon-kindle-paperwhite",
     "product_url": "https://www.myntra.com/gadgets/amazon-kindle-paperwhite",
     "seller": "Gadget Hub Myntra",
@@ -1952,15 +3452,15 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
     "specs": {
       "display": "6.8-inch 300 ppi glare-free Paperwhite display",
-      "battery_life": "Up to 10 weeks",
-      "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
-      "storage": "16 GB (holds thousands of books)"
+      "battery_life": "Up to 10 weeks battery life",
+      "water_resistance": "IPX8 waterproof rating",
+      "storage": "16 GB storage (holds 10,000+ books)"
     },
     "reviews": [
       {
         "author": "Prachi M",
         "rating": 4,
-        "text": "Type C port makes charging super convenient.",
+        "text": "Type C port charging is great.",
         "date": "2024-11-01"
       }
     ]
@@ -1986,8 +3486,96 @@ export const mockProducts = [
     "review_count": 9450,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.2 cm",
+      "height": "13.5 cm",
+      "depth": "29.8 cm",
+      "weight": "340g (Size 9)"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B07C9L8ZXY",
     "product_url": "https://www.amazon.in/dp/B07C9L8ZXY",
     "seller": "Nike Authorized India",
@@ -2004,15 +3592,16 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Nike build quality and performance.",
     "specs": {
       "type": "Running & Lifestyle",
-      "cushioning": "Max Air 270 unit delivers all-day comfort",
-      "upper_material": "Engineered breathable mesh",
-      "closure": "Asymmetrical lacing for secure fit"
+      "cushioning": "Max Air 270 heel unit delivers bouncy energy return",
+      "upper_material": "Engineered breathable mesh with synthetic overlays",
+      "closure": "Asymmetrical lacing system",
+      "outsole": "Solid rubber in the forefoot, clear rubber on the heel"
     },
     "reviews": [
       {
         "author": "Rohit K",
         "rating": 5,
-        "text": "Superb cushioning. Best looking lifestyle sneaker ever.",
+        "text": "Best cushioning in a lifestyle shoe. Extremely stylish.",
         "date": "2024-11-16"
       }
     ]
@@ -2038,8 +3627,96 @@ export const mockProducts = [
     "review_count": 6720,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.2 cm",
+      "height": "13.5 cm",
+      "depth": "29.8 cm",
+      "weight": "340g (Size 9)"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
     "productUrl": "https://www.flipkart.com/nike-air-max-270",
     "product_url": "https://www.flipkart.com/nike-air-max-270",
     "seller": "RetailNet Footwear",
@@ -2056,15 +3733,16 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Nike build quality and performance.",
     "specs": {
       "type": "Running & Lifestyle",
-      "cushioning": "Max Air 270 unit delivers all-day comfort",
-      "upper_material": "Engineered breathable mesh",
-      "closure": "Asymmetrical lacing for secure fit"
+      "cushioning": "Max Air 270 heel unit delivers bouncy energy return",
+      "upper_material": "Engineered breathable mesh with synthetic overlays",
+      "closure": "Asymmetrical lacing system",
+      "outsole": "Solid rubber in the forefoot, clear rubber on the heel"
     },
     "reviews": [
       {
         "author": "Ajay S",
         "rating": 4,
-        "text": "Slightly snug fit, recommend sizing half up.",
+        "text": "Recommend sizing half up for wider feet.",
         "date": "2024-10-24"
       }
     ]
@@ -2090,8 +3768,96 @@ export const mockProducts = [
     "review_count": 4890,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.2 cm",
+      "height": "13.5 cm",
+      "depth": "29.8 cm",
+      "weight": "340g (Size 9)"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
     "productUrl": "https://www.myntra.com/casual-shoes/nike-air-max-270",
     "product_url": "https://www.myntra.com/casual-shoes/nike-air-max-270",
     "seller": "Nike Flagship Store (Myntra)",
@@ -2108,15 +3874,16 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Nike build quality and performance.",
     "specs": {
       "type": "Running & Lifestyle",
-      "cushioning": "Max Air 270 unit delivers all-day comfort",
-      "upper_material": "Engineered breathable mesh",
-      "closure": "Asymmetrical lacing for secure fit"
+      "cushioning": "Max Air 270 heel unit delivers bouncy energy return",
+      "upper_material": "Engineered breathable mesh with synthetic overlays",
+      "closure": "Asymmetrical lacing system",
+      "outsole": "Solid rubber in the forefoot, clear rubber on the heel"
     },
     "reviews": [
       {
         "author": "Vikas M",
         "rating": 5,
-        "text": "Best deal on Myntra with bank offer discount.",
+        "text": "Lowest price on Myntra with instant bank discounts.",
         "date": "2024-11-28"
       }
     ]
@@ -2142,8 +3909,96 @@ export const mockProducts = [
     "review_count": 4210,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "10.8 cm",
+      "height": "12.8 cm",
+      "depth": "29.2 cm",
+      "weight": "299g (Size 9)"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B0BSLH9KV9",
     "product_url": "https://www.amazon.in/dp/B0BSLH9KV9",
     "seller": "Adidas India Direct",
@@ -2159,16 +4014,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
     "specs": {
-      "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
-      "upper": "PRIMEKNIT+ textile upper with sock-like fit",
-      "outsole": "Continental Better Rubber outsole",
+      "midsole": "Light BOOST cushioning (30% lighter than classic BOOST)",
+      "upper": "PRIMEKNIT+ sock-like breathable textile",
+      "outsole": "Continental Better Rubber grip outsole",
       "drop": "10mm (heel: 30mm / forefoot: 20mm)"
     },
     "reviews": [
       {
         "author": "Karthik R",
         "rating": 5,
-        "text": "Light BOOST foam gives explosive energy return for 10k marathon runs.",
+        "text": "Light BOOST foam gives explosive energy return for 10k runs.",
         "date": "2024-11-19"
       }
     ]
@@ -2194,8 +4049,96 @@ export const mockProducts = [
     "review_count": 2890,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "10.8 cm",
+      "height": "12.8 cm",
+      "depth": "29.2 cm",
+      "weight": "299g (Size 9)"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
     "productUrl": "https://www.flipkart.com/adidas-ultraboost-light",
     "product_url": "https://www.flipkart.com/adidas-ultraboost-light",
     "seller": "FSAssured Sports",
@@ -2211,9 +4154,9 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
     "specs": {
-      "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
-      "upper": "PRIMEKNIT+ textile upper with sock-like fit",
-      "outsole": "Continental Better Rubber outsole",
+      "midsole": "Light BOOST cushioning (30% lighter than classic BOOST)",
+      "upper": "PRIMEKNIT+ sock-like breathable textile",
+      "outsole": "Continental Better Rubber grip outsole",
       "drop": "10mm (heel: 30mm / forefoot: 20mm)"
     },
     "reviews": [
@@ -2246,8 +4189,96 @@ export const mockProducts = [
     "review_count": 3120,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "10.8 cm",
+      "height": "12.8 cm",
+      "depth": "29.2 cm",
+      "weight": "299g (Size 9)"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
     "productUrl": "https://www.myntra.com/sports-shoes/adidas-ultraboost-light",
     "product_url": "https://www.myntra.com/sports-shoes/adidas-ultraboost-light",
     "seller": "Adidas Official Partner",
@@ -2263,479 +4294,17 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
     "specs": {
-      "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
-      "upper": "PRIMEKNIT+ textile upper with sock-like fit",
-      "outsole": "Continental Better Rubber outsole",
+      "midsole": "Light BOOST cushioning (30% lighter than classic BOOST)",
+      "upper": "PRIMEKNIT+ sock-like breathable textile",
+      "outsole": "Continental Better Rubber grip outsole",
       "drop": "10mm (heel: 30mm / forefoot: 20mm)"
     },
     "reviews": [
       {
         "author": "Dheeraj S",
         "rating": 5,
-        "text": "Unmatched step-in comfort. Feels like walking on clouds.",
+        "text": "Feels like walking on clouds with high arch support.",
         "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "asics-gel-kayano-30-amazon",
-    "product_id": "asics-gel-kayano-30-amazon",
-    "groupId": "asics-gel-kayano-30",
-    "group_id": "asics-gel-kayano-30",
-    "title": "ASICS Gel-Kayano 30 Stability Road Running Shoes (AMAZON)",
-    "name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "brand": "ASICS",
-    "category": "footwear",
-    "platform": "amazon",
-    "price": 11999,
-    "originalPrice": 15999,
-    "original_price": 15999,
-    "discountPercent": 25,
-    "discount_percent": 25,
-    "rating": 4.7,
-    "reviewCount": 3150,
-    "review_count": 3150,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0C77G9KL8",
-    "product_url": "https://www.amazon.in/dp/B0C77G9KL8",
-    "seller": "ASICS India Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 81,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 25% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 25% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "specs": {
-      "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
-      "stability": "4D GUIDANCE SYSTEM for adaptive stability",
-      "heel_drop": "10mm",
-      "surface": "Road / Track"
-    },
-    "reviews": [
-      {
-        "author": "Ramanathan G",
-        "rating": 5,
-        "text": "The 4D guidance system completely fixed my overpronation issues.",
-        "date": "2024-11-15"
-      }
-    ]
-  },
-  {
-    "id": "asics-gel-kayano-30-flipkart",
-    "product_id": "asics-gel-kayano-30-flipkart",
-    "groupId": "asics-gel-kayano-30",
-    "group_id": "asics-gel-kayano-30",
-    "title": "ASICS Gel-Kayano 30 Stability Road Running Shoes (FLIPKART)",
-    "name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "brand": "ASICS",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 12499,
-    "originalPrice": 15999,
-    "original_price": 15999,
-    "discountPercent": 22,
-    "discount_percent": 22,
-    "rating": 4.6,
-    "reviewCount": 1820,
-    "review_count": 1820,
-    "deliveryEstimate": "3-5 days",
-    "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/asics-gel-kayano-30",
-    "product_url": "https://www.flipkart.com/asics-gel-kayano-30",
-    "seller": "Marathon Gear Hub",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 22% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 22% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "specs": {
-      "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
-      "stability": "4D GUIDANCE SYSTEM for adaptive stability",
-      "heel_drop": "10mm",
-      "surface": "Road / Track"
-    },
-    "reviews": [
-      {
-        "author": "Anil K",
-        "rating": 4,
-        "text": "Plush tongue and ankle collar. Perfect for long half-marathons.",
-        "date": "2024-10-31"
-      }
-    ]
-  },
-  {
-    "id": "asics-gel-kayano-30-myntra",
-    "product_id": "asics-gel-kayano-30-myntra",
-    "groupId": "asics-gel-kayano-30",
-    "group_id": "asics-gel-kayano-30",
-    "title": "ASICS Gel-Kayano 30 Stability Road Running Shoes (MYNTRA)",
-    "name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "brand": "ASICS",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 11699,
-    "originalPrice": 15999,
-    "original_price": 15999,
-    "discountPercent": 27,
-    "discount_percent": 27,
-    "rating": 4.7,
-    "reviewCount": 940,
-    "review_count": 940,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/sports-shoes/asics-gel-kayano-30",
-    "product_url": "https://www.myntra.com/sports-shoes/asics-gel-kayano-30",
-    "seller": "ASICS Running Studio",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 27% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 27% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "specs": {
-      "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
-      "stability": "4D GUIDANCE SYSTEM for adaptive stability",
-      "heel_drop": "10mm",
-      "surface": "Road / Track"
-    },
-    "reviews": [
-      {
-        "author": "Harsh V",
-        "rating": 5,
-        "text": "Very smooth heel-to-toe transition. Highly recommended.",
-        "date": "2024-11-26"
-      }
-    ]
-  },
-  {
-    "id": "new-balance-574-core-amazon",
-    "product_id": "new-balance-574-core-amazon",
-    "groupId": "new-balance-574-core",
-    "group_id": "new-balance-574-core",
-    "title": "New Balance 574 Core Men's Classic Suede Sneakers (AMAZON)",
-    "name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "brand": "New Balance",
-    "category": "footwear",
-    "platform": "amazon",
-    "price": 6499,
-    "originalPrice": 8999,
-    "original_price": 8999,
-    "discountPercent": 28,
-    "discount_percent": 28,
-    "rating": 4.4,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B00K5O2L9P",
-    "product_url": "https://www.amazon.in/dp/B00K5O2L9P",
-    "seller": "New Balance Authorized",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 77,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 28% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 28% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "specs": {
-      "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
-      "upper": "Suede and mesh upper",
-      "outsole": "Durable rubber outsole with classic lug pattern"
-    },
-    "reviews": [
-      {
-        "author": "Naveen C",
-        "rating": 5,
-        "text": "Timeless grey suede sneaker. Goes with both jeans and shorts.",
-        "date": "2024-11-03"
-      }
-    ]
-  },
-  {
-    "id": "new-balance-574-core-flipkart",
-    "product_id": "new-balance-574-core-flipkart",
-    "groupId": "new-balance-574-core",
-    "group_id": "new-balance-574-core",
-    "title": "New Balance 574 Core Men's Classic Suede Sneakers (FLIPKART)",
-    "name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "brand": "New Balance",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 6799,
-    "originalPrice": 8999,
-    "original_price": 8999,
-    "discountPercent": 24,
-    "discount_percent": 24,
-    "rating": 4.3,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/new-balance-574",
-    "product_url": "https://www.flipkart.com/new-balance-574",
-    "seller": "FSAssured Lifestyle",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 24% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 24% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "specs": {
-      "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
-      "upper": "Suede and mesh upper",
-      "outsole": "Durable rubber outsole with classic lug pattern"
-    },
-    "reviews": [
-      {
-        "author": "Girish M",
-        "rating": 4,
-        "text": "Great wide toe box, very supportive for daily walking.",
-        "date": "2024-10-17"
-      }
-    ]
-  },
-  {
-    "id": "new-balance-574-core-myntra",
-    "product_id": "new-balance-574-core-myntra",
-    "groupId": "new-balance-574-core",
-    "group_id": "new-balance-574-core",
-    "title": "New Balance 574 Core Men's Classic Suede Sneakers (MYNTRA)",
-    "name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "brand": "New Balance",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 5999,
-    "originalPrice": 8999,
-    "original_price": 8999,
-    "discountPercent": 33,
-    "discount_percent": 33,
-    "rating": 4.5,
-    "reviewCount": 2450,
-    "review_count": 2450,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/new-balance-574",
-    "product_url": "https://www.myntra.com/casual-shoes/new-balance-574",
-    "seller": "New Balance Flagship",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 33% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 33% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "specs": {
-      "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
-      "upper": "Suede and mesh upper",
-      "outsole": "Durable rubber outsole with classic lug pattern"
-    },
-    "reviews": [
-      {
-        "author": "Soham D",
-        "rating": 5,
-        "text": "Best price on Myntra for genuine 574 Core.",
-        "date": "2024-11-14"
-      }
-    ]
-  },
-  {
-    "id": "crocs-classic-clogs-amazon",
-    "product_id": "crocs-classic-clogs-amazon",
-    "groupId": "crocs-classic-clogs",
-    "group_id": "crocs-classic-clogs",
-    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (AMAZON)",
-    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "brand": "Crocs",
-    "category": "footwear",
-    "platform": "amazon",
-    "price": 2495,
-    "originalPrice": 3495,
-    "original_price": 3495,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.4,
-    "reviewCount": 38900,
-    "review_count": 38900,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0014C5W7Q",
-    "product_url": "https://www.amazon.in/dp/B0014C5W7Q",
-    "seller": "Crocs India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "specs": {
-      "material": "100% Croslite lightweight proprietary foam",
-      "ventilation": "Ventilation ports add breathability and help shed water",
-      "strap": "Pivoting heel straps for a more secure fit"
-    },
-    "reviews": [
-      {
-        "author": "Deepa N",
-        "rating": 5,
-        "text": "Extremely comfortable for household chores and monsoon walks.",
-        "date": "2024-11-11"
-      }
-    ]
-  },
-  {
-    "id": "crocs-classic-clogs-flipkart",
-    "product_id": "crocs-classic-clogs-flipkart",
-    "groupId": "crocs-classic-clogs",
-    "group_id": "crocs-classic-clogs",
-    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (FLIPKART)",
-    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "brand": "Crocs",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 2295,
-    "originalPrice": 3495,
-    "original_price": 3495,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.3,
-    "reviewCount": 24100,
-    "review_count": 24100,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/crocs-classic-clog",
-    "product_url": "https://www.flipkart.com/crocs-classic-clog",
-    "seller": "RetailNet Footwear",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "specs": {
-      "material": "100% Croslite lightweight proprietary foam",
-      "ventilation": "Ventilation ports add breathability and help shed water",
-      "strap": "Pivoting heel straps for a more secure fit"
-    },
-    "reviews": [
-      {
-        "author": "Manish B",
-        "rating": 4,
-        "text": "Easy to clean with just water and mild soap.",
-        "date": "2024-10-20"
-      }
-    ]
-  },
-  {
-    "id": "crocs-classic-clogs-myntra",
-    "product_id": "crocs-classic-clogs-myntra",
-    "groupId": "crocs-classic-clogs",
-    "group_id": "crocs-classic-clogs",
-    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (MYNTRA)",
-    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "brand": "Crocs",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 2395,
-    "originalPrice": 3495,
-    "original_price": 3495,
-    "discountPercent": 31,
-    "discount_percent": 31,
-    "rating": 4.4,
-    "reviewCount": 14200,
-    "review_count": 14200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
-    "product_url": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
-    "seller": "Crocs Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 31% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 31% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "specs": {
-      "material": "100% Croslite lightweight proprietary foam",
-      "ventilation": "Ventilation ports add breathability and help shed water",
-      "strap": "Pivoting heel straps for a more secure fit"
-    },
-    "reviews": [
-      {
-        "author": "Pradeep G",
-        "rating": 5,
-        "text": "100% original Crocs with genuine tags.",
-        "date": "2024-11-27"
       }
     ]
   },
@@ -2755,21 +4324,109 @@ export const mockProducts = [
     "original_price": 5495,
     "discountPercent": 36,
     "discount_percent": 36,
-    "rating": 4.2,
+    "rating": 4.3,
     "reviewCount": 14320,
     "review_count": 14320,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.0 cm",
+      "height": "17.5 cm",
+      "depth": "31.0 cm",
+      "weight": "620g per boot"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B00K52079M",
     "product_url": "https://www.amazon.in/dp/B00K52079M",
     "seller": "Aero Club (Woodland)",
     "inStock": true,
     "in_stock": true,
     "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 77,
+    "sentimentScore": 87,
+    "best_overall_score": 79,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated footwear pick with 36% off and verified fast shipping.",
@@ -2780,13 +4437,13 @@ export const mockProducts = [
       "upper_material": "Genuine Nubuck / Suede Leather",
       "sole": "Heavy-duty grooved rubber lug sole",
       "closure": "Rust-proof metallic eyelet lace-up",
-      "terrain": "All-terrain / Off-road trekking"
+      "terrain": "All-terrain rugged Himalayan trekking"
     },
     "reviews": [
       {
         "author": "Vikram S",
         "rating": 5,
-        "text": "Tough as a tank. Have used it on 3 Himalayan treks without a scratch.",
+        "text": "Built like a tank. Withstood rocky trails with zero tearing.",
         "date": "2024-11-08"
       }
     ]
@@ -2807,21 +4464,109 @@ export const mockProducts = [
     "original_price": 5495,
     "discountPercent": 31,
     "discount_percent": 31,
-    "rating": 4.1,
+    "rating": 4.2,
     "reviewCount": 9820,
     "review_count": 9820,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.0 cm",
+      "height": "17.5 cm",
+      "depth": "31.0 cm",
+      "weight": "620g per boot"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
     "productUrl": "https://www.flipkart.com/woodland-boots",
     "product_url": "https://www.flipkart.com/woodland-boots",
     "seller": "SuperComNet Footwear",
     "inStock": true,
     "in_stock": true,
     "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 74,
+    "sentimentScore": 85,
+    "best_overall_score": 75,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated footwear pick with 31% off and verified fast shipping.",
@@ -2832,13 +4577,13 @@ export const mockProducts = [
       "upper_material": "Genuine Nubuck / Suede Leather",
       "sole": "Heavy-duty grooved rubber lug sole",
       "closure": "Rust-proof metallic eyelet lace-up",
-      "terrain": "All-terrain / Off-road trekking"
+      "terrain": "All-terrain rugged Himalayan trekking"
     },
     "reviews": [
       {
         "author": "Ankur J",
         "rating": 4,
-        "text": "High ankle support prevents twisting on rocks.",
+        "text": "High ankle collar prevents sprains on steep descents.",
         "date": "2024-10-15"
       }
     ]
@@ -2864,8 +4609,96 @@ export const mockProducts = [
     "review_count": 5120,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.0 cm",
+      "height": "17.5 cm",
+      "depth": "31.0 cm",
+      "weight": "620g per boot"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
     "productUrl": "https://www.myntra.com/boots/woodland-leather-boots",
     "product_url": "https://www.myntra.com/boots/woodland-leather-boots",
     "seller": "Woodland Official",
@@ -2884,400 +4717,271 @@ export const mockProducts = [
       "upper_material": "Genuine Nubuck / Suede Leather",
       "sole": "Heavy-duty grooved rubber lug sole",
       "closure": "Rust-proof metallic eyelet lace-up",
-      "terrain": "All-terrain / Off-road trekking"
+      "terrain": "All-terrain rugged Himalayan trekking"
     },
     "reviews": [
       {
         "author": "Devashish T",
         "rating": 5,
-        "text": "Premium nubuck leather finish looks very stylish.",
+        "text": "Premium nubuck suede texture.",
         "date": "2024-11-20"
       }
     ]
   },
   {
-    "id": "puma-softride-pro-amazon",
-    "product_id": "puma-softride-pro-amazon",
-    "groupId": "puma-softride-pro",
-    "group_id": "puma-softride-pro",
-    "title": "Puma Softride Pro Men's Cushioned Running Shoes (AMAZON)",
-    "name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "brand": "Puma",
+    "id": "crocs-classic-clogs-amazon",
+    "product_id": "crocs-classic-clogs-amazon",
+    "groupId": "crocs-classic-clogs",
+    "group_id": "crocs-classic-clogs",
+    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (AMAZON)",
+    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
+    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
+    "brand": "Crocs",
     "category": "footwear",
     "platform": "amazon",
-    "price": 3499,
-    "originalPrice": 5999,
-    "original_price": 5999,
-    "discountPercent": 42,
-    "discount_percent": 42,
-    "rating": 4.1,
-    "reviewCount": 8200,
-    "review_count": 8200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09WJ98X7N",
-    "product_url": "https://www.amazon.in/dp/B09WJ98X7N",
-    "seller": "Puma Sports India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "specs": {
-      "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
-      "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
-      "upper": "Breathable knit upper with zoned rubber traction"
-    },
-    "reviews": [
-      {
-        "author": "Rakesh D",
-        "rating": 4,
-        "text": "Memory foam insole is very soft. Great for gym and daily jogs.",
-        "date": "2024-11-05"
-      }
-    ]
-  },
-  {
-    "id": "puma-softride-pro-flipkart",
-    "product_id": "puma-softride-pro-flipkart",
-    "groupId": "puma-softride-pro",
-    "group_id": "puma-softride-pro",
-    "title": "Puma Softride Pro Men's Cushioned Running Shoes (FLIPKART)",
-    "name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "brand": "Puma",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 3699,
-    "originalPrice": 5999,
-    "original_price": 5999,
-    "discountPercent": 38,
-    "discount_percent": 38,
-    "rating": 4,
-    "reviewCount": 5400,
-    "review_count": 5400,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/puma-softride-pro",
-    "product_url": "https://www.flipkart.com/puma-softride-pro",
-    "seller": "RetailNet Puma",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 81,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 38% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 38% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "specs": {
-      "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
-      "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
-      "upper": "Breathable knit upper with zoned rubber traction"
-    },
-    "reviews": [
-      {
-        "author": "Kishan M",
-        "rating": 4,
-        "text": "Lightweight and flexible sole.",
-        "date": "2024-10-18"
-      }
-    ]
-  },
-  {
-    "id": "puma-softride-pro-myntra",
-    "product_id": "puma-softride-pro-myntra",
-    "groupId": "puma-softride-pro",
-    "group_id": "puma-softride-pro",
-    "title": "Puma Softride Pro Men's Cushioned Running Shoes (MYNTRA)",
-    "name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "brand": "Puma",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 3599,
-    "originalPrice": 5999,
-    "original_price": 5999,
-    "discountPercent": 40,
-    "discount_percent": 40,
-    "rating": 4.1,
-    "reviewCount": 3900,
-    "review_count": 3900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/sports-shoes/puma-softride-pro",
-    "product_url": "https://www.myntra.com/sports-shoes/puma-softride-pro",
-    "seller": "Puma Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "specs": {
-      "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
-      "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
-      "upper": "Breathable knit upper with zoned rubber traction"
-    },
-    "reviews": [
-      {
-        "author": "Sameer A",
-        "rating": 4,
-        "text": "True to size and very comfortable for standing long hours.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "red-tape-casual-sneaker-amazon",
-    "product_id": "red-tape-casual-sneaker-amazon",
-    "groupId": "red-tape-casual-sneaker",
-    "group_id": "red-tape-casual-sneaker",
-    "title": "Red Tape Men's Classic White Low-Top Casual Sneakers (AMAZON)",
-    "name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "brand": "Red Tape",
-    "category": "footwear",
-    "platform": "amazon",
-    "price": 1399,
-    "originalPrice": 5399,
-    "original_price": 5399,
-    "discountPercent": 74,
-    "discount_percent": 74,
-    "rating": 4.1,
-    "reviewCount": 18450,
-    "review_count": 18450,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B08K5Q89LM",
-    "product_url": "https://www.amazon.in/dp/B08K5Q89LM",
-    "seller": "Red Tape India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 91,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 74% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 74% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "specs": {
-      "upper": "Premium PU leather upper with perforated toe box",
-      "sole": "EVA sole for lightweight cushioning and grip",
-      "closure": "Lace-Up"
-    },
-    "reviews": [
-      {
-        "author": "Prashant R",
-        "rating": 5,
-        "text": "Insane value for ₹1399. Looks exactly like premium Stan Smiths.",
-        "date": "2024-11-19"
-      }
-    ]
-  },
-  {
-    "id": "red-tape-casual-sneaker-flipkart",
-    "product_id": "red-tape-casual-sneaker-flipkart",
-    "groupId": "red-tape-casual-sneaker",
-    "group_id": "red-tape-casual-sneaker",
-    "title": "Red Tape Men's Classic White Low-Top Casual Sneakers (FLIPKART)",
-    "name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "brand": "Red Tape",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 1299,
-    "originalPrice": 5399,
-    "original_price": 5399,
-    "discountPercent": 76,
-    "discount_percent": 76,
-    "rating": 4,
-    "reviewCount": 24120,
-    "review_count": 24120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/red-tape-white-sneaker",
-    "product_url": "https://www.flipkart.com/red-tape-white-sneaker",
-    "seller": "RetailNet Footwear",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 81,
-    "best_overall_score": 90,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 76% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 76% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "specs": {
-      "upper": "Premium PU leather upper with perforated toe box",
-      "sole": "EVA sole for lightweight cushioning and grip",
-      "closure": "Lace-Up"
-    },
-    "reviews": [
-      {
-        "author": "Karthik D",
-        "rating": 4,
-        "text": "Very easy to wipe clean with damp cloth.",
-        "date": "2024-10-28"
-      }
-    ]
-  },
-  {
-    "id": "red-tape-casual-sneaker-myntra",
-    "product_id": "red-tape-casual-sneaker-myntra",
-    "groupId": "red-tape-casual-sneaker",
-    "group_id": "red-tape-casual-sneaker",
-    "title": "Red Tape Men's Classic White Low-Top Casual Sneakers (MYNTRA)",
-    "name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "brand": "Red Tape",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 1449,
-    "originalPrice": 5399,
-    "original_price": 5399,
-    "discountPercent": 73,
-    "discount_percent": 73,
-    "rating": 4.2,
-    "reviewCount": 11200,
-    "review_count": 11200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/red-tape-sneakers",
-    "product_url": "https://www.myntra.com/casual-shoes/red-tape-sneakers",
-    "seller": "Red Tape Official Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 92,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 73% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 73% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "specs": {
-      "upper": "Premium PU leather upper with perforated toe box",
-      "sole": "EVA sole for lightweight cushioning and grip",
-      "closure": "Lace-Up"
-    },
-    "reviews": [
-      {
-        "author": "Nikhil P",
-        "rating": 5,
-        "text": "Great everyday college sneaker.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "skechers-go-walk-max-amazon",
-    "product_id": "skechers-go-walk-max-amazon",
-    "groupId": "skechers-go-walk-max",
-    "group_id": "skechers-go-walk-max",
-    "title": "Skechers Men's Go Walk Max Slip-On Walking Shoes (AMAZON)",
-    "name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "brand": "Skechers",
-    "category": "footwear",
-    "platform": "amazon",
-    "price": 3299,
-    "originalPrice": 5499,
-    "original_price": 5499,
-    "discountPercent": 40,
-    "discount_percent": 40,
+    "price": 2495,
+    "originalPrice": 3495,
+    "original_price": 3495,
+    "discountPercent": 29,
+    "discount_percent": 29,
     "rating": 4.5,
-    "reviewCount": 12400,
-    "review_count": 12400,
+    "reviewCount": 38900,
+    "review_count": 38900,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B073WP8N91",
-    "product_url": "https://www.amazon.in/dp/B073WP8N91",
-    "seller": "Skechers South Asia",
+    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.5 cm",
+      "height": "10.0 cm",
+      "depth": "28.5 cm",
+      "weight": "185g per clog"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
+      },
+      {
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
+      },
+      {
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
+      },
+      {
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
+      },
+      {
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
+      }
+    ],
+    "productUrl": "https://www.amazon.in/dp/B0014C5W7Q",
+    "product_url": "https://www.amazon.in/dp/B0014C5W7Q",
+    "seller": "Crocs India",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
     "sentimentScore": 91,
-    "best_overall_score": 84,
+    "best_overall_score": 79,
     "is_best_overall": true,
     "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
+    "whyBuy": "Top rated footwear pick with 29% off and verified fast shipping.",
+    "why_buy": "Top rated footwear pick with 29% off and verified fast shipping.",
+    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
+    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
     "specs": {
-      "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
-      "insole": "Goga Max high-rebound cushioning insole",
-      "upper": "Super lightweight mesh fabric upper with padded heel collar"
+      "material": "100% Croslite closed-cell resin proprietary foam",
+      "ventilation": "Ports shed water and debris quickly",
+      "strap": "Pivoting heel strap for snug or slip-on mode",
+      "water_resistance": "100% buoyant and water-friendly"
     },
     "reviews": [
       {
-        "author": "Mahesh B",
+        "author": "Deepa N",
         "rating": 5,
-        "text": "The best walking shoe for senior citizens and daily 5km evening walks.",
-        "date": "2024-11-14"
+        "text": "Ultimate comfort for home and rain.",
+        "date": "2024-11-11"
       }
     ]
   },
   {
-    "id": "skechers-go-walk-max-flipkart",
-    "product_id": "skechers-go-walk-max-flipkart",
-    "groupId": "skechers-go-walk-max",
-    "group_id": "skechers-go-walk-max",
-    "title": "Skechers Men's Go Walk Max Slip-On Walking Shoes (FLIPKART)",
-    "name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "brand": "Skechers",
+    "id": "crocs-classic-clogs-flipkart",
+    "product_id": "crocs-classic-clogs-flipkart",
+    "groupId": "crocs-classic-clogs",
+    "group_id": "crocs-classic-clogs",
+    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (FLIPKART)",
+    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
+    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
+    "brand": "Crocs",
     "category": "footwear",
     "platform": "flipkart",
-    "price": 3499,
-    "originalPrice": 5499,
-    "original_price": 5499,
-    "discountPercent": 36,
-    "discount_percent": 36,
+    "price": 2295,
+    "originalPrice": 3495,
+    "original_price": 3495,
+    "discountPercent": 34,
+    "discount_percent": 34,
     "rating": 4.4,
-    "reviewCount": 7890,
-    "review_count": 7890,
+    "reviewCount": 24100,
+    "review_count": 24100,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/skechers-go-walk-max",
-    "product_url": "https://www.flipkart.com/skechers-go-walk-max",
-    "seller": "SuperComNet Sports",
+    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.5 cm",
+      "height": "10.0 cm",
+      "depth": "28.5 cm",
+      "weight": "185g per clog"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
+      },
+      {
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
+      },
+      {
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
+      },
+      {
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
+      },
+      {
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
+      }
+    ],
+    "productUrl": "https://www.flipkart.com/crocs-classic-clog",
+    "product_url": "https://www.flipkart.com/crocs-classic-clog",
+    "seller": "RetailNet Footwear",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
@@ -3285,72 +4989,162 @@ export const mockProducts = [
     "best_overall_score": 80,
     "is_best_overall": false,
     "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 36% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 36% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
+    "whyBuy": "Top rated footwear pick with 34% off and verified fast shipping.",
+    "why_buy": "Top rated footwear pick with 34% off and verified fast shipping.",
+    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
+    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
     "specs": {
-      "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
-      "insole": "Goga Max high-rebound cushioning insole",
-      "upper": "Super lightweight mesh fabric upper with padded heel collar"
+      "material": "100% Croslite closed-cell resin proprietary foam",
+      "ventilation": "Ports shed water and debris quickly",
+      "strap": "Pivoting heel strap for snug or slip-on mode",
+      "water_resistance": "100% buoyant and water-friendly"
     },
     "reviews": [
       {
-        "author": "Sunita G",
-        "rating": 5,
-        "text": "Slip-on design is effortless to wear. Very soft on heel spurs.",
-        "date": "2024-10-21"
+        "author": "Manish B",
+        "rating": 4,
+        "text": "Cleans with running water in seconds.",
+        "date": "2024-10-20"
       }
     ]
   },
   {
-    "id": "skechers-go-walk-max-myntra",
-    "product_id": "skechers-go-walk-max-myntra",
-    "groupId": "skechers-go-walk-max",
-    "group_id": "skechers-go-walk-max",
-    "title": "Skechers Men's Go Walk Max Slip-On Walking Shoes (MYNTRA)",
-    "name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "brand": "Skechers",
+    "id": "crocs-classic-clogs-myntra",
+    "product_id": "crocs-classic-clogs-myntra",
+    "groupId": "crocs-classic-clogs",
+    "group_id": "crocs-classic-clogs",
+    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (MYNTRA)",
+    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
+    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
+    "brand": "Crocs",
     "category": "footwear",
     "platform": "myntra",
-    "price": 3199,
-    "originalPrice": 5499,
-    "original_price": 5499,
-    "discountPercent": 42,
-    "discount_percent": 42,
-    "rating": 4.6,
-    "reviewCount": 5120,
-    "review_count": 5120,
+    "price": 2395,
+    "originalPrice": 3495,
+    "original_price": 3495,
+    "discountPercent": 31,
+    "discount_percent": 31,
+    "rating": 4.5,
+    "reviewCount": 14200,
+    "review_count": 14200,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/skechers-go-walk",
-    "product_url": "https://www.myntra.com/casual-shoes/skechers-go-walk",
-    "seller": "Skechers Flagship Store",
+    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.5 cm",
+      "height": "10.0 cm",
+      "depth": "28.5 cm",
+      "weight": "185g per clog"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
+      },
+      {
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
+      },
+      {
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
+      },
+      {
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
+      },
+      {
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
+      }
+    ],
+    "productUrl": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
+    "product_url": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
+    "seller": "Crocs Brand Store",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 86,
+    "sentimentScore": 91,
+    "best_overall_score": 80,
     "is_best_overall": false,
     "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
+    "whyBuy": "Top rated footwear pick with 31% off and verified fast shipping.",
+    "why_buy": "Top rated footwear pick with 31% off and verified fast shipping.",
+    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
+    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
     "specs": {
-      "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
-      "insole": "Goga Max high-rebound cushioning insole",
-      "upper": "Super lightweight mesh fabric upper with padded heel collar"
+      "material": "100% Croslite closed-cell resin proprietary foam",
+      "ventilation": "Ports shed water and debris quickly",
+      "strap": "Pivoting heel strap for snug or slip-on mode",
+      "water_resistance": "100% buoyant and water-friendly"
     },
     "reviews": [
       {
-        "author": "Vijay R",
+        "author": "Pradeep G",
         "rating": 5,
-        "text": "Extremely breathable mesh, zero foot odor even after 8 hours.",
-        "date": "2024-11-25"
+        "text": "Genuine tags and pristine quality.",
+        "date": "2024-11-27"
       }
     ]
   },
@@ -3370,21 +5164,109 @@ export const mockProducts = [
     "original_price": 3999,
     "discountPercent": 45,
     "discount_percent": 45,
-    "rating": 4.3,
+    "rating": 4.4,
     "reviewCount": 14200,
     "review_count": 14200,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "38.0 cm",
+      "height": "105.0 cm",
+      "depth": "2.0 cm",
+      "weight": "550g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B00K5Q28L1",
     "product_url": "https://www.amazon.in/dp/B00K5Q28L1",
     "seller": "Levi's Authorized Store",
     "inStock": true,
     "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 83,
+    "sentiment": "green",
+    "sentimentScore": 89,
+    "best_overall_score": 84,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated fashion pick with 45% off and verified fast shipping.",
@@ -3393,15 +5275,15 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
     "specs": {
       "fit": "Slim from hip to ankle",
-      "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
-      "rise": "Sits below waist",
+      "fabric": "99% Cotton, 1% Elastane with Levi's Flex stretch",
+      "rise": "Sits below waist (Mid rise)",
       "leg_opening": "14.5 inch slim leg"
     },
     "reviews": [
       {
         "author": "Alok N",
         "rating": 5,
-        "text": "Classic 511 fit. Perfect stretch and doesn't lose shape after washes.",
+        "text": "Classic 511 fit. Perfect stretch that holds form.",
         "date": "2024-11-12"
       }
     ]
@@ -3422,21 +5304,109 @@ export const mockProducts = [
     "original_price": 3999,
     "discountPercent": 40,
     "discount_percent": 40,
-    "rating": 4.2,
+    "rating": 4.3,
     "reviewCount": 9800,
     "review_count": 9800,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "38.0 cm",
+      "height": "105.0 cm",
+      "depth": "2.0 cm",
+      "weight": "550g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
     "productUrl": "https://www.flipkart.com/levis-511-slim-fit",
     "product_url": "https://www.flipkart.com/levis-511-slim-fit",
     "seller": "RetailNet Denim",
     "inStock": true,
     "in_stock": true,
     "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 79,
+    "sentimentScore": 87,
+    "best_overall_score": 81,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated fashion pick with 40% off and verified fast shipping.",
@@ -3445,15 +5415,15 @@ export const mockProducts = [
     "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
     "specs": {
       "fit": "Slim from hip to ankle",
-      "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
-      "rise": "Sits below waist",
+      "fabric": "99% Cotton, 1% Elastane with Levi's Flex stretch",
+      "rise": "Sits below waist (Mid rise)",
       "leg_opening": "14.5 inch slim leg"
     },
     "reviews": [
       {
         "author": "Harish S",
         "rating": 4,
-        "text": "Deep indigo color that looks great with white sneakers.",
+        "text": "Rich indigo color looks great with white sneakers.",
         "date": "2024-10-29"
       }
     ]
@@ -3474,172 +5444,104 @@ export const mockProducts = [
     "original_price": 3999,
     "discountPercent": 50,
     "discount_percent": 50,
-    "rating": 4.4,
+    "rating": 4.5,
     "reviewCount": 18400,
     "review_count": 18400,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "38.0 cm",
+      "height": "105.0 cm",
+      "depth": "2.0 cm",
+      "weight": "550g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
     "productUrl": "https://www.myntra.com/jeans/levis-511-slim-fit",
     "product_url": "https://www.myntra.com/jeans/levis-511-slim-fit",
     "seller": "Levi's Brand Flagship",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 86,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "specs": {
-      "fit": "Slim from hip to ankle",
-      "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
-      "rise": "Sits below waist",
-      "leg_opening": "14.5 inch slim leg"
-    },
-    "reviews": [
-      {
-        "author": "Yash P",
-        "rating": 5,
-        "text": "Massive 50% discount on Myntra. 100% authentic red tab jeans.",
-        "date": "2024-11-24"
-      }
-    ]
-  },
-  {
-    "id": "tommy-hilfiger-classic-polo-amazon",
-    "product_id": "tommy-hilfiger-classic-polo-amazon",
-    "groupId": "tommy-hilfiger-classic-polo",
-    "group_id": "tommy-hilfiger-classic-polo",
-    "title": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt (AMAZON)",
-    "name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "brand": "Tommy Hilfiger",
-    "category": "fashion",
-    "platform": "amazon",
-    "price": 2499,
-    "originalPrice": 4599,
-    "original_price": 4599,
-    "discountPercent": 46,
-    "discount_percent": 46,
-    "rating": 4.4,
-    "reviewCount": 4890,
-    "review_count": 4890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09KL897N4",
-    "product_url": "https://www.amazon.in/dp/B09KL897N4",
-    "seller": "Cloudtail Apparel",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 84,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 46% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 46% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "specs": {
-      "fabric": "100% Organic Pique Cotton",
-      "fit": "Custom Regular Fit",
-      "collar": "Ribbed polo collar with 2-button placket",
-      "embroidery": "Signature Tommy Hilfiger flag logo on chest"
-    },
-    "reviews": [
-      {
-        "author": "Chetan B",
-        "rating": 5,
-        "text": "High quality pique cotton that stays crisp throughout the day.",
-        "date": "2024-11-17"
-      }
-    ]
-  },
-  {
-    "id": "tommy-hilfiger-classic-polo-flipkart",
-    "product_id": "tommy-hilfiger-classic-polo-flipkart",
-    "groupId": "tommy-hilfiger-classic-polo",
-    "group_id": "tommy-hilfiger-classic-polo",
-    "title": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt (FLIPKART)",
-    "name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "brand": "Tommy Hilfiger",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 2799,
-    "originalPrice": 4599,
-    "original_price": 4599,
-    "discountPercent": 39,
-    "discount_percent": 39,
-    "rating": 4.2,
-    "reviewCount": 2410,
-    "review_count": 2410,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/tommy-hilfiger-polo",
-    "product_url": "https://www.flipkart.com/tommy-hilfiger-polo",
-    "seller": "FSAssured Fashion",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 79,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "specs": {
-      "fabric": "100% Organic Pique Cotton",
-      "fit": "Custom Regular Fit",
-      "collar": "Ribbed polo collar with 2-button placket",
-      "embroidery": "Signature Tommy Hilfiger flag logo on chest"
-    },
-    "reviews": [
-      {
-        "author": "Deepak V",
-        "rating": 4,
-        "text": "Rich navy blue shade and comfortable fit.",
-        "date": "2024-10-18"
-      }
-    ]
-  },
-  {
-    "id": "tommy-hilfiger-classic-polo-myntra",
-    "product_id": "tommy-hilfiger-classic-polo-myntra",
-    "groupId": "tommy-hilfiger-classic-polo",
-    "group_id": "tommy-hilfiger-classic-polo",
-    "title": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt (MYNTRA)",
-    "name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "brand": "Tommy Hilfiger",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 2299,
-    "originalPrice": 4599,
-    "original_price": 4599,
-    "discountPercent": 50,
-    "discount_percent": 50,
-    "rating": 4.5,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/tshirts/tommy-hilfiger-polo",
-    "product_url": "https://www.myntra.com/tshirts/tommy-hilfiger-polo",
-    "seller": "Tommy Hilfiger Flagship",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
@@ -3649,20 +5551,20 @@ export const mockProducts = [
     "isBestOverall": false,
     "whyBuy": "Top rated fashion pick with 50% off and verified fast shipping.",
     "why_buy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
+    "reviewSummary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
+    "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
     "specs": {
-      "fabric": "100% Organic Pique Cotton",
-      "fit": "Custom Regular Fit",
-      "collar": "Ribbed polo collar with 2-button placket",
-      "embroidery": "Signature Tommy Hilfiger flag logo on chest"
+      "fit": "Slim from hip to ankle",
+      "fabric": "99% Cotton, 1% Elastane with Levi's Flex stretch",
+      "rise": "Sits below waist (Mid rise)",
+      "leg_opening": "14.5 inch slim leg"
     },
     "reviews": [
       {
-        "author": "Sahil G",
+        "author": "Yash P",
         "rating": 5,
-        "text": "Premium finish and comfortable fabric for summer.",
-        "date": "2024-11-20"
+        "text": "50% discount on Myntra with genuine red tab.",
+        "date": "2024-11-24"
       }
     ]
   },
@@ -3682,21 +5584,109 @@ export const mockProducts = [
     "original_price": 10490,
     "discountPercent": 19,
     "discount_percent": 19,
-    "rating": 4.6,
+    "rating": 4.7,
     "reviewCount": 7210,
     "review_count": 7210,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "14.0 cm",
+      "height": "5.0 cm",
+      "depth": "13.5 cm",
+      "weight": "31g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B00080FGVO",
     "product_url": "https://www.amazon.in/dp/B00080FGVO",
     "seller": "Luxottica India Official",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 77,
+    "sentimentScore": 94,
+    "best_overall_score": 78,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated fashion pick with 19% off and verified fast shipping.",
@@ -3704,16 +5694,15 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
     "specs": {
-      "frame_material": "Corrosion-resistant Metal alloy",
-      "lens_technology": "Polarized G-15 Green Crystal Lens",
-      "uv_protection": "100% UV400 protection",
-      "size": "58mm standard lens width"
+      "frame_material": "Corrosion-resistant Gold Alloy Metal",
+      "lens": "Polarized G-15 Crystal Green Glass (100% UV400)",
+      "size": "58mm standard pilot teardrop lens"
     },
     "reviews": [
       {
         "author": "Aditya S",
         "rating": 5,
-        "text": "The iconic pilot aviators. Glare reduction while driving is unmatched.",
+        "text": "Glare reduction while highway driving is outstanding.",
         "date": "2024-11-21"
       }
     ]
@@ -3739,8 +5728,96 @@ export const mockProducts = [
     "review_count": 3890,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "14.0 cm",
+      "height": "5.0 cm",
+      "depth": "13.5 cm",
+      "weight": "31g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
     "productUrl": "https://www.flipkart.com/ray-ban-aviator",
     "product_url": "https://www.flipkart.com/ray-ban-aviator",
     "seller": "Optics SuperStore",
@@ -3756,16 +5833,15 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
     "specs": {
-      "frame_material": "Corrosion-resistant Metal alloy",
-      "lens_technology": "Polarized G-15 Green Crystal Lens",
-      "uv_protection": "100% UV400 protection",
-      "size": "58mm standard lens width"
+      "frame_material": "Corrosion-resistant Gold Alloy Metal",
+      "lens": "Polarized G-15 Crystal Green Glass (100% UV400)",
+      "size": "58mm standard pilot teardrop lens"
     },
     "reviews": [
       {
         "author": "Kunal M",
         "rating": 5,
-        "text": "Came with original leather case and microfiber cloth.",
+        "text": "Original leather case and microfiber cloth included.",
         "date": "2024-10-14"
       }
     ]
@@ -3791,8 +5867,96 @@ export const mockProducts = [
     "review_count": 5120,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "14.0 cm",
+      "height": "5.0 cm",
+      "depth": "13.5 cm",
+      "weight": "31g"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
     "productUrl": "https://www.myntra.com/sunglasses/ray-ban-aviator",
     "product_url": "https://www.myntra.com/sunglasses/ray-ban-aviator",
     "seller": "Ray-Ban Brand Boutique",
@@ -3808,481 +5972,15 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
     "specs": {
-      "frame_material": "Corrosion-resistant Metal alloy",
-      "lens_technology": "Polarized G-15 Green Crystal Lens",
-      "uv_protection": "100% UV400 protection",
-      "size": "58mm standard lens width"
+      "frame_material": "Corrosion-resistant Gold Alloy Metal",
+      "lens": "Polarized G-15 Crystal Green Glass (100% UV400)",
+      "size": "58mm standard pilot teardrop lens"
     },
     "reviews": [
       {
         "author": "Tarun D",
         "rating": 5,
-        "text": "Authentic Luxottica barcode and warranty registration verified.",
-        "date": "2024-11-26"
-      }
-    ]
-  },
-  {
-    "id": "zara-faux-leather-jacket-amazon",
-    "product_id": "zara-faux-leather-jacket-amazon",
-    "groupId": "zara-faux-leather-jacket",
-    "group_id": "zara-faux-leather-jacket",
-    "title": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip (AMAZON)",
-    "name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "brand": "Zara",
-    "category": "fashion",
-    "platform": "amazon",
-    "price": 4990,
-    "originalPrice": 6990,
-    "original_price": 6990,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.3,
-    "reviewCount": 2180,
-    "review_count": 2180,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CY78L91P",
-    "product_url": "https://www.amazon.in/dp/B0CY78L91P",
-    "seller": "Urban Trendsetters",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 76,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "specs": {
-      "material": "100% Polyurethane leather finish with viscose lining",
-      "closure": "Asymmetric silver metallic zip",
-      "pockets": "3 functional zip pockets with coin flap",
-      "collar": "Notched lapel collar with snap buttons"
-    },
-    "reviews": [
-      {
-        "author": "Ishaan B",
-        "rating": 5,
-        "text": "Looks like real leather. Perfect slim fit jacket for winter nights.",
-        "date": "2024-11-13"
-      }
-    ]
-  },
-  {
-    "id": "zara-faux-leather-jacket-flipkart",
-    "product_id": "zara-faux-leather-jacket-flipkart",
-    "groupId": "zara-faux-leather-jacket",
-    "group_id": "zara-faux-leather-jacket",
-    "title": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip (FLIPKART)",
-    "name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "brand": "Zara",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 5290,
-    "originalPrice": 6990,
-    "original_price": 6990,
-    "discountPercent": 24,
-    "discount_percent": 24,
-    "rating": 4.2,
-    "reviewCount": 1420,
-    "review_count": 1420,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/zara-biker-jacket",
-    "product_url": "https://www.flipkart.com/zara-biker-jacket",
-    "seller": "EuroFashion Outlet",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 73,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 24% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 24% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "specs": {
-      "material": "100% Polyurethane leather finish with viscose lining",
-      "closure": "Asymmetric silver metallic zip",
-      "pockets": "3 functional zip pockets with coin flap",
-      "collar": "Notched lapel collar with snap buttons"
-    },
-    "reviews": [
-      {
-        "author": "Rahul P",
-        "rating": 4,
-        "text": "Good stitching and heavy quality zippers.",
-        "date": "2024-10-22"
-      }
-    ]
-  },
-  {
-    "id": "zara-faux-leather-jacket-myntra",
-    "product_id": "zara-faux-leather-jacket-myntra",
-    "groupId": "zara-faux-leather-jacket",
-    "group_id": "zara-faux-leather-jacket",
-    "title": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip (MYNTRA)",
-    "name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "brand": "Zara",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 4690,
-    "originalPrice": 6990,
-    "original_price": 6990,
-    "discountPercent": 33,
-    "discount_percent": 33,
-    "rating": 4.5,
-    "reviewCount": 3840,
-    "review_count": 3840,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/jackets/zara-biker-jacket",
-    "product_url": "https://www.myntra.com/jackets/zara-biker-jacket",
-    "seller": "Myntra Studio Luxe",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 33% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 33% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "specs": {
-      "material": "100% Polyurethane leather finish with viscose lining",
-      "closure": "Asymmetric silver metallic zip",
-      "pockets": "3 functional zip pockets with coin flap",
-      "collar": "Notched lapel collar with snap buttons"
-    },
-    "reviews": [
-      {
-        "author": "Siddharth N",
-        "rating": 5,
-        "text": "Incredible silhouette. Elevates any basic white tee and jeans outfit.",
-        "date": "2024-11-25"
-      }
-    ]
-  },
-  {
-    "id": "fabindia-printed-cotton-kurta-amazon",
-    "product_id": "fabindia-printed-cotton-kurta-amazon",
-    "groupId": "fabindia-printed-cotton-kurta",
-    "group_id": "fabindia-printed-cotton-kurta",
-    "title": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta (AMAZON)",
-    "name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "brand": "FabIndia",
-    "category": "fashion",
-    "platform": "amazon",
-    "price": 1499,
-    "originalPrice": 2490,
-    "original_price": 2490,
-    "discountPercent": 40,
-    "discount_percent": 40,
-    "rating": 4.4,
-    "reviewCount": 3890,
-    "review_count": 3890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09L7X89W1",
-    "product_url": "https://www.amazon.in/dp/B09L7X89W1",
-    "seller": "FabIndia Overseas",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 82,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "specs": {
-      "fabric": "100% Breathable Khadi Cotton",
-      "craft": "Traditional Hand Block Floral Print",
-      "neck": "Mandarin Collar with button placket",
-      "sleeves": "Full Sleeves with roll-up tab"
-    },
-    "reviews": [
-      {
-        "author": "Manish K",
-        "rating": 5,
-        "text": "Super light pure cotton fabric for festive occasions and casual Fridays.",
-        "date": "2024-11-09"
-      }
-    ]
-  },
-  {
-    "id": "fabindia-printed-cotton-kurta-flipkart",
-    "product_id": "fabindia-printed-cotton-kurta-flipkart",
-    "groupId": "fabindia-printed-cotton-kurta",
-    "group_id": "fabindia-printed-cotton-kurta",
-    "title": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta (FLIPKART)",
-    "name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "brand": "FabIndia",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 1699,
-    "originalPrice": 2490,
-    "original_price": 2490,
-    "discountPercent": 32,
-    "discount_percent": 32,
-    "rating": 4.3,
-    "reviewCount": 2150,
-    "review_count": 2150,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/fabindia-cotton-kurta",
-    "product_url": "https://www.flipkart.com/fabindia-cotton-kurta",
-    "seller": "Ethnic Weaves India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 32% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 32% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "specs": {
-      "fabric": "100% Breathable Khadi Cotton",
-      "craft": "Traditional Hand Block Floral Print",
-      "neck": "Mandarin Collar with button placket",
-      "sleeves": "Full Sleeves with roll-up tab"
-    },
-    "reviews": [
-      {
-        "author": "Suraj G",
-        "rating": 4,
-        "text": "Natural dye colors look rich and authentic.",
-        "date": "2024-10-18"
-      }
-    ]
-  },
-  {
-    "id": "fabindia-printed-cotton-kurta-myntra",
-    "product_id": "fabindia-printed-cotton-kurta-myntra",
-    "groupId": "fabindia-printed-cotton-kurta",
-    "group_id": "fabindia-printed-cotton-kurta",
-    "title": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta (MYNTRA)",
-    "name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "brand": "FabIndia",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 1399,
-    "originalPrice": 2490,
-    "original_price": 2490,
-    "discountPercent": 44,
-    "discount_percent": 44,
-    "rating": 4.5,
-    "reviewCount": 6720,
-    "review_count": 6720,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kurtas/fabindia-printed-kurta",
-    "product_url": "https://www.myntra.com/kurtas/fabindia-printed-kurta",
-    "seller": "FabIndia Official Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 85,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 44% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 44% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "specs": {
-      "fabric": "100% Breathable Khadi Cotton",
-      "craft": "Traditional Hand Block Floral Print",
-      "neck": "Mandarin Collar with button placket",
-      "sleeves": "Full Sleeves with roll-up tab"
-    },
-    "reviews": [
-      {
-        "author": "Deepak S",
-        "rating": 5,
-        "text": "Perfect fit around shoulders and chest.",
-        "date": "2024-11-21"
-      }
-    ]
-  },
-  {
-    "id": "allen-solly-formal-trousers-amazon",
-    "product_id": "allen-solly-formal-trousers-amazon",
-    "groupId": "allen-solly-formal-trousers",
-    "group_id": "allen-solly-formal-trousers",
-    "title": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers (AMAZON)",
-    "name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "brand": "Allen Solly",
-    "category": "fashion",
-    "platform": "amazon",
-    "price": 1399,
-    "originalPrice": 2299,
-    "original_price": 2299,
-    "discountPercent": 39,
-    "discount_percent": 39,
-    "rating": 4.3,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B07K9L8P3M",
-    "product_url": "https://www.amazon.in/dp/B07K9L8P3M",
-    "seller": "Aditya Birla Fashion (Amazon)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 80,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "specs": {
-      "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
-      "fit": "Contemporary Slim Fit with flat front",
-      "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
-    },
-    "reviews": [
-      {
-        "author": "Naveen P",
-        "rating": 5,
-        "text": "Wrinkle-free material is great for long office workdays.",
-        "date": "2024-11-12"
-      }
-    ]
-  },
-  {
-    "id": "allen-solly-formal-trousers-flipkart",
-    "product_id": "allen-solly-formal-trousers-flipkart",
-    "groupId": "allen-solly-formal-trousers",
-    "group_id": "allen-solly-formal-trousers",
-    "title": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers (FLIPKART)",
-    "name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "brand": "Allen Solly",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 1499,
-    "originalPrice": 2299,
-    "original_price": 2299,
-    "discountPercent": 35,
-    "discount_percent": 35,
-    "rating": 4.2,
-    "reviewCount": 3840,
-    "review_count": 3840,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/allen-solly-formal-trouser",
-    "product_url": "https://www.flipkart.com/allen-solly-formal-trouser",
-    "seller": "FormalWear Express",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 35% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 35% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "specs": {
-      "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
-      "fit": "Contemporary Slim Fit with flat front",
-      "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
-    },
-    "reviews": [
-      {
-        "author": "Ravi M",
-        "rating": 4,
-        "text": "True to waist size. Clean charcoal grey color.",
-        "date": "2024-10-25"
-      }
-    ]
-  },
-  {
-    "id": "allen-solly-formal-trousers-myntra",
-    "product_id": "allen-solly-formal-trousers-myntra",
-    "groupId": "allen-solly-formal-trousers",
-    "group_id": "allen-solly-formal-trousers",
-    "title": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers (MYNTRA)",
-    "name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "brand": "Allen Solly",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 1299,
-    "originalPrice": 2299,
-    "original_price": 2299,
-    "discountPercent": 43,
-    "discount_percent": 43,
-    "rating": 4.4,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/trousers/allen-solly-formal-trousers",
-    "product_url": "https://www.myntra.com/trousers/allen-solly-formal-trousers",
-    "seller": "Allen Solly Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 83,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 43% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 43% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "specs": {
-      "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
-      "fit": "Contemporary Slim Fit with flat front",
-      "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
-    },
-    "reviews": [
-      {
-        "author": "Aniket T",
-        "rating": 5,
-        "text": "Excellent tailoring and comfortable fabric.",
+        "text": "Authentic Luxottica barcode verified.",
         "date": "2024-11-26"
       }
     ]
@@ -4303,21 +6001,109 @@ export const mockProducts = [
     "original_price": 4990,
     "discountPercent": 26,
     "discount_percent": 26,
-    "rating": 4.5,
+    "rating": 4.6,
     "reviewCount": 42100,
     "review_count": 42100,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "120.0 cm",
+      "height": "35.0 cm",
+      "depth": "120.0 cm",
+      "weight": "4.2 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B07P8N9KLM",
     "product_url": "https://www.amazon.in/dp/B07P8N9KLM",
     "seller": "Atomberg Technologies Official",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 78,
+    "sentimentScore": 92,
+    "best_overall_score": 79,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated home pick with 26% off and verified fast shipping.",
@@ -4325,9 +6111,9 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
     "specs": {
-      "power_consumption": "28W at highest speed (saves 65% electricity)",
+      "power": "28W at highest speed (saves 65% electricity)",
       "motor": "Energy efficient BLDC motor",
-      "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
+      "blade_sweep": "1200mm (48 inch) aerodynamic blades",
       "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
     },
     "reviews": [
@@ -4355,21 +6141,109 @@ export const mockProducts = [
     "original_price": 4990,
     "discountPercent": 29,
     "discount_percent": 29,
-    "rating": 4.4,
+    "rating": 4.5,
     "reviewCount": 28400,
     "review_count": 28400,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "120.0 cm",
+      "height": "35.0 cm",
+      "depth": "120.0 cm",
+      "weight": "4.2 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
     "productUrl": "https://www.flipkart.com/atomberg-renesa",
     "product_url": "https://www.flipkart.com/atomberg-renesa",
     "seller": "RetailNet Home",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 78,
+    "sentimentScore": 91,
+    "best_overall_score": 79,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated home pick with 29% off and verified fast shipping.",
@@ -4377,16 +6251,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
     "specs": {
-      "power_consumption": "28W at highest speed (saves 65% electricity)",
+      "power": "28W at highest speed (saves 65% electricity)",
       "motor": "Energy efficient BLDC motor",
-      "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
+      "blade_sweep": "1200mm (48 inch) aerodynamic blades",
       "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
     },
     "reviews": [
       {
         "author": "Sunil K",
         "rating": 5,
-        "text": "Remote control works from anywhere in the bedroom.",
+        "text": "Remote works from any corner of the room.",
         "date": "2024-10-18"
       }
     ]
@@ -4412,8 +6286,96 @@ export const mockProducts = [
     "review_count": 1200,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "120.0 cm",
+      "height": "35.0 cm",
+      "depth": "120.0 cm",
+      "weight": "4.2 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
     "productUrl": "https://www.myntra.com/home-appliances/atomberg-fan",
     "product_url": "https://www.myntra.com/home-appliances/atomberg-fan",
     "seller": "Home Decor Studio",
@@ -4429,16 +6391,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
     "specs": {
-      "power_consumption": "28W at highest speed (saves 65% electricity)",
+      "power": "28W at highest speed (saves 65% electricity)",
       "motor": "Energy efficient BLDC motor",
-      "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
+      "blade_sweep": "1200mm (48 inch) aerodynamic blades",
       "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
     },
     "reviews": [
       {
         "author": "Archana S",
         "rating": 4,
-        "text": "Modern minimalist look that fits false ceiling aesthetics.",
+        "text": "Sleek look on false ceiling.",
         "date": "2024-11-09"
       }
     ]
@@ -4459,21 +6421,109 @@ export const mockProducts = [
     "original_price": 11995,
     "discountPercent": 33,
     "discount_percent": 33,
-    "rating": 4.5,
+    "rating": 4.6,
     "reviewCount": 19800,
     "review_count": 19800,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.5 cm",
+      "height": "33.8 cm",
+      "depth": "35.5 cm",
+      "weight": "4.55 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B09B1Y8TKL",
     "product_url": "https://www.amazon.in/dp/B09B1Y8TKL",
     "seller": "Philips Domestic Appliances",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
+    "sentimentScore": 92,
+    "best_overall_score": 82,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated home pick with 33% off and verified fast shipping.",
@@ -4481,16 +6531,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Philips build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Philips build quality and performance.",
     "specs": {
-      "capacity": "4.1 Litres XL Basket",
+      "capacity": "4.1 Litres XL Basket (up to 4 portions)",
       "technology": "Rapid Air Technology (up to 90% less fat)",
-      "controls": "Digital Touch Screen with 7 preset cooking modes",
+      "controls": "Digital Touch Screen with 7 presets + Keep Warm function",
       "power": "1400W powerful heating element"
     },
     "reviews": [
       {
         "author": "Pooja V",
         "rating": 5,
-        "text": "French fries and chicken tikka turn out crispy with just 1 spoon oil.",
+        "text": "Fries and chicken tikka turn out crispy with 1 spoon oil.",
         "date": "2024-11-20"
       }
     ]
@@ -4511,21 +6561,109 @@ export const mockProducts = [
     "original_price": 11995,
     "discountPercent": 36,
     "discount_percent": 36,
-    "rating": 4.4,
+    "rating": 4.5,
     "reviewCount": 12400,
     "review_count": 12400,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.5 cm",
+      "height": "33.8 cm",
+      "depth": "35.5 cm",
+      "weight": "4.55 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
     "productUrl": "https://www.flipkart.com/philips-digital-airfryer",
     "product_url": "https://www.flipkart.com/philips-digital-airfryer",
     "seller": "SuperComNet Kitchen",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 80,
+    "sentimentScore": 91,
+    "best_overall_score": 82,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated home pick with 36% off and verified fast shipping.",
@@ -4533,9 +6671,9 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Philips build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Philips build quality and performance.",
     "specs": {
-      "capacity": "4.1 Litres XL Basket",
+      "capacity": "4.1 Litres XL Basket (up to 4 portions)",
       "technology": "Rapid Air Technology (up to 90% less fat)",
-      "controls": "Digital Touch Screen with 7 preset cooking modes",
+      "controls": "Digital Touch Screen with 7 presets + Keep Warm function",
       "power": "1400W powerful heating element"
     },
     "reviews": [
@@ -4568,8 +6706,96 @@ export const mockProducts = [
     "review_count": 850,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.5 cm",
+      "height": "33.8 cm",
+      "depth": "35.5 cm",
+      "weight": "4.55 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
     "productUrl": "https://www.myntra.com/kitchen/philips-air-fryer",
     "product_url": "https://www.myntra.com/kitchen/philips-air-fryer",
     "seller": "Philips Luxe Appliances",
@@ -4585,16 +6811,16 @@ export const mockProducts = [
     "reviewSummary": "Customer sentiment is strongly positive for Philips build quality and performance.",
     "review_summary": "Customer sentiment is strongly positive for Philips build quality and performance.",
     "specs": {
-      "capacity": "4.1 Litres XL Basket",
+      "capacity": "4.1 Litres XL Basket (up to 4 portions)",
       "technology": "Rapid Air Technology (up to 90% less fat)",
-      "controls": "Digital Touch Screen with 7 preset cooking modes",
+      "controls": "Digital Touch Screen with 7 presets + Keep Warm function",
       "power": "1400W powerful heating element"
     },
     "reviews": [
       {
         "author": "Komal D",
         "rating": 4,
-        "text": "Very convenient for healthy everyday snacking.",
+        "text": "Very convenient for healthy daily cooking.",
         "date": "2024-11-15"
       }
     ]
@@ -4615,21 +6841,109 @@ export const mockProducts = [
     "original_price": 43900,
     "discountPercent": 32,
     "discount_percent": 32,
-    "rating": 4.6,
+    "rating": 4.7,
     "reviewCount": 8940,
     "review_count": 8940,
     "deliveryEstimate": "1-2 days",
     "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "25.0 cm",
+      "height": "124.4 cm",
+      "depth": "22.4 cm",
+      "weight": "2.61 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
     "productUrl": "https://www.amazon.in/dp/B09V7N8L92",
     "product_url": "https://www.amazon.in/dp/B09V7N8L92",
     "seller": "Dyson India Official",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 82,
+    "sentimentScore": 94,
+    "best_overall_score": 83,
     "is_best_overall": true,
     "isBestOverall": true,
     "whyBuy": "Top rated home pick with 32% off and verified fast shipping.",
@@ -4639,14 +6953,14 @@ export const mockProducts = [
     "specs": {
       "suction_power": "115 AW powerful fade-free suction",
       "runtime": "Up to 40 minutes continuous cleaning",
-      "filtration": "Advanced whole-machine filtration captures 99.99% particles",
+      "filtration": "Advanced whole-machine filtration captures 99.99% of dust particles",
       "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
     },
     "reviews": [
       {
         "author": "Vivek G",
         "rating": 5,
-        "text": "Deep cleans carpets and sofas effortlessly. Worth every penny.",
+        "text": "Deep cleans sofas and carpets with ease.",
         "date": "2024-11-18"
       }
     ]
@@ -4667,21 +6981,109 @@ export const mockProducts = [
     "original_price": 43900,
     "discountPercent": 34,
     "discount_percent": 34,
-    "rating": 4.5,
+    "rating": 4.6,
     "reviewCount": 5120,
     "review_count": 5120,
     "deliveryEstimate": "2-3 days",
     "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "25.0 cm",
+      "height": "124.4 cm",
+      "depth": "22.4 cm",
+      "weight": "2.61 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
     "productUrl": "https://www.flipkart.com/dyson-v8-absolute",
     "product_url": "https://www.flipkart.com/dyson-v8-absolute",
     "seller": "FSAssured Appliances",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
+    "sentimentScore": 92,
+    "best_overall_score": 83,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated home pick with 34% off and verified fast shipping.",
@@ -4691,14 +7093,14 @@ export const mockProducts = [
     "specs": {
       "suction_power": "115 AW powerful fade-free suction",
       "runtime": "Up to 40 minutes continuous cleaning",
-      "filtration": "Advanced whole-machine filtration captures 99.99% particles",
+      "filtration": "Advanced whole-machine filtration captures 99.99% of dust particles",
       "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
     },
     "reviews": [
       {
         "author": "Ananya B",
         "rating": 5,
-        "text": "Picks up pet hair with zero tangling on the brush roll.",
+        "text": "Pet hair removal is instantaneous.",
         "date": "2024-10-30"
       }
     ]
@@ -4719,21 +7121,109 @@ export const mockProducts = [
     "original_price": 43900,
     "discountPercent": 27,
     "discount_percent": 27,
-    "rating": 4.6,
+    "rating": 4.7,
     "reviewCount": 620,
     "review_count": 620,
     "deliveryEstimate": "3-4 days",
     "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "25.0 cm",
+      "height": "124.4 cm",
+      "depth": "22.4 cm",
+      "weight": "2.61 kg"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
+    "priceHistory": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
     "productUrl": "https://www.myntra.com/home-appliances/dyson-v8-vacuum",
     "product_url": "https://www.myntra.com/home-appliances/dyson-v8-vacuum",
     "seller": "Dyson Premium Store",
     "inStock": true,
     "in_stock": true,
     "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 80,
+    "sentimentScore": 94,
+    "best_overall_score": 81,
     "is_best_overall": false,
     "isBestOverall": false,
     "whyBuy": "Top rated home pick with 27% off and verified fast shipping.",
@@ -4743,483 +7233,15 @@ export const mockProducts = [
     "specs": {
       "suction_power": "115 AW powerful fade-free suction",
       "runtime": "Up to 40 minutes continuous cleaning",
-      "filtration": "Advanced whole-machine filtration captures 99.99% particles",
+      "filtration": "Advanced whole-machine filtration captures 99.99% of dust particles",
       "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
     },
     "reviews": [
       {
         "author": "Karan T",
         "rating": 5,
-        "text": "Very lightweight for cleaning ceiling fans and AC vents.",
+        "text": "Lightweight and easy to carry upstairs.",
         "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "nespresso-essenza-mini-amazon",
-    "product_id": "nespresso-essenza-mini-amazon",
-    "groupId": "nespresso-essenza-mini",
-    "group_id": "nespresso-essenza-mini",
-    "title": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black) (AMAZON)",
-    "name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "brand": "Nespresso",
-    "category": "home",
-    "platform": "amazon",
-    "price": 13999,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 26,
-    "discount_percent": 26,
-    "rating": 4.6,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B079L7N9K1",
-    "product_url": "https://www.amazon.in/dp/B079L7N9K1",
-    "seller": "Nespresso Official Distributor",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 79,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 26% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 26% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "specs": {
-      "pressure": "19-bar high-pressure extraction pump",
-      "heat_up_time": "Ultra-fast 25-second heat-up",
-      "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
-      "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
-    },
-    "reviews": [
-      {
-        "author": "Gautam M",
-        "rating": 5,
-        "text": "Makes rich crema espresso like an Italian cafe in 30 seconds.",
-        "date": "2024-11-16"
-      }
-    ]
-  },
-  {
-    "id": "nespresso-essenza-mini-flipkart",
-    "product_id": "nespresso-essenza-mini-flipkart",
-    "groupId": "nespresso-essenza-mini",
-    "group_id": "nespresso-essenza-mini",
-    "title": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black) (FLIPKART)",
-    "name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "brand": "Nespresso",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 14499,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 24,
-    "discount_percent": 24,
-    "rating": 4.4,
-    "reviewCount": 2400,
-    "review_count": 2400,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/nespresso-essenza-mini",
-    "product_url": "https://www.flipkart.com/nespresso-essenza-mini",
-    "seller": "CoffeeCrafters India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 76,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 24% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 24% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "specs": {
-      "pressure": "19-bar high-pressure extraction pump",
-      "heat_up_time": "Ultra-fast 25-second heat-up",
-      "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
-      "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
-    },
-    "reviews": [
-      {
-        "author": "Sonia P",
-        "rating": 4,
-        "text": "Tiny footprint on kitchen counter. Super easy to use.",
-        "date": "2024-10-21"
-      }
-    ]
-  },
-  {
-    "id": "nespresso-essenza-mini-myntra",
-    "product_id": "nespresso-essenza-mini-myntra",
-    "groupId": "nespresso-essenza-mini",
-    "group_id": "nespresso-essenza-mini",
-    "title": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black) (MYNTRA)",
-    "name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "brand": "Nespresso",
-    "category": "home",
-    "platform": "myntra",
-    "price": 13499,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.7,
-    "reviewCount": 890,
-    "review_count": 890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kitchen/nespresso-essenza-mini",
-    "product_url": "https://www.myntra.com/kitchen/nespresso-essenza-mini",
-    "seller": "Gourmet Kitchen Studio",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 82,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "specs": {
-      "pressure": "19-bar high-pressure extraction pump",
-      "heat_up_time": "Ultra-fast 25-second heat-up",
-      "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
-      "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
-    },
-    "reviews": [
-      {
-        "author": "Rahul K",
-        "rating": 5,
-        "text": "Came with 14 complimentary coffee capsules. Great taste!",
-        "date": "2024-11-28"
-      }
-    ]
-  },
-  {
-    "id": "bajaj-rex-500w-mixer-amazon",
-    "product_id": "bajaj-rex-500w-mixer-amazon",
-    "groupId": "bajaj-rex-500w-mixer",
-    "group_id": "bajaj-rex-500w-mixer",
-    "title": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars (AMAZON)",
-    "name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "brand": "Bajaj",
-    "category": "home",
-    "platform": "amazon",
-    "price": 1999,
-    "originalPrice": 3200,
-    "original_price": 3200,
-    "discountPercent": 38,
-    "discount_percent": 38,
-    "rating": 4.2,
-    "reviewCount": 64200,
-    "review_count": 64200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B009P2LM9K",
-    "product_url": "https://www.amazon.in/dp/B009P2LM9K",
-    "seller": "Bajaj Electricals Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 38% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 38% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "specs": {
-      "power": "500 Watts 100% Copper Motor",
-      "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
-      "speed_control": "3 speed control with incher for momentary operation",
-      "overload_protection": "Motor overload protection with auto cut-off"
-    },
-    "reviews": [
-      {
-        "author": "Sunita D",
-        "rating": 5,
-        "text": "Chutney and dry masalas grind into fine paste within seconds.",
-        "date": "2024-11-10"
-      }
-    ]
-  },
-  {
-    "id": "bajaj-rex-500w-mixer-flipkart",
-    "product_id": "bajaj-rex-500w-mixer-flipkart",
-    "groupId": "bajaj-rex-500w-mixer",
-    "group_id": "bajaj-rex-500w-mixer",
-    "title": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars (FLIPKART)",
-    "name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "brand": "Bajaj",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 1899,
-    "originalPrice": 3200,
-    "original_price": 3200,
-    "discountPercent": 41,
-    "discount_percent": 41,
-    "rating": 4.1,
-    "reviewCount": 48900,
-    "review_count": 48900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/bajaj-rex-mixer",
-    "product_url": "https://www.flipkart.com/bajaj-rex-mixer",
-    "seller": "RetailNet Kitchen",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 41% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 41% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "specs": {
-      "power": "500 Watts 100% Copper Motor",
-      "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
-      "speed_control": "3 speed control with incher for momentary operation",
-      "overload_protection": "Motor overload protection with auto cut-off"
-    },
-    "reviews": [
-      {
-        "author": "Kishore M",
-        "rating": 4,
-        "text": "Value for money kitchen appliance for small families.",
-        "date": "2024-10-14"
-      }
-    ]
-  },
-  {
-    "id": "bajaj-rex-500w-mixer-myntra",
-    "product_id": "bajaj-rex-500w-mixer-myntra",
-    "groupId": "bajaj-rex-500w-mixer",
-    "group_id": "bajaj-rex-500w-mixer",
-    "title": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars (MYNTRA)",
-    "name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "brand": "Bajaj",
-    "category": "home",
-    "platform": "myntra",
-    "price": 2099,
-    "originalPrice": 3200,
-    "original_price": 3200,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.3,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kitchen/bajaj-rex-mixer",
-    "product_url": "https://www.myntra.com/kitchen/bajaj-rex-mixer",
-    "seller": "Home Utilities Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "specs": {
-      "power": "500 Watts 100% Copper Motor",
-      "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
-      "speed_control": "3 speed control with incher for momentary operation",
-      "overload_protection": "Motor overload protection with auto cut-off"
-    },
-    "reviews": [
-      {
-        "author": "Meenakshi R",
-        "rating": 4,
-        "text": "Sturdy vacuum suction feet keep it steady.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "mi-smart-air-purifier-4-amazon",
-    "product_id": "mi-smart-air-purifier-4-amazon",
-    "groupId": "mi-smart-air-purifier-4",
-    "group_id": "mi-smart-air-purifier-4",
-    "title": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google) (AMAZON)",
-    "name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "brand": "Xiaomi",
-    "category": "home",
-    "platform": "amazon",
-    "price": 13999,
-    "originalPrice": 16999,
-    "original_price": 16999,
-    "discountPercent": 18,
-    "discount_percent": 18,
-    "rating": 4.5,
-    "reviewCount": 14200,
-    "review_count": 14200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09WJ78L91",
-    "product_url": "https://www.amazon.in/dp/B09WJ78L91",
-    "seller": "Xiaomi India Authorized",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 75,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 18% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 18% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "specs": {
-      "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
-      "coverage_area": "Up to 516 sq. ft. room coverage",
-      "cadr": "400 m³/h Clean Air Delivery Rate",
-      "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
-    },
-    "reviews": [
-      {
-        "author": "Tarun B",
-        "rating": 5,
-        "text": "Brings AQI from 350 to under 25 in 20 minutes in Delhi winters.",
-        "date": "2024-11-24"
-      }
-    ]
-  },
-  {
-    "id": "mi-smart-air-purifier-4-flipkart",
-    "product_id": "mi-smart-air-purifier-4-flipkart",
-    "groupId": "mi-smart-air-purifier-4",
-    "group_id": "mi-smart-air-purifier-4",
-    "title": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google) (FLIPKART)",
-    "name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "brand": "Xiaomi",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 13499,
-    "originalPrice": 16999,
-    "original_price": 16999,
-    "discountPercent": 21,
-    "discount_percent": 21,
-    "rating": 4.4,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/mi-smart-air-purifier-4",
-    "product_url": "https://www.flipkart.com/mi-smart-air-purifier-4",
-    "seller": "FSAssured Electronics",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 21% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 21% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "specs": {
-      "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
-      "coverage_area": "Up to 516 sq. ft. room coverage",
-      "cadr": "400 m³/h Clean Air Delivery Rate",
-      "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
-    },
-    "reviews": [
-      {
-        "author": "Deepak N",
-        "rating": 5,
-        "text": "Night mode is whisper quiet. Real-time PM2.5 display is accurate.",
-        "date": "2024-10-29"
-      }
-    ]
-  },
-  {
-    "id": "mi-smart-air-purifier-4-myntra",
-    "product_id": "mi-smart-air-purifier-4-myntra",
-    "groupId": "mi-smart-air-purifier-4",
-    "group_id": "mi-smart-air-purifier-4",
-    "title": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google) (MYNTRA)",
-    "name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "brand": "Xiaomi",
-    "category": "home",
-    "platform": "myntra",
-    "price": 14299,
-    "originalPrice": 16999,
-    "original_price": 16999,
-    "discountPercent": 16,
-    "discount_percent": 16,
-    "rating": 4.5,
-    "reviewCount": 940,
-    "review_count": 940,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/appliances/mi-air-purifier-4",
-    "product_url": "https://www.myntra.com/appliances/mi-air-purifier-4",
-    "seller": "Xiaomi Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 16% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 16% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "specs": {
-      "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
-      "coverage_area": "Up to 516 sq. ft. room coverage",
-      "cadr": "400 m³/h Clean Air Delivery Rate",
-      "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
-    },
-    "reviews": [
-      {
-        "author": "Sangeeta P",
-        "rating": 5,
-        "text": "Helps tremendously with dust allergy and pet dander.",
-        "date": "2024-11-18"
       }
     ]
   }
@@ -5236,6 +7258,7 @@ export const searchMockProducts = ({ query = "", category = "", minPrice = 0, ma
     const q = query.toLowerCase();
     filtered = filtered.filter((p) =>
       p.title.toLowerCase().includes(q) ||
+      p.name.toLowerCase().includes(q) ||
       p.brand.toLowerCase().includes(q) ||
       p.category.toLowerCase().includes(q)
     );
@@ -5267,11 +7290,21 @@ export const searchMockProducts = ({ query = "", category = "", minPrice = 0, ma
 
 export const getAlternatives = (productId) => {
   const current = mockProducts.find((p) => p.id === productId || p.product_id === productId) || mockProducts[0];
-  const sameCategory = mockProducts.filter((p) => p.category === current.category && p.groupId !== current.groupId);
+  const sameCategory = mockProducts.filter((p) => p.category === current.category && (p.groupId || p.group_id) !== (current.groupId || current.group_id));
 
-  const cheaper = sameCategory.filter((p) => p.price < current.price * 0.85).slice(0, 3);
-  const similar = sameCategory.filter((p) => p.price >= current.price * 0.85 && p.price <= current.price * 1.15).slice(0, 3);
-  const premium = sameCategory.filter((p) => p.price > current.price * 1.15).slice(0, 3);
+  // Deduplicate by product group
+  const uniqueGroupMap = new Map();
+  sameCategory.forEach((item) => {
+    const gid = item.groupId || item.group_id;
+    if (!uniqueGroupMap.has(gid)) {
+      uniqueGroupMap.set(gid, item);
+    }
+  });
+  const uniqueList = Array.from(uniqueGroupMap.values());
+
+  const cheaper = uniqueList.filter((p) => p.price < current.price * 0.9).slice(0, 3);
+  const similar = uniqueList.filter((p) => p.price >= current.price * 0.85 && p.price <= current.price * 1.15).slice(0, 3);
+  const premium = uniqueList.filter((p) => p.price > current.price * 1.10).slice(0, 3);
 
   return { currentProduct: current, cheaper, similar, premium };
 };
@@ -5286,7 +7319,7 @@ export const budgetExplorer = (productId, extraBudget) => {
     .map((p) => ({
       ...p,
       priceDifference: p.price - current.price,
-      upgradeReason: `For +₹${p.price - current.price}, get ${p.brand} with superior specs and higher ratings.`,
+      upgradeReason: `For +₹${(p.price - current.price).toLocaleString("en-IN")}, get ${p.brand} with superior specs and higher ratings.`,
     }));
 
   return {

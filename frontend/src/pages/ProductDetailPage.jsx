@@ -17,13 +17,18 @@ import {
   ShoppingBag,
   Sliders,
   ChevronRight,
-  Share2
+  Share2,
+  Box,
+  Truck,
+  RotateCw,
+  Zap,
+  TrendingDown
 } from "lucide-react";
-import CategoryNavRail from "../components/home/CategoryNavRail";
 import PlatformBadge from "../components/products/PlatformBadge";
 import SentimentBadge from "../components/products/SentimentBadge";
 import ProductCard from "../components/products/ProductCard";
-import AlternativeFinder from "../components/tools/AlternativeFinder";
+import PriceHistoryGraph from "../components/products/PriceHistoryGraph";
+import SpatialARViewerModal from "../components/tools/SpatialARViewerModal";
 import { getProductById, getProductAlternatives, exploreBudget, createPriceAlert } from "../services/api";
 import { getCategoryFallbackImage, mockProducts, CATEGORY_DEFINITIONS } from "../services/mockData";
 
@@ -34,8 +39,8 @@ export default function ProductDetailPage({ onOpenChat }) {
   const [product, setProduct] = useState(null);
   const [variants, setVariants] = useState([]);
   const [alternatives, setAlternatives] = useState({ cheaper: [], similar: [], premium: [] });
-  const [extraBudget, setExtraBudget] = useState(2000);
-  const [budgetUpgrades, setBudgetUpgrades] = useState([]);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [isARModalOpen, setIsARModalOpen] = useState(false);
   const [targetPrice, setTargetPrice] = useState("");
   const [alertSuccess, setAlertSuccess] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -45,6 +50,7 @@ export default function ProductDetailPage({ onOpenChat }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setLoading(true);
     setAlertSuccess(false);
+    setSelectedImageIndex(0);
 
     getProductById(productId)
       .then((data) => {
@@ -59,7 +65,7 @@ export default function ProductDetailPage({ onOpenChat }) {
       })
       .catch((err) => {
         console.warn("Product load error, fallback to mock:", err.message);
-        const cleanId = productId.replace(/-amazon$/, "").replace(/-flipkart$/, "").replace(/-myntra$/, "");
+        const cleanId = productId?.replace(/-amazon$/, "").replace(/-flipkart$/, "").replace(/-myntra$/, "");
         const found = mockProducts.find((p) => p.id === productId || p.product_id === productId || p.groupId === cleanId) || mockProducts[0];
         const allVars = mockProducts.filter((p) => (p.groupId || p.group_id) === (found.groupId || found.group_id));
         setProduct(found);
@@ -77,16 +83,6 @@ export default function ProductDetailPage({ onOpenChat }) {
       .catch(() => {});
   }, [productId]);
 
-  // Handle budget explore
-  useEffect(() => {
-    if (!product) return;
-    exploreBudget(product.product_id || product.id, extraBudget)
-      .then((res) => {
-        if (res?.upgradedOptions) setBudgetUpgrades(res.upgradedOptions);
-      })
-      .catch(() => {});
-  }, [product, extraBudget]);
-
   const handleSetAlert = async (e) => {
     e.preventDefault();
     if (!product || !targetPrice) return;
@@ -99,144 +95,138 @@ export default function ProductDetailPage({ onOpenChat }) {
         platform: product.platform,
       });
       setAlertSuccess(true);
+      setTimeout(() => setAlertSuccess(false), 5000);
     } catch (err) {
-      console.error("Price alert error:", err);
+      console.error("Failed to create price alert:", err);
     }
   };
 
-  const handleShare = () => {
-    navigator.clipboard?.writeText(window.location.href);
+  const handleCopyShare = () => {
+    navigator.clipboard.writeText(window.location.href);
     setCopiedLink(true);
     setTimeout(() => setCopiedLink(false), 2000);
   };
 
   if (loading || !product) {
     return (
-      <div style={{ minHeight: "100vh", backgroundColor: "var(--color-canvas)" }}>
-        <CategoryNavRail />
-        <div className="container" style={{ padding: "80px 24px", textAlign: "center" }}>
-          <h2 className="heading-xl">Loading Product Details...</h2>
-          <p style={{ color: "var(--color-mute)", marginTop: "8px" }}>Fetching live multi-platform data from Amazon, Flipkart & Myntra</p>
+      <div style={{ minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              width: "48px",
+              height: "48px",
+              border: "3px solid var(--color-hairline)",
+              borderTopColor: "var(--color-ink)",
+              borderRadius: "50%",
+              animation: "spin 0.8s linear infinite",
+              margin: "0 auto 16px",
+            }}
+          />
+          <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px" }}>LOADING PRODUCT INTELLIGENCE...</h3>
         </div>
       </div>
     );
   }
 
-  const categoryDef = CATEGORY_DEFINITIONS.find((c) => c.id === product.category) || {
-    id: product.category || "electronics",
-    shortLabel: (product.category || "Category").toUpperCase(),
-  };
+  // 4-image array with fallback
+  const images = product.images && product.images.length >= 4 
+    ? product.images 
+    : [
+        product.imageUrl || product.image_url,
+        product.imageUrl || product.image_url,
+        product.imageUrl || product.image_url,
+        product.imageUrl || product.image_url,
+      ];
 
-  const isBestOverall = product.is_best_overall || product.isBestOverall || (product.best_overall_score || product.bestOverallScore) >= 90;
-  const discountPercent = product.discount_percent || product.discountPercent || 0;
-  const isSale = discountPercent > 0;
-  const relatedProducts = mockProducts
+  // Best platform deal
+  const sortedVariants = [...variants].sort((a, b) => a.price - b.price);
+  const bestVariant = sortedVariants[0] || product;
+  const maxVariantPrice = Math.max(...variants.map((v) => v.price));
+  const maxSavings = maxVariantPrice - bestVariant.price;
+
+  // More products in this category
+  const moreInCategory = mockProducts
     .filter((p) => p.category === product.category && (p.groupId || p.group_id) !== (product.groupId || product.group_id))
     .filter((v, i, a) => a.findIndex((t) => (t.groupId || t.group_id) === (v.groupId || v.group_id)) === i)
-    .slice(0, 4);
+    .slice(0, 6);
 
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "var(--color-canvas)", paddingBottom: "80px" }}>
-      {/* Category Nav Rail */}
-      <CategoryNavRail />
-
-      <div className="container" style={{ paddingTop: "24px" }}>
-        {/* ─── 1. BREADCRUMBS & TOP BAR ──────────────────────────── */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: "12px",
-            marginBottom: "24px",
-            fontSize: "13px",
-            color: "var(--color-mute)",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-            <Link to="/" style={{ color: "var(--color-charcoal)", fontWeight: 500 }}>
-              Home
+    <div style={{ backgroundColor: "var(--color-canvas)", minHeight: "100vh", paddingBottom: "80px" }}>
+      {/* 1. Breadcrumbs Header */}
+      <div style={{ borderBottom: "1px solid var(--color-hairline)", backgroundColor: "var(--color-soft-cloud)" }}>
+        <div className="container" style={{ padding: "12px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px" }}>
+            <Link to="/" style={{ color: "var(--color-mute)", display: "flex", alignItems: "center", gap: "4px" }}>
+              <ArrowLeft size={14} /> Home
             </Link>
-            <ChevronRight size={14} />
-            <Link to={`/category/${categoryDef.id}`} style={{ color: "var(--color-charcoal)", fontWeight: 500 }}>
-              {categoryDef.shortLabel}
+            <span style={{ color: "var(--color-mute)" }}>/</span>
+            <Link to={`/category/${product.category}`} style={{ color: "var(--color-mute)", textTransform: "capitalize" }}>
+              {product.category}
             </Link>
-            <ChevronRight size={14} />
-            <span style={{ color: "var(--color-ink)", fontWeight: 600, maxWidth: "320px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-              {product.title}
+            <span style={{ color: "var(--color-mute)" }}>/</span>
+            <span style={{ fontWeight: 600, color: "var(--color-ink)", maxWidth: "300px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+              {product.name || product.product_name || product.title}
             </span>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <button
-              onClick={handleShare}
-              className="btn-secondary"
-              style={{
-                height: "36px",
-                padding: "0 14px",
-                fontSize: "12px",
-                gap: "6px",
-                borderRadius: "var(--radius-sm)",
-              }}
-            >
-              <Share2 size={13} />
-              <span>{copiedLink ? "Link Copied!" : "Share Deal"}</span>
-            </button>
-            <button
-              onClick={() => navigate(-1)}
-              className="btn-secondary"
-              style={{
-                height: "36px",
-                padding: "0 14px",
-                fontSize: "12px",
-                gap: "6px",
-                borderRadius: "var(--radius-sm)",
-              }}
-            >
-              <ArrowLeft size={13} />
-              <span>Back</span>
-            </button>
-          </div>
+          <button
+            onClick={handleCopyShare}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+              background: "none",
+              border: "1px solid var(--color-hairline)",
+              padding: "5px 12px",
+              borderRadius: "var(--radius-pill)",
+              fontSize: "12px",
+              fontWeight: 600,
+              cursor: "pointer",
+            }}
+          >
+            <Share2 size={13} /> {copiedLink ? "Link Copied!" : "Share"}
+          </button>
         </div>
+      </div>
 
-        {/* ─── 2. HERO PRODUCT OVERVIEW ─────────────────────────── */}
+      {/* 2. Main Product Showcase Hero (Gallery + Intelligence Column) */}
+      <div className="container" style={{ paddingTop: "32px" }}>
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
-            gap: "48px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
+            gap: "40px",
             alignItems: "start",
-            marginBottom: "64px",
           }}
         >
-          {/* Left Column: Media Studio */}
+          {/* ─── LEFT: 4-Angle Interactive Gallery & AR Button ─── */}
           <div>
             <div
               style={{
                 position: "relative",
-                width: "100%",
                 aspectRatio: "1/1",
                 backgroundColor: "var(--color-soft-cloud)",
-                overflow: "hidden",
                 border: "1px solid var(--color-hairline)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                overflow: "hidden",
               }}
             >
               <img
-                src={product.image_url || product.imageUrl || getCategoryFallbackImage(product.category)}
+                src={images[selectedImageIndex % images.length]}
                 alt={product.title}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src = getCategoryFallbackImage(product.category);
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  padding: "24px",
+                  transition: "transform 0.3s ease",
                 }}
               />
 
-              {/* Top Pick Ribbon */}
-              {isBestOverall && (
+              {/* Best Overall Badge */}
+              {(product.is_best_overall || product.isBestOverall) && (
                 <div
                   style={{
                     position: "absolute",
@@ -244,275 +234,120 @@ export default function ProductDetailPage({ onOpenChat }) {
                     left: "16px",
                     backgroundColor: "var(--color-ink)",
                     color: "var(--color-canvas)",
-                    padding: "6px 14px",
-                    borderRadius: "var(--radius-lg)",
-                    fontSize: "12px",
+                    padding: "4px 12px",
+                    borderRadius: "4px",
+                    fontSize: "11px",
                     fontWeight: 800,
                     textTransform: "uppercase",
-                    letterSpacing: "0.5px",
                     display: "flex",
                     alignItems: "center",
                     gap: "6px",
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <Sparkles size={13} color="#f59e0b" />
-                  <span>AI Best Overall Pick</span>
+                  <Sparkles size={12} color="#FFD700" /> AI Best Overall Deal
                 </div>
               )}
 
-              {/* Discount Tag */}
-              {isSale && (
-                <div
-                  style={{
-                    position: "absolute",
-                    top: isBestOverall ? "56px" : "16px",
-                    left: "16px",
-                    backgroundColor: "var(--color-sale)",
-                    color: "#ffffff",
-                    padding: "4px 10px",
-                    borderRadius: "4px",
-                    fontSize: "12px",
-                    fontWeight: 800,
-                  }}
-                >
-                  {discountPercent}% OFF
-                </div>
-              )}
-
-              {/* Platform Origin Tag */}
-              <div style={{ position: "absolute", bottom: "16px", left: "16px" }}>
-                <PlatformBadge platform={product.platform} size="lg" />
-              </div>
+              {/* Interactive 3D / AR View Launch Button */}
+              <button
+                onClick={() => setIsARModalOpen(true)}
+                style={{
+                  position: "absolute",
+                  bottom: "16px",
+                  right: "16px",
+                  backgroundColor: "rgba(17, 17, 17, 0.9)",
+                  color: "#ffffff",
+                  border: "none",
+                  borderRadius: "var(--radius-pill)",
+                  padding: "8px 16px",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  cursor: "pointer",
+                  boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
+                  backdropFilter: "blur(6px)",
+                }}
+              >
+                <Box size={15} color="#00ffcc" />
+                <span>3D & AR View</span>
+              </button>
             </div>
 
-            {/* AI Sentiment Bar Below Image */}
+            {/* 4 Clickable Angle Thumbnails */}
             <div
               style={{
-                marginTop: "16px",
-                padding: "16px 20px",
-                backgroundColor: "var(--color-soft-cloud)",
-                border: "1px solid var(--color-hairline)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: "repeat(4, 1fr)",
                 gap: "12px",
+                marginTop: "16px",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                <SentimentBadge
-                  sentiment={product.sentiment}
-                  score={product.sentiment_score || product.sentimentScore}
-                  pros={product.sentimentPros}
-                  cons={product.sentimentCons}
-                  size="md"
-                />
-                <span style={{ fontSize: "13px", color: "var(--color-charcoal)", fontWeight: 500 }}>
-                  Based on verified user feedback
-                </span>
-              </div>
-
-              {(product.best_overall_score || product.bestOverallScore) && (
-                <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                  <span style={{ fontSize: "12px", fontWeight: 700, color: "var(--color-mute)", textTransform: "uppercase" }}>
-                    AI Score:
-                  </span>
-                  <span
-                    style={{
-                      fontSize: "14px",
-                      fontWeight: 800,
-                      color: "var(--color-success)",
-                      backgroundColor: "rgba(0, 125, 72, 0.1)",
-                      padding: "2px 8px",
-                      borderRadius: "var(--radius-sm)",
-                    }}
-                  >
-                    {product.best_overall_score || product.bestOverallScore}/100
-                  </span>
-                </div>
-              )}
+              {images.slice(0, 4).map((imgUrl, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setSelectedImageIndex(idx)}
+                  style={{
+                    aspectRatio: "1/1",
+                    backgroundColor: "var(--color-soft-cloud)",
+                    border: selectedImageIndex === idx ? "2px solid var(--color-ink)" : "1px solid var(--color-hairline)",
+                    padding: "4px",
+                    cursor: "pointer",
+                    overflow: "hidden",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    src={imgUrl}
+                    alt={`Angle ${idx + 1}`}
+                    style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                  />
+                </button>
+              ))}
             </div>
           </div>
 
-          {/* Right Column: Title, Prices, Multi-Platform Comparison */}
+          {/* ─── RIGHT: Product Intelligence, Pricing & Multi-Platform Overview ─── */}
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-              <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--color-mute)", textTransform: "uppercase" }}>
-                {product.brand} · {product.category?.toUpperCase()}
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+              <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", color: "var(--color-mute)" }}>
+                {product.brand}
+              </span>
+              <span style={{ color: "var(--color-hairline)" }}>•</span>
+              <span style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", color: "var(--color-sale)" }}>
+                {product.category}
               </span>
             </div>
 
             <h1
               style={{
-                fontFamily: "var(--font-ui)",
-                fontSize: "clamp(24px, 3vw, 32px)",
-                fontWeight: 700,
+                fontFamily: "var(--font-display)",
+                fontSize: "36px",
+                lineHeight: 1.1,
+                letterSpacing: "0.5px",
                 color: "var(--color-ink)",
-                lineHeight: 1.25,
-                marginBottom: "12px",
+                margin: "0 0 16px 0",
               }}
             >
-              {product.title}
+              {product.name || product.product_name || product.title}
             </h1>
 
-            {/* Ratings Summary */}
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "4px", fontWeight: 700, fontSize: "15px" }}>
-                <Star size={16} fill="#f59e0b" color="#f59e0b" />
-                <span>{product.rating ? Number(product.rating).toFixed(1) : "4.5"}</span>
+            {/* Rating & Reviews Bar */}
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "4px", backgroundColor: "var(--color-soft-cloud)", padding: "4px 10px", borderRadius: "4px" }}>
+                <Star size={15} fill="var(--color-ink)" color="var(--color-ink)" />
+                <span style={{ fontSize: "13px", fontWeight: 800 }}>{Number(product.rating || 4.5).toFixed(1)}</span>
+                <span style={{ fontSize: "12px", color: "var(--color-mute)" }}>({(product.review_count || 1200).toLocaleString("en-IN")} reviews)</span>
               </div>
-              <span style={{ color: "var(--color-hairline)" }}>|</span>
-              <span style={{ fontSize: "14px", color: "var(--color-mute)" }}>
-                {(product.review_count || product.reviewCount || 15400).toLocaleString("en-IN")} ratings across platforms
-              </span>
-              <span style={{ color: "var(--color-hairline)" }}>|</span>
-              <span style={{ fontSize: "13px", color: "var(--color-success)", fontWeight: 600, display: "flex", alignItems: "center", gap: "4px" }}>
-                <ShieldCheck size={14} /> In Stock
-              </span>
-            </div>
-
-            {/* Price Callout */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                gap: "14px",
-                padding: "20px 0",
-                borderTop: "1px solid var(--color-hairline)",
-                borderBottom: "1px solid var(--color-hairline)",
-                marginBottom: "24px",
-              }}
-            >
-              <div>
-                <span style={{ fontSize: "12px", color: "var(--color-mute)", display: "block", textTransform: "uppercase", fontWeight: 600 }}>
-                  Best Current Price
-                </span>
-                <span style={{ fontSize: "36px", fontWeight: 800, color: "var(--color-ink)" }}>
-                  ₹{Number(product.price).toLocaleString("en-IN")}
-                </span>
-              </div>
-
-              {(product.original_price || product.originalPrice) && (
-                <div style={{ fontSize: "16px", color: "var(--color-mute)", textDecoration: "line-through" }}>
-                  ₹{Number(product.original_price || product.originalPrice).toLocaleString("en-IN")}
-                </div>
-              )}
-
-              {isSale && (
-                <div
-                  style={{
-                    backgroundColor: "var(--color-sale)",
-                    color: "#ffffff",
-                    padding: "4px 10px",
-                    borderRadius: "4px",
-                    fontSize: "13px",
-                    fontWeight: 800,
-                  }}
-                >
-                  Save {discountPercent}%
-                </div>
-              )}
-            </div>
-
-            {/* AI "Why Buy This" Verdict Box */}
-            {(product.why_buy || product.whyBuy) && (
-              <div
-                style={{
-                  backgroundColor: "rgba(0, 125, 72, 0.06)",
-                  borderLeft: "4px solid var(--color-success)",
-                  padding: "14px 18px",
-                  marginBottom: "24px",
-                  borderRadius: "var(--radius-none)",
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "var(--color-success)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", marginBottom: "4px" }}>
-                  <Sparkles size={14} />
-                  <span>AI Recommendation Rationale</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "var(--color-ink)", lineHeight: 1.45 }}>
-                  {product.why_buy || product.whyBuy}
-                </p>
-              </div>
-            )}
-
-            {/* ─── MULTI-PLATFORM REAL-TIME COMPARISON MATRIX ─── */}
-            <div style={{ marginBottom: "28px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
-                <h3 style={{ fontSize: "14px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--color-ink)" }}>
-                  Live Multi-Platform Comparison:
-                </h3>
-                <span style={{ fontSize: "12px", color: "var(--color-mute)" }}>
-                  Verified 100% In-Stock
-                </span>
-              </div>
-
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                {variants.map((v, i) => {
-                  const isCurrent = v.platform === product.platform;
-                  return (
-                    <div
-                      key={i}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        padding: "12px 18px",
-                        backgroundColor: isCurrent ? "var(--color-soft-cloud)" : "var(--color-canvas)",
-                        border: `1.5px solid ${isCurrent ? "var(--color-ink)" : "var(--color-hairline)"}`,
-                        borderRadius: "var(--radius-none)",
-                        gap: "16px",
-                        flexWrap: "wrap",
-                      }}
-                    >
-                      <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                        <PlatformBadge platform={v.platform} size="md" />
-                        <div>
-                          <span style={{ fontSize: "12px", color: "var(--color-mute)", display: "block" }}>
-                            {v.delivery_estimate || v.deliveryEstimate || "2-3 Days Delivery"}
-                          </span>
-                          <span style={{ fontSize: "11px", color: "var(--color-charcoal)", fontWeight: 500 }}>
-                            Seller: {v.seller || "Authorized Retailer"}
-                          </span>
-                        </div>
-                      </div>
-
-                      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                        <div>
-                          <div style={{ fontSize: "18px", fontWeight: 800, color: "var(--color-ink)", textAlign: "right" }}>
-                            ₹{Number(v.price).toLocaleString("en-IN")}
-                          </div>
-                          {(v.original_price || v.originalPrice) && (v.discount_percent || v.discountPercent) > 0 && (
-                            <div style={{ fontSize: "11px", color: "var(--color-sale)", fontWeight: 700, textAlign: "right" }}>
-                              {v.discount_percent || v.discountPercent}% off
-                            </div>
-                          )}
-                        </div>
-
-                        <a
-                          href={v.product_url || v.productUrl || "#"}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn-primary"
-                          style={{
-                            height: "38px",
-                            padding: "0 18px",
-                            fontSize: "13px",
-                            gap: "6px",
-                            borderRadius: "var(--radius-lg)",
-                          }}
-                        >
-                          <span>Buy on {v.platform ? v.platform.toUpperCase() : "STORE"}</span>
-                          <ExternalLink size={13} />
-                        </a>
-                      </div>
-                    </div>
-                  );
-                })}
+              <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "#059669", fontWeight: 700 }}>
+                <CheckCircle2 size={15} /> 100% Authentic Seller
               </div>
             </div>
 
-            {/* Price Alert Form & AI Question CTA */}
+            {/* Price Card */}
             <div
               style={{
                 backgroundColor: "var(--color-soft-cloud)",
@@ -521,276 +356,450 @@ export default function ProductDetailPage({ onOpenChat }) {
                 marginBottom: "24px",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                <Bell size={16} color="var(--color-ink)" />
-                <span style={{ fontSize: "14px", fontWeight: 700 }}>Set Price Drop Alert</span>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "12px", flexWrap: "wrap" }}>
+                <span style={{ fontSize: "36px", fontWeight: 900, color: "var(--color-ink)" }}>
+                  ₹{Number(bestVariant.price).toLocaleString("en-IN")}
+                </span>
+                {bestVariant.original_price && (
+                  <span style={{ fontSize: "18px", color: "var(--color-mute)", textDecoration: "line-through" }}>
+                    ₹{Number(bestVariant.original_price).toLocaleString("en-IN")}
+                  </span>
+                )}
+                {bestVariant.discount_percent > 0 && (
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontWeight: 800,
+                      color: "#ffffff",
+                      backgroundColor: "var(--color-sale)",
+                      padding: "3px 8px",
+                      borderRadius: "4px",
+                    }}
+                  >
+                    SAVE {bestVariant.discount_percent}%
+                  </span>
+                )}
               </div>
-              <p style={{ fontSize: "13px", color: "var(--color-mute)", marginBottom: "12px" }}>
-                We'll notify you automatically when this item drops to or below your target threshold.
-              </p>
 
-              {alertSuccess ? (
-                <div style={{ color: "var(--color-success)", fontSize: "14px", fontWeight: 600, display: "flex", alignItems: "center", gap: "6px" }}>
-                  <CheckCircle2 size={16} /> Alert saved for ₹{targetPrice}! We are tracking Amazon, Flipkart & Myntra.
+              {maxSavings > 0 && (
+                <div style={{ marginTop: "8px", fontSize: "12px", fontWeight: 700, color: "#059669" }}>
+                  🎉 Save up to ₹{maxSavings.toLocaleString("en-IN")} by purchasing on {bestVariant.platform?.toUpperCase()} instead of other stores!
                 </div>
-              ) : (
-                <form onSubmit={handleSetAlert} style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-                  <div style={{ position: "relative", flex: 1, minWidth: "160px" }}>
-                    <span style={{ position: "absolute", left: "12px", top: "10px", fontSize: "14px", color: "var(--color-mute)", fontWeight: 600 }}>₹</span>
-                    <input
-                      type="number"
-                      placeholder="Target price in ₹"
-                      value={targetPrice}
-                      onChange={(e) => setTargetPrice(e.target.value)}
-                      style={{
-                        width: "100%",
-                        padding: "10px 12px 10px 28px",
-                        fontSize: "14px",
-                        fontWeight: 600,
-                        border: "1px solid var(--color-hairline)",
-                        borderRadius: "var(--radius-none)",
-                        backgroundColor: "var(--color-canvas)",
-                        outline: "none",
-                        fontFamily: "var(--font-ui)",
-                      }}
-                    />
-                  </div>
-                  <button type="submit" className="btn-primary" style={{ height: "42px", padding: "0 24px", fontSize: "14px" }}>
-                    Track Price
-                  </button>
-                </form>
               )}
             </div>
 
-            {/* Ask AI Trigger */}
-            <button
-              onClick={onOpenChat}
-              className="btn-secondary"
+            {/* AI Summary Recommendation Box */}
+            <div
               style={{
-                width: "100%",
-                height: "44px",
-                fontSize: "14px",
-                fontWeight: 600,
-                gap: "8px",
                 border: "1px solid var(--color-ink)",
+                padding: "16px 20px",
+                marginBottom: "24px",
+                backgroundColor: "var(--color-canvas)",
               }}
             >
-              <Sparkles size={16} />
-              <span>Ask AI Advisor about {product.title}</span>
-            </button>
-          </div>
-        </div>
-
-        {/* ─── 3. DEEP DIVE SPECS & AI REVIEW SYNTHESIS ───────────── */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "36px",
-            padding: "48px 0",
-            borderTop: "1px solid var(--color-hairline)",
-            borderBottom: "1px solid var(--color-hairline)",
-            marginBottom: "48px",
-          }}
-        >
-          {/* Key Specifications Grid */}
-          <div>
-            <span style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "var(--color-mute)" }}>
-              Technical Breakdown
-            </span>
-            <h3 className="heading-lg" style={{ marginTop: "4px", marginBottom: "20px" }}>
-              SPECIFICATIONS
-            </h3>
-
-            {product.specs && Object.keys(product.specs).length > 0 ? (
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                {Object.entries(product.specs).map(([key, val]) => (
-                  <div
-                    key={key}
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      padding: "10px 14px",
-                      backgroundColor: "var(--color-soft-cloud)",
-                      borderBottom: "1px solid var(--color-hairline-soft)",
-                      fontSize: "13px",
-                    }}
-                  >
-                    <span style={{ color: "var(--color-mute)", fontWeight: 600, textTransform: "capitalize" }}>
-                      {key.replace(/_/g, " ")}:
-                    </span>
-                    <span style={{ color: "var(--color-ink)", fontWeight: 700, textAlign: "right" }}>
-                      {String(val)}
-                    </span>
-                  </div>
-                ))}
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px" }}>
+                <Sparkles size={16} color="var(--color-ink)" />
+                <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.5px" }}>
+                  AI Purchase Recommendation
+                </span>
               </div>
-            ) : (
-              <p style={{ color: "var(--color-mute)", fontSize: "14px" }}>Standard manufacturer retail specs apply.</p>
-            )}
-          </div>
-
-          {/* AI Review Pros & Cons Synthesis */}
-          <div>
-            <span style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "var(--color-mute)" }}>
-              Customer Intelligence
-            </span>
-            <h3 className="heading-lg" style={{ marginTop: "4px", marginBottom: "20px" }}>
-              AI REVIEW SYNTHESIS
-            </h3>
-
-            {(product.review_summary || product.reviewSummary) && (
-              <p style={{ fontSize: "14px", color: "var(--color-charcoal)", lineHeight: 1.5, marginBottom: "20px", padding: "14px", backgroundColor: "var(--color-soft-cloud)" }}>
-                {product.review_summary || product.reviewSummary}
+              <p style={{ fontSize: "13px", color: "var(--color-ink)", lineHeight: 1.5, margin: 0 }}>
+                {product.why_buy || product.whyBuy || `Top rated ${product.category} product with high durability, verified buyer sentiment, and best market pricing.`}
               </p>
-            )}
-
-            {/* Pros vs Cons */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
-              {/* Pros */}
-              <div style={{ padding: "16px", backgroundColor: "rgba(16,185,129,0.06)", border: "1px solid rgba(16,185,129,0.2)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "#10B981", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>
-                  <ThumbsUp size={14} /> What Buyers Love
-                </div>
-                <ul style={{ margin: "0 0 0 16px", padding: 0, fontSize: "13px", color: "var(--color-ink)", lineHeight: 1.4 }}>
-                  {(product.sentimentPros || ["Exceptional performance & build", "Reliable battery longevity", "High value for money"]).map((pro, idx) => (
-                    <li key={idx} style={{ marginBottom: "6px" }}>{pro}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Cons */}
-              <div style={{ padding: "16px", backgroundColor: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.2)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "#EF4444", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>
-                  <ThumbsDown size={14} /> Common Criticisms
-                </div>
-                <ul style={{ margin: "0 0 0 16px", padding: 0, fontSize: "13px", color: "var(--color-ink)", lineHeight: 1.4 }}>
-                  {(product.sentimentCons || ["Premium launch pricing", "Slight learning curve"]).map((con, idx) => (
-                    <li key={idx} style={{ marginBottom: "6px" }}>{con}</li>
-                  ))}
-                </ul>
-              </div>
             </div>
+
+            {/* Price Drop Alert Form */}
+            <form onSubmit={handleSetAlert} style={{ display: "flex", gap: "10px", marginBottom: "16px" }}>
+              <div style={{ flex: 1 }}>
+                <input
+                  type="number"
+                  placeholder="Target Price (₹)"
+                  value={targetPrice}
+                  onChange={(e) => setTargetPrice(e.target.value)}
+                  style={{
+                    width: "100%",
+                    height: "44px",
+                    padding: "0 14px",
+                    border: "1px solid var(--color-hairline)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    outline: "none",
+                  }}
+                />
+              </div>
+              <button
+                type="submit"
+                style={{
+                  height: "44px",
+                  padding: "0 20px",
+                  backgroundColor: "var(--color-ink)",
+                  color: "var(--color-canvas)",
+                  border: "none",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                <Bell size={14} /> Set Price Alert
+              </button>
+            </form>
+            {alertSuccess && (
+              <div style={{ fontSize: "12px", color: "#059669", fontWeight: 700, marginBottom: "16px" }}>
+                ✓ Price drop alert set! We'll notify you when it drops below ₹{Number(targetPrice).toLocaleString("en-IN")}.
+              </div>
+            )}
           </div>
         </div>
 
-        {/* ─── 4. BUDGET EXPLORER & UPGRADE OPPORTUNITIES ───────── */}
-        <div style={{ marginBottom: "48px" }}>
-          <div style={{ marginBottom: "20px" }}>
-            <span style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "var(--color-mute)" }}>
-              Decision Intelligence
-            </span>
-            <h3 className="heading-lg" style={{ marginTop: "4px" }}>
-              BUDGET EXPLORER (WHAT UNLOCKS WITH MORE BUDGET?)
-            </h3>
-            <p style={{ fontSize: "14px", color: "var(--color-mute)", marginTop: "2px" }}>
-              See if spending slightly more gets you a substantially better product in this category.
+        {/* ─── 3. REBUILT LIVE MULTI-PLATFORM COMPARISON (Point 5) ─── */}
+        <section style={{ marginTop: "60px" }}>
+          <div style={{ borderBottom: "1px solid var(--color-hairline)", paddingBottom: "12px", marginBottom: "24px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "11px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", color: "var(--color-mute)" }}>
+                Live Marketplace Arbitrage
+              </span>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", letterSpacing: "0.5px", margin: "4px 0 0 0", color: "var(--color-ink)" }}>
+              LIVE MULTI-PLATFORM COMPARISON
+            </h2>
+            <p style={{ fontSize: "13px", color: "var(--color-mute)", margin: "2px 0 0 0" }}>
+              Real-time pricing, verified delivery speeds, and in-stock status across major retailers
             </p>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px", flexWrap: "wrap" }}>
-            <span style={{ fontSize: "13px", fontWeight: 700 }}>Increase Budget by:</span>
-            {[1000, 2000, 3000, 5000].map((amt) => (
-              <button
-                key={amt}
-                onClick={() => setExtraBudget(amt)}
-                className={`filter-chip ${extraBudget === amt ? "active" : ""}`}
-              >
-                +₹{amt.toLocaleString("en-IN")}
-              </button>
-            ))}
-          </div>
+          {/* 3-Store Side-by-Side Comparison Cards */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "20px",
+            }}
+          >
+            {variants.map((v) => {
+              const isLowest = v.price === bestVariant.price;
+              const storeColor = v.platform === "amazon" ? "#FF9900" : v.platform === "flipkart" ? "#2874F0" : "#FF3F6C";
 
-          {budgetUpgrades.length > 0 ? (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-                gap: "20px",
-              }}
-            >
-              {budgetUpgrades.map((up, idx) => (
+              return (
                 <div
-                  key={idx}
-                  onClick={() => navigate(`/product/${up.product_id || up.id}`)}
+                  key={v.platform}
                   style={{
-                    padding: "16px",
-                    backgroundColor: "var(--color-soft-cloud)",
-                    border: "1px solid var(--color-hairline)",
-                    cursor: "pointer",
-                    transition: "border-color 0.15s ease",
+                    backgroundColor: "var(--color-canvas)",
+                    border: isLowest ? "2px solid var(--color-ink)" : "1px solid var(--color-hairline)",
+                    padding: "24px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    position: "relative",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--color-ink)")}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--color-hairline)")}
                 >
-                  <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-                    <img
-                      src={up.image_url || up.imageUrl || getCategoryFallbackImage(up.category)}
-                      alt={up.title}
-                      style={{ width: "64px", height: "64px", objectFit: "cover", backgroundColor: "var(--color-canvas)" }}
-                    />
-                    <div style={{ flex: 1, minWidth: 0 }}>
-                      <h4 style={{ fontSize: "14px", fontWeight: 700, color: "var(--color-ink)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                        {up.title}
-                      </h4>
-                      <div style={{ fontSize: "14px", fontWeight: 800, color: "var(--color-ink)", marginTop: "2px" }}>
-                        ₹{Number(up.price).toLocaleString("en-IN")}
+                  {isLowest && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-12px",
+                        left: "20px",
+                        backgroundColor: "var(--color-ink)",
+                        color: "#ffffff",
+                        fontSize: "10px",
+                        fontWeight: 900,
+                        textTransform: "uppercase",
+                        padding: "3px 10px",
+                        letterSpacing: "0.5px",
+                        borderRadius: "2px",
+                      }}
+                    >
+                      Lowest Price Guaranteed
+                    </div>
+                  )}
+
+                  <div>
+                    {/* Platform Header */}
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <span
+                          style={{
+                            display: "inline-block",
+                            width: "12px",
+                            height: "12px",
+                            borderRadius: "50%",
+                            backgroundColor: storeColor,
+                          }}
+                        />
+                        <span style={{ fontSize: "16px", fontWeight: 800, textTransform: "uppercase", color: "var(--color-ink)" }}>
+                          {v.platform}
+                        </span>
                       </div>
-                      <div style={{ fontSize: "12px", color: "var(--color-success)", fontWeight: 600, marginTop: "4px" }}>
-                        {up.upgradeReason || `Higher rating and +${up.best_overall_score - product.best_overall_score} AI Score`}
+                      <span style={{ fontSize: "11px", fontWeight: 700, color: v.in_stock !== false ? "#059669" : "var(--color-sale)" }}>
+                        {v.in_stock !== false ? "In Stock" : "Out of Stock"}
+                      </span>
+                    </div>
+
+                    {/* Price */}
+                    <div style={{ marginBottom: "16px" }}>
+                      <div style={{ fontSize: "28px", fontWeight: 900, color: "var(--color-ink)" }}>
+                        ₹{Number(v.price).toLocaleString("en-IN")}
+                      </div>
+                      {v.original_price && (
+                        <div style={{ fontSize: "13px", color: "var(--color-mute)", textDecoration: "line-through" }}>
+                          ₹{Number(v.original_price).toLocaleString("en-IN")} ({v.discount_percent}% off)
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Store Meta details */}
+                    <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "12px", color: "var(--color-mute)", marginBottom: "20px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                        <Truck size={14} color="var(--color-ink)" />
+                        <span>Delivery: <strong>{v.delivery_estimate || "2-3 days"}</strong></span>
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                        <ShieldCheck size={14} color="var(--color-ink)" />
+                        <span>Seller: <strong>{v.seller || "Official Brand Retailer"}</strong></span>
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                        <Star size={14} color="var(--color-ink)" />
+                        <span>Rating: <strong>{v.rating || 4.5} ★</strong> ({(v.review_count || 1000).toLocaleString("en-IN")})</span>
                       </div>
                     </div>
                   </div>
+
+                  {/* Direct Store Button */}
+                  <a
+                    href={v.product_url || `https://www.${v.platform}.in`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "8px",
+                      width: "100%",
+                      padding: "12px",
+                      backgroundColor: isLowest ? "var(--color-ink)" : "var(--color-soft-cloud)",
+                      color: isLowest ? "#ffffff" : "var(--color-ink)",
+                      textDecoration: "none",
+                      fontSize: "13px",
+                      fontWeight: 700,
+                      border: isLowest ? "none" : "1px solid var(--color-hairline)",
+                      cursor: "pointer",
+                      textAlign: "center",
+                    }}
+                  >
+                    <span>Buy on {v.platform?.toUpperCase()}</span>
+                    <ExternalLink size={14} />
+                  </a>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div style={{ padding: "20px", backgroundColor: "var(--color-soft-cloud)", fontSize: "14px", color: "var(--color-mute)" }}>
-              No major step-up upgrade in this exact budget bracket. Current choice remains best value.
-            </div>
-          )}
-        </div>
+              );
+            })}
+          </div>
 
-        {/* ─── 5. THREE-COLUMN ALTERNATIVES ─────────────────────── */}
-        <div style={{ marginBottom: "48px" }}>
-          <div style={{ marginBottom: "20px" }}>
-            <span style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "var(--color-mute)" }}>
-              Market Comparison
-            </span>
-            <h3 className="heading-lg" style={{ marginTop: "4px" }}>
+          {/* 4. Interactive 90-Day Price History Trend Graph (Point 5) */}
+          <PriceHistoryGraph product={product} priceHistory={product.price_history || product.priceHistory} />
+        </section>
+
+        {/* ─── 5. MARKET COMPARISON & RECOMMENDED ALTERNATIVES (Point 6) ─── */}
+        <section style={{ marginTop: "60px" }}>
+          <div style={{ borderBottom: "1px solid var(--color-hairline)", paddingBottom: "12px", marginBottom: "24px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "11px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", color: "var(--color-mute)" }}>
+                AI Market Matrix
+              </span>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", letterSpacing: "0.5px", margin: "4px 0 0 0", color: "var(--color-ink)" }}>
               RECOMMENDED ALTERNATIVES
-            </h3>
+            </h2>
+            <p style={{ fontSize: "13px", color: "var(--color-mute)", margin: "2px 0 0 0" }}>
+              Compare against budget-friendly alternatives, direct spec matches, and premium upgrades
+            </p>
           </div>
-          <AlternativeFinder product={product} />
-        </div>
 
-        {/* ─── 6. RELATED PRODUCTS IN CATEGORY ──────────────────── */}
-        {relatedProducts.length > 0 && (
-          <div style={{ paddingTop: "32px", borderTop: "1px solid var(--color-hairline)" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "24px" }}>
-              <h3 className="heading-lg">MORE IN {categoryDef.shortLabel}</h3>
-              <Link to={`/category/${categoryDef.id}`} style={{ fontSize: "13px", fontWeight: 700, color: "var(--color-ink)" }}>
-                View All {categoryDef.shortLabel} →
-              </Link>
+          {/* 3 Structured Alternative Tiers */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "24px",
+            }}
+          >
+            {/* 1. Cheaper Pick */}
+            {alternatives.cheaper?.[0] && (
+              <div style={{ backgroundColor: "var(--color-canvas)", border: "1px solid var(--color-hairline)", padding: "20px" }}>
+                <div style={{ display: "inline-block", backgroundColor: "rgba(16, 185, 129, 0.12)", color: "#059669", fontSize: "11px", fontWeight: 800, padding: "3px 8px", borderRadius: "2px", marginBottom: "12px", textTransform: "uppercase" }}>
+                  Cheaper Alternative (Save Money)
+                </div>
+                <div style={{ aspectRatio: "16/10", backgroundColor: "var(--color-soft-cloud)", marginBottom: "12px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <img
+                    src={alternatives.cheaper[0].imageUrl || alternatives.cheaper[0].image_url || alternatives.cheaper[0].images?.[0]}
+                    alt={alternatives.cheaper[0].title}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", padding: "12px" }}
+                  />
+                </div>
+                <h4 style={{ fontSize: "15px", fontWeight: 700, margin: "0 0 6px 0", color: "var(--color-ink)" }}>
+                  {alternatives.cheaper[0].name || alternatives.cheaper[0].product_name || alternatives.cheaper[0].title}
+                </h4>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+                  <span style={{ fontSize: "18px", fontWeight: 900 }}>₹{Number(alternatives.cheaper[0].price).toLocaleString("en-IN")}</span>
+                  <span style={{ fontSize: "12px", color: "#059669", fontWeight: 800 }}>
+                    -₹{(product.price - alternatives.cheaper[0].price).toLocaleString("en-IN")} Cheaper
+                  </span>
+                </div>
+                <p style={{ fontSize: "12px", color: "var(--color-mute)", margin: "0 0 16px 0", lineHeight: 1.4 }}>
+                  {alternatives.cheaper[0].why_buy || alternatives.cheaper[0].whyBuy || "Great budget alternative offering great essential specs at a lower cost."}
+                </p>
+                <Link
+                  to={`/product/${alternatives.cheaper[0].product_id || alternatives.cheaper[0].id}`}
+                  style={{
+                    display: "block",
+                    textAlign: "center",
+                    padding: "10px",
+                    backgroundColor: "var(--color-soft-cloud)",
+                    color: "var(--color-ink)",
+                    fontSize: "12px",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    border: "1px solid var(--color-hairline)",
+                  }}
+                >
+                  View Cheaper Option →
+                </Link>
+              </div>
+            )}
+
+            {/* 2. Direct Match Pick */}
+            {alternatives.similar?.[0] && (
+              <div style={{ backgroundColor: "var(--color-canvas)", border: "1px solid var(--color-hairline)", padding: "20px" }}>
+                <div style={{ display: "inline-block", backgroundColor: "rgba(59, 130, 246, 0.12)", color: "#2563eb", fontSize: "11px", fontWeight: 800, padding: "3px 8px", borderRadius: "2px", marginBottom: "12px", textTransform: "uppercase" }}>
+                  Spec-for-Spec Match (Same Tier)
+                </div>
+                <div style={{ aspectRatio: "16/10", backgroundColor: "var(--color-soft-cloud)", marginBottom: "12px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <img
+                    src={alternatives.similar[0].imageUrl || alternatives.similar[0].image_url || alternatives.similar[0].images?.[0]}
+                    alt={alternatives.similar[0].title}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", padding: "12px" }}
+                  />
+                </div>
+                <h4 style={{ fontSize: "15px", fontWeight: 700, margin: "0 0 6px 0", color: "var(--color-ink)" }}>
+                  {alternatives.similar[0].name || alternatives.similar[0].product_name || alternatives.similar[0].title}
+                </h4>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+                  <span style={{ fontSize: "18px", fontWeight: 900 }}>₹{Number(alternatives.similar[0].price).toLocaleString("en-IN")}</span>
+                  <span style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 700 }}>
+                    Similar Price
+                  </span>
+                </div>
+                <p style={{ fontSize: "12px", color: "var(--color-mute)", margin: "0 0 16px 0", lineHeight: 1.4 }}>
+                  {alternatives.similar[0].why_buy || alternatives.similar[0].whyBuy || "Direct competitor offering comparable specs with distinct design styling."}
+                </p>
+                <Link
+                  to={`/product/${alternatives.similar[0].product_id || alternatives.similar[0].id}`}
+                  style={{
+                    display: "block",
+                    textAlign: "center",
+                    padding: "10px",
+                    backgroundColor: "var(--color-soft-cloud)",
+                    color: "var(--color-ink)",
+                    fontSize: "12px",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    border: "1px solid var(--color-hairline)",
+                  }}
+                >
+                  View Spec Match →
+                </Link>
+              </div>
+            )}
+
+            {/* 3. Premium Upgrade */}
+            {alternatives.premium?.[0] && (
+              <div style={{ backgroundColor: "var(--color-canvas)", border: "1px solid var(--color-hairline)", padding: "20px" }}>
+                <div style={{ display: "inline-block", backgroundColor: "rgba(168, 85, 247, 0.12)", color: "#9333ea", fontSize: "11px", fontWeight: 800, padding: "3px 8px", borderRadius: "2px", marginBottom: "12px", textTransform: "uppercase" }}>
+                  Premium Upgrade (More Features)
+                </div>
+                <div style={{ aspectRatio: "16/10", backgroundColor: "var(--color-soft-cloud)", marginBottom: "12px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <img
+                    src={alternatives.premium[0].imageUrl || alternatives.premium[0].image_url || alternatives.premium[0].images?.[0]}
+                    alt={alternatives.premium[0].title}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", padding: "12px" }}
+                  />
+                </div>
+                <h4 style={{ fontSize: "15px", fontWeight: 700, margin: "0 0 6px 0", color: "var(--color-ink)" }}>
+                  {alternatives.premium[0].name || alternatives.premium[0].product_name || alternatives.premium[0].title}
+                </h4>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+                  <span style={{ fontSize: "18px", fontWeight: 900 }}>₹{Number(alternatives.premium[0].price).toLocaleString("en-IN")}</span>
+                  <span style={{ fontSize: "12px", color: "#9333ea", fontWeight: 800 }}>
+                    +₹{(alternatives.premium[0].price - product.price).toLocaleString("en-IN")} Upgrade
+                  </span>
+                </div>
+                <p style={{ fontSize: "12px", color: "var(--color-mute)", margin: "0 0 16px 0", lineHeight: 1.4 }}>
+                  {alternatives.premium[0].why_buy || alternatives.premium[0].whyBuy || "Flagship tier option with upgraded premium components and superior ratings."}
+                </p>
+                <Link
+                  to={`/product/${alternatives.premium[0].product_id || alternatives.premium[0].id}`}
+                  style={{
+                    display: "block",
+                    textAlign: "center",
+                    padding: "10px",
+                    backgroundColor: "var(--color-soft-cloud)",
+                    color: "var(--color-ink)",
+                    fontSize: "12px",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    border: "1px solid var(--color-hairline)",
+                  }}
+                >
+                  View Premium Upgrade →
+                </Link>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* ─── 6. MORE IN THIS CATEGORY (Point 7) ─── */}
+        <section style={{ marginTop: "60px" }}>
+          <div style={{ borderBottom: "1px solid var(--color-hairline)", paddingBottom: "12px", marginBottom: "24px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+            <div>
+              <span style={{ fontSize: "11px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", color: "var(--color-mute)" }}>
+                Curated Vertical
+              </span>
+              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", letterSpacing: "0.5px", margin: "4px 0 0 0", color: "var(--color-ink)", textTransform: "uppercase" }}>
+                MORE IN {product.category}
+              </h2>
             </div>
-
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-                gap: "32px 20px",
-              }}
+            <Link
+              to={`/category/${product.category}`}
+              style={{ fontSize: "13px", fontWeight: 700, color: "var(--color-ink)", display: "flex", alignItems: "center", gap: "4px" }}
             >
-              {relatedProducts.map((rel) => (
-                <ProductCard
-                  key={rel.id || rel.product_id}
-                  product={rel}
-                />
-              ))}
-            </div>
+              View Full Category Catalog →
+            </Link>
           </div>
-        )}
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+              gap: "24px",
+            }}
+          >
+            {moreInCategory.map((item) => (
+              <ProductCard
+                key={item.id || item.product_id}
+                product={item}
+                onSelectProduct={(p) => navigate(`/product/${p.product_id || p.id}`)}
+              />
+            ))}
+          </div>
+        </section>
       </div>
+
+      {/* 7. AR / VR Spatial Inspection Modal */}
+      {isARModalOpen && (
+        <SpatialARViewerModal product={product} onClose={() => setIsARModalOpen(false)} />
+      )}
     </div>
   );
 }

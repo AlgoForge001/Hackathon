@@ -4,14 +4,65 @@
     "product_name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
     "category": "electronics",
     "brand": "Sony",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "18.5 cm",
+      "height": "24.0 cm",
+      "depth": "7.2 cm",
+      "weight": "250g"
+    },
     "specs": {
       "type": "Over-ear",
-      "battery_life": "30 hours",
+      "battery_life": "30 hours with ANC",
       "weight": "250g",
-      "connectivity": "Bluetooth 5.2",
-      "noise_cancellation": "Industry-leading ANC with 8 microphones",
-      "multipoint_connection": true
+      "connectivity": "Bluetooth 5.2 & LDAC",
+      "noise_cancellation": "Industry-leading ANC with 8 microphones & Auto NC Optimizer",
+      "multipoint_connection": true,
+      "fast_charging": "3 min charge = 3 hours playback"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 27989,
+        "flipkart": 28049,
+        "myntra": 31038
+      },
+      {
+        "month": "Jun",
+        "amazon": 26989,
+        "flipkart": 27284,
+        "myntra": 29689
+      },
+      {
+        "month": "Jul",
+        "amazon": 26240,
+        "flipkart": 26519,
+        "myntra": 29149
+      },
+      {
+        "month": "Aug",
+        "amazon": 25490,
+        "flipkart": 27029,
+        "myntra": 28070
+      },
+      {
+        "month": "Sep",
+        "amazon": 24490,
+        "flipkart": 26009,
+        "myntra": 27530
+      },
+      {
+        "month": "Current",
+        "amazon": 24990,
+        "flipkart": 25499,
+        "myntra": 26990
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -19,24 +70,24 @@
         "price": 24990,
         "original_price": 29990,
         "discount_percent": 17,
-        "rating": 4.5,
+        "rating": 4.6,
         "review_count": 12847,
-        "delivery_estimate": "2-3 days",
-        "seller": "Amazon Fulfilled",
+        "delivery_estimate": "1-2 days (Prime)",
+        "seller": "Appario Retail (Amazon Fulfilled)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B09XS7JWHH",
         "reviews": [
           {
             "author": "Rahul K",
             "rating": 5,
-            "text": "Best noise cancellation headphones. Sound quality is crystal clear.",
+            "text": "Unmatched noise cancellation and crystal clear calls.",
             "date": "2024-10-15"
           },
           {
             "author": "Priya M",
             "rating": 4,
-            "text": "Superb ANC and call quality. Slightly bulky carrying case.",
+            "text": "Extremely lightweight and comfortable on long flights.",
             "date": "2024-09-22"
           }
         ]
@@ -47,18 +98,18 @@
         "price": 25499,
         "original_price": 29990,
         "discount_percent": 15,
-        "rating": 4.4,
+        "rating": 4.5,
         "review_count": 8230,
-        "delivery_estimate": "3-4 days",
+        "delivery_estimate": "2-3 days",
         "seller": "SuperComNet (Flipkart Assured)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/sony-wh-1000xm5",
         "reviews": [
           {
             "author": "Karan B",
             "rating": 5,
-            "text": "Awesome sound and very comfortable for long flights.",
+            "text": "Awesome soundstage with deep sub-bass and LDAC support.",
             "date": "2024-11-12"
           }
         ]
@@ -71,16 +122,16 @@
         "discount_percent": 10,
         "rating": 4.6,
         "review_count": 1120,
-        "delivery_estimate": "2-4 days",
+        "delivery_estimate": "3-4 days",
         "seller": "Myntra Premium Tech",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/headphones/sony-xm5",
         "reviews": [
           {
             "author": "Tanvi S",
             "rating": 5,
-            "text": "Fast delivery from Myntra, pristine packaging.",
+            "text": "Original sealed package with full Sony India 1-year warranty.",
             "date": "2024-10-02"
           }
         ]
@@ -92,13 +143,63 @@
     "product_name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
     "category": "electronics",
     "brand": "Apple",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "6.0 cm",
+      "height": "4.5 cm",
+      "depth": "2.1 cm",
+      "weight": "50.8g"
+    },
     "specs": {
       "type": "In-ear TWS",
-      "battery_life": "6h (30h with case)",
-      "chip": "Apple H2",
-      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
+      "battery_life": "6h (30h with MagSafe Case)",
+      "chip": "Apple H2 Headphone Chip",
+      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio + Transparency",
       "water_resistance": "IP54 dust, sweat, and water resistant"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 22399,
+        "flipkart": 22539,
+        "myntra": 25185
+      },
+      {
+        "month": "Jun",
+        "amazon": 21599,
+        "flipkart": 21924,
+        "myntra": 24090
+      },
+      {
+        "month": "Jul",
+        "amazon": 20999,
+        "flipkart": 21310,
+        "myntra": 23652
+      },
+      {
+        "month": "Aug",
+        "amazon": 20399,
+        "flipkart": 21719,
+        "myntra": 22776
+      },
+      {
+        "month": "Sep",
+        "amazon": 19599,
+        "flipkart": 20900,
+        "myntra": 22338
+      },
+      {
+        "month": "Current",
+        "amazon": 19999,
+        "flipkart": 20490,
+        "myntra": 21900
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -106,18 +207,18 @@
         "price": 19999,
         "original_price": 24900,
         "discount_percent": 20,
-        "rating": 4.7,
+        "rating": 4.8,
         "review_count": 24190,
-        "delivery_estimate": "1-2 days",
-        "seller": "Appario Retail (Amazon Fulfilled)",
+        "delivery_estimate": "Tomorrow",
+        "seller": "Appario Retail (Amazon Prime)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CHWRXH8B",
         "reviews": [
           {
             "author": "Arjun V",
             "rating": 5,
-            "text": "Transparency mode feels like magic. Spatial audio is phenomenal.",
+            "text": "Transparency mode is incredible. Spatial audio with head tracking is mind blowing.",
             "date": "2024-11-20"
           }
         ]
@@ -128,18 +229,18 @@
         "price": 20490,
         "original_price": 24900,
         "discount_percent": 18,
-        "rating": 4.6,
+        "rating": 4.7,
         "review_count": 14200,
         "delivery_estimate": "2-3 days",
         "seller": "IndiFlashMart (Flipkart Assured)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/apple-airpods-pro-2",
         "reviews": [
           {
             "author": "Meera K",
             "rating": 5,
-            "text": "Seamless switching between iPhone and MacBook.",
+            "text": "USB-C case makes charging with Mac and iPad effortless.",
             "date": "2024-10-18"
           }
         ]
@@ -152,177 +253,17 @@
         "discount_percent": 12,
         "rating": 4.7,
         "review_count": 2150,
-        "delivery_estimate": "1-3 days",
+        "delivery_estimate": "2-3 days",
         "seller": "Apple Authorised Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/apple-airpods-pro-2",
         "reviews": [
           {
             "author": "Rohan D",
             "rating": 5,
-            "text": "Authentic product with full Apple warranty.",
+            "text": "Authentic item with AppleCare activation.",
             "date": "2024-12-01"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "boat-rockerz-550",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "category": "electronics",
-    "brand": "boAt",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "20 hours",
-      "driver_size": "50mm dynamic drivers",
-      "connectivity": "Bluetooth 5.0 + AUX"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B0863TXGM3",
-        "price": 1299,
-        "original_price": 4999,
-        "discount_percent": 74,
-        "rating": 4.1,
-        "review_count": 67320,
-        "delivery_estimate": "1 day",
-        "seller": "Imagine Marketing (Amazon Fulfilled)",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B0863TXGM3",
-        "reviews": [
-          {
-            "author": "Deepak S",
-            "rating": 4,
-            "text": "Great bass for EDM. Excellent value for ₹1299.",
-            "date": "2024-11-05"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-BOAT-ROCKERZ-550",
-        "price": 1199,
-        "original_price": 4999,
-        "discount_percent": 76,
-        "rating": 4,
-        "review_count": 51200,
-        "delivery_estimate": "2 days",
-        "seller": "RetailNet (Flipkart Assured)",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/boat-rockerz-550",
-        "reviews": [
-          {
-            "author": "Akash R",
-            "rating": 4,
-            "text": "Battery backup is solid around 18-20 hours.",
-            "date": "2024-10-14"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-BOAT-550",
-        "price": 1399,
-        "original_price": 4999,
-        "discount_percent": 72,
-        "rating": 4.1,
-        "review_count": 8900,
-        "delivery_estimate": "2-3 days",
-        "seller": "boAt Official Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/boat-rockerz-550",
-        "reviews": [
-          {
-            "author": "Sunil N",
-            "rating": 4,
-            "text": "Good cushioning around the ears.",
-            "date": "2024-09-30"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "jbl-tune-770nc",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "category": "electronics",
-    "brand": "JBL",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "70 hours (44h with ANC)",
-      "connectivity": "Bluetooth 5.3",
-      "noise_cancellation": "Adaptive ANC with Smart Ambient"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B0CB8GLTYG",
-        "price": 6999,
-        "original_price": 9999,
-        "discount_percent": 30,
-        "rating": 4.3,
-        "review_count": 5410,
-        "delivery_estimate": "2-3 days",
-        "seller": "Appario Retail",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B0CB8GLTYG",
-        "reviews": [
-          {
-            "author": "Manish P",
-            "rating": 5,
-            "text": "Insane 70h battery life. Balanced JBL signature sound.",
-            "date": "2024-11-25"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-JBL-770NC",
-        "price": 7299,
-        "original_price": 9999,
-        "discount_percent": 27,
-        "rating": 4.2,
-        "review_count": 3200,
-        "delivery_estimate": "3-4 days",
-        "seller": "HARMAN Official Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/jbl-tune-770nc",
-        "reviews": [
-          {
-            "author": "Ravi G",
-            "rating": 4,
-            "text": "Solid ANC for this price range.",
-            "date": "2024-10-19"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-JBL-770NC",
-        "price": 7499,
-        "original_price": 9999,
-        "discount_percent": 25,
-        "rating": 4.3,
-        "review_count": 850,
-        "delivery_estimate": "2-3 days",
-        "seller": "Myntra Electronics",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/jbl-tune-770nc",
-        "reviews": [
-          {
-            "author": "Snehal D",
-            "rating": 5,
-            "text": "Very lightweight and punchy bass.",
-            "date": "2024-11-08"
           }
         ]
       }
@@ -333,12 +274,64 @@
     "product_name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
     "category": "electronics",
     "brand": "Apple",
-    "specs": {
-      "processor": "Apple M2 8-core CPU / 8-core GPU",
-      "display": "13.6-inch Liquid Retina Display (500 nits)",
-      "battery_life": "Up to 18 hours",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "30.4 cm",
+      "height": "21.5 cm",
+      "depth": "1.13 cm",
       "weight": "1.24 kg"
     },
+    "specs": {
+      "processor": "Apple M2 8-core CPU / 8-core GPU",
+      "display": "13.6-inch Liquid Retina Display with True Tone (500 nits)",
+      "battery_life": "Up to 18 hours",
+      "memory": "8GB Unified Memory",
+      "storage": "256GB Superfast SSD",
+      "weight": "1.24 kg lightweight fanless design"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 95189,
+        "flipkart": 92389,
+        "myntra": 101085
+      },
+      {
+        "month": "Jun",
+        "amazon": 91789,
+        "flipkart": 89869,
+        "myntra": 96690
+      },
+      {
+        "month": "Jul",
+        "amazon": 89240,
+        "flipkart": 87350,
+        "myntra": 94932
+      },
+      {
+        "month": "Aug",
+        "amazon": 86690,
+        "flipkart": 89029,
+        "myntra": 91416
+      },
+      {
+        "month": "Sep",
+        "amazon": 83290,
+        "flipkart": 85670,
+        "myntra": 89658
+      },
+      {
+        "month": "Current",
+        "amazon": 84990,
+        "flipkart": 83990,
+        "myntra": 87900
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -351,13 +344,13 @@
         "delivery_estimate": "1-2 days",
         "seller": "Amazon Prime Seller",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0B3C5Q8N1",
         "reviews": [
           {
             "author": "Kunal J",
             "rating": 5,
-            "text": "Best laptop for developers and students. Battery is unbelievable.",
+            "text": "Fast compilation and 16 hours real world battery life. Perfect machine.",
             "date": "2024-11-10"
           }
         ]
@@ -368,18 +361,18 @@
         "price": 83990,
         "original_price": 99900,
         "discount_percent": 16,
-        "rating": 4.7,
+        "rating": 4.8,
         "review_count": 6720,
         "delivery_estimate": "2-3 days",
         "seller": "SuperComNet",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/apple-macbook-air-m2",
         "reviews": [
           {
             "author": "Ananya P",
             "rating": 5,
-            "text": "Super sleek midnight color. Whisper quiet with no fan noise.",
+            "text": "Midnight finish is gorgeous. Fanless design means zero noise.",
             "date": "2024-10-28"
           }
         ]
@@ -395,13 +388,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "Apple Official Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/laptops/apple-macbook-air-m2",
         "reviews": [
           {
             "author": "Devendra R",
             "rating": 5,
-            "text": "Received brand new sealed box with AppleCare eligibility.",
+            "text": "Original packaging and verified battery health.",
             "date": "2024-11-15"
           }
         ]
@@ -413,12 +406,63 @@
     "product_name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
     "category": "electronics",
     "brand": "Samsung",
-    "specs": {
-      "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
-      "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "camera": "200MP Quad Camera with Galaxy AI",
-      "battery": "5000mAh with 45W Fast Charging"
+    "images": [
+      "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "7.9 cm",
+      "height": "16.2 cm",
+      "depth": "0.86 cm",
+      "weight": "232g"
     },
+    "specs": {
+      "display": "6.8-inch Dynamic AMOLED 2X 120Hz Anti-Reflective (2600 nits)",
+      "processor": "Snapdragon 8 Gen 3 for Galaxy",
+      "camera": "200MP Quad Camera with 5x Optical Periscope & Galaxy AI",
+      "battery": "5000mAh with 45W Super Fast Charging",
+      "s_pen": "Built-in S-Pen with Air Actions"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 134399,
+        "flipkart": 130349,
+        "myntra": 141449
+      },
+      {
+        "month": "Jun",
+        "amazon": 129599,
+        "flipkart": 126794,
+        "myntra": 135299
+      },
+      {
+        "month": "Jul",
+        "amazon": 125999,
+        "flipkart": 123239,
+        "myntra": 132839
+      },
+      {
+        "month": "Aug",
+        "amazon": 122399,
+        "flipkart": 125609,
+        "myntra": 127919
+      },
+      {
+        "month": "Sep",
+        "amazon": 117599,
+        "flipkart": 120869,
+        "myntra": 125459
+      },
+      {
+        "month": "Current",
+        "amazon": 119999,
+        "flipkart": 118499,
+        "myntra": 122999
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -426,18 +470,18 @@
         "price": 119999,
         "original_price": 134999,
         "discount_percent": 11,
-        "rating": 4.6,
+        "rating": 4.7,
         "review_count": 4890,
         "delivery_estimate": "1-2 days",
-        "seller": "STPL Exclusive",
+        "seller": "STPL Exclusive (Amazon Prime)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CS5XNFXZ",
         "reviews": [
           {
             "author": "Sameer N",
             "rating": 5,
-            "text": "Galaxy AI features and zoom photography are jaw dropping.",
+            "text": "Galaxy AI zoom photography and Circle to Search work flawlessly.",
             "date": "2024-11-18"
           }
         ]
@@ -448,18 +492,18 @@
         "price": 118499,
         "original_price": 134999,
         "discount_percent": 12,
-        "rating": 4.5,
+        "rating": 4.6,
         "review_count": 3120,
         "delivery_estimate": "2-3 days",
         "seller": "FSAssured Mobile Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/samsung-galaxy-s24-ultra",
         "reviews": [
           {
             "author": "Deepak G",
             "rating": 5,
-            "text": "Anti-reflective screen is the best display ever made on a smartphone.",
+            "text": "Flat display with anti-reflective glass makes outdoor viewing crystal clear.",
             "date": "2024-10-30"
           }
         ]
@@ -472,97 +516,17 @@
         "discount_percent": 9,
         "rating": 4.6,
         "review_count": 320,
-        "delivery_estimate": "2-4 days",
+        "delivery_estimate": "3-4 days",
         "seller": "Samsung Luxe Authorised",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/smartphones/samsung-s24-ultra",
         "reviews": [
           {
             "author": "Pradeep T",
-            "rating": 4,
-            "text": "Premium build, flat screen is much easier to write on with S-Pen.",
+            "rating": 5,
+            "text": "Titanium build feels luxurious in the hand.",
             "date": "2024-11-04"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "oneplus-12-5g",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "category": "electronics",
-    "brand": "OnePlus",
-    "specs": {
-      "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
-      "processor": "Snapdragon 8 Gen 3 Mobile Platform",
-      "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
-      "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B0CQPPY23T",
-        "price": 64999,
-        "original_price": 69999,
-        "discount_percent": 7,
-        "rating": 4.6,
-        "review_count": 8120,
-        "delivery_estimate": "1-2 days",
-        "seller": "OnePlus Official India",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B0CQPPY23T",
-        "reviews": [
-          {
-            "author": "Rohit V",
-            "rating": 5,
-            "text": "100W fast charger charges 0 to 100% in 26 minutes. Phenomenal battery life.",
-            "date": "2024-11-19"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-ONEPLUS-12",
-        "price": 64499,
-        "original_price": 69999,
-        "discount_percent": 8,
-        "rating": 4.5,
-        "review_count": 4200,
-        "delivery_estimate": "2-3 days",
-        "seller": "FSAssured Mobiles",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/oneplus-12",
-        "reviews": [
-          {
-            "author": "Mayank S",
-            "rating": 5,
-            "text": "Smooth OxygenOS and the Hasselblad periscope portrait shots look like DSLR.",
-            "date": "2024-10-22"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-ONEPLUS-12",
-        "price": 66999,
-        "original_price": 69999,
-        "discount_percent": 4,
-        "rating": 4.6,
-        "review_count": 410,
-        "delivery_estimate": "3-4 days",
-        "seller": "OnePlus Brand Hub",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/smartphones/oneplus-12",
-        "reviews": [
-          {
-            "author": "Kiran D",
-            "rating": 4,
-            "text": "Top notch flagship performance.",
-            "date": "2024-11-03"
           }
         ]
       }
@@ -573,12 +537,62 @@
     "product_name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
     "category": "electronics",
     "brand": "ASUS",
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "31.1 cm",
+      "height": "22.0 cm",
+      "depth": "1.59 cm",
+      "weight": "1.50 kg"
+    },
     "specs": {
       "processor": "AMD Ryzen 9 8945HS Processor with Ryzen AI",
       "graphics": "NVIDIA GeForce RTX 4060 8GB GDDR6 (90W TGP)",
       "display": "14-inch 3K 120Hz 0.2ms ROG Nebula OLED (100% DCI-P3)",
       "weight": "1.50 kg ultra-portable CNC aluminum chassis"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 173589,
+        "flipkart": 168289,
+        "myntra": 183989
+      },
+      {
+        "month": "Jun",
+        "amazon": 167389,
+        "flipkart": 163699,
+        "myntra": 175989
+      },
+      {
+        "month": "Jul",
+        "amazon": 162740,
+        "flipkart": 159110,
+        "myntra": 172789
+      },
+      {
+        "month": "Aug",
+        "amazon": 158090,
+        "flipkart": 162169,
+        "myntra": 166390
+      },
+      {
+        "month": "Sep",
+        "amazon": 151890,
+        "flipkart": 156050,
+        "myntra": 163190
+      },
+      {
+        "month": "Current",
+        "amazon": 154990,
+        "flipkart": 152990,
+        "myntra": 159990
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -591,13 +605,13 @@
         "delivery_estimate": "2-3 days",
         "seller": "Appario Retail",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CSG6K8L1",
         "reviews": [
           {
             "author": "Varun K",
             "rating": 5,
-            "text": "The 3K OLED display is unmatched. Cyberpunk 2077 runs over 75fps with DLSS 3.5.",
+            "text": "OLED panel is breathtaking. Runs Cyberpunk over 75fps with DLSS.",
             "date": "2024-11-15"
           }
         ]
@@ -613,13 +627,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "SuperComNet Gaming",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/asus-rog-zephyrus-g14",
         "reviews": [
           {
             "author": "Aditya N",
             "rating": 5,
-            "text": "CNC aluminum body feels as premium as a MacBook Pro.",
+            "text": "CNC aluminum body is rock solid and very portable.",
             "date": "2024-10-25"
           }
         ]
@@ -635,13 +649,13 @@
         "delivery_estimate": "3-5 days",
         "seller": "ROG Exclusive Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/laptops/asus-rog-g14",
         "reviews": [
           {
             "author": "Kunal M",
             "rating": 5,
-            "text": "Slash lighting strip on lid looks stunning.",
+            "text": "Slash lighting strip looks amazing.",
             "date": "2024-11-20"
           }
         ]
@@ -653,12 +667,62 @@
     "product_name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
     "category": "electronics",
     "brand": "Sony",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592840496073-6701b22e11d0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.8 cm",
+      "height": "9.6 cm",
+      "depth": "21.6 cm",
+      "weight": "3.2 kg"
+    },
     "specs": {
       "storage": "1TB Ultra-High Speed NVMe SSD",
       "resolution": "4K 120Hz Gaming, Ray Tracing, HDR",
       "audio": "Tempest 3D AudioTech",
       "controller": "DualSense Wireless Controller with Haptic Feedback"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 55989,
+        "flipkart": 53889,
+        "myntra": 59788
+      },
+      {
+        "month": "Jun",
+        "amazon": 53989,
+        "flipkart": 52419,
+        "myntra": 57189
+      },
+      {
+        "month": "Jul",
+        "amazon": 52490,
+        "flipkart": 50950,
+        "myntra": 56149
+      },
+      {
+        "month": "Aug",
+        "amazon": 50990,
+        "flipkart": 51929,
+        "myntra": 54070
+      },
+      {
+        "month": "Sep",
+        "amazon": 48990,
+        "flipkart": 49970,
+        "myntra": 53030
+      },
+      {
+        "month": "Current",
+        "amazon": 49990,
+        "flipkart": 48990,
+        "myntra": 51990
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -668,16 +732,16 @@
         "discount_percent": 9,
         "rating": 4.9,
         "review_count": 8700,
-        "delivery_estimate": "2-3 days",
+        "delivery_estimate": "1-2 days",
         "seller": "Electronics Bazaar",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CY5Q2N1W",
         "reviews": [
           {
             "author": "Nikhil K",
             "rating": 5,
-            "text": "Spider-Man 2 and God of War Ragnarok look breathtaking in 4K 60fps.",
+            "text": "Spider-Man 2 and God of War look incredible at 4K 60fps.",
             "date": "2024-11-14"
           }
         ]
@@ -693,13 +757,13 @@
         "delivery_estimate": "2-4 days",
         "seller": "RetailNet Gaming",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/sony-playstation-5-slim",
         "reviews": [
           {
             "author": "Siddharth B",
             "rating": 5,
-            "text": "Much lighter and compact than original launch PS5.",
+            "text": "Much smaller and lighter than original launch PS5.",
             "date": "2024-10-25"
           }
         ]
@@ -715,13 +779,13 @@
         "delivery_estimate": "3-5 days",
         "seller": "Myntra Gaming Studio",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/gaming/sony-playstation-5-slim",
         "reviews": [
           {
             "author": "Gaurav S",
             "rating": 5,
-            "text": "Fast shipping with secure tamper-proof packaging.",
+            "text": "Fast delivery with secure seal intact.",
             "date": "2024-11-20"
           }
         ]
@@ -733,12 +797,62 @@
     "product_name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
     "category": "electronics",
     "brand": "Apple",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "3.8 cm",
+      "height": "4.5 cm",
+      "depth": "1.07 cm",
+      "weight": "38.7g"
+    },
     "specs": {
-      "display": "Always-On Retina OLED (2000 nits)",
+      "display": "Always-On Retina OLED (2000 nits peak brightness)",
       "chip": "S9 SiP with Double Tap gesture",
-      "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
+      "health_sensors": "ECG, Blood Oxygen, Temperature sensor, Crash Detection",
       "battery": "18 hours all-day battery life (36h in Low Power Mode)"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 43679,
+        "flipkart": 41789,
+        "myntra": 45885
+      },
+      {
+        "month": "Jun",
+        "amazon": 42119,
+        "flipkart": 40649,
+        "myntra": 43890
+      },
+      {
+        "month": "Jul",
+        "amazon": 40949,
+        "flipkart": 39510,
+        "myntra": 43092
+      },
+      {
+        "month": "Aug",
+        "amazon": 39779,
+        "flipkart": 40269,
+        "myntra": 41496
+      },
+      {
+        "month": "Sep",
+        "amazon": 38219,
+        "flipkart": 38750,
+        "myntra": 40698
+      },
+      {
+        "month": "Current",
+        "amazon": 38999,
+        "flipkart": 37990,
+        "myntra": 39900
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -751,13 +865,13 @@
         "delivery_estimate": "1-2 days",
         "seller": "Appario Retail",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CHWZ8H7H",
         "reviews": [
           {
             "author": "Vishal M",
             "rating": 5,
-            "text": "Double tap gesture to take calls is super convenient while cooking or driving.",
+            "text": "Double tap gesture is super useful while cooking or driving.",
             "date": "2024-11-09"
           }
         ]
@@ -773,13 +887,13 @@
         "delivery_estimate": "2-3 days",
         "seller": "FSAssured Wearables",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/apple-watch-series-9",
         "reviews": [
           {
             "author": "Kavita S",
             "rating": 5,
-            "text": "Accurate fitness metrics and ECG capability give great peace of mind.",
+            "text": "Fitness tracking is unmatched.",
             "date": "2024-10-15"
           }
         ]
@@ -795,94 +909,14 @@
         "delivery_estimate": "2-4 days",
         "seller": "Apple Official Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/smartwatches/apple-watch-s9",
         "reviews": [
           {
             "author": "Varun P",
             "rating": 4,
-            "text": "Battery lasts a day and a half easily on moderate use.",
+            "text": "Fast charging gets it to 80% in 45 mins.",
             "date": "2024-11-02"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "marshall-kilburn-2",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "category": "electronics",
-    "brand": "Marshall",
-    "specs": {
-      "battery_life": "20+ hours portable playtime",
-      "connectivity": "Bluetooth 5.0 aptX",
-      "water_resistance": "IPX2 water resistant design",
-      "sound": "Multi-directional Blumlein Stereo sound"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B07H8VTFLT",
-        "price": 24999,
-        "original_price": 31999,
-        "discount_percent": 22,
-        "rating": 4.6,
-        "review_count": 3840,
-        "delivery_estimate": "2-3 days",
-        "seller": "Marshall Audio Direct",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B07H8VTFLT",
-        "reviews": [
-          {
-            "author": "Rishi T",
-            "rating": 5,
-            "text": "Vintage rock guitar amp design with thunderous bass and crystal highs.",
-            "date": "2024-11-20"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-MARSHALL-KILBURN2",
-        "price": 23999,
-        "original_price": 31999,
-        "discount_percent": 25,
-        "rating": 4.5,
-        "review_count": 2100,
-        "delivery_estimate": "3-4 days",
-        "seller": "SoundKart SuperStore",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/marshall-kilburn-2",
-        "reviews": [
-          {
-            "author": "Abhishek C",
-            "rating": 5,
-            "text": "Analogue knobs for bass and treble are tactile and satisfying.",
-            "date": "2024-10-18"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-MARSHALL-KILBURN",
-        "price": 26999,
-        "original_price": 31999,
-        "discount_percent": 16,
-        "rating": 4.6,
-        "review_count": 420,
-        "delivery_estimate": "2-4 days",
-        "seller": "Myntra Audio Luxe",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/speakers/marshall-kilburn-2",
-        "reviews": [
-          {
-            "author": "Shruti D",
-            "rating": 5,
-            "text": "Stunning aesthetic on my living room bookshelf.",
-            "date": "2024-11-12"
           }
         ]
       }
@@ -893,12 +927,62 @@
     "product_name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
     "category": "electronics",
     "brand": "Amazon",
+    "images": [
+      "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.5 cm",
+      "height": "17.4 cm",
+      "depth": "0.81 cm",
+      "weight": "205g"
+    },
     "specs": {
       "display": "6.8-inch 300 ppi glare-free Paperwhite display",
-      "battery_life": "Up to 10 weeks",
-      "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
-      "storage": "16 GB (holds thousands of books)"
+      "battery_life": "Up to 10 weeks battery life",
+      "water_resistance": "IPX8 waterproof rating",
+      "storage": "16 GB storage (holds 10,000+ books)"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 15679,
+        "flipkart": 15949,
+        "myntra": 17249
+      },
+      {
+        "month": "Jun",
+        "amazon": 15119,
+        "flipkart": 15514,
+        "myntra": 16499
+      },
+      {
+        "month": "Jul",
+        "amazon": 14699,
+        "flipkart": 15079,
+        "myntra": 16199
+      },
+      {
+        "month": "Aug",
+        "amazon": 14279,
+        "flipkart": 15369,
+        "myntra": 15599
+      },
+      {
+        "month": "Sep",
+        "amazon": 13719,
+        "flipkart": 14789,
+        "myntra": 15299
+      },
+      {
+        "month": "Current",
+        "amazon": 13999,
+        "flipkart": 14499,
+        "myntra": 14999
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -908,16 +992,16 @@
         "discount_percent": 7,
         "rating": 4.8,
         "review_count": 18450,
-        "delivery_estimate": "1 day",
+        "delivery_estimate": "1 day (Prime)",
         "seller": "Amazon Device Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B08N41Y4Q2",
         "reviews": [
           {
             "author": "Nandita S",
             "rating": 5,
-            "text": "The warm light feature allows reading for hours at night without eye strain.",
+            "text": "Adjustable warm light makes bedtime reading effortless.",
             "date": "2024-11-22"
           }
         ]
@@ -933,13 +1017,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "E-Reader Express",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/amazon-kindle-paperwhite",
         "reviews": [
           {
             "author": "Aman G",
             "rating": 5,
-            "text": "Battery life is legendary. Haven't charged it in 3 weeks.",
+            "text": "Battery lasts for weeks on a single charge.",
             "date": "2024-10-09"
           }
         ]
@@ -955,13 +1039,13 @@
         "delivery_estimate": "3-5 days",
         "seller": "Gadget Hub Myntra",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/gadgets/amazon-kindle-paperwhite",
         "reviews": [
           {
             "author": "Prachi M",
             "rating": 4,
-            "text": "Type C port makes charging super convenient.",
+            "text": "Type C port charging is great.",
             "date": "2024-11-01"
           }
         ]
@@ -973,12 +1057,63 @@
     "product_name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
     "category": "footwear",
     "brand": "Nike",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.2 cm",
+      "height": "13.5 cm",
+      "depth": "29.8 cm",
+      "weight": "340g (Size 9)"
+    },
     "specs": {
       "type": "Running & Lifestyle",
-      "cushioning": "Max Air 270 unit delivers all-day comfort",
-      "upper_material": "Engineered breathable mesh",
-      "closure": "Asymmetrical lacing for secure fit"
+      "cushioning": "Max Air 270 heel unit delivers bouncy energy return",
+      "upper_material": "Engineered breathable mesh with synthetic overlays",
+      "closure": "Asymmetrical lacing system",
+      "outsole": "Solid rubber in the forefoot, clear rubber on the heel"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 12874,
+        "flipkart": 13195,
+        "myntra": 12644
+      },
+      {
+        "month": "Jun",
+        "amazon": 12415,
+        "flipkart": 12835,
+        "myntra": 12095
+      },
+      {
+        "month": "Jul",
+        "amazon": 12070,
+        "flipkart": 12475,
+        "myntra": 11875
+      },
+      {
+        "month": "Aug",
+        "amazon": 11725,
+        "flipkart": 12715,
+        "myntra": 11435
+      },
+      {
+        "month": "Sep",
+        "amazon": 11265,
+        "flipkart": 12235,
+        "myntra": 11215
+      },
+      {
+        "month": "Current",
+        "amazon": 11495,
+        "flipkart": 11995,
+        "myntra": 10995
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -991,13 +1126,13 @@
         "delivery_estimate": "2-3 days",
         "seller": "Nike Authorized India",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B07C9L8ZXY",
         "reviews": [
           {
             "author": "Rohit K",
             "rating": 5,
-            "text": "Superb cushioning. Best looking lifestyle sneaker ever.",
+            "text": "Best cushioning in a lifestyle shoe. Extremely stylish.",
             "date": "2024-11-16"
           }
         ]
@@ -1013,13 +1148,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "RetailNet Footwear",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/nike-air-max-270",
         "reviews": [
           {
             "author": "Ajay S",
             "rating": 4,
-            "text": "Slightly snug fit, recommend sizing half up.",
+            "text": "Recommend sizing half up for wider feet.",
             "date": "2024-10-24"
           }
         ]
@@ -1035,13 +1170,13 @@
         "delivery_estimate": "1-2 days",
         "seller": "Nike Flagship Store (Myntra)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/casual-shoes/nike-air-max-270",
         "reviews": [
           {
             "author": "Vikas M",
             "rating": 5,
-            "text": "Best deal on Myntra with bank offer discount.",
+            "text": "Lowest price on Myntra with instant bank discounts.",
             "date": "2024-11-28"
           }
         ]
@@ -1053,12 +1188,62 @@
     "product_name": "Adidas Ultraboost Light Men's Road Running Shoes",
     "category": "footwear",
     "brand": "Adidas",
+    "images": [
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "10.8 cm",
+      "height": "12.8 cm",
+      "depth": "29.2 cm",
+      "weight": "299g (Size 9)"
+    },
     "specs": {
-      "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
-      "upper": "PRIMEKNIT+ textile upper with sock-like fit",
-      "outsole": "Continental Better Rubber outsole",
+      "midsole": "Light BOOST cushioning (30% lighter than classic BOOST)",
+      "upper": "PRIMEKNIT+ sock-like breathable textile",
+      "outsole": "Continental Better Rubber grip outsole",
       "drop": "10mm (heel: 30mm / forefoot: 20mm)"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 14559,
+        "flipkart": 14849,
+        "myntra": 14374
+      },
+      {
+        "month": "Jun",
+        "amazon": 14039,
+        "flipkart": 14444,
+        "myntra": 13749
+      },
+      {
+        "month": "Jul",
+        "amazon": 13649,
+        "flipkart": 14039,
+        "myntra": 13499
+      },
+      {
+        "month": "Aug",
+        "amazon": 13259,
+        "flipkart": 14309,
+        "myntra": 12999
+      },
+      {
+        "month": "Sep",
+        "amazon": 12739,
+        "flipkart": 13769,
+        "myntra": 12749
+      },
+      {
+        "month": "Current",
+        "amazon": 12999,
+        "flipkart": 13499,
+        "myntra": 12499
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -1071,13 +1256,13 @@
         "delivery_estimate": "2-3 days",
         "seller": "Adidas India Direct",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0BSLH9KV9",
         "reviews": [
           {
             "author": "Karthik R",
             "rating": 5,
-            "text": "Light BOOST foam gives explosive energy return for 10k marathon runs.",
+            "text": "Light BOOST foam gives explosive energy return for 10k runs.",
             "date": "2024-11-19"
           }
         ]
@@ -1093,7 +1278,7 @@
         "delivery_estimate": "3-4 days",
         "seller": "FSAssured Sports",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/adidas-ultraboost-light",
         "reviews": [
           {
@@ -1115,252 +1300,14 @@
         "delivery_estimate": "1-2 days",
         "seller": "Adidas Official Partner",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/sports-shoes/adidas-ultraboost-light",
         "reviews": [
           {
             "author": "Dheeraj S",
             "rating": 5,
-            "text": "Unmatched step-in comfort. Feels like walking on clouds.",
+            "text": "Feels like walking on clouds with high arch support.",
             "date": "2024-11-22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "asics-gel-kayano-30",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "category": "footwear",
-    "brand": "ASICS",
-    "specs": {
-      "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
-      "stability": "4D GUIDANCE SYSTEM for adaptive stability",
-      "heel_drop": "10mm",
-      "surface": "Road / Track"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B0C77G9KL8",
-        "price": 11999,
-        "original_price": 15999,
-        "discount_percent": 25,
-        "rating": 4.7,
-        "review_count": 3150,
-        "delivery_estimate": "2-3 days",
-        "seller": "ASICS India Official",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B0C77G9KL8",
-        "reviews": [
-          {
-            "author": "Ramanathan G",
-            "rating": 5,
-            "text": "The 4D guidance system completely fixed my overpronation issues.",
-            "date": "2024-11-15"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-ASICS-KAYANO30",
-        "price": 12499,
-        "original_price": 15999,
-        "discount_percent": 22,
-        "rating": 4.6,
-        "review_count": 1820,
-        "delivery_estimate": "3-5 days",
-        "seller": "Marathon Gear Hub",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/asics-gel-kayano-30",
-        "reviews": [
-          {
-            "author": "Anil K",
-            "rating": 4,
-            "text": "Plush tongue and ankle collar. Perfect for long half-marathons.",
-            "date": "2024-10-31"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-ASICS-KAYANO",
-        "price": 11699,
-        "original_price": 15999,
-        "discount_percent": 27,
-        "rating": 4.7,
-        "review_count": 940,
-        "delivery_estimate": "2-3 days",
-        "seller": "ASICS Running Studio",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/sports-shoes/asics-gel-kayano-30",
-        "reviews": [
-          {
-            "author": "Harsh V",
-            "rating": 5,
-            "text": "Very smooth heel-to-toe transition. Highly recommended.",
-            "date": "2024-11-26"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "new-balance-574-core",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "category": "footwear",
-    "brand": "New Balance",
-    "specs": {
-      "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
-      "upper": "Suede and mesh upper",
-      "outsole": "Durable rubber outsole with classic lug pattern"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B00K5O2L9P",
-        "price": 6499,
-        "original_price": 8999,
-        "discount_percent": 28,
-        "rating": 4.4,
-        "review_count": 5120,
-        "delivery_estimate": "2-3 days",
-        "seller": "New Balance Authorized",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B00K5O2L9P",
-        "reviews": [
-          {
-            "author": "Naveen C",
-            "rating": 5,
-            "text": "Timeless grey suede sneaker. Goes with both jeans and shorts.",
-            "date": "2024-11-03"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-NB-574-CORE",
-        "price": 6799,
-        "original_price": 8999,
-        "discount_percent": 24,
-        "rating": 4.3,
-        "review_count": 3200,
-        "delivery_estimate": "3-4 days",
-        "seller": "FSAssured Lifestyle",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/new-balance-574",
-        "reviews": [
-          {
-            "author": "Girish M",
-            "rating": 4,
-            "text": "Great wide toe box, very supportive for daily walking.",
-            "date": "2024-10-17"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-NB-574",
-        "price": 5999,
-        "original_price": 8999,
-        "discount_percent": 33,
-        "rating": 4.5,
-        "review_count": 2450,
-        "delivery_estimate": "1-2 days",
-        "seller": "New Balance Flagship",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/casual-shoes/new-balance-574",
-        "reviews": [
-          {
-            "author": "Soham D",
-            "rating": 5,
-            "text": "Best price on Myntra for genuine 574 Core.",
-            "date": "2024-11-14"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "crocs-classic-clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "category": "footwear",
-    "brand": "Crocs",
-    "specs": {
-      "material": "100% Croslite lightweight proprietary foam",
-      "ventilation": "Ventilation ports add breathability and help shed water",
-      "strap": "Pivoting heel straps for a more secure fit"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B0014C5W7Q",
-        "price": 2495,
-        "original_price": 3495,
-        "discount_percent": 29,
-        "rating": 4.4,
-        "review_count": 38900,
-        "delivery_estimate": "1-2 days",
-        "seller": "Crocs India",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B0014C5W7Q",
-        "reviews": [
-          {
-            "author": "Deepa N",
-            "rating": 5,
-            "text": "Extremely comfortable for household chores and monsoon walks.",
-            "date": "2024-11-11"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-CROCS-CLASSIC",
-        "price": 2295,
-        "original_price": 3495,
-        "discount_percent": 34,
-        "rating": 4.3,
-        "review_count": 24100,
-        "delivery_estimate": "2-3 days",
-        "seller": "RetailNet Footwear",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/crocs-classic-clog",
-        "reviews": [
-          {
-            "author": "Manish B",
-            "rating": 4,
-            "text": "Easy to clean with just water and mild soap.",
-            "date": "2024-10-20"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-CROCS-CLASSIC",
-        "price": 2395,
-        "original_price": 3495,
-        "discount_percent": 31,
-        "rating": 4.4,
-        "review_count": 14200,
-        "delivery_estimate": "1-2 days",
-        "seller": "Crocs Brand Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
-        "reviews": [
-          {
-            "author": "Pradeep G",
-            "rating": 5,
-            "text": "100% original Crocs with genuine tags.",
-            "date": "2024-11-27"
           }
         ]
       }
@@ -1371,12 +1318,62 @@
     "product_name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
     "category": "footwear",
     "brand": "Woodland",
+    "images": [
+      "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "12.0 cm",
+      "height": "17.5 cm",
+      "depth": "31.0 cm",
+      "weight": "620g per boot"
+    },
     "specs": {
       "upper_material": "Genuine Nubuck / Suede Leather",
       "sole": "Heavy-duty grooved rubber lug sole",
       "closure": "Rust-proof metallic eyelet lace-up",
-      "terrain": "All-terrain / Off-road trekking"
+      "terrain": "All-terrain rugged Himalayan trekking"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 3919,
+        "flipkart": 4179,
+        "myntra": 4196
+      },
+      {
+        "month": "Jun",
+        "amazon": 3779,
+        "flipkart": 4065,
+        "myntra": 4014
+      },
+      {
+        "month": "Jul",
+        "amazon": 3674,
+        "flipkart": 3951,
+        "myntra": 3941
+      },
+      {
+        "month": "Aug",
+        "amazon": 3569,
+        "flipkart": 4027,
+        "myntra": 3795
+      },
+      {
+        "month": "Sep",
+        "amazon": 3429,
+        "flipkart": 3875,
+        "myntra": 3722
+      },
+      {
+        "month": "Current",
+        "amazon": 3499,
+        "flipkart": 3799,
+        "myntra": 3649
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -1384,18 +1381,18 @@
         "price": 3499,
         "original_price": 5495,
         "discount_percent": 36,
-        "rating": 4.2,
+        "rating": 4.3,
         "review_count": 14320,
         "delivery_estimate": "2-3 days",
         "seller": "Aero Club (Woodland)",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B00K52079M",
         "reviews": [
           {
             "author": "Vikram S",
             "rating": 5,
-            "text": "Tough as a tank. Have used it on 3 Himalayan treks without a scratch.",
+            "text": "Built like a tank. Withstood rocky trails with zero tearing.",
             "date": "2024-11-08"
           }
         ]
@@ -1406,18 +1403,18 @@
         "price": 3799,
         "original_price": 5495,
         "discount_percent": 31,
-        "rating": 4.1,
+        "rating": 4.2,
         "review_count": 9820,
         "delivery_estimate": "3-4 days",
         "seller": "SuperComNet Footwear",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/woodland-boots",
         "reviews": [
           {
             "author": "Ankur J",
             "rating": 4,
-            "text": "High ankle support prevents twisting on rocks.",
+            "text": "High ankle collar prevents sprains on steep descents.",
             "date": "2024-10-15"
           }
         ]
@@ -1433,13 +1430,13 @@
         "delivery_estimate": "2-3 days",
         "seller": "Woodland Official",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/boots/woodland-leather-boots",
         "reviews": [
           {
             "author": "Devashish T",
             "rating": 5,
-            "text": "Premium nubuck leather finish looks very stylish.",
+            "text": "Premium nubuck suede texture.",
             "date": "2024-11-20"
           }
         ]
@@ -1447,237 +1444,130 @@
     ]
   },
   {
-    "group_id": "puma-softride-pro",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
+    "group_id": "crocs-classic-clogs",
+    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
     "category": "footwear",
-    "brand": "Puma",
-    "specs": {
-      "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
-      "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
-      "upper": "Breathable knit upper with zoned rubber traction"
+    "brand": "Crocs",
+    "images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "11.5 cm",
+      "height": "10.0 cm",
+      "depth": "28.5 cm",
+      "weight": "185g per clog"
     },
-    "platforms": [
+    "specs": {
+      "material": "100% Croslite closed-cell resin proprietary foam",
+      "ventilation": "Ports shed water and debris quickly",
+      "strap": "Pivoting heel strap for snug or slip-on mode",
+      "water_resistance": "100% buoyant and water-friendly"
+    },
+    "price_history": [
       {
-        "platform": "amazon",
-        "platform_product_id": "B09WJ98X7N",
-        "price": 3499,
-        "original_price": 5999,
-        "discount_percent": 42,
-        "rating": 4.1,
-        "review_count": 8200,
-        "delivery_estimate": "2-3 days",
-        "seller": "Puma Sports India",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B09WJ98X7N",
-        "reviews": [
-          {
-            "author": "Rakesh D",
-            "rating": 4,
-            "text": "Memory foam insole is very soft. Great for gym and daily jogs.",
-            "date": "2024-11-05"
-          }
-        ]
+        "month": "May",
+        "amazon": 2794,
+        "flipkart": 2525,
+        "myntra": 2754
       },
       {
-        "platform": "flipkart",
-        "platform_product_id": "FK-PUMA-SOFTRIDE",
-        "price": 3699,
-        "original_price": 5999,
-        "discount_percent": 38,
-        "rating": 4,
-        "review_count": 5400,
-        "delivery_estimate": "3-4 days",
-        "seller": "RetailNet Puma",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/puma-softride-pro",
-        "reviews": [
-          {
-            "author": "Kishan M",
-            "rating": 4,
-            "text": "Lightweight and flexible sole.",
-            "date": "2024-10-18"
-          }
-        ]
+        "month": "Jun",
+        "amazon": 2695,
+        "flipkart": 2456,
+        "myntra": 2635
       },
       {
-        "platform": "myntra",
-        "platform_product_id": "MYN-PUMA-SOFTRIDE",
-        "price": 3599,
-        "original_price": 5999,
-        "discount_percent": 40,
-        "rating": 4.1,
-        "review_count": 3900,
-        "delivery_estimate": "2-3 days",
-        "seller": "Puma Official Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/sports-shoes/puma-softride-pro",
-        "reviews": [
-          {
-            "author": "Sameer A",
-            "rating": 4,
-            "text": "True to size and very comfortable for standing long hours.",
-            "date": "2024-11-22"
-          }
-        ]
+        "month": "Jul",
+        "amazon": 2620,
+        "flipkart": 2387,
+        "myntra": 2587
+      },
+      {
+        "month": "Aug",
+        "amazon": 2545,
+        "flipkart": 2433,
+        "myntra": 2491
+      },
+      {
+        "month": "Sep",
+        "amazon": 2445,
+        "flipkart": 2341,
+        "myntra": 2443
+      },
+      {
+        "month": "Current",
+        "amazon": 2495,
+        "flipkart": 2295,
+        "myntra": 2395
       }
-    ]
-  },
-  {
-    "group_id": "red-tape-casual-sneaker",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "category": "footwear",
-    "brand": "Red Tape",
-    "specs": {
-      "upper": "Premium PU leather upper with perforated toe box",
-      "sole": "EVA sole for lightweight cushioning and grip",
-      "closure": "Lace-Up"
-    },
+    ],
     "platforms": [
       {
         "platform": "amazon",
-        "platform_product_id": "B08K5Q89LM",
-        "price": 1399,
-        "original_price": 5399,
-        "discount_percent": 74,
-        "rating": 4.1,
-        "review_count": 18450,
+        "platform_product_id": "B0014C5W7Q",
+        "price": 2495,
+        "original_price": 3495,
+        "discount_percent": 29,
+        "rating": 4.5,
+        "review_count": 38900,
         "delivery_estimate": "1-2 days",
-        "seller": "Red Tape India",
+        "seller": "Crocs India",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B08K5Q89LM",
+        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+        "product_url": "https://www.amazon.in/dp/B0014C5W7Q",
         "reviews": [
           {
-            "author": "Prashant R",
+            "author": "Deepa N",
             "rating": 5,
-            "text": "Insane value for ₹1399. Looks exactly like premium Stan Smiths.",
-            "date": "2024-11-19"
+            "text": "Ultimate comfort for home and rain.",
+            "date": "2024-11-11"
           }
         ]
       },
       {
         "platform": "flipkart",
-        "platform_product_id": "FK-REDTAPE-SNEAKER",
-        "price": 1299,
-        "original_price": 5399,
-        "discount_percent": 76,
-        "rating": 4,
-        "review_count": 24120,
+        "platform_product_id": "FK-CROCS-CLASSIC",
+        "price": 2295,
+        "original_price": 3495,
+        "discount_percent": 34,
+        "rating": 4.4,
+        "review_count": 24100,
         "delivery_estimate": "2-3 days",
         "seller": "RetailNet Footwear",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/red-tape-white-sneaker",
+        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+        "product_url": "https://www.flipkart.com/crocs-classic-clog",
         "reviews": [
           {
-            "author": "Karthik D",
+            "author": "Manish B",
             "rating": 4,
-            "text": "Very easy to wipe clean with damp cloth.",
-            "date": "2024-10-28"
+            "text": "Cleans with running water in seconds.",
+            "date": "2024-10-20"
           }
         ]
       },
       {
         "platform": "myntra",
-        "platform_product_id": "MYN-REDTAPE-SNEAKER",
-        "price": 1449,
-        "original_price": 5399,
-        "discount_percent": 73,
-        "rating": 4.2,
-        "review_count": 11200,
-        "delivery_estimate": "1-2 days",
-        "seller": "Red Tape Official Brand Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/casual-shoes/red-tape-sneakers",
-        "reviews": [
-          {
-            "author": "Nikhil P",
-            "rating": 5,
-            "text": "Great everyday college sneaker.",
-            "date": "2024-11-22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "skechers-go-walk-max",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "category": "footwear",
-    "brand": "Skechers",
-    "specs": {
-      "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
-      "insole": "Goga Max high-rebound cushioning insole",
-      "upper": "Super lightweight mesh fabric upper with padded heel collar"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B073WP8N91",
-        "price": 3299,
-        "original_price": 5499,
-        "discount_percent": 40,
+        "platform_product_id": "MYN-CROCS-CLASSIC",
+        "price": 2395,
+        "original_price": 3495,
+        "discount_percent": 31,
         "rating": 4.5,
-        "review_count": 12400,
+        "review_count": 14200,
         "delivery_estimate": "1-2 days",
-        "seller": "Skechers South Asia",
+        "seller": "Crocs Brand Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B073WP8N91",
+        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&auto=format&fit=crop&q=80",
+        "product_url": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
         "reviews": [
           {
-            "author": "Mahesh B",
+            "author": "Pradeep G",
             "rating": 5,
-            "text": "The best walking shoe for senior citizens and daily 5km evening walks.",
-            "date": "2024-11-14"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-SKECHERS-GOWALK",
-        "price": 3499,
-        "original_price": 5499,
-        "discount_percent": 36,
-        "rating": 4.4,
-        "review_count": 7890,
-        "delivery_estimate": "2-3 days",
-        "seller": "SuperComNet Sports",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/skechers-go-walk-max",
-        "reviews": [
-          {
-            "author": "Sunita G",
-            "rating": 5,
-            "text": "Slip-on design is effortless to wear. Very soft on heel spurs.",
-            "date": "2024-10-21"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-SKECHERS-GOWALK",
-        "price": 3199,
-        "original_price": 5499,
-        "discount_percent": 42,
-        "rating": 4.6,
-        "review_count": 5120,
-        "delivery_estimate": "1-2 days",
-        "seller": "Skechers Flagship Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/casual-shoes/skechers-go-walk",
-        "reviews": [
-          {
-            "author": "Vijay R",
-            "rating": 5,
-            "text": "Extremely breathable mesh, zero foot odor even after 8 hours.",
-            "date": "2024-11-25"
+            "text": "Genuine tags and pristine quality.",
+            "date": "2024-11-27"
           }
         ]
       }
@@ -1688,12 +1578,62 @@
     "product_name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
     "category": "fashion",
     "brand": "Levi's",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542272604-780c96856592?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "38.0 cm",
+      "height": "105.0 cm",
+      "depth": "2.0 cm",
+      "weight": "550g"
+    },
     "specs": {
       "fit": "Slim from hip to ankle",
-      "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
-      "rise": "Sits below waist",
+      "fabric": "99% Cotton, 1% Elastane with Levi's Flex stretch",
+      "rise": "Sits below waist (Mid rise)",
       "leg_opening": "14.5 inch slim leg"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 2463,
+        "flipkart": 2639,
+        "myntra": 2299
+      },
+      {
+        "month": "Jun",
+        "amazon": 2375,
+        "flipkart": 2567,
+        "myntra": 2199
+      },
+      {
+        "month": "Jul",
+        "amazon": 2309,
+        "flipkart": 2495,
+        "myntra": 2159
+      },
+      {
+        "month": "Aug",
+        "amazon": 2243,
+        "flipkart": 2543,
+        "myntra": 2079
+      },
+      {
+        "month": "Sep",
+        "amazon": 2155,
+        "flipkart": 2447,
+        "myntra": 2039
+      },
+      {
+        "month": "Current",
+        "amazon": 2199,
+        "flipkart": 2399,
+        "myntra": 1999
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -1701,18 +1641,18 @@
         "price": 2199,
         "original_price": 3999,
         "discount_percent": 45,
-        "rating": 4.3,
+        "rating": 4.4,
         "review_count": 14200,
         "delivery_estimate": "2-3 days",
         "seller": "Levi's Authorized Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B00K5Q28L1",
         "reviews": [
           {
             "author": "Alok N",
             "rating": 5,
-            "text": "Classic 511 fit. Perfect stretch and doesn't lose shape after washes.",
+            "text": "Classic 511 fit. Perfect stretch that holds form.",
             "date": "2024-11-12"
           }
         ]
@@ -1723,18 +1663,18 @@
         "price": 2399,
         "original_price": 3999,
         "discount_percent": 40,
-        "rating": 4.2,
+        "rating": 4.3,
         "review_count": 9800,
         "delivery_estimate": "3-4 days",
         "seller": "RetailNet Denim",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/levis-511-slim-fit",
         "reviews": [
           {
             "author": "Harish S",
             "rating": 4,
-            "text": "Deep indigo color that looks great with white sneakers.",
+            "text": "Rich indigo color looks great with white sneakers.",
             "date": "2024-10-29"
           }
         ]
@@ -1745,99 +1685,19 @@
         "price": 1999,
         "original_price": 3999,
         "discount_percent": 50,
-        "rating": 4.4,
+        "rating": 4.5,
         "review_count": 18400,
         "delivery_estimate": "1-2 days",
         "seller": "Levi's Brand Flagship",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/jeans/levis-511-slim-fit",
         "reviews": [
           {
             "author": "Yash P",
             "rating": 5,
-            "text": "Massive 50% discount on Myntra. 100% authentic red tab jeans.",
+            "text": "50% discount on Myntra with genuine red tab.",
             "date": "2024-11-24"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "tommy-hilfiger-classic-polo",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "category": "fashion",
-    "brand": "Tommy Hilfiger",
-    "specs": {
-      "fabric": "100% Organic Pique Cotton",
-      "fit": "Custom Regular Fit",
-      "collar": "Ribbed polo collar with 2-button placket",
-      "embroidery": "Signature Tommy Hilfiger flag logo on chest"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B09KL897N4",
-        "price": 2499,
-        "original_price": 4599,
-        "discount_percent": 46,
-        "rating": 4.4,
-        "review_count": 4890,
-        "delivery_estimate": "2-3 days",
-        "seller": "Cloudtail Apparel",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B09KL897N4",
-        "reviews": [
-          {
-            "author": "Chetan B",
-            "rating": 5,
-            "text": "High quality pique cotton that stays crisp throughout the day.",
-            "date": "2024-11-17"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-TOMMY-POLO",
-        "price": 2799,
-        "original_price": 4599,
-        "discount_percent": 39,
-        "rating": 4.2,
-        "review_count": 2410,
-        "delivery_estimate": "3-4 days",
-        "seller": "FSAssured Fashion",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/tommy-hilfiger-polo",
-        "reviews": [
-          {
-            "author": "Deepak V",
-            "rating": 4,
-            "text": "Rich navy blue shade and comfortable fit.",
-            "date": "2024-10-18"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-TOMMY-POLO",
-        "price": 2299,
-        "original_price": 4599,
-        "discount_percent": 50,
-        "rating": 4.5,
-        "review_count": 8900,
-        "delivery_estimate": "1-2 days",
-        "seller": "Tommy Hilfiger Flagship",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/tshirts/tommy-hilfiger-polo",
-        "reviews": [
-          {
-            "author": "Sahil G",
-            "rating": 5,
-            "text": "Premium finish and comfortable fabric for summer.",
-            "date": "2024-11-20"
           }
         ]
       }
@@ -1848,12 +1708,61 @@
     "product_name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
     "category": "fashion",
     "brand": "Ray-Ban",
-    "specs": {
-      "frame_material": "Corrosion-resistant Metal alloy",
-      "lens_technology": "Polarized G-15 Green Crystal Lens",
-      "uv_protection": "100% UV400 protection",
-      "size": "58mm standard lens width"
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "14.0 cm",
+      "height": "5.0 cm",
+      "depth": "13.5 cm",
+      "weight": "31g"
     },
+    "specs": {
+      "frame_material": "Corrosion-resistant Gold Alloy Metal",
+      "lens": "Polarized G-15 Crystal Green Glass (100% UV400)",
+      "size": "58mm standard pilot teardrop lens"
+    },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 9509,
+        "flipkart": 9779,
+        "myntra": 9419
+      },
+      {
+        "month": "Jun",
+        "amazon": 9169,
+        "flipkart": 9512,
+        "myntra": 9009
+      },
+      {
+        "month": "Jul",
+        "amazon": 8915,
+        "flipkart": 9246,
+        "myntra": 8845
+      },
+      {
+        "month": "Aug",
+        "amazon": 8660,
+        "flipkart": 9423,
+        "myntra": 8518
+      },
+      {
+        "month": "Sep",
+        "amazon": 8320,
+        "flipkart": 9068,
+        "myntra": 8354
+      },
+      {
+        "month": "Current",
+        "amazon": 8490,
+        "flipkart": 8890,
+        "myntra": 8190
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -1861,18 +1770,18 @@
         "price": 8490,
         "original_price": 10490,
         "discount_percent": 19,
-        "rating": 4.6,
+        "rating": 4.7,
         "review_count": 7210,
         "delivery_estimate": "1-2 days",
         "seller": "Luxottica India Official",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B00080FGVO",
         "reviews": [
           {
             "author": "Aditya S",
             "rating": 5,
-            "text": "The iconic pilot aviators. Glare reduction while driving is unmatched.",
+            "text": "Glare reduction while highway driving is outstanding.",
             "date": "2024-11-21"
           }
         ]
@@ -1888,13 +1797,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "Optics SuperStore",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/ray-ban-aviator",
         "reviews": [
           {
             "author": "Kunal M",
             "rating": 5,
-            "text": "Came with original leather case and microfiber cloth.",
+            "text": "Original leather case and microfiber cloth included.",
             "date": "2024-10-14"
           }
         ]
@@ -1910,252 +1819,13 @@
         "delivery_estimate": "1-2 days",
         "seller": "Ray-Ban Brand Boutique",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/sunglasses/ray-ban-aviator",
         "reviews": [
           {
             "author": "Tarun D",
             "rating": 5,
-            "text": "Authentic Luxottica barcode and warranty registration verified.",
-            "date": "2024-11-26"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "zara-faux-leather-jacket",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "category": "fashion",
-    "brand": "Zara",
-    "specs": {
-      "material": "100% Polyurethane leather finish with viscose lining",
-      "closure": "Asymmetric silver metallic zip",
-      "pockets": "3 functional zip pockets with coin flap",
-      "collar": "Notched lapel collar with snap buttons"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B0CY78L91P",
-        "price": 4990,
-        "original_price": 6990,
-        "discount_percent": 29,
-        "rating": 4.3,
-        "review_count": 2180,
-        "delivery_estimate": "2-3 days",
-        "seller": "Urban Trendsetters",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B0CY78L91P",
-        "reviews": [
-          {
-            "author": "Ishaan B",
-            "rating": 5,
-            "text": "Looks like real leather. Perfect slim fit jacket for winter nights.",
-            "date": "2024-11-13"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-ZARA-LEATHER-JKT",
-        "price": 5290,
-        "original_price": 6990,
-        "discount_percent": 24,
-        "rating": 4.2,
-        "review_count": 1420,
-        "delivery_estimate": "3-4 days",
-        "seller": "EuroFashion Outlet",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/zara-biker-jacket",
-        "reviews": [
-          {
-            "author": "Rahul P",
-            "rating": 4,
-            "text": "Good stitching and heavy quality zippers.",
-            "date": "2024-10-22"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-ZARA-BIKER",
-        "price": 4690,
-        "original_price": 6990,
-        "discount_percent": 33,
-        "rating": 4.5,
-        "review_count": 3840,
-        "delivery_estimate": "1-2 days",
-        "seller": "Myntra Studio Luxe",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/jackets/zara-biker-jacket",
-        "reviews": [
-          {
-            "author": "Siddharth N",
-            "rating": 5,
-            "text": "Incredible silhouette. Elevates any basic white tee and jeans outfit.",
-            "date": "2024-11-25"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "fabindia-printed-cotton-kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "category": "fashion",
-    "brand": "FabIndia",
-    "specs": {
-      "fabric": "100% Breathable Khadi Cotton",
-      "craft": "Traditional Hand Block Floral Print",
-      "neck": "Mandarin Collar with button placket",
-      "sleeves": "Full Sleeves with roll-up tab"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B09L7X89W1",
-        "price": 1499,
-        "original_price": 2490,
-        "discount_percent": 40,
-        "rating": 4.4,
-        "review_count": 3890,
-        "delivery_estimate": "2-3 days",
-        "seller": "FabIndia Overseas",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B09L7X89W1",
-        "reviews": [
-          {
-            "author": "Manish K",
-            "rating": 5,
-            "text": "Super light pure cotton fabric for festive occasions and casual Fridays.",
-            "date": "2024-11-09"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-FABINDIA-KURTA",
-        "price": 1699,
-        "original_price": 2490,
-        "discount_percent": 32,
-        "rating": 4.3,
-        "review_count": 2150,
-        "delivery_estimate": "3-4 days",
-        "seller": "Ethnic Weaves India",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/fabindia-cotton-kurta",
-        "reviews": [
-          {
-            "author": "Suraj G",
-            "rating": 4,
-            "text": "Natural dye colors look rich and authentic.",
-            "date": "2024-10-18"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-FABINDIA-KURTA",
-        "price": 1399,
-        "original_price": 2490,
-        "discount_percent": 44,
-        "rating": 4.5,
-        "review_count": 6720,
-        "delivery_estimate": "1-2 days",
-        "seller": "FabIndia Official Brand Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/kurtas/fabindia-printed-kurta",
-        "reviews": [
-          {
-            "author": "Deepak S",
-            "rating": 5,
-            "text": "Perfect fit around shoulders and chest.",
-            "date": "2024-11-21"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "allen-solly-formal-trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "category": "fashion",
-    "brand": "Allen Solly",
-    "specs": {
-      "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
-      "fit": "Contemporary Slim Fit with flat front",
-      "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B07K9L8P3M",
-        "price": 1399,
-        "original_price": 2299,
-        "discount_percent": 39,
-        "rating": 4.3,
-        "review_count": 5120,
-        "delivery_estimate": "2-3 days",
-        "seller": "Aditya Birla Fashion (Amazon)",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B07K9L8P3M",
-        "reviews": [
-          {
-            "author": "Naveen P",
-            "rating": 5,
-            "text": "Wrinkle-free material is great for long office workdays.",
-            "date": "2024-11-12"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-ALLEN-SOLLY-TROUSER",
-        "price": 1499,
-        "original_price": 2299,
-        "discount_percent": 35,
-        "rating": 4.2,
-        "review_count": 3840,
-        "delivery_estimate": "3-4 days",
-        "seller": "FormalWear Express",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/allen-solly-formal-trouser",
-        "reviews": [
-          {
-            "author": "Ravi M",
-            "rating": 4,
-            "text": "True to waist size. Clean charcoal grey color.",
-            "date": "2024-10-25"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-ALLEN-SOLLY-TROUSER",
-        "price": 1299,
-        "original_price": 2299,
-        "discount_percent": 43,
-        "rating": 4.4,
-        "review_count": 8900,
-        "delivery_estimate": "1-2 days",
-        "seller": "Allen Solly Brand Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/trousers/allen-solly-formal-trousers",
-        "reviews": [
-          {
-            "author": "Aniket T",
-            "rating": 5,
-            "text": "Excellent tailoring and comfortable fabric.",
+            "text": "Authentic Luxottica barcode verified.",
             "date": "2024-11-26"
           }
         ]
@@ -2167,12 +1837,62 @@
     "product_name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
     "category": "home",
     "brand": "Atomberg",
+    "images": [
+      "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "120.0 cm",
+      "height": "35.0 cm",
+      "depth": "120.0 cm",
+      "weight": "4.2 kg"
+    },
     "specs": {
-      "power_consumption": "28W at highest speed (saves 65% electricity)",
+      "power": "28W at highest speed (saves 65% electricity)",
       "motor": "Energy efficient BLDC motor",
-      "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
+      "blade_sweep": "1200mm (48 inch) aerodynamic blades",
       "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 4143,
+        "flipkart": 3904,
+        "myntra": 4474
+      },
+      {
+        "month": "Jun",
+        "amazon": 3995,
+        "flipkart": 3797,
+        "myntra": 4279
+      },
+      {
+        "month": "Jul",
+        "amazon": 3884,
+        "flipkart": 3691,
+        "myntra": 4201
+      },
+      {
+        "month": "Aug",
+        "amazon": 3773,
+        "flipkart": 3762,
+        "myntra": 4046
+      },
+      {
+        "month": "Sep",
+        "amazon": 3625,
+        "flipkart": 3620,
+        "myntra": 3968
+      },
+      {
+        "month": "Current",
+        "amazon": 3699,
+        "flipkart": 3549,
+        "myntra": 3890
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -2180,12 +1900,12 @@
         "price": 3699,
         "original_price": 4990,
         "discount_percent": 26,
-        "rating": 4.5,
+        "rating": 4.6,
         "review_count": 42100,
         "delivery_estimate": "1-2 days",
         "seller": "Atomberg Technologies Official",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B07P8N9KLM",
         "reviews": [
           {
@@ -2202,18 +1922,18 @@
         "price": 3549,
         "original_price": 4990,
         "discount_percent": 29,
-        "rating": 4.4,
+        "rating": 4.5,
         "review_count": 28400,
         "delivery_estimate": "2-3 days",
         "seller": "RetailNet Home",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/atomberg-renesa",
         "reviews": [
           {
             "author": "Sunil K",
             "rating": 5,
-            "text": "Remote control works from anywhere in the bedroom.",
+            "text": "Remote works from any corner of the room.",
             "date": "2024-10-18"
           }
         ]
@@ -2229,13 +1949,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "Home Decor Studio",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/home-appliances/atomberg-fan",
         "reviews": [
           {
             "author": "Archana S",
             "rating": 4,
-            "text": "Modern minimalist look that fits false ceiling aesthetics.",
+            "text": "Sleek look on false ceiling.",
             "date": "2024-11-09"
           }
         ]
@@ -2247,12 +1967,62 @@
     "product_name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
     "category": "home",
     "brand": "Philips",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "35.5 cm",
+      "height": "33.8 cm",
+      "depth": "35.5 cm",
+      "weight": "4.55 kg"
+    },
     "specs": {
-      "capacity": "4.1 Litres XL Basket",
+      "capacity": "4.1 Litres XL Basket (up to 4 portions)",
       "technology": "Rapid Air Technology (up to 90% less fat)",
-      "controls": "Digital Touch Screen with 7 preset cooking modes",
+      "controls": "Digital Touch Screen with 7 presets + Keep Warm function",
       "power": "1400W powerful heating element"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 8959,
+        "flipkart": 8469,
+        "myntra": 9764
+      },
+      {
+        "month": "Jun",
+        "amazon": 8639,
+        "flipkart": 8238,
+        "myntra": 9339
+      },
+      {
+        "month": "Jul",
+        "amazon": 8399,
+        "flipkart": 8007,
+        "myntra": 9169
+      },
+      {
+        "month": "Aug",
+        "amazon": 8159,
+        "flipkart": 8161,
+        "myntra": 8830
+      },
+      {
+        "month": "Sep",
+        "amazon": 7839,
+        "flipkart": 7853,
+        "myntra": 8660
+      },
+      {
+        "month": "Current",
+        "amazon": 7999,
+        "flipkart": 7699,
+        "myntra": 8490
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -2260,18 +2030,18 @@
         "price": 7999,
         "original_price": 11995,
         "discount_percent": 33,
-        "rating": 4.5,
+        "rating": 4.6,
         "review_count": 19800,
         "delivery_estimate": "1-2 days",
         "seller": "Philips Domestic Appliances",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B09B1Y8TKL",
         "reviews": [
           {
             "author": "Pooja V",
             "rating": 5,
-            "text": "French fries and chicken tikka turn out crispy with just 1 spoon oil.",
+            "text": "Fries and chicken tikka turn out crispy with 1 spoon oil.",
             "date": "2024-11-20"
           }
         ]
@@ -2282,12 +2052,12 @@
         "price": 7699,
         "original_price": 11995,
         "discount_percent": 36,
-        "rating": 4.4,
+        "rating": 4.5,
         "review_count": 12400,
         "delivery_estimate": "2-3 days",
         "seller": "SuperComNet Kitchen",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/philips-digital-airfryer",
         "reviews": [
           {
@@ -2309,13 +2079,13 @@
         "delivery_estimate": "3-4 days",
         "seller": "Philips Luxe Appliances",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/kitchen/philips-air-fryer",
         "reviews": [
           {
             "author": "Komal D",
             "rating": 4,
-            "text": "Very convenient for healthy everyday snacking.",
+            "text": "Very convenient for healthy daily cooking.",
             "date": "2024-11-15"
           }
         ]
@@ -2327,12 +2097,62 @@
     "product_name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
     "category": "home",
     "brand": "Dyson",
+    "images": [
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&auto=format&fit=crop&q=80"
+    ],
+    "dimensions": {
+      "width": "25.0 cm",
+      "height": "124.4 cm",
+      "depth": "22.4 cm",
+      "weight": "2.61 kg"
+    },
     "specs": {
       "suction_power": "115 AW powerful fade-free suction",
       "runtime": "Up to 40 minutes continuous cleaning",
-      "filtration": "Advanced whole-machine filtration captures 99.99% particles",
+      "filtration": "Advanced whole-machine filtration captures 99.99% of dust particles",
       "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
     },
+    "price_history": [
+      {
+        "month": "May",
+        "amazon": 33488,
+        "flipkart": 31889,
+        "myntra": 36685
+      },
+      {
+        "month": "Jun",
+        "amazon": 32292,
+        "flipkart": 31019,
+        "myntra": 35090
+      },
+      {
+        "month": "Jul",
+        "amazon": 31395,
+        "flipkart": 30150,
+        "myntra": 34452
+      },
+      {
+        "month": "Aug",
+        "amazon": 30498,
+        "flipkart": 30729,
+        "myntra": 33176
+      },
+      {
+        "month": "Sep",
+        "amazon": 29302,
+        "flipkart": 29570,
+        "myntra": 32538
+      },
+      {
+        "month": "Current",
+        "amazon": 29900,
+        "flipkart": 28990,
+        "myntra": 31900
+      }
+    ],
     "platforms": [
       {
         "platform": "amazon",
@@ -2340,18 +2160,18 @@
         "price": 29900,
         "original_price": 43900,
         "discount_percent": 32,
-        "rating": 4.6,
+        "rating": 4.7,
         "review_count": 8940,
         "delivery_estimate": "1-2 days",
         "seller": "Dyson India Official",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B09V7N8L92",
         "reviews": [
           {
             "author": "Vivek G",
             "rating": 5,
-            "text": "Deep cleans carpets and sofas effortlessly. Worth every penny.",
+            "text": "Deep cleans sofas and carpets with ease.",
             "date": "2024-11-18"
           }
         ]
@@ -2362,18 +2182,18 @@
         "price": 28990,
         "original_price": 43900,
         "discount_percent": 34,
-        "rating": 4.5,
+        "rating": 4.6,
         "review_count": 5120,
         "delivery_estimate": "2-3 days",
         "seller": "FSAssured Appliances",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/dyson-v8-absolute",
         "reviews": [
           {
             "author": "Ananya B",
             "rating": 5,
-            "text": "Picks up pet hair with zero tangling on the brush roll.",
+            "text": "Pet hair removal is instantaneous.",
             "date": "2024-10-30"
           }
         ]
@@ -2384,259 +2204,19 @@
         "price": 31900,
         "original_price": 43900,
         "discount_percent": 27,
-        "rating": 4.6,
+        "rating": 4.7,
         "review_count": 620,
         "delivery_estimate": "3-4 days",
         "seller": "Dyson Premium Store",
         "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+        "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=900&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/home-appliances/dyson-v8-vacuum",
         "reviews": [
           {
             "author": "Karan T",
             "rating": 5,
-            "text": "Very lightweight for cleaning ceiling fans and AC vents.",
+            "text": "Lightweight and easy to carry upstairs.",
             "date": "2024-11-22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "nespresso-essenza-mini",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "category": "home",
-    "brand": "Nespresso",
-    "specs": {
-      "pressure": "19-bar high-pressure extraction pump",
-      "heat_up_time": "Ultra-fast 25-second heat-up",
-      "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
-      "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B079L7N9K1",
-        "price": 13999,
-        "original_price": 18999,
-        "discount_percent": 26,
-        "rating": 4.6,
-        "review_count": 5120,
-        "delivery_estimate": "2-3 days",
-        "seller": "Nespresso Official Distributor",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B079L7N9K1",
-        "reviews": [
-          {
-            "author": "Gautam M",
-            "rating": 5,
-            "text": "Makes rich crema espresso like an Italian cafe in 30 seconds.",
-            "date": "2024-11-16"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-NESPRESSO-MINI",
-        "price": 14499,
-        "original_price": 18999,
-        "discount_percent": 24,
-        "rating": 4.4,
-        "review_count": 2400,
-        "delivery_estimate": "3-4 days",
-        "seller": "CoffeeCrafters India",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/nespresso-essenza-mini",
-        "reviews": [
-          {
-            "author": "Sonia P",
-            "rating": 4,
-            "text": "Tiny footprint on kitchen counter. Super easy to use.",
-            "date": "2024-10-21"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-NESPRESSO-MINI",
-        "price": 13499,
-        "original_price": 18999,
-        "discount_percent": 29,
-        "rating": 4.7,
-        "review_count": 890,
-        "delivery_estimate": "2-3 days",
-        "seller": "Gourmet Kitchen Studio",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/kitchen/nespresso-essenza-mini",
-        "reviews": [
-          {
-            "author": "Rahul K",
-            "rating": 5,
-            "text": "Came with 14 complimentary coffee capsules. Great taste!",
-            "date": "2024-11-28"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "bajaj-rex-500w-mixer",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "category": "home",
-    "brand": "Bajaj",
-    "specs": {
-      "power": "500 Watts 100% Copper Motor",
-      "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
-      "speed_control": "3 speed control with incher for momentary operation",
-      "overload_protection": "Motor overload protection with auto cut-off"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B009P2LM9K",
-        "price": 1999,
-        "original_price": 3200,
-        "discount_percent": 38,
-        "rating": 4.2,
-        "review_count": 64200,
-        "delivery_estimate": "1-2 days",
-        "seller": "Bajaj Electricals Official",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B009P2LM9K",
-        "reviews": [
-          {
-            "author": "Sunita D",
-            "rating": 5,
-            "text": "Chutney and dry masalas grind into fine paste within seconds.",
-            "date": "2024-11-10"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-BAJAJ-REX-500W",
-        "price": 1899,
-        "original_price": 3200,
-        "discount_percent": 41,
-        "rating": 4.1,
-        "review_count": 48900,
-        "delivery_estimate": "2-3 days",
-        "seller": "RetailNet Kitchen",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/bajaj-rex-mixer",
-        "reviews": [
-          {
-            "author": "Kishore M",
-            "rating": 4,
-            "text": "Value for money kitchen appliance for small families.",
-            "date": "2024-10-14"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-BAJAJ-REX",
-        "price": 2099,
-        "original_price": 3200,
-        "discount_percent": 34,
-        "rating": 4.3,
-        "review_count": 3200,
-        "delivery_estimate": "2-4 days",
-        "seller": "Home Utilities Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/kitchen/bajaj-rex-mixer",
-        "reviews": [
-          {
-            "author": "Meenakshi R",
-            "rating": 4,
-            "text": "Sturdy vacuum suction feet keep it steady.",
-            "date": "2024-11-20"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "group_id": "mi-smart-air-purifier-4",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "category": "home",
-    "brand": "Xiaomi",
-    "specs": {
-      "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
-      "coverage_area": "Up to 516 sq. ft. room coverage",
-      "cadr": "400 m³/h Clean Air Delivery Rate",
-      "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
-    },
-    "platforms": [
-      {
-        "platform": "amazon",
-        "platform_product_id": "B09WJ78L91",
-        "price": 13999,
-        "original_price": 16999,
-        "discount_percent": 18,
-        "rating": 4.5,
-        "review_count": 14200,
-        "delivery_estimate": "1-2 days",
-        "seller": "Xiaomi India Authorized",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.amazon.in/dp/B09WJ78L91",
-        "reviews": [
-          {
-            "author": "Tarun B",
-            "rating": 5,
-            "text": "Brings AQI from 350 to under 25 in 20 minutes in Delhi winters.",
-            "date": "2024-11-24"
-          }
-        ]
-      },
-      {
-        "platform": "flipkart",
-        "platform_product_id": "FK-MI-AIRPURIFIER-4",
-        "price": 13499,
-        "original_price": 16999,
-        "discount_percent": 21,
-        "rating": 4.4,
-        "review_count": 8900,
-        "delivery_estimate": "2-3 days",
-        "seller": "FSAssured Electronics",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.flipkart.com/mi-smart-air-purifier-4",
-        "reviews": [
-          {
-            "author": "Deepak N",
-            "rating": 5,
-            "text": "Night mode is whisper quiet. Real-time PM2.5 display is accurate.",
-            "date": "2024-10-29"
-          }
-        ]
-      },
-      {
-        "platform": "myntra",
-        "platform_product_id": "MYN-MI-AIRPURIFIER",
-        "price": 14299,
-        "original_price": 16999,
-        "discount_percent": 16,
-        "rating": 4.5,
-        "review_count": 940,
-        "delivery_estimate": "3-4 days",
-        "seller": "Xiaomi Official Store",
-        "in_stock": true,
-        "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-        "product_url": "https://www.myntra.com/appliances/mi-air-purifier-4",
-        "reviews": [
-          {
-            "author": "Sangeeta P",
-            "rating": 5,
-            "text": "Helps tremendously with dust allergy and pet dander.",
-            "date": "2024-11-18"
           }
         ]
       }
