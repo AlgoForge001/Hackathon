@@ -11,6 +11,21 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Global Auth Modal state
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [authModalTab, setAuthModalTab] = useState("login"); // "login" | "register"
+
+  const openAuthModal = (tab = "login") => {
+    setError(null);
+    setAuthModalTab(tab);
+    setIsAuthModalOpen(true);
+  };
+
+  const closeAuthModal = () => {
+    setError(null);
+    setIsAuthModalOpen(false);
+  };
+
   // Fetch logged in user details if token exists
   useEffect(() => {
     const fetchUser = async () => {
@@ -27,7 +42,7 @@ export const AuthProvider = ({ children }) => {
           setUser(res.data.user);
         }
       } catch (err) {
-        console.error("Session verification error:", err);
+        console.warn("Session verification error, logging out:", err.message);
         logout();
       } finally {
         setLoading(false);
@@ -36,6 +51,85 @@ export const AuthProvider = ({ children }) => {
 
     fetchUser();
   }, [token]);
+
+  // Handle Local Email/Password Login
+  const login = async (email, password) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await axios.post(`${API_URL}/auth/login`, { email, password });
+      if (res.data.success) {
+        const { token: jwtToken, user: userData } = res.data;
+        localStorage.setItem("token", jwtToken);
+        setToken(jwtToken);
+        setUser(userData);
+        closeAuthModal();
+        return userData;
+      }
+    } catch (err) {
+      const message = err.response?.data?.message || "Login failed. Please check your credentials.";
+      setError(message);
+      throw new Error(message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Handle Local Registration
+  const register = async (name, email, password) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await axios.post(`${API_URL}/auth/register`, { name, email, password });
+      if (res.data.success) {
+        const { token: jwtToken, user: userData } = res.data;
+        localStorage.setItem("token", jwtToken);
+        setToken(jwtToken);
+        setUser(userData);
+        closeAuthModal();
+        return userData;
+      }
+    } catch (err) {
+      const message = err.response?.data?.message || "Registration failed. Please check your information.";
+      setError(message);
+      throw new Error(message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Handle Instant 1-Click Demo Login
+  const loginAsDemo = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await axios.post(`${API_URL}/auth/demo`);
+      if (res.data.success) {
+        const { token: jwtToken, user: userData } = res.data;
+        localStorage.setItem("token", jwtToken);
+        setToken(jwtToken);
+        setUser(userData);
+        closeAuthModal();
+        return userData;
+      }
+    } catch (err) {
+      // Fallback demo user if backend is offline
+      const fallbackUser = {
+        id: "demo-user-123",
+        _id: "demo-user-123",
+        name: "Demo Shopper",
+        email: "demo.shopper@shopsy.ai",
+        authProvider: "demo",
+        picture: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+        role: "user",
+      };
+      setUser(fallbackUser);
+      closeAuthModal();
+      return fallbackUser;
+    } finally {
+      setLoading(false);
+    }
+  };
 
   // Handle Google Login Success
   const handleGoogleSuccess = async (credentialResponse) => {
@@ -51,6 +145,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("token", jwtToken);
         setToken(jwtToken);
         setUser(userData);
+        closeAuthModal();
         return userData;
       }
     } catch (err) {
@@ -64,7 +159,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const handleGoogleFailure = (err) => {
-    console.error("Google Login popup error:", err);
+    console.error("Google Login error:", err);
     setError("Google Sign-In failed or was cancelled.");
   };
 
@@ -72,6 +167,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("token");
     setToken(null);
     setUser(null);
+    setError(null);
   };
 
   return (
@@ -81,10 +177,19 @@ export const AuthProvider = ({ children }) => {
         token,
         loading,
         error,
+        setError,
+        login,
+        register,
+        loginAsDemo,
         handleGoogleSuccess,
         handleGoogleFailure,
         logout,
         isAuthenticated: !!user,
+        isAuthModalOpen,
+        authModalTab,
+        openAuthModal,
+        closeAuthModal,
+        setAuthModalTab,
       }}
     >
       {children}

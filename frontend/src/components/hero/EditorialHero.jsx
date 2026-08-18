@@ -58,89 +58,89 @@ export default function EditorialHero({ onOpenChat }) {
   ];
 
   return (
-    <section style={{ position: "relative", width: "100%", overflow: "hidden" }}>
-      <div className="container" style={{ paddingTop: "20px" }}>
-        {/* Editorial Campaign Hero Tile with Exact Aura Mesh Gradient */}
+    <section style={{ position: "relative", width: "100%", padding: "24px 0 36px 0" }}>
+      <div className="container">
+        {/* Seamless Hero Container (No black card behind, clean natural page background) */}
         <div
-          className="aura-mesh-hero aura-mesh-animated"
           style={{
-            position: "relative",
-            width: "100%",
-            minHeight: "520px",
-            borderRadius: "var(--radius-none)",
-            overflow: "hidden",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            padding: "clamp(32px, 5vw, 56px)",
-            color: "var(--color-canvas)",
-            border: "1px solid rgba(255, 255, 255, 0.12)",
-            boxShadow: "0 24px 60px rgba(0,0,0,0.45)",
+            display: "grid",
+            gridTemplateColumns: "1.2fr 0.8fr",
+            gap: "clamp(24px, 5vw, 64px)",
+            alignItems: "center",
+            paddingBottom: "36px",
+            borderBottom: "1px solid var(--color-hairline)",
           }}
+          className="hero-grid-layout"
         >
-          {/* Authentic Film Grain Noise Texture */}
-          <div className="aura-grain-overlay" />
+          {/* ─── LEFT COLUMN: Text, Headline & AI Search ─── */}
+          <div>
+            {/* Top Status Bar */}
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap", marginBottom: "20px" }}>
+              <span
+                style={{
+                  backgroundColor: "var(--color-soft-cloud)",
+                  padding: "5px 14px",
+                  borderRadius: "var(--radius-pill)",
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "0.8px",
+                  textTransform: "uppercase",
+                  color: "var(--color-ink)",
+                  border: "1px solid var(--color-hairline)",
+                }}
+              >
+                Multi-Platform AI Comparison
+              </span>
+              <span style={{ fontSize: "12px", color: "var(--color-mute)", display: "flex", alignItems: "center", gap: "5px" }}>
+                <ShieldCheck size={14} color="#059669" /> Verified Live Real-Time Pricing
+              </span>
+            </div>
 
-          {/* High-Intensity Diagonal Aura Light Streak */}
-          <div className="aura-glow-beam" />
-
-          {/* Top Tagline */}
-          <div style={{ position: "relative", zIndex: 2, display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-            <span
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.15)",
-                backdropFilter: "blur(8px)",
-                padding: "6px 16px",
-                borderRadius: "var(--radius-lg)",
-                fontSize: "12px",
-                fontWeight: 700,
-                letterSpacing: "1px",
-                textTransform: "uppercase",
-              }}
-            >
-              Multi-Platform AI Comparison
-            </span>
-            <span style={{ fontSize: "13px", color: "var(--color-hairline)", display: "flex", alignItems: "center", gap: "4px" }}>
-              <ShieldCheck size={14} color="#4ade80" /> Verified Real-Time Live Pricing
-            </span>
-          </div>
-
-          {/* Towering Display Campaign Lockup with Fixed-Height Typing Animation */}
-          <div style={{ maxWidth: "800px", marginTop: "32px", marginBottom: "32px" }}>
-            <div style={{ minHeight: "155px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
-              <h1 className="display-campaign" style={{ color: "var(--color-canvas)", textShadow: "0 2px 20px rgba(0,0,0,0.5)", margin: 0, lineHeight: 0.95 }}>
+            {/* Display Campaign Lockup with Fixed-Height Typing Animation */}
+            <div style={{ minHeight: "130px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
+              <h1
+                className="display-campaign"
+                style={{
+                  color: "var(--color-ink)",
+                  margin: 0,
+                  lineHeight: 0.95,
+                  fontSize: "clamp(36px, 4.8vw, 60px)",
+                }}
+              >
                 COMPARE. DECIDE.<br />
-                <span style={{ color: "var(--color-canvas)", display: "inline-block", minHeight: "1.15em" }}>
+                <span style={{ color: "var(--color-ink)", display: "inline-block", minHeight: "1.15em" }}>
                   {typedText}
                   <span className="typing-cursor" style={{ color: "#FF9900" }}>|</span>
                 </span>
               </h1>
             </div>
+
             <p
               style={{
                 fontSize: "16px",
-                color: "rgba(255,255,255,0.85)",
+                color: "var(--color-mute)",
                 marginTop: "16px",
-                maxWidth: "560px",
-                lineHeight: 1.5,
+                maxWidth: "540px",
+                lineHeight: 1.6,
               }}
             >
               Unified cross-platform intelligence across Amazon, Flipkart, and Myntra. Real-time review sentiment, true price drop alerts, and instant AI recommendations.
             </p>
 
             {/* Interactive Hero AI Search Bar */}
-            <form onSubmit={handleHeroSubmit} style={{ marginTop: "24px", maxWidth: "620px" }}>
+            <form onSubmit={handleHeroSubmit} style={{ marginTop: "24px", maxWidth: "560px" }}>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
                   backgroundColor: "var(--color-canvas)",
                   borderRadius: "var(--radius-lg)",
-                  padding: "6px 8px 6px 20px",
-                  boxShadow: "0 8px 30px rgba(0,0,0,0.35)",
+                  padding: "6px 8px 6px 18px",
+                  border: "1.5px solid var(--color-hairline)",
+                  boxShadow: "0 6px 24px rgba(0, 0, 0, 0.06)",
                 }}
               >
-                <Search size={20} color="var(--color-mute)" style={{ marginRight: "12px", flexShrink: 0 }} />
+                <Search size={18} color="var(--color-mute)" style={{ marginRight: "10px", flexShrink: 0 }} />
                 <input
                   type="text"
                   placeholder="Ask anything (e.g. 'Best running shoes under ₹5000')..."
@@ -150,7 +150,7 @@ export default function EditorialHero({ onOpenChat }) {
                     flex: 1,
                     border: "none",
                     outline: "none",
-                    fontSize: "15px",
+                    fontSize: "14px",
                     fontFamily: "var(--font-ui)",
                     color: "var(--color-ink)",
                     backgroundColor: "transparent",
@@ -163,100 +163,135 @@ export default function EditorialHero({ onOpenChat }) {
                     color: "var(--color-canvas)",
                     border: "none",
                     borderRadius: "var(--radius-lg)",
-                    padding: "10px 20px",
-                    fontSize: "14px",
+                    padding: "10px 18px",
+                    fontSize: "13px",
                     fontWeight: 700,
                     cursor: "pointer",
                     display: "flex",
                     alignItems: "center",
                     gap: "6px",
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                   }}
                 >
                   <span>Search</span>
-                  <ArrowRight size={16} />
+                  <ArrowRight size={15} />
                 </button>
               </div>
             </form>
 
             {/* Quick Trending Searches */}
             <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "16px", flexWrap: "wrap" }}>
-              <span style={{ fontSize: "12px", color: "var(--color-hairline)", fontWeight: 600 }}>Trending:</span>
+              <span style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 600 }}>Trending:</span>
               {trendingSearches.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => navigate(`/search?q=${encodeURIComponent(item.query)}`)}
                   style={{
-                    backgroundColor: "rgba(255,255,255,0.12)",
-                    color: "var(--color-canvas)",
-                    border: "1px solid rgba(255,255,255,0.25)",
-                    padding: "4px 14px",
-                    borderRadius: "var(--radius-lg)",
+                    backgroundColor: "var(--color-soft-cloud)",
+                    color: "var(--color-ink)",
+                    border: "1px solid var(--color-hairline)",
+                    padding: "4px 12px",
+                    borderRadius: "var(--radius-pill)",
                     fontSize: "12px",
                     fontWeight: 500,
                     transition: "all 0.15s ease",
                     cursor: "pointer",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "var(--color-canvas)";
-                    e.currentTarget.style.color = "var(--color-ink)";
+                    e.currentTarget.style.backgroundColor = "var(--color-ink)";
+                    e.currentTarget.style.color = "#ffffff";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.12)";
-                    e.currentTarget.style.color = "var(--color-canvas)";
+                    e.currentTarget.style.backgroundColor = "var(--color-soft-cloud)";
+                    e.currentTarget.style.color = "var(--color-ink)";
                   }}
                 >
                   {item.label}
                 </button>
               ))}
             </div>
-          </div>
 
-          {/* Bottom Action Bar */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              flexWrap: "wrap",
-              gap: "16px",
-              borderTop: "1px solid rgba(255,255,255,0.15)",
-              paddingTop: "18px",
-            }}
-          >
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+            {/* Action Buttons & Fulfillment Credential */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "14px",
+                flexWrap: "wrap",
+                marginTop: "28px",
+              }}
+            >
               <button
                 onClick={() => navigate("/deals")}
-                className="btn-outline-on-image"
-                style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "11px 22px",
+                  backgroundColor: "var(--color-ink)",
+                  color: "#ffffff",
+                  borderRadius: "var(--radius-sm)",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  border: "none",
+                  cursor: "pointer",
+                }}
               >
-                <Zap size={14} fill="var(--color-ink)" />
+                <Zap size={14} fill="#ffffff" />
                 <span>Shop Today's Deals</span>
               </button>
+
               <button
                 onClick={onOpenChat}
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "8px",
-                  backgroundColor: "rgba(255,255,255,0.15)",
-                  color: "var(--color-canvas)",
-                  padding: "0 24px",
-                  height: "42px",
-                  borderRadius: "var(--radius-lg)",
-                  fontSize: "14px",
+                  backgroundColor: "var(--color-soft-cloud)",
+                  color: "var(--color-ink)",
+                  padding: "10px 20px",
+                  borderRadius: "var(--radius-sm)",
+                  fontSize: "13px",
                   fontWeight: 600,
-                  backdropFilter: "blur(10px)",
+                  border: "1px solid var(--color-hairline)",
+                  cursor: "pointer",
                 }}
               >
-                <Sparkles size={15} color="#f59e0b" />
+                <Sparkles size={15} color="#d97706" />
                 Ask Shopping Assistant
               </button>
             </div>
+          </div>
 
-            <div style={{ fontSize: "13px", color: "var(--color-hairline)", display: "flex", gap: "20px" }}>
-              <span>Amazon Fulfilled</span>
-              <span>Flipkart Assured</span>
-              <span>Myntra Luxe</span>
+          {/* ─── RIGHT COLUMN: 9:16 Video Showcase Frame ─── */}
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                maxWidth: "320px",
+                aspectRatio: "9/16",
+                backgroundColor: "#000000",
+                borderRadius: "24px",
+                overflow: "hidden",
+                border: "1px solid var(--color-hairline)",
+                boxShadow: "0 20px 45px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.08)",
+              }}
+            >
+              {/* 9:16 AutoPlay Video */}
+              <video
+                src="/hero-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
             </div>
           </div>
         </div>
@@ -267,7 +302,7 @@ export default function EditorialHero({ onOpenChat }) {
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
             gap: "18px",
-            marginTop: "20px",
+            marginTop: "24px",
           }}
         >
           {/* Ad Card 1: Amazon Tech Carnival */}
@@ -275,8 +310,9 @@ export default function EditorialHero({ onOpenChat }) {
             onClick={() => navigate("/category/electronics")}
             style={{
               position: "relative",
-              height: "170px",
+              height: "160px",
               backgroundColor: "#1E293B",
+              borderRadius: "var(--radius-sm)",
               overflow: "hidden",
               cursor: "pointer",
               display: "flex",
@@ -302,7 +338,7 @@ export default function EditorialHero({ onOpenChat }) {
               <span style={{ fontSize: "10px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", backgroundColor: "#FF9900", color: "#111111", padding: "2px 8px", borderRadius: "2px" }}>
                 Amazon Deals
               </span>
-              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", color: "#ffffff", margin: "8px 0 4px 0", letterSpacing: "0.5px", lineHeight: 1.1 }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "22px", color: "#ffffff", margin: "6px 0 3px 0", letterSpacing: "0.5px", lineHeight: 1.1 }}>
                 FLAGSHIP AUDIO & GADGETS
               </h3>
               <p style={{ fontSize: "12px", color: "#cbd5e1", margin: 0, fontWeight: 600 }}>
@@ -310,7 +346,7 @@ export default function EditorialHero({ onOpenChat }) {
               </p>
             </div>
             <div style={{ zIndex: 2, alignSelf: "flex-end" }}>
-              <span style={{ fontSize: "11px", fontWeight: 800, color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(255,255,255,0.2)", padding: "6px 12px", backdropFilter: "blur(4px)" }}>
+              <span style={{ fontSize: "11px", fontWeight: 800, color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(255,255,255,0.2)", padding: "6px 12px", backdropFilter: "blur(4px)", borderRadius: "var(--radius-sm)" }}>
                 Shop Tech <ArrowRight size={12} />
               </span>
             </div>
@@ -321,8 +357,9 @@ export default function EditorialHero({ onOpenChat }) {
             onClick={() => navigate("/category/footwear")}
             style={{
               position: "relative",
-              height: "170px",
+              height: "160px",
               backgroundColor: "#1E3A8A",
+              borderRadius: "var(--radius-sm)",
               overflow: "hidden",
               cursor: "pointer",
               display: "flex",
@@ -348,7 +385,7 @@ export default function EditorialHero({ onOpenChat }) {
               <span style={{ fontSize: "10px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", backgroundColor: "#2874F0", color: "#ffffff", padding: "2px 8px", borderRadius: "2px" }}>
                 Flipkart Assured
               </span>
-              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", color: "#ffffff", margin: "8px 0 4px 0", letterSpacing: "0.5px", lineHeight: 1.1 }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "22px", color: "#ffffff", margin: "6px 0 3px 0", letterSpacing: "0.5px", lineHeight: 1.1 }}>
                 AIR MAX & SNEAKER DROPS
               </h3>
               <p style={{ fontSize: "12px", color: "#bfdbfe", margin: 0, fontWeight: 600 }}>
@@ -356,7 +393,7 @@ export default function EditorialHero({ onOpenChat }) {
               </p>
             </div>
             <div style={{ zIndex: 2, alignSelf: "flex-end" }}>
-              <span style={{ fontSize: "11px", fontWeight: 800, color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(255,255,255,0.2)", padding: "6px 12px", backdropFilter: "blur(4px)" }}>
+              <span style={{ fontSize: "11px", fontWeight: 800, color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(255,255,255,0.2)", padding: "6px 12px", backdropFilter: "blur(4px)", borderRadius: "var(--radius-sm)" }}>
                 Shop Shoes <ArrowRight size={12} />
               </span>
             </div>
@@ -367,8 +404,9 @@ export default function EditorialHero({ onOpenChat }) {
             onClick={() => navigate("/category/fashion")}
             style={{
               position: "relative",
-              height: "170px",
+              height: "160px",
               backgroundColor: "#831843",
+              borderRadius: "var(--radius-sm)",
               overflow: "hidden",
               cursor: "pointer",
               display: "flex",
@@ -394,7 +432,7 @@ export default function EditorialHero({ onOpenChat }) {
               <span style={{ fontSize: "10px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", backgroundColor: "#FF3F6C", color: "#ffffff", padding: "2px 8px", borderRadius: "2px" }}>
                 Myntra Luxe
               </span>
-              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", color: "#ffffff", margin: "8px 0 4px 0", letterSpacing: "0.5px", lineHeight: 1.1 }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "22px", color: "#ffffff", margin: "6px 0 3px 0", letterSpacing: "0.5px", lineHeight: 1.1 }}>
                 DENIM & DESIGNER POLOS
               </h3>
               <p style={{ fontSize: "12px", color: "#fbcfe8", margin: 0, fontWeight: 600 }}>
@@ -402,7 +440,7 @@ export default function EditorialHero({ onOpenChat }) {
               </p>
             </div>
             <div style={{ zIndex: 2, alignSelf: "flex-end" }}>
-              <span style={{ fontSize: "11px", fontWeight: 800, color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(255,255,255,0.2)", padding: "6px 12px", backdropFilter: "blur(4px)" }}>
+              <span style={{ fontSize: "11px", fontWeight: 800, color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(255,255,255,0.2)", padding: "6px 12px", backdropFilter: "blur(4px)", borderRadius: "var(--radius-sm)" }}>
                 Shop Wardrobe <ArrowRight size={12} />
               </span>
             </div>

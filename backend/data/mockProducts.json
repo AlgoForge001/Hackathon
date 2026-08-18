@@ -133,7 +133,9 @@
           }
         ]
       }
-    ]
+    ],
+    "glbUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
+    "usdzUrl": ""
   },
   {
     "group_id": "apple-airpods-pro-2",
@@ -1352,7 +1354,9 @@
           }
         ]
       }
-    ]
+    ],
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
+    "usdzUrl": ""
   },
   {
     "group_id": "adidas-ultraboost-light",
@@ -2290,7 +2294,9 @@
           }
         ]
       }
-    ]
+    ],
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "usdzUrl": "https://modelviewer.dev/shared-assets/models/Chair.usdz"
   },
   {
     "group_id": "philips-digital-airfryer-xl",

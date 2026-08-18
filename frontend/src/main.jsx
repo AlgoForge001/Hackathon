@@ -5,6 +5,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import { AuthProvider } from "./context/AuthContext.jsx";
 import { ShoppingProvider } from "./context/ShoppingContext.jsx";
 import "./index.css";
+import "@google/model-viewer";
 import App from "./App.jsx";
 
 const GOOGLE_CLIENT_ID =

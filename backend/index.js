@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+dotenv.config();
 import cookieParser from "cookie-parser";
 
 import authRoutes from "./routes/authRoutes.js";
@@ -34,6 +35,7 @@ app.get("/api/health", (req, res) => {
     status: "OK",
     message: "AI Shopping Assistant API is running!",
     openrouter: process.env.OPENROUTER_API_KEY ? "configured" : "MISSING — add to .env",
+    arcjet: process.env.ARCJET_KEY ? "configured (LIVE mode)" : "fail-open (no ARCJET_KEY in .env)",
     endpoints: [
       "POST /api/search",
       "GET  /api/products/:id",

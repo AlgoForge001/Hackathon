@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import FloatingAIChat from "./components/chat/FloatingAIChat";
+import AuthModal from "./components/auth/AuthModal";
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -108,6 +109,9 @@ export default function App() {
         isOpen={isChatOpen}
         onClose={() => setIsChatOpen(false)}
       />
+
+      {/* Global Auth Modal (Sign In / Register / Google / 1-Click Demo) */}
+      <AuthModal />
     </div>
   );
 }

@@ -30,6 +30,7 @@ import ProductCard from "../components/products/ProductCard";
 import PriceHistoryGraph from "../components/products/PriceHistoryGraph";
 import BuySellSignalCard from "../components/products/BuySellSignalCard";
 import SpatialARViewerModal from "../components/tools/SpatialARViewerModal";
+import ProductAR from "../components/products/ProductAR";
 import { getProductById, getProductAlternatives, exploreBudget, createPriceAlert } from "../services/api";
 import { getCategoryFallbackImage, mockProducts, CATEGORY_DEFINITIONS } from "../services/mockData";
 
@@ -249,31 +250,33 @@ export default function ProductDetailPage({ onOpenChat }) {
                 </div>
               )}
 
-              {/* Interactive 3D / AR View Launch Button */}
-              <button
-                onClick={() => setIsARModalOpen(true)}
-                style={{
-                  position: "absolute",
-                  bottom: "16px",
-                  right: "16px",
-                  backgroundColor: "rgba(17, 17, 17, 0.9)",
-                  color: "#ffffff",
-                  border: "none",
-                  borderRadius: "var(--radius-pill)",
-                  padding: "8px 16px",
-                  fontSize: "12px",
-                  fontWeight: 700,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  cursor: "pointer",
-                  boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
-                  backdropFilter: "blur(6px)",
-                }}
-              >
-                <Box size={15} color="#00ffcc" />
-                <span>3D & AR View</span>
-              </button>
+              {/* View in AR Button — strictly rendered ONLY if glbUrl exists */}
+              {(product.glbUrl || product.glb_url) && (
+                <button
+                  onClick={() => setIsARModalOpen(true)}
+                  style={{
+                    position: "absolute",
+                    bottom: "16px",
+                    right: "16px",
+                    backgroundColor: "rgba(17, 17, 17, 0.9)",
+                    color: "#ffffff",
+                    border: "none",
+                    borderRadius: "var(--radius-pill)",
+                    padding: "8px 16px",
+                    fontSize: "12px",
+                    fontWeight: 700,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    cursor: "pointer",
+                    boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
+                    backdropFilter: "blur(6px)",
+                  }}
+                >
+                  <Box size={15} color="#00ffcc" />
+                  <span>View in AR (3D)</span>
+                </button>
+              )}
             </div>
 
             {/* 4 Clickable Angle Thumbnails */}
@@ -416,6 +419,48 @@ export default function ProductDetailPage({ onOpenChat }) {
                 </a>
               </div>
             </div>
+
+            {/* View in Your Room / AR Button (Only shown if product has 3D asset) */}
+            {(product.glbUrl || product.glb_url) && (
+              <button
+                onClick={() => setIsARModalOpen(true)}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "10px",
+                  width: "100%",
+                  padding: "13px 20px",
+                  backgroundColor: "#ffffff",
+                  color: "#111111",
+                  border: "2px solid #111111",
+                  borderRadius: "var(--radius-none)",
+                  fontSize: "13px",
+                  fontWeight: 800,
+                  cursor: "pointer",
+                  marginBottom: "24px",
+                  boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
+                  transition: "all 0.2s ease",
+                }}
+              >
+                <Box size={18} color="#059669" />
+                <span>VIEW IN YOUR ROOM (AR &amp; 3D)</span>
+                <span
+                  style={{
+                    fontSize: "10px",
+                    backgroundColor: "#059669",
+                    color: "#ffffff",
+                    padding: "2px 8px",
+                    borderRadius: "12px",
+                    marginLeft: "auto",
+                    fontWeight: 800,
+                    letterSpacing: "0.5px",
+                  }}
+                >
+                  WebXR / Quick Look
+                </span>
+              </button>
+            )}
 
             {/* AI Summary Recommendation Box */}
             <div

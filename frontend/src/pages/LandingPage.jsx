@@ -137,146 +137,178 @@ export default function LandingPage({ onOpenChat }) {
 
   return (
     <div style={{ backgroundColor: "var(--color-canvas)", color: "var(--color-ink)", minHeight: "100vh" }}>
-      {/* ─── 1. HERO SECTION WITH EXACT AURA MESH GRADIENT ─────────────────── */}
+      {/* ─── 1. HERO SECTION WITH CLEAN SEAMLESS BACKGROUND & 9:16 VIDEO SHOWCASE ─── */}
       <section
-        className="aura-mesh-hero aura-mesh-animated"
         style={{
           borderBottom: "1px solid var(--color-hairline)",
-          paddingTop: "72px",
-          paddingBottom: "72px",
+          paddingTop: "40px",
+          paddingBottom: "40px",
           position: "relative",
           overflow: "hidden",
-          color: "#ffffff",
+          backgroundColor: "var(--color-canvas)",
+          color: "var(--color-ink)",
         }}
       >
-        {/* Authentic Film Grain Noise Texture */}
-        <div className="aura-grain-overlay" />
-
-        {/* High-Intensity Diagonal Aura Light Streak */}
-        <div className="aura-glow-beam" />
-
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ maxWidth: "860px", margin: "0 auto", textAlign: "center" }}>
-            {/* Main Headline with Fixed-Height Typing Container */}
-            <div style={{ minHeight: "165px", display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center", marginBottom: "16px" }}>
-              <h1
+          {/* Main 2-Column Showcase */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "clamp(24px, 5vw, 64px)",
+              alignItems: "center",
+              marginBottom: "40px",
+            }}
+          >
+            {/* ─── LEFT COLUMN: Text, Typing Headline & Action Buttons ─── */}
+            <div>
+              {/* Main Headline with Fixed-Height Typing Container */}
+              <div style={{ minHeight: "140px", display: "flex", flexDirection: "column", justifyContent: "flex-start", marginBottom: "16px" }}>
+                <h1
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "clamp(36px, 4.8vw, 60px)",
+                    lineHeight: 1,
+                    letterSpacing: "0.5px",
+                    margin: 0,
+                    color: "var(--color-ink)",
+                  }}
+                >
+                  NEVER OVERPAY AGAIN. <br />
+                  <span style={{ color: "var(--color-ink)", display: "inline-block", minHeight: "1.15em" }}>
+                    {typedHeadline}
+                    <span className="typing-cursor" style={{ color: "#FF9900" }}>|</span>
+                  </span>
+                </h1>
+              </div>
+
+              {/* Subtitle */}
+              <p
                 style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(40px, 6vw, 70px)",
-                  lineHeight: 1,
-                  letterSpacing: "0.5px",
-                  margin: 0,
-                  color: "#ffffff",
-                  textShadow: "0 2px 20px rgba(0,0,0,0.6)",
+                  fontSize: "16px",
+                  lineHeight: 1.6,
+                  color: "var(--color-mute)",
+                  maxWidth: "540px",
+                  margin: "0 0 28px 0",
                 }}
               >
-                NEVER OVERPAY AGAIN. <br />
-                <span style={{ color: "#ffffff", display: "inline-block", minHeight: "1.15em" }}>
-                  {typedHeadline}
-                  <span className="typing-cursor" style={{ color: "#FF9900" }}>|</span>
-                </span>
-              </h1>
-            </div>
+                Shopsy combines real-time price arbitrage, AI sentiment intelligence, 90-day price tracking graphs, and AR spatial previews so you always secure the lowest price.
+              </p>
 
-            {/* Subtitle */}
-            <p
-              style={{
-                fontSize: "17px",
-                lineHeight: 1.6,
-                color: "#e2e8f0",
-                maxWidth: "680px",
-                margin: "0 auto 36px auto",
-                textShadow: "0 1px 10px rgba(0,0,0,0.5)",
-              }}
-            >
-              Shopsy combines real-time price arbitrage, AI sentiment intelligence, 90-day price tracking graphs, and AR spatial previews so you always secure the lowest price.
-            </p>
-
-            {/* Primary Action Buttons */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "16px",
-                flexWrap: "wrap",
-                marginBottom: "48px",
-              }}
-            >
-              <button
-                onClick={() => navigate("/")}
+              {/* Primary Action Buttons */}
+              <div
                 style={{
-                  display: "inline-flex",
+                  display: "flex",
                   alignItems: "center",
-                  gap: "10px",
-                  padding: "16px 36px",
-                  backgroundColor: "var(--color-canvas)",
-                  color: "var(--color-ink)",
-                  fontSize: "15px",
-                  fontWeight: 900,
-                  border: "none",
-                  borderRadius: "var(--radius-none)",
-                  cursor: "pointer",
-                  transition: "transform 0.15s ease, background-color 0.15s ease",
-                  textDecoration: "none",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
+                  gap: "14px",
+                  flexWrap: "wrap",
                 }}
               >
-                <ShoppingBag size={18} />
-                <span>LAUNCH MAIN HOME PAGE</span>
-                <ArrowRight size={18} />
-              </button>
-
-              {onOpenChat && (
                 <button
-                  onClick={onOpenChat}
+                  onClick={() => navigate("/")}
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "8px",
-                    padding: "16px 28px",
-                    backgroundColor: "rgba(255,255,255,0.15)",
-                    color: "#ffffff",
-                    fontSize: "15px",
-                    fontWeight: 700,
-                    border: "1px solid rgba(255,255,255,0.3)",
-                    borderRadius: "var(--radius-none)",
+                    padding: "14px 28px",
+                    backgroundColor: "var(--color-ink)",
+                    color: "var(--color-canvas)",
+                    fontSize: "14px",
+                    fontWeight: 800,
+                    border: "none",
+                    borderRadius: "var(--radius-sm)",
                     cursor: "pointer",
-                    backdropFilter: "blur(10px)",
+                    transition: "transform 0.15s ease, background-color 0.15s ease",
+                    textDecoration: "none",
+                    boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
                   }}
                 >
-                  <Sparkles size={16} color="#FF9900" />
-                  <span>Ask Shopsy AI Advisor</span>
+                  <ShoppingBag size={16} />
+                  <span>LAUNCH APP</span>
+                  <ArrowRight size={16} />
                 </button>
-              )}
+
+                {onOpenChat && (
+                  <button
+                    onClick={onOpenChat}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      padding: "13px 24px",
+                      backgroundColor: "var(--color-soft-cloud)",
+                      color: "var(--color-ink)",
+                      fontSize: "14px",
+                      fontWeight: 700,
+                      border: "1px solid var(--color-hairline)",
+                      borderRadius: "var(--radius-sm)",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <Sparkles size={16} color="#d97706" />
+                    <span>Ask Shopsy AI Advisor</span>
+                  </button>
+                )}
+              </div>
             </div>
 
-            {/* Stats Row */}
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-                gap: "20px",
-                paddingTop: "24px",
-                borderTop: "1px solid rgba(255,255,255,0.2)",
-              }}
-            >
-              <div>
-                <div style={{ fontFamily: "var(--font-display)", fontSize: "32px", color: "#ffffff" }}>3 STORES</div>
-                <div style={{ fontSize: "12px", color: "#cbd5e1", fontWeight: 600 }}>Amazon, Flipkart, Myntra</div>
+            {/* ─── RIGHT COLUMN: 9:16 Video Showcase ─── */}
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  maxWidth: "320px",
+                  aspectRatio: "9/16",
+                  backgroundColor: "#000000",
+                  borderRadius: "24px",
+                  overflow: "hidden",
+                  border: "1px solid var(--color-hairline)",
+                  boxShadow: "0 20px 45px rgba(0, 0, 0, 0.14)",
+                }}
+              >
+                <video
+                  src="/hero-video.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
               </div>
-              <div>
-                <div style={{ fontFamily: "var(--font-display)", fontSize: "32px", color: "#ffffff" }}>100% VERIFIED</div>
-                <div style={{ fontSize: "12px", color: "#cbd5e1", fontWeight: 600 }}>Authentic Retailer Stock</div>
-              </div>
-              <div>
-                <div style={{ fontFamily: "var(--font-display)", fontSize: "32px", color: "#fb923c" }}>UP TO 40%</div>
-                <div style={{ fontSize: "12px", color: "#cbd5e1", fontWeight: 600 }}>Average Arbitrage Savings</div>
-              </div>
-              <div>
-                <div style={{ fontFamily: "var(--font-display)", fontSize: "32px", color: "#ffffff" }}>AI POWERED</div>
-                <div style={{ fontSize: "12px", color: "#cbd5e1", fontWeight: 600 }}>Sentiment & Review Scoring</div>
-              </div>
+            </div>
+          </div>
+
+          {/* Stats Row */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+              gap: "20px",
+              paddingTop: "24px",
+              borderTop: "1px solid var(--color-hairline)",
+            }}
+          >
+            <div>
+              <div style={{ fontFamily: "var(--font-display)", fontSize: "30px", color: "var(--color-ink)" }}>3 STORES</div>
+              <div style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 600 }}>Amazon, Flipkart, Myntra</div>
+            </div>
+            <div>
+              <div style={{ fontFamily: "var(--font-display)", fontSize: "30px", color: "var(--color-ink)" }}>100% VERIFIED</div>
+              <div style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 600 }}>Authentic Retailer Stock</div>
+            </div>
+            <div>
+              <div style={{ fontFamily: "var(--font-display)", fontSize: "30px", color: "#d97706" }}>UP TO 40%</div>
+              <div style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 600 }}>Average Arbitrage Savings</div>
+            </div>
+            <div>
+              <div style={{ fontFamily: "var(--font-display)", fontSize: "30px", color: "var(--color-ink)" }}>AI POWERED</div>
+              <div style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 600 }}>Sentiment & Review Scoring</div>
             </div>
           </div>
 

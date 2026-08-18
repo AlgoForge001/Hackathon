@@ -113,6 +113,8 @@ export const mockProducts = [
       "depth": "7.2 cm",
       "weight": "250g"
     },
+    "glbUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
+    "glb_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
     "price_history": [
       {
         "month": "Mar",
@@ -259,6 +261,8 @@ export const mockProducts = [
       "depth": "7.2 cm",
       "weight": "250g"
     },
+    "glbUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
+    "glb_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
     "price_history": [
       {
         "month": "Mar",
@@ -399,6 +403,8 @@ export const mockProducts = [
       "depth": "7.2 cm",
       "weight": "250g"
     },
+    "glbUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
+    "glb_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
     "price_history": [
       {
         "month": "Mar",
@@ -3938,6 +3944,8 @@ export const mockProducts = [
       "depth": "29.8 cm",
       "weight": "340g (Size 9)"
     },
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
+    "glb_url": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
     "price_history": [
       {
         "month": "Mar",
@@ -4082,6 +4090,8 @@ export const mockProducts = [
       "depth": "29.8 cm",
       "weight": "340g (Size 9)"
     },
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
+    "glb_url": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
     "price_history": [
       {
         "month": "Mar",
@@ -4220,6 +4230,8 @@ export const mockProducts = [
       "depth": "29.8 cm",
       "weight": "340g (Size 9)"
     },
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
+    "glb_url": "https://modelviewer.dev/shared-assets/models/MaterialsVariantsShoe.glb",
     "price_history": [
       {
         "month": "Mar",
@@ -6878,6 +6890,10 @@ export const mockProducts = [
       "depth": "120 cm",
       "weight": "4.1 kg"
     },
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "glb_url": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "usdzUrl": "https://modelviewer.dev/shared-assets/models/Chair.usdz",
+    "usdz_url": "https://modelviewer.dev/shared-assets/models/Chair.usdz",
     "price_history": [
       {
         "month": "Mar",
@@ -7022,6 +7038,10 @@ export const mockProducts = [
       "depth": "120 cm",
       "weight": "4.1 kg"
     },
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "glb_url": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "usdzUrl": "https://modelviewer.dev/shared-assets/models/Chair.usdz",
+    "usdz_url": "https://modelviewer.dev/shared-assets/models/Chair.usdz",
     "price_history": [
       {
         "month": "Mar",
@@ -7160,6 +7180,10 @@ export const mockProducts = [
       "depth": "120 cm",
       "weight": "4.1 kg"
     },
+    "glbUrl": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "glb_url": "https://modelviewer.dev/shared-assets/models/Chair.glb",
+    "usdzUrl": "https://modelviewer.dev/shared-assets/models/Chair.usdz",
+    "usdz_url": "https://modelviewer.dev/shared-assets/models/Chair.usdz",
     "price_history": [
       {
         "month": "Mar",

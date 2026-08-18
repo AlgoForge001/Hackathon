@@ -36,6 +36,8 @@ const ProductSchema = new mongoose.Schema(
     category: { type: String, required: true, index: true },
     brand: { type: String, required: true, index: true },
     specs: { type: Map, of: mongoose.Schema.Types.Mixed },
+    glbUrl: { type: String },
+    usdzUrl: { type: String },
     platforms: [PlatformListingSchema],
   },
   {

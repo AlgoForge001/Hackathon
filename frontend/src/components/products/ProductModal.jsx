@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { X, Star, Sparkles, ExternalLink, Bell, ArrowRight, ShieldCheck, Check, TrendingUp } from "lucide-react";
+import { X, Star, Sparkles, ExternalLink, Bell, ArrowRight, ShieldCheck, Check, TrendingUp, Box } from "lucide-react";
 import { getProductById, getProductAlternatives, exploreBudget, createPriceAlert } from "../../services/api";
+import ProductAR from "./ProductAR";
 
 export default function ProductModal({ product, onClose, onSelectAlternative }) {
   const [productDetail, setProductDetail] = useState(null);
@@ -11,6 +12,7 @@ export default function ProductModal({ product, onClose, onSelectAlternative }) 
   const [targetPrice, setTargetPrice] = useState("");
   const [alertSuccess, setAlertSuccess] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [show3D, setShow3D] = useState(false);
 
   useEffect(() => {
     if (!product) return;
@@ -141,6 +143,7 @@ export default function ProductModal({ product, onClose, onSelectAlternative }) 
             <div>
               <div
                 style={{
+                  position: "relative",
                   width: "100%",
                   aspectRatio: "1/1",
                   backgroundColor: "var(--color-soft-cloud)",
@@ -150,11 +153,51 @@ export default function ProductModal({ product, onClose, onSelectAlternative }) 
                   overflow: "hidden",
                 }}
               >
-                <img
-                  src={current.image_url}
-                  alt={current.title}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
+                {show3D && (current.glbUrl || current.glb_url) ? (
+                  <ProductAR
+                    glbUrl={current.glbUrl || current.glb_url}
+                    usdzUrl={current.usdzUrl || current.usdz_url}
+                    poster={current.image_url}
+                    alt={current.title}
+                    height="100%"
+                    autoRotate={true}
+                  />
+                ) : (
+                  <img
+                    src={current.image_url}
+                    alt={current.title}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                )}
+
+                {/* 3D / AR Toggle Button if 3D model exists */}
+                {(current.glbUrl || current.glb_url) && (
+                  <button
+                    onClick={() => setShow3D(!show3D)}
+                    style={{
+                      position: "absolute",
+                      bottom: "12px",
+                      right: "12px",
+                      backgroundColor: "rgba(17, 17, 17, 0.9)",
+                      color: "#ffffff",
+                      border: "none",
+                      borderRadius: "var(--radius-pill)",
+                      padding: "6px 14px",
+                      fontSize: "11px",
+                      fontWeight: 700,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      cursor: "pointer",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+                      backdropFilter: "blur(4px)",
+                      zIndex: 10,
+                    }}
+                  >
+                    <Box size={13} color="#00ffcc" />
+                    <span>{show3D ? "Photo View" : "3D & AR View"}</span>
+                  </button>
+                )}
               </div>
 
               {/* AI Sentiment Bar */}

@@ -13,7 +13,7 @@ export default function Navbar({ onOpenChat }) {
   const searchInputRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, logout } = useAuth ? useAuth() : { user: null, logout: () => {} };
+  const { user, logout, openAuthModal } = useAuth();
 
   // Filter recommendations in real time as user types
   const searchSuggestions = React.useMemo(() => {
@@ -404,67 +404,129 @@ export default function Navbar({ onOpenChat }) {
               <span>Ask AI</span>
             </button>
 
-            {/* Profile Dropdown */}
-            <div style={{ position: "relative" }}>
-              <button
-                onClick={() => setProfileOpen(!profileOpen)}
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  backgroundColor: "var(--color-soft-cloud)",
-                  border: "1px solid var(--color-hairline)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  cursor: "pointer",
-                }}
-              >
-                <User size={18} color="var(--color-ink)" />
-              </button>
-
-              {profileOpen && (
-                <div
+            {/* Auth / Profile Area */}
+            {user ? (
+              <div style={{ position: "relative" }}>
+                <button
+                  onClick={() => setProfileOpen(!profileOpen)}
                   style={{
-                    position: "absolute",
-                    right: 0,
-                    top: "48px",
-                    width: "220px",
-                    backgroundColor: "var(--color-canvas)",
-                    borderRadius: "var(--radius-md)",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    padding: "4px 10px 4px 4px",
+                    backgroundColor: "var(--color-soft-cloud)",
                     border: "1px solid var(--color-hairline)",
-                    padding: "12px",
-                    zIndex: 1000,
+                    borderRadius: "var(--radius-pill)",
+                    cursor: "pointer",
                   }}
                 >
-                  <div style={{ paddingBottom: "8px", borderBottom: "1px solid var(--color-hairline-soft)", marginBottom: "8px" }}>
-                    <p style={{ fontSize: "13px", fontWeight: 700, margin: 0, color: "var(--color-ink)" }}>
-                      {user ? user.name : "Guest Shopper"}
-                    </p>
-                    <p style={{ fontSize: "11px", color: "var(--color-mute)", margin: 0 }}>
-                      {user ? user.email : "Sign in to sync alerts"}
-                    </p>
-                  </div>
+                  {user.picture ? (
+                    <img
+                      src={user.picture}
+                      alt={user.name}
+                      style={{ width: "30px", height: "30px", borderRadius: "50%", objectFit: "cover" }}
+                    />
+                  ) : (
+                    <div
+                      style={{
+                        width: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "var(--color-ink)",
+                        color: "#ffffff",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontSize: "13px",
+                        fontWeight: 800,
+                      }}
+                    >
+                      {user.name ? user.name.charAt(0).toUpperCase() : "U"}
+                    </div>
+                  )}
+                  <span style={{ fontSize: "12px", fontWeight: 700, color: "var(--color-ink)", maxWidth: "90px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                    {user.name ? user.name.split(" ")[0] : "Account"}
+                  </span>
+                </button>
 
-                  <Link
-                    to="/trending"
-                    onClick={() => setProfileOpen(false)}
+                {profileOpen && (
+                  <div
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      padding: "8px",
-                      fontSize: "12px",
-                      fontWeight: 600,
-                      color: "var(--color-ink)",
-                      borderRadius: "var(--radius-sm)",
+                      position: "absolute",
+                      right: 0,
+                      top: "48px",
+                      width: "240px",
+                      backgroundColor: "var(--color-canvas)",
+                      borderRadius: "var(--radius-md)",
+                      boxShadow: "0 12px 36px rgba(0,0,0,0.15)",
+                      border: "1px solid var(--color-hairline)",
+                      padding: "14px",
+                      zIndex: 1000,
                     }}
                   >
-                    <TrendingUp size={14} />
-                    <span>Trending Deals</span>
-                  </Link>
-                  {user && (
+                    <div style={{ paddingBottom: "10px", borderBottom: "1px solid var(--color-hairline)", marginBottom: "8px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "2px" }}>
+                        <span style={{ width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#10b981" }} />
+                        <p style={{ fontSize: "13px", fontWeight: 800, margin: 0, color: "var(--color-ink)" }}>
+                          {user.name}
+                        </p>
+                      </div>
+                      <p style={{ fontSize: "11px", color: "var(--color-mute)", margin: 0 }}>
+                        {user.email}
+                      </p>
+                      <span
+                        style={{
+                          display: "inline-block",
+                          marginTop: "6px",
+                          fontSize: "10px",
+                          fontWeight: 800,
+                          textTransform: "uppercase",
+                          padding: "2px 8px",
+                          borderRadius: "10px",
+                          backgroundColor: user.authProvider === "demo" ? "#fef3c7" : "var(--color-soft-cloud)",
+                          color: user.authProvider === "demo" ? "#92400e" : "var(--color-ink)",
+                        }}
+                      >
+                        {user.authProvider === "demo" ? "Demo Shopper" : "Verified Account"}
+                      </span>
+                    </div>
+
+                    <Link
+                      to="/deals"
+                      onClick={() => setProfileOpen(false)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        padding: "8px",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        color: "var(--color-ink)",
+                        borderRadius: "var(--radius-sm)",
+                      }}
+                    >
+                      <Zap size={14} color="#f59e0b" />
+                      <span>Today's Top Deals</span>
+                    </Link>
+
+                    <Link
+                      to="/trending"
+                      onClick={() => setProfileOpen(false)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        padding: "8px",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        color: "var(--color-ink)",
+                        borderRadius: "var(--radius-sm)",
+                      }}
+                    >
+                      <TrendingUp size={14} />
+                      <span>Trending Price Drops</span>
+                    </Link>
+
                     <button
                       onClick={() => {
                         logout();
@@ -483,16 +545,47 @@ export default function Navbar({ onOpenChat }) {
                         background: "none",
                         cursor: "pointer",
                         borderRadius: "var(--radius-sm)",
-                        marginTop: "4px",
+                        marginTop: "6px",
+                        borderTop: "1px solid var(--color-hairline-soft)",
+                        paddingTop: "10px",
                       }}
                     >
                       <LogOut size={14} />
                       <span>Sign Out</span>
                     </button>
-                  )}
-                </div>
-              )}
-            </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <button
+                onClick={() => openAuthModal("login")}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "8px 16px",
+                  backgroundColor: "var(--color-soft-cloud)",
+                  color: "var(--color-ink)",
+                  border: "1px solid var(--color-hairline)",
+                  borderRadius: "var(--radius-pill)",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  transition: "all 0.15s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "var(--color-ink)";
+                  e.currentTarget.style.color = "#ffffff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "var(--color-soft-cloud)";
+                  e.currentTarget.style.color = "var(--color-ink)";
+                }}
+              >
+                <User size={15} />
+                <span>Sign In</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
