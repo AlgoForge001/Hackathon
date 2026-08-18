@@ -8,7 +8,7 @@
  */
 
 const cache = new Map();
-const DEFAULT_TTL = 10 * 60 * 1000; // 10 minutes in milliseconds
+const DEFAULT_TTL = 2 * 60 * 1000; // 2 minutes (reduced from 10 to prevent stale data)
 
 /**
  * Get a value from cache. Returns null if key doesn't exist or is expired.

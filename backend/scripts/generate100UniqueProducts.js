@@ -351,10 +351,21 @@ const MASTER_PRODUCTS = [
 
 console.log(`🚀 Assembling Master Direct-Link Catalog of ${MASTER_PRODUCTS.length} Unique Products...`);
 
+// Build a concise keyword from product name for search (strip parenthetical details for cleaner match)
+function searchKeyword(name) {
+  return name
+    .replace(/\(.*?\)/g, "")           // remove (2nd Gen), (USB-C), (256GB), etc.
+    .replace(/[–—]/g, " ")             // normalize dashes
+    .replace(/\s{2,}/g, " ")           // collapse spaces
+    .trim();
+}
+
 const catalog = MASTER_PRODUCTS.map((prod) => {
   const discountAmz = Math.round(((prod.amz.orig - prod.amz.price) / prod.amz.orig) * 100);
   const discountFk = Math.round(((prod.fk.orig - prod.fk.price) / prod.fk.orig) * 100);
   const discountMyn = Math.round(((prod.myn.orig - prod.myn.price) / prod.myn.orig) * 100);
+
+  const keyword = searchKeyword(prod.name);
 
   return {
     group_id: prod.id,
@@ -378,6 +389,7 @@ const catalog = MASTER_PRODUCTS.map((prod) => {
         seller: "Appario Retail (Amazon Prime)",
         in_stock: true,
         image_url: prod.images[0],
+        // Amazon ASIN URLs are permanent — direct single product page
         product_url: prod.amz.url,
         reviews: [
           { author: "Rahul K", rating: 5, text: `Genuine ${prod.brand} item with sealed packaging. Superb quality and quick Prime delivery.`, date: "2024-11-15" },
@@ -396,7 +408,8 @@ const catalog = MASTER_PRODUCTS.map((prod) => {
         seller: "SuperComNet (Flipkart Assured)",
         in_stock: true,
         image_url: prod.images[0],
-        product_url: prod.fk.url,
+        // Flipkart /p/itm... URLs expire. Search URLs are stable and always find correct product.
+        product_url: `https://www.flipkart.com/search?q=${encodeURIComponent(keyword)}&otracker=search`,
         reviews: [
           { author: "Karan B", rating: 5, text: `Authentic product with 1-year brand warranty. Very smooth checkout.`, date: "2024-11-12" },
         ],
@@ -413,7 +426,9 @@ const catalog = MASTER_PRODUCTS.map((prod) => {
         seller: `${prod.brand} Official Store`,
         in_stock: true,
         image_url: prod.images[0],
-        product_url: prod.myn.url,
+        // Myntra /category/brand/.../articleId/buy links expire and redirect to category page.
+        // Using search URL is the only stable approach without a paid API.
+        product_url: `https://www.myntra.com/search?rawQuery=${encodeURIComponent(keyword)}`,
         reviews: [
           { author: "Tanvi S", rating: 5, text: `Original product certified with official brand warranty.`, date: "2024-10-02" },
         ],
@@ -425,4 +440,4 @@ const catalog = MASTER_PRODUCTS.map((prod) => {
 const outputPath = path.join(__dirname, "../data/mockProducts.json");
 fs.writeFileSync(outputPath, JSON.stringify(catalog, null, 2), "utf-8");
 
-console.log(`✅ Saved ${catalog.length} Unique Product Groups with Direct PDP Single Product URLs to: ${outputPath}`);
+console.log(`✅ Saved ${catalog.length} Unique Product Groups with Stable Search URLs to: ${outputPath}`);

@@ -8,6 +8,8 @@ import authRoutes from "./routes/authRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import chatRoutes from "./routes/chatRoutes.js";
 import alertRoutes from "./routes/alertRoutes.js";
+import { clearAllCache } from "./middleware/cacheMiddleware.js";
+import { invalidateCatalogCache } from "./services/catalogService.js";
 
 dotenv.config();
 
@@ -46,6 +48,13 @@ app.get("/api/health", (req, res) => {
     ],
     timestamp: new Date().toISOString(),
   });
+});
+
+// ─── Cache Clear (dev/admin utility) ─────────────────────────────────────────
+app.get("/api/cache/clear", (req, res) => {
+  clearAllCache();
+  invalidateCatalogCache();
+  res.json({ success: true, message: "All caches cleared. Next request will load fresh data." });
 });
 
 // ─── 404 Handler ─────────────────────────────────────────────────────────────

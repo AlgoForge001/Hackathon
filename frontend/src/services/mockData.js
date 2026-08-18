@@ -335,8 +335,8 @@ export const mockProducts = [
         "myntra": 26990
       }
     ],
-    "productUrl": "https://www.flipkart.com/sony-wh-1000xm5-bluetooth-headset/p/itm7e62a1ef24a0d",
-    "product_url": "https://www.flipkart.com/sony-wh-1000xm5-bluetooth-headset/p/itm7e62a1ef24a0d",
+    "productUrl": "https://www.flipkart.com/search?q=Sony%20WH-1000XM5%20Wireless%20Noise%20Cancelling%20Headphones&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Sony%20WH-1000XM5%20Wireless%20Noise%20Cancelling%20Headphones&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -475,8 +475,8 @@ export const mockProducts = [
         "myntra": 26990
       }
     ],
-    "productUrl": "https://www.myntra.com/headphones/sony/sony-wh-1000xm5-wireless-noise-cancelling-headphones/19934752/buy",
-    "product_url": "https://www.myntra.com/headphones/sony/sony-wh-1000xm5-wireless-noise-cancelling-headphones/19934752/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Sony%20WH-1000XM5%20Wireless%20Noise%20Cancelling%20Headphones",
+    "product_url": "https://www.myntra.com/search?rawQuery=Sony%20WH-1000XM5%20Wireless%20Noise%20Cancelling%20Headphones",
     "seller": "Sony Official Store",
     "inStock": true,
     "in_stock": true,
@@ -761,8 +761,8 @@ export const mockProducts = [
         "myntra": 21900
       }
     ],
-    "productUrl": "https://www.flipkart.com/apple-airpods-pro-2nd-gen-mag-safe-case-usb-c-bluetooth-headset/p/itmd4540d58546f2",
-    "product_url": "https://www.flipkart.com/apple-airpods-pro-2nd-gen-mag-safe-case-usb-c-bluetooth-headset/p/itmd4540d58546f2",
+    "productUrl": "https://www.flipkart.com/search?q=Apple%20AirPods%20Pro%20with%20MagSafe%20Case&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Apple%20AirPods%20Pro%20with%20MagSafe%20Case&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -901,8 +901,8 @@ export const mockProducts = [
         "myntra": 21900
       }
     ],
-    "productUrl": "https://www.myntra.com/headphones/apple/apple-airpods-pro-2nd-generation-with-magsafe-case-usb-c/25139828/buy",
-    "product_url": "https://www.myntra.com/headphones/apple/apple-airpods-pro-2nd-generation-with-magsafe-case-usb-c/25139828/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Apple%20AirPods%20Pro%20with%20MagSafe%20Case",
+    "product_url": "https://www.myntra.com/search?rawQuery=Apple%20AirPods%20Pro%20with%20MagSafe%20Case",
     "seller": "Apple Official Store",
     "inStock": true,
     "in_stock": true,
@@ -1188,8 +1188,8 @@ export const mockProducts = [
         "myntra": 87900
       }
     ],
-    "productUrl": "https://www.flipkart.com/apple-macbook-air-m2-8-gb-256-gb-ssd-mac-os-monterey-mly33hn-a/p/itm4b29e925916d8",
-    "product_url": "https://www.flipkart.com/apple-macbook-air-m2-8-gb-256-gb-ssd-mac-os-monterey-mly33hn-a/p/itm4b29e925916d8",
+    "productUrl": "https://www.flipkart.com/search?q=Apple%20MacBook%20Air%2013.6-inch%20M2&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Apple%20MacBook%20Air%2013.6-inch%20M2&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -1329,8 +1329,8 @@ export const mockProducts = [
         "myntra": 87900
       }
     ],
-    "productUrl": "https://www.myntra.com/laptops/apple/apple-macbook-air-m2-chip-136-inch-8gb-256gb-ssd-midnight/20839412/buy",
-    "product_url": "https://www.myntra.com/laptops/apple/apple-macbook-air-m2-chip-136-inch-8gb-256gb-ssd-midnight/20839412/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Apple%20MacBook%20Air%2013.6-inch%20M2",
+    "product_url": "https://www.myntra.com/search?rawQuery=Apple%20MacBook%20Air%2013.6-inch%20M2",
     "seller": "Apple Official Store",
     "inStock": true,
     "in_stock": true,
@@ -1617,8 +1617,8 @@ export const mockProducts = [
         "myntra": 122999
       }
     ],
-    "productUrl": "https://www.flipkart.com/samsung-galaxy-s24-ultra-5g-titanium-gray-256-gb/p/itm5347be735f4df",
-    "product_url": "https://www.flipkart.com/samsung-galaxy-s24-ultra-5g-titanium-gray-256-gb/p/itm5347be735f4df",
+    "productUrl": "https://www.flipkart.com/search?q=Samsung%20Galaxy%20S24%20Ultra%205G&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Samsung%20Galaxy%20S24%20Ultra%205G&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -1758,8 +1758,8 @@ export const mockProducts = [
         "myntra": 122999
       }
     ],
-    "productUrl": "https://www.myntra.com/smartphones/samsung/samsung-galaxy-s24-ultra-5g-256gb-titanium-gray/27189402/buy",
-    "product_url": "https://www.myntra.com/smartphones/samsung/samsung-galaxy-s24-ultra-5g-256gb-titanium-gray/27189402/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Samsung%20Galaxy%20S24%20Ultra%205G",
+    "product_url": "https://www.myntra.com/search?rawQuery=Samsung%20Galaxy%20S24%20Ultra%205G",
     "seller": "Samsung Official Store",
     "inStock": true,
     "in_stock": true,
@@ -2045,8 +2045,8 @@ export const mockProducts = [
         "myntra": 159990
       }
     ],
-    "productUrl": "https://www.flipkart.com/asus-rog-zephyrus-g14-2024-amd-ryzen-9-8945hs-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-ga403uv-qs085ws-gaming-laptop/p/itm3d25ceea2fc11",
-    "product_url": "https://www.flipkart.com/asus-rog-zephyrus-g14-2024-amd-ryzen-9-8945hs-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-ga403uv-qs085ws-gaming-laptop/p/itm3d25ceea2fc11",
+    "productUrl": "https://www.flipkart.com/search?q=ASUS%20ROG%20Zephyrus%20G14%203K%20OLED%20Gaming%20Laptop&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=ASUS%20ROG%20Zephyrus%20G14%203K%20OLED%20Gaming%20Laptop&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -2185,8 +2185,8 @@ export const mockProducts = [
         "myntra": 159990
       }
     ],
-    "productUrl": "https://www.myntra.com/laptops/asus/asus-rog-zephyrus-g14-3k-oled-gaming-laptop/28391024/buy",
-    "product_url": "https://www.myntra.com/laptops/asus/asus-rog-zephyrus-g14-3k-oled-gaming-laptop/28391024/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=ASUS%20ROG%20Zephyrus%20G14%203K%20OLED%20Gaming%20Laptop",
+    "product_url": "https://www.myntra.com/search?rawQuery=ASUS%20ROG%20Zephyrus%20G14%203K%20OLED%20Gaming%20Laptop",
     "seller": "ASUS Official Store",
     "inStock": true,
     "in_stock": true,
@@ -2470,8 +2470,8 @@ export const mockProducts = [
         "myntra": 51990
       }
     ],
-    "productUrl": "https://www.flipkart.com/sony-playstation-5-slim-cfi-2008a01x-1-tb/p/itmdc74766ce5dd6",
-    "product_url": "https://www.flipkart.com/sony-playstation-5-slim-cfi-2008a01x-1-tb/p/itmdc74766ce5dd6",
+    "productUrl": "https://www.flipkart.com/search?q=Sony%20PlayStation%205%20Console%20Slim&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Sony%20PlayStation%205%20Console%20Slim&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -2609,8 +2609,8 @@ export const mockProducts = [
         "myntra": 51990
       }
     ],
-    "productUrl": "https://www.myntra.com/gaming-consoles/sony/sony-playstation-5-slim-disc-edition-1tb/28901248/buy",
-    "product_url": "https://www.myntra.com/gaming-consoles/sony/sony-playstation-5-slim-disc-edition-1tb/28901248/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Sony%20PlayStation%205%20Console%20Slim",
+    "product_url": "https://www.myntra.com/search?rawQuery=Sony%20PlayStation%205%20Console%20Slim",
     "seller": "Sony Official Store",
     "inStock": true,
     "in_stock": true,
@@ -2893,8 +2893,8 @@ export const mockProducts = [
         "myntra": 39900
       }
     ],
-    "productUrl": "https://www.flipkart.com/apple-watch-series-9-gps-45mm-midnight-aluminium-case-sport-band/p/itm4b29e925916d8",
-    "product_url": "https://www.flipkart.com/apple-watch-series-9-gps-45mm-midnight-aluminium-case-sport-band/p/itm4b29e925916d8",
+    "productUrl": "https://www.flipkart.com/search?q=Apple%20Watch%20Series%209%20GPS%2045mm&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Apple%20Watch%20Series%209%20GPS%2045mm&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -3032,8 +3032,8 @@ export const mockProducts = [
         "myntra": 39900
       }
     ],
-    "productUrl": "https://www.myntra.com/smartwatches/apple/apple-watch-series-9-gps-45mm-midnight-aluminium/25139850/buy",
-    "product_url": "https://www.myntra.com/smartwatches/apple/apple-watch-series-9-gps-45mm-midnight-aluminium/25139850/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Apple%20Watch%20Series%209%20GPS%2045mm",
+    "product_url": "https://www.myntra.com/search?rawQuery=Apple%20Watch%20Series%209%20GPS%2045mm",
     "seller": "Apple Official Store",
     "inStock": true,
     "in_stock": true,
@@ -3316,8 +3316,8 @@ export const mockProducts = [
         "myntra": 14999
       }
     ],
-    "productUrl": "https://www.flipkart.com/all-new-kindle-paperwhite-16-gb-6-8-display-adjustable-warm-light/p/itm7e62a1ef24a0d",
-    "product_url": "https://www.flipkart.com/all-new-kindle-paperwhite-16-gb-6-8-display-adjustable-warm-light/p/itm7e62a1ef24a0d",
+    "productUrl": "https://www.flipkart.com/search?q=Amazon%20Kindle%20Paperwhite%206.8%22%20Glare-Free%20with%20Warm%20Light&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Amazon%20Kindle%20Paperwhite%206.8%22%20Glare-Free%20with%20Warm%20Light&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -3455,8 +3455,8 @@ export const mockProducts = [
         "myntra": 14999
       }
     ],
-    "productUrl": "https://www.myntra.com/e-readers/amazon/amazon-kindle-paperwhite-16gb-68-inch-glare-free/21934752/buy",
-    "product_url": "https://www.myntra.com/e-readers/amazon/amazon-kindle-paperwhite-16gb-68-inch-glare-free/21934752/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Amazon%20Kindle%20Paperwhite%206.8%22%20Glare-Free%20with%20Warm%20Light",
+    "product_url": "https://www.myntra.com/search?rawQuery=Amazon%20Kindle%20Paperwhite%206.8%22%20Glare-Free%20with%20Warm%20Light",
     "seller": "Amazon Official Store",
     "inStock": true,
     "in_stock": true,
@@ -3738,8 +3738,8 @@ export const mockProducts = [
         "myntra": 34990
       }
     ],
-    "productUrl": "https://www.flipkart.com/bose-quietcomfort-ultra-bluetooth-headset/p/itm4b29e925916d8",
-    "product_url": "https://www.flipkart.com/bose-quietcomfort-ultra-bluetooth-headset/p/itm4b29e925916d8",
+    "productUrl": "https://www.flipkart.com/search?q=Bose%20QuietComfort%20Ultra%20Wireless%20Noise%20Cancelling%20Headphones&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Bose%20QuietComfort%20Ultra%20Wireless%20Noise%20Cancelling%20Headphones&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -3876,8 +3876,8 @@ export const mockProducts = [
         "myntra": 34990
       }
     ],
-    "productUrl": "https://www.myntra.com/headphones/bose/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones/26109482/buy",
-    "product_url": "https://www.myntra.com/headphones/bose/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones/26109482/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Bose%20QuietComfort%20Ultra%20Wireless%20Noise%20Cancelling%20Headphones",
+    "product_url": "https://www.myntra.com/search?rawQuery=Bose%20QuietComfort%20Ultra%20Wireless%20Noise%20Cancelling%20Headphones",
     "seller": "Bose Official Store",
     "inStock": true,
     "in_stock": true,
@@ -4158,8 +4158,8 @@ export const mockProducts = [
         "myntra": 10995
       }
     ],
-    "productUrl": "https://www.flipkart.com/nike-air-max-270-running-shoes-men/p/itmff417643b1fe4",
-    "product_url": "https://www.flipkart.com/nike-air-max-270-running-shoes-men/p/itmff417643b1fe4",
+    "productUrl": "https://www.flipkart.com/search?q=Nike%20Air%20Max%20270%20Men's%20Running%20%26%20Lifestyle%20Shoes&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Nike%20Air%20Max%20270%20Men's%20Running%20%26%20Lifestyle%20Shoes&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -4296,8 +4296,8 @@ export const mockProducts = [
         "myntra": 10995
       }
     ],
-    "productUrl": "https://www.myntra.com/casual-shoes/nike/nike-men-black-air-max-270-sneakers/7543209/buy",
-    "product_url": "https://www.myntra.com/casual-shoes/nike/nike-men-black-air-max-270-sneakers/7543209/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Nike%20Air%20Max%20270%20Men's%20Running%20%26%20Lifestyle%20Shoes",
+    "product_url": "https://www.myntra.com/search?rawQuery=Nike%20Air%20Max%20270%20Men's%20Running%20%26%20Lifestyle%20Shoes",
     "seller": "Nike Official Store",
     "inStock": true,
     "in_stock": true,
@@ -4578,8 +4578,8 @@ export const mockProducts = [
         "myntra": 12499
       }
     ],
-    "productUrl": "https://www.flipkart.com/adidas-ultraboost-light-m-running-shoes-men/p/itmff417643b1fe4",
-    "product_url": "https://www.flipkart.com/adidas-ultraboost-light-m-running-shoes-men/p/itmff417643b1fe4",
+    "productUrl": "https://www.flipkart.com/search?q=Adidas%20Ultraboost%20Light%20Men's%20Road%20Running%20Shoes&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Adidas%20Ultraboost%20Light%20Men's%20Road%20Running%20Shoes&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -4716,8 +4716,8 @@ export const mockProducts = [
         "myntra": 12499
       }
     ],
-    "productUrl": "https://www.myntra.com/sports-shoes/adidas/adidas-men-black-ultraboost-light-running-shoes/22415678/buy",
-    "product_url": "https://www.myntra.com/sports-shoes/adidas/adidas-men-black-ultraboost-light-running-shoes/22415678/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Adidas%20Ultraboost%20Light%20Men's%20Road%20Running%20Shoes",
+    "product_url": "https://www.myntra.com/search?rawQuery=Adidas%20Ultraboost%20Light%20Men's%20Road%20Running%20Shoes",
     "seller": "Adidas Official Store",
     "inStock": true,
     "in_stock": true,
@@ -4998,8 +4998,8 @@ export const mockProducts = [
         "myntra": 3649
       }
     ],
-    "productUrl": "https://www.flipkart.com/woodland-outdoors-leather-trekking-boots-men/p/itmfc2b3fefb4890",
-    "product_url": "https://www.flipkart.com/woodland-outdoors-leather-trekking-boots-men/p/itmfc2b3fefb4890",
+    "productUrl": "https://www.flipkart.com/search?q=Woodland%20Men's%20Camel%20Brown%20Leather%20Outdoor%20Trekking%20Boots&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Woodland%20Men's%20Camel%20Brown%20Leather%20Outdoor%20Trekking%20Boots&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -5136,8 +5136,8 @@ export const mockProducts = [
         "myntra": 3649
       }
     ],
-    "productUrl": "https://www.myntra.com/casual-shoes/woodland/woodland-men-camel-brown-leather-trekking-boots/1839201/buy",
-    "product_url": "https://www.myntra.com/casual-shoes/woodland/woodland-men-camel-brown-leather-trekking-boots/1839201/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Woodland%20Men's%20Camel%20Brown%20Leather%20Outdoor%20Trekking%20Boots",
+    "product_url": "https://www.myntra.com/search?rawQuery=Woodland%20Men's%20Camel%20Brown%20Leather%20Outdoor%20Trekking%20Boots",
     "seller": "Woodland Official Store",
     "inStock": true,
     "in_stock": true,
@@ -5418,8 +5418,8 @@ export const mockProducts = [
         "myntra": 2195
       }
     ],
-    "productUrl": "https://www.flipkart.com/crocs-classic-clogs/p/itmff417643b1fe4",
-    "product_url": "https://www.flipkart.com/crocs-classic-clogs/p/itmff417643b1fe4",
+    "productUrl": "https://www.flipkart.com/search?q=Crocs%20Classic%20Unisex%20Lightweight%20Waterproof%20Clogs&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Crocs%20Classic%20Unisex%20Lightweight%20Waterproof%20Clogs&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -5556,8 +5556,8 @@ export const mockProducts = [
         "myntra": 2195
       }
     ],
-    "productUrl": "https://www.myntra.com/sandals/crocs/crocs-unisex-navy-blue-solid-classic-clogs/10342918/buy",
-    "product_url": "https://www.myntra.com/sandals/crocs/crocs-unisex-navy-blue-solid-classic-clogs/10342918/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Crocs%20Classic%20Unisex%20Lightweight%20Waterproof%20Clogs",
+    "product_url": "https://www.myntra.com/search?rawQuery=Crocs%20Classic%20Unisex%20Lightweight%20Waterproof%20Clogs",
     "seller": "Crocs Official Store",
     "inStock": true,
     "in_stock": true,
@@ -5838,8 +5838,8 @@ export const mockProducts = [
         "myntra": 2399
       }
     ],
-    "productUrl": "https://www.flipkart.com/levi-s-511-slim-men-blue-jeans/p/itm12938475839201",
-    "product_url": "https://www.flipkart.com/levi-s-511-slim-men-blue-jeans/p/itm12938475839201",
+    "productUrl": "https://www.flipkart.com/search?q=Levi's%20511%20Slim%20Fit%20Stretch%20Denim%20Jeans&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Levi's%20511%20Slim%20Fit%20Stretch%20Denim%20Jeans&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -5976,8 +5976,8 @@ export const mockProducts = [
         "myntra": 2399
       }
     ],
-    "productUrl": "https://www.myntra.com/jeans/levis/levis-men-blue-511-slim-fit-stretchable-jeans/11245890/buy",
-    "product_url": "https://www.myntra.com/jeans/levis/levis-men-blue-511-slim-fit-stretchable-jeans/11245890/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Levi's%20511%20Slim%20Fit%20Stretch%20Denim%20Jeans",
+    "product_url": "https://www.myntra.com/search?rawQuery=Levi's%20511%20Slim%20Fit%20Stretch%20Denim%20Jeans",
     "seller": "Levi's Official Store",
     "inStock": true,
     "in_stock": true,
@@ -6258,8 +6258,8 @@ export const mockProducts = [
         "myntra": 2899
       }
     ],
-    "productUrl": "https://www.flipkart.com/tommy-hilfiger-solid-men-polo-neck-t-shirt/p/itm19283746501928",
-    "product_url": "https://www.flipkart.com/tommy-hilfiger-solid-men-polo-neck-t-shirt/p/itm19283746501928",
+    "productUrl": "https://www.flipkart.com/search?q=Tommy%20Hilfiger%20Classic%20Pique%20Cotton%20Slim%20Fit%20Polo%20Shirt&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Tommy%20Hilfiger%20Classic%20Pique%20Cotton%20Slim%20Fit%20Polo%20Shirt&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -6396,8 +6396,8 @@ export const mockProducts = [
         "myntra": 2899
       }
     ],
-    "productUrl": "https://www.myntra.com/tshirts/tommy-hilfiger/tommy-hilfiger-men-classic-pique-cotton-polo-t-shirt/13490218/buy",
-    "product_url": "https://www.myntra.com/tshirts/tommy-hilfiger/tommy-hilfiger-men-classic-pique-cotton-polo-t-shirt/13490218/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Tommy%20Hilfiger%20Classic%20Pique%20Cotton%20Slim%20Fit%20Polo%20Shirt",
+    "product_url": "https://www.myntra.com/search?rawQuery=Tommy%20Hilfiger%20Classic%20Pique%20Cotton%20Slim%20Fit%20Polo%20Shirt",
     "seller": "Tommy Hilfiger Official Store",
     "inStock": true,
     "in_stock": true,
@@ -6678,8 +6678,8 @@ export const mockProducts = [
         "myntra": 8290
       }
     ],
-    "productUrl": "https://www.flipkart.com/ray-ban-aviator-sunglasses/p/itmff417643b1fe4",
-    "product_url": "https://www.flipkart.com/ray-ban-aviator-sunglasses/p/itmff417643b1fe4",
+    "productUrl": "https://www.flipkart.com/search?q=Ray-Ban%20Aviator%20Classic%20Polarized%20Sunglasses&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Ray-Ban%20Aviator%20Classic%20Polarized%20Sunglasses&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -6816,8 +6816,8 @@ export const mockProducts = [
         "myntra": 8290
       }
     ],
-    "productUrl": "https://www.myntra.com/sunglasses/ray-ban/ray-ban-unisex-green-lens-gold-toned-aviator-sunglasses-rb3025/1109342/buy",
-    "product_url": "https://www.myntra.com/sunglasses/ray-ban/ray-ban-unisex-green-lens-gold-toned-aviator-sunglasses-rb3025/1109342/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Ray-Ban%20Aviator%20Classic%20Polarized%20Sunglasses",
+    "product_url": "https://www.myntra.com/search?rawQuery=Ray-Ban%20Aviator%20Classic%20Polarized%20Sunglasses",
     "seller": "Ray-Ban Official Store",
     "inStock": true,
     "in_stock": true,
@@ -7098,8 +7098,8 @@ export const mockProducts = [
         "myntra": 3899
       }
     ],
-    "productUrl": "https://www.flipkart.com/atomberg-renesa-1200-mm-bldc-motor-smart-remote-3-blade-ceiling-fan/p/itm12938475839201",
-    "product_url": "https://www.flipkart.com/atomberg-renesa-1200-mm-bldc-motor-smart-remote-3-blade-ceiling-fan/p/itm12938475839201",
+    "productUrl": "https://www.flipkart.com/search?q=Atomberg%20Renesa%201200mm%20Smart%20BLDC%20Ceiling%20Fan%20with%20Remote&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Atomberg%20Renesa%201200mm%20Smart%20BLDC%20Ceiling%20Fan%20with%20Remote&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -7236,8 +7236,8 @@ export const mockProducts = [
         "myntra": 3899
       }
     ],
-    "productUrl": "https://www.myntra.com/ceiling-fans/atomberg/atomberg-renesa-1200mm-smart-bldc-ceiling-fan/21903482/buy",
-    "product_url": "https://www.myntra.com/ceiling-fans/atomberg/atomberg-renesa-1200mm-smart-bldc-ceiling-fan/21903482/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Atomberg%20Renesa%201200mm%20Smart%20BLDC%20Ceiling%20Fan%20with%20Remote",
+    "product_url": "https://www.myntra.com/search?rawQuery=Atomberg%20Renesa%201200mm%20Smart%20BLDC%20Ceiling%20Fan%20with%20Remote",
     "seller": "Atomberg Official Store",
     "inStock": true,
     "in_stock": true,
@@ -7518,8 +7518,8 @@ export const mockProducts = [
         "myntra": 7499
       }
     ],
-    "productUrl": "https://www.flipkart.com/philips-hd9200-90-rapid-air-technology-air-fryer/p/itmff417643b1fe4",
-    "product_url": "https://www.flipkart.com/philips-hd9200-90-rapid-air-technology-air-fryer/p/itmff417643b1fe4",
+    "productUrl": "https://www.flipkart.com/search?q=Philips%20Digital%20Airfryer%20XL&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Philips%20Digital%20Airfryer%20XL&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -7656,8 +7656,8 @@ export const mockProducts = [
         "myntra": 7499
       }
     ],
-    "productUrl": "https://www.myntra.com/air-fryers/philips/philips-digital-airfryer-xl-41l-rapid-air-technology/20491823/buy",
-    "product_url": "https://www.myntra.com/air-fryers/philips/philips-digital-airfryer-xl-41l-rapid-air-technology/20491823/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Philips%20Digital%20Airfryer%20XL",
+    "product_url": "https://www.myntra.com/search?rawQuery=Philips%20Digital%20Airfryer%20XL",
     "seller": "Philips Official Store",
     "inStock": true,
     "in_stock": true,
@@ -7938,8 +7938,8 @@ export const mockProducts = [
         "myntra": 31900
       }
     ],
-    "productUrl": "https://www.flipkart.com/dyson-v8-absolute-cordless-vacuum-cleaner/p/itm3d25ceea2fc11",
-    "product_url": "https://www.flipkart.com/dyson-v8-absolute-cordless-vacuum-cleaner/p/itm3d25ceea2fc11",
+    "productUrl": "https://www.flipkart.com/search?q=Dyson%20V8%20Absolute%20Cordless%20Stick%20Vacuum%20Cleaner&otracker=search",
+    "product_url": "https://www.flipkart.com/search?q=Dyson%20V8%20Absolute%20Cordless%20Stick%20Vacuum%20Cleaner&otracker=search",
     "seller": "SuperComNet (Flipkart Assured)",
     "inStock": true,
     "in_stock": true,
@@ -8076,8 +8076,8 @@ export const mockProducts = [
         "myntra": 31900
       }
     ],
-    "productUrl": "https://www.myntra.com/vacuum-cleaners/dyson/dyson-v8-absolute-cordless-stick-vacuum-cleaner/19034812/buy",
-    "product_url": "https://www.myntra.com/vacuum-cleaners/dyson/dyson-v8-absolute-cordless-stick-vacuum-cleaner/19034812/buy",
+    "productUrl": "https://www.myntra.com/search?rawQuery=Dyson%20V8%20Absolute%20Cordless%20Stick%20Vacuum%20Cleaner",
+    "product_url": "https://www.myntra.com/search?rawQuery=Dyson%20V8%20Absolute%20Cordless%20Stick%20Vacuum%20Cleaner",
     "seller": "Dyson Official Store",
     "inStock": true,
     "in_stock": true,

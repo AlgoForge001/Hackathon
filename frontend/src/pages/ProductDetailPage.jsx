@@ -379,13 +379,35 @@ export default function ProductDetailPage({ onOpenChat }) {
                     SAVE {bestVariant.discount_percent}%
                   </span>
                 )}
+                <span style={{ fontSize: "11px", fontWeight: 600, color: "var(--color-mute)", alignSelf: "flex-end", paddingBottom: "6px" }}>
+                  Indicative price
+                </span>
               </div>
 
               {maxSavings > 0 && (
                 <div style={{ marginTop: "8px", fontSize: "12px", fontWeight: 700, color: "#059669" }}>
-                  🎉 Save up to ₹{maxSavings.toLocaleString("en-IN")} by purchasing on {bestVariant.platform?.toUpperCase()} instead of other stores!
+                  🎉 Estimated saving of up to ₹{maxSavings.toLocaleString("en-IN")} vs other platforms
                 </div>
               )}
+
+              {/* Price disclaimer */}
+              <div
+                style={{
+                  marginTop: "12px",
+                  padding: "10px 14px",
+                  backgroundColor: "#FEF9C3",
+                  border: "1px solid #FDE047",
+                  borderRadius: "6px",
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "8px",
+                }}
+              >
+                <span style={{ fontSize: "15px", flexShrink: 0 }}>⚠️</span>
+                <p style={{ margin: 0, fontSize: "12px", color: "#713F12", lineHeight: 1.5 }}>
+                  <strong>Prices shown are indicative and may differ from live platform prices.</strong> Platform prices change frequently due to sales, offers, and stock. Always verify the final price on the retailer's website before purchasing.
+                </p>
+              </div>
             </div>
 
             {/* AI Summary Recommendation Box */}
@@ -455,19 +477,19 @@ export default function ProductDetailPage({ onOpenChat }) {
           </div>
         </div>
 
-        {/* ─── 3. REBUILT LIVE MULTI-PLATFORM COMPARISON (Point 5) ─── */}
+        {/* ─── 3. MULTI-PLATFORM PRICE COMPARISON ─── */}
         <section style={{ marginTop: "60px" }}>
           <div style={{ borderBottom: "1px solid var(--color-hairline)", paddingBottom: "12px", marginBottom: "24px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span style={{ fontSize: "11px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px", color: "var(--color-mute)" }}>
-                Live Marketplace Arbitrage
+                Platform Price Comparison
               </span>
             </div>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", letterSpacing: "0.5px", margin: "4px 0 0 0", color: "var(--color-ink)" }}>
-              LIVE MULTI-PLATFORM COMPARISON
+              COMPARE ACROSS PLATFORMS
             </h2>
             <p style={{ fontSize: "13px", color: "var(--color-mute)", margin: "2px 0 0 0" }}>
-              Real-time pricing, verified delivery speeds, and in-stock status across major retailers
+              Indicative prices across Amazon, Flipkart &amp; Myntra — click any platform to see the exact live price before you buy.
             </p>
           </div>
 
@@ -540,8 +562,11 @@ export default function ProductDetailPage({ onOpenChat }) {
 
                     {/* Price */}
                     <div style={{ marginBottom: "16px" }}>
-                      <div style={{ fontSize: "28px", fontWeight: 900, color: "var(--color-ink)" }}>
-                        ₹{Number(v.price).toLocaleString("en-IN")}
+                      <div style={{ display: "flex", alignItems: "baseline", gap: "6px" }}>
+                        <div style={{ fontSize: "28px", fontWeight: 900, color: "var(--color-ink)" }}>
+                          ₹{Number(v.price).toLocaleString("en-IN")}
+                        </div>
+                        <span style={{ fontSize: "11px", color: "var(--color-mute)", fontWeight: 600, paddingBottom: "2px" }}>approx.</span>
                       </div>
                       {v.original_price && (
                         <div style={{ fontSize: "13px", color: "var(--color-mute)", textDecoration: "line-through" }}>
@@ -602,9 +627,31 @@ export default function ProductDetailPage({ onOpenChat }) {
                       </a>
                     );
                   })()}
+                  <p style={{ margin: "8px 0 0 0", fontSize: "11px", color: "var(--color-mute)", textAlign: "center", lineHeight: 1.4 }}>
+                    Price is indicative. Verify exact price on {v.platform}.
+                  </p>
                 </div>
               );
             })}
+          </div>
+
+          {/* Price disclaimer banner below comparison grid */}
+          <div
+            style={{
+              marginTop: "20px",
+              padding: "12px 16px",
+              backgroundColor: "#F0F9FF",
+              border: "1px solid #BAE6FD",
+              borderRadius: "6px",
+              display: "flex",
+              alignItems: "flex-start",
+              gap: "10px",
+            }}
+          >
+            <span style={{ fontSize: "16px", flexShrink: 0 }}>ℹ️</span>
+            <p style={{ margin: 0, fontSize: "12px", color: "#0C4A6E", lineHeight: 1.6 }}>
+              <strong>These are indicative prices based on our last recorded data.</strong> Actual prices on Amazon, Flipkart, and Myntra may vary due to live sales, flash deals, coupon codes, and dynamic pricing. Always click through to verify the final price on the retailer's website before completing your purchase.
+            </p>
           </div>
 
           {/* 4. Interactive 90-Day Price History Trend Graph (Point 5) */}

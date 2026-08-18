@@ -115,7 +115,12 @@ const ProductDetailModal = () => {
                   <TrendingUp size={13} /> Budget+
                 </motion.button>
                 <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
-                  href={p.productUrl} target="_blank" rel="noopener noreferrer"
+                  href={p.productUrl || p.product_url || (p.platform === "amazon" 
+                    ? `https://www.amazon.in/s?k=${encodeURIComponent(p.name || p.title || "")}`
+                    : p.platform === "flipkart" 
+                    ? `https://www.flipkart.com/search?q=${encodeURIComponent(p.name || p.title || "")}`
+                    : `https://www.myntra.com/search?rawQuery=${encodeURIComponent(p.name || p.title || "")}`)} 
+                  target="_blank" rel="noopener noreferrer"
                   className="btn btn-primary" style={{ padding: "8px 16px", fontSize: "0.8rem", textDecoration: "none" }}>
                   Buy Now <ExternalLink size={12} />
                 </motion.a>
