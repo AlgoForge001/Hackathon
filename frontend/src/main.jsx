@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { AuthProvider } from "./context/AuthContext.jsx";
 import { ShoppingProvider } from "./context/ShoppingContext.jsx";
@@ -12,12 +13,14 @@ const GOOGLE_CLIENT_ID =
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-      <AuthProvider>
-        <ShoppingProvider>
-          <App />
-        </ShoppingProvider>
-      </AuthProvider>
-    </GoogleOAuthProvider>
+    <BrowserRouter>
+      <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+        <AuthProvider>
+          <ShoppingProvider>
+            <App />
+          </ShoppingProvider>
+        </AuthProvider>
+      </GoogleOAuthProvider>
+    </BrowserRouter>
   </StrictMode>
 );

@@ -26,14 +26,39 @@
         "delivery_estimate": "2-3 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/51aXvjzcukL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B09XS7JWHH",
         "reviews": [
-          { "author": "Rahul K", "rating": 5, "text": "Absolutely the best noise cancellation headphones. The sound quality is crystal clear and battery lasts all day.", "date": "2024-10-15" },
-          { "author": "Priya M", "rating": 4, "text": "Great headphones but a bit heavy for long usage. ANC is superb and call quality is excellent.", "date": "2024-09-22" },
-          { "author": "Amit S", "rating": 5, "text": "Worth every rupee. Multipoint connection is a game changer. Switching between laptop and phone is seamless.", "date": "2024-11-01" },
-          { "author": "Sneha R", "rating": 3, "text": "Good product but the carrying case feels cheap. Sound quality is top notch though.", "date": "2024-08-30" },
-          { "author": "Vikram T", "rating": 5, "text": "Sony knocked it out of the park. Speak to chat feature works perfectly and ANC is unbeatable.", "date": "2024-12-05" }
+          {
+            "author": "Rahul K",
+            "rating": 5,
+            "text": "Absolutely the best noise cancellation headphones. The sound quality is crystal clear and battery lasts all day.",
+            "date": "2024-10-15"
+          },
+          {
+            "author": "Priya M",
+            "rating": 4,
+            "text": "Great headphones but a bit heavy for long usage. ANC is superb and call quality is excellent.",
+            "date": "2024-09-22"
+          },
+          {
+            "author": "Amit S",
+            "rating": 5,
+            "text": "Worth every rupee. Multipoint connection is a game changer. Switching between laptop and phone is seamless.",
+            "date": "2024-11-01"
+          },
+          {
+            "author": "Sneha R",
+            "rating": 3,
+            "text": "Good product but the carrying case feels cheap. Sound quality is top notch though.",
+            "date": "2024-08-30"
+          },
+          {
+            "author": "Vikram T",
+            "rating": 5,
+            "text": "Sony knocked it out of the park. Speak to chat feature works perfectly and ANC is unbeatable.",
+            "date": "2024-12-05"
+          }
         ]
       },
       {
@@ -47,12 +72,27 @@
         "delivery_estimate": "3-4 days",
         "seller": "Flipkart Assured",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/d/v/7/wh-1000xm5-sony-original-imag97rz8ybhrgss.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/sony-wh-1000xm5/p/itm123",
         "reviews": [
-          { "author": "Deepak N", "rating": 4, "text": "Excellent noise cancellation. Touch controls are very responsive and intuitive.", "date": "2024-10-08" },
-          { "author": "Ananya P", "rating": 5, "text": "Life changing headphones. I can finally work from noisy cafes without distractions.", "date": "2024-11-15" },
-          { "author": "Rohit G", "rating": 3, "text": "Good but expensive. Non-foldable design is a downgrade from XM4. Sound is great though.", "date": "2024-09-11" }
+          {
+            "author": "Deepak N",
+            "rating": 4,
+            "text": "Excellent noise cancellation. Touch controls are very responsive and intuitive.",
+            "date": "2024-10-08"
+          },
+          {
+            "author": "Ananya P",
+            "rating": 5,
+            "text": "Life changing headphones. I can finally work from noisy cafes without distractions.",
+            "date": "2024-11-15"
+          },
+          {
+            "author": "Rohit G",
+            "rating": 3,
+            "text": "Good but expensive. Non-foldable design is a downgrade from XM4. Sound is great though.",
+            "date": "2024-09-11"
+          }
         ]
       },
       {
@@ -66,11 +106,21 @@
         "delivery_estimate": "4-5 days",
         "seller": "Myntra Premium",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/sony-wh1000xm5.jpg",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/headphones/sony/24867392",
         "reviews": [
-          { "author": "Kavya L", "rating": 4, "text": "Great sound quality. ANC is really impressive for long flights.", "date": "2024-10-20" },
-          { "author": "Suresh B", "rating": 5, "text": "Best purchase of the year. Premium feel and sound quality justifies the price.", "date": "2024-12-01" }
+          {
+            "author": "Kavya L",
+            "rating": 4,
+            "text": "Great sound quality. ANC is really impressive for long flights.",
+            "date": "2024-10-20"
+          },
+          {
+            "author": "Suresh B",
+            "rating": 5,
+            "text": "Best purchase of the year. Premium feel and sound quality justifies the price.",
+            "date": "2024-12-01"
+          }
         ]
       }
     ]
@@ -102,13 +152,33 @@
         "delivery_estimate": "1-2 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/61SUj2aKoEL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0BDHWDR12",
         "reviews": [
-          { "author": "Neha T", "rating": 5, "text": "These are absolutely incredible. The ANC is top class and fit is perfect. Battery life with case is amazing.", "date": "2024-11-10" },
-          { "author": "Karthik M", "rating": 5, "text": "Seamless integration with all Apple devices. The transparency mode sounds incredibly natural.", "date": "2024-10-22" },
-          { "author": "Divya S", "rating": 4, "text": "Excellent earbuds but quite expensive. Sound quality and ANC are worth it for Apple users.", "date": "2024-09-18" },
-          { "author": "Arjun P", "rating": 5, "text": "The H2 chip makes a huge difference. Call quality is crystal clear even in noisy environments.", "date": "2024-12-02" }
+          {
+            "author": "Neha T",
+            "rating": 5,
+            "text": "These are absolutely incredible. The ANC is top class and fit is perfect. Battery life with case is amazing.",
+            "date": "2024-11-10"
+          },
+          {
+            "author": "Karthik M",
+            "rating": 5,
+            "text": "Seamless integration with all Apple devices. The transparency mode sounds incredibly natural.",
+            "date": "2024-10-22"
+          },
+          {
+            "author": "Divya S",
+            "rating": 4,
+            "text": "Excellent earbuds but quite expensive. Sound quality and ANC are worth it for Apple users.",
+            "date": "2024-09-18"
+          },
+          {
+            "author": "Arjun P",
+            "rating": 5,
+            "text": "The H2 chip makes a huge difference. Call quality is crystal clear even in noisy environments.",
+            "date": "2024-12-02"
+          }
         ]
       },
       {
@@ -122,11 +192,21 @@
         "delivery_estimate": "2-3 days",
         "seller": "Flipkart Assured",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/airpods-pro2.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/apple-airpods-pro-2nd-gen/p/itm456",
         "reviews": [
-          { "author": "Meera V", "rating": 5, "text": "Perfect earbuds for iPhone users. Sound quality is phenomenal and ANC is class leading.", "date": "2024-10-15" },
-          { "author": "Sanjay K", "rating": 4, "text": "Great product but only works best in the Apple ecosystem. Spatial audio is mind blowing.", "date": "2024-11-08" }
+          {
+            "author": "Meera V",
+            "rating": 5,
+            "text": "Perfect earbuds for iPhone users. Sound quality is phenomenal and ANC is class leading.",
+            "date": "2024-10-15"
+          },
+          {
+            "author": "Sanjay K",
+            "rating": 4,
+            "text": "Great product but only works best in the Apple ecosystem. Spatial audio is mind blowing.",
+            "date": "2024-11-08"
+          }
         ]
       },
       {
@@ -140,11 +220,21 @@
         "delivery_estimate": "3-4 days",
         "seller": "Myntra Apple Store",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/airpods-pro2.jpg",
+        "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/earphones/apple/31204857",
         "reviews": [
-          { "author": "Pooja R", "rating": 5, "text": "Love these earbuds. Perfect for workouts and daily commute. ANC blocks everything out.", "date": "2024-11-25" },
-          { "author": "Varun N", "rating": 4, "text": "Excellent quality as expected from Apple. The case design is very premium.", "date": "2024-10-30" }
+          {
+            "author": "Pooja R",
+            "rating": 5,
+            "text": "Love these earbuds. Perfect for workouts and daily commute. ANC blocks everything out.",
+            "date": "2024-11-25"
+          },
+          {
+            "author": "Varun N",
+            "rating": 4,
+            "text": "Excellent quality as expected from Apple. The case design is very premium.",
+            "date": "2024-10-30"
+          }
         ]
       }
     ]
@@ -176,13 +266,33 @@
         "delivery_estimate": "2-3 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71HBN-RVNSL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0C89LFZRS",
         "reviews": [
-          { "author": "Ravi S", "rating": 4, "text": "70 hours battery is insane! ANC is decent and sound quality is very good for the price.", "date": "2024-10-08" },
-          { "author": "Anjali M", "rating": 5, "text": "Best budget ANC headphones available. Sound quality is punchy and bass heavy.", "date": "2024-11-12" },
-          { "author": "Sunil K", "rating": 3, "text": "Good headphones but ANC is not as strong as Sony or Bose. Build quality could be better.", "date": "2024-09-25" },
-          { "author": "Lakshmi T", "rating": 4, "text": "Excellent value for money. 70 hours battery means I charge it once a week.", "date": "2024-12-10" }
+          {
+            "author": "Ravi S",
+            "rating": 4,
+            "text": "70 hours battery is insane! ANC is decent and sound quality is very good for the price.",
+            "date": "2024-10-08"
+          },
+          {
+            "author": "Anjali M",
+            "rating": 5,
+            "text": "Best budget ANC headphones available. Sound quality is punchy and bass heavy.",
+            "date": "2024-11-12"
+          },
+          {
+            "author": "Sunil K",
+            "rating": 3,
+            "text": "Good headphones but ANC is not as strong as Sony or Bose. Build quality could be better.",
+            "date": "2024-09-25"
+          },
+          {
+            "author": "Lakshmi T",
+            "rating": 4,
+            "text": "Excellent value for money. 70 hours battery means I charge it once a week.",
+            "date": "2024-12-10"
+          }
         ]
       },
       {
@@ -196,11 +306,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "JBL Official Store",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/jbl-tune770nc.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/jbl-tune-770nc/p/itm789",
         "reviews": [
-          { "author": "Madhu P", "rating": 4, "text": "Very comfortable for long usage. 70hr battery is the standout feature. Sound is JBL signature bass.", "date": "2024-10-18" },
-          { "author": "Ganesh R", "rating": 3, "text": "ANC is ok but not great. For the price though, it offers the best battery life in the market.", "date": "2024-11-05" }
+          {
+            "author": "Madhu P",
+            "rating": 4,
+            "text": "Very comfortable for long usage. 70hr battery is the standout feature. Sound is JBL signature bass.",
+            "date": "2024-10-18"
+          },
+          {
+            "author": "Ganesh R",
+            "rating": 3,
+            "text": "ANC is ok but not great. For the price though, it offers the best battery life in the market.",
+            "date": "2024-11-05"
+          }
         ]
       },
       {
@@ -209,16 +329,26 @@
         "price": 7499,
         "original_price": 9999,
         "discount_percent": 25,
-        "rating": 4.0,
+        "rating": 4,
         "review_count": 2184,
         "delivery_estimate": "4-5 days",
         "seller": "Myntra Electronics",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/jbl-770nc.jpg",
+        "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/headphones/jbl/29741563",
         "reviews": [
-          { "author": "Nisha B", "rating": 4, "text": "Great headphones for the price. Comfortable for long hours and sound quality is solid.", "date": "2024-11-20" },
-          { "author": "Kartik A", "rating": 4, "text": "Foldable design is very practical for travel. Battery life is outstanding.", "date": "2024-10-28" }
+          {
+            "author": "Nisha B",
+            "rating": 4,
+            "text": "Great headphones for the price. Comfortable for long hours and sound quality is solid.",
+            "date": "2024-11-20"
+          },
+          {
+            "author": "Kartik A",
+            "rating": 4,
+            "text": "Foldable design is very practical for travel. Battery life is outstanding.",
+            "date": "2024-10-28"
+          }
         ]
       }
     ]
@@ -250,13 +380,33 @@
         "delivery_estimate": "1-2 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/61j8ZUFMyaL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B08GFXMB5C",
         "reviews": [
-          { "author": "Pradeep K", "rating": 4, "text": "Best budget headphones in India. Sound quality is good for the price and bass is impressive.", "date": "2024-10-12" },
-          { "author": "Rani S", "rating": 3, "text": "Average build quality but sound is good. Not very comfortable after 2-3 hours.", "date": "2024-09-30" },
-          { "author": "Vijay M", "rating": 5, "text": "At this price, there's nothing better. My third boAt purchase and still going strong.", "date": "2024-11-18" },
-          { "author": "Sunita D", "rating": 2, "text": "One ear stopped working after 6 months. Customer service was not helpful.", "date": "2024-08-15" }
+          {
+            "author": "Pradeep K",
+            "rating": 4,
+            "text": "Best budget headphones in India. Sound quality is good for the price and bass is impressive.",
+            "date": "2024-10-12"
+          },
+          {
+            "author": "Rani S",
+            "rating": 3,
+            "text": "Average build quality but sound is good. Not very comfortable after 2-3 hours.",
+            "date": "2024-09-30"
+          },
+          {
+            "author": "Vijay M",
+            "rating": 5,
+            "text": "At this price, there's nothing better. My third boAt purchase and still going strong.",
+            "date": "2024-11-18"
+          },
+          {
+            "author": "Sunita D",
+            "rating": 2,
+            "text": "One ear stopped working after 6 months. Customer service was not helpful.",
+            "date": "2024-08-15"
+          }
         ]
       },
       {
@@ -270,11 +420,21 @@
         "delivery_estimate": "2-3 days",
         "seller": "boAt Official",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/boat-rockerz550.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/boat-rockerz-550/p/itm321",
         "reviews": [
-          { "author": "Aakash V", "rating": 4, "text": "Good product for this price range. Sound quality is decent and build is ok.", "date": "2024-10-05" },
-          { "author": "Preeti L", "rating": 3, "text": "Battery drains faster than advertised. But for college students this is the best budget option.", "date": "2024-11-22" }
+          {
+            "author": "Aakash V",
+            "rating": 4,
+            "text": "Good product for this price range. Sound quality is decent and build is ok.",
+            "date": "2024-10-05"
+          },
+          {
+            "author": "Preeti L",
+            "rating": 3,
+            "text": "Battery drains faster than advertised. But for college students this is the best budget option.",
+            "date": "2024-11-22"
+          }
         ]
       },
       {
@@ -288,11 +448,21 @@
         "delivery_estimate": "3-4 days",
         "seller": "boAt on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/boat-rockerz550.jpg",
+        "image_url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/headphones/boat/18924657",
         "reviews": [
-          { "author": "Harish P", "rating": 4, "text": "Solid budget headphones. Works well with my phone and laptop both.", "date": "2024-10-16" },
-          { "author": "Meghna S", "rating": 3, "text": "Decent for casual use but not for audiophiles. Gets the job done for the price.", "date": "2024-11-08" }
+          {
+            "author": "Harish P",
+            "rating": 4,
+            "text": "Solid budget headphones. Works well with my phone and laptop both.",
+            "date": "2024-10-16"
+          },
+          {
+            "author": "Meghna S",
+            "rating": 3,
+            "text": "Decent for casual use but not for audiophiles. Gets the job done for the price.",
+            "date": "2024-11-08"
+          }
         ]
       }
     ]
@@ -326,13 +496,33 @@
         "delivery_estimate": "1-2 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71ipH1xJVKL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CS5X8NYN",
         "reviews": [
-          { "author": "Arun V", "rating": 5, "text": "Exceptional phone. The Galaxy AI features are genuinely useful. Camera quality is top tier.", "date": "2024-11-05" },
-          { "author": "Shreya M", "rating": 4, "text": "Great display and performance. Battery life is just ok for a flagship though.", "date": "2024-10-20" },
-          { "author": "Nitin K", "rating": 5, "text": "Best Android phone you can buy. The software experience is polished and smooth.", "date": "2024-12-01" },
-          { "author": "Rekha P", "rating": 3, "text": "Good phone but overpriced compared to OnePlus. Camera bump feels awkward in hand.", "date": "2024-09-28" }
+          {
+            "author": "Arun V",
+            "rating": 5,
+            "text": "Exceptional phone. The Galaxy AI features are genuinely useful. Camera quality is top tier.",
+            "date": "2024-11-05"
+          },
+          {
+            "author": "Shreya M",
+            "rating": 4,
+            "text": "Great display and performance. Battery life is just ok for a flagship though.",
+            "date": "2024-10-20"
+          },
+          {
+            "author": "Nitin K",
+            "rating": 5,
+            "text": "Best Android phone you can buy. The software experience is polished and smooth.",
+            "date": "2024-12-01"
+          },
+          {
+            "author": "Rekha P",
+            "rating": 3,
+            "text": "Good phone but overpriced compared to OnePlus. Camera bump feels awkward in hand.",
+            "date": "2024-09-28"
+          }
         ]
       },
       {
@@ -346,11 +536,21 @@
         "delivery_estimate": "2-3 days",
         "seller": "Samsung India",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/samsung-galaxy-s24.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/samsung-galaxy-s24/p/itm567",
         "reviews": [
-          { "author": "Praveen J", "rating": 4, "text": "Excellent phone with great AI features. Build quality is premium and camera is impressive.", "date": "2024-10-25" },
-          { "author": "Tanvi S", "rating": 5, "text": "Loving the Galaxy AI features. Translate feature has been very handy during travels.", "date": "2024-11-18" }
+          {
+            "author": "Praveen J",
+            "rating": 4,
+            "text": "Excellent phone with great AI features. Build quality is premium and camera is impressive.",
+            "date": "2024-10-25"
+          },
+          {
+            "author": "Tanvi S",
+            "rating": 5,
+            "text": "Loving the Galaxy AI features. Translate feature has been very handy during travels.",
+            "date": "2024-11-18"
+          }
         ]
       },
       {
@@ -364,11 +564,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "Samsung Official Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/samsung-s24.jpg",
+        "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/mobiles/samsung/30192874",
         "reviews": [
-          { "author": "Bharat R", "rating": 4, "text": "Smooth performance and great camera system. Galaxy AI is a nice addition.", "date": "2024-11-12" },
-          { "author": "Deepa M", "rating": 4, "text": "Premium build and excellent display. Worth the price for a flagship experience.", "date": "2024-10-08" }
+          {
+            "author": "Bharat R",
+            "rating": 4,
+            "text": "Smooth performance and great camera system. Galaxy AI is a nice addition.",
+            "date": "2024-11-12"
+          },
+          {
+            "author": "Deepa M",
+            "rating": 4,
+            "text": "Premium build and excellent display. Worth the price for a flagship experience.",
+            "date": "2024-10-08"
+          }
         ]
       }
     ]
@@ -402,12 +612,27 @@
         "delivery_estimate": "1-2 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71NJYQ1SWPL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B0CTJDLM2L",
         "reviews": [
-          { "author": "Prakash N", "rating": 5, "text": "The 100W charging is incredible. From 0 to 100% in 26 minutes! Performance is butter smooth.", "date": "2024-11-02" },
-          { "author": "Ishita V", "rating": 5, "text": "Best phone for the price. Camera with Hasselblad tuning is outstanding especially at night.", "date": "2024-10-28" },
-          { "author": "Mohit S", "rating": 4, "text": "Excellent performance but OxygenOS bloatware has increased. Otherwise great flagship killer.", "date": "2024-12-05" }
+          {
+            "author": "Prakash N",
+            "rating": 5,
+            "text": "The 100W charging is incredible. From 0 to 100% in 26 minutes! Performance is butter smooth.",
+            "date": "2024-11-02"
+          },
+          {
+            "author": "Ishita V",
+            "rating": 5,
+            "text": "Best phone for the price. Camera with Hasselblad tuning is outstanding especially at night.",
+            "date": "2024-10-28"
+          },
+          {
+            "author": "Mohit S",
+            "rating": 4,
+            "text": "Excellent performance but OxygenOS bloatware has increased. Otherwise great flagship killer.",
+            "date": "2024-12-05"
+          }
         ]
       },
       {
@@ -421,11 +646,21 @@
         "delivery_estimate": "2-3 days",
         "seller": "OnePlus Official",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/oneplus-12.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/oneplus-12/p/itm890",
         "reviews": [
-          { "author": "Satish R", "rating": 5, "text": "The 5400mAh battery easily lasts 2 days with moderate use. Charging speed is unmatched.", "date": "2024-10-14" },
-          { "author": "Divyanka P", "rating": 4, "text": "Great flagship phone. Camera quality rivals Samsung Galaxy at a lower price.", "date": "2024-11-20" }
+          {
+            "author": "Satish R",
+            "rating": 5,
+            "text": "The 5400mAh battery easily lasts 2 days with moderate use. Charging speed is unmatched.",
+            "date": "2024-10-14"
+          },
+          {
+            "author": "Divyanka P",
+            "rating": 4,
+            "text": "Great flagship phone. Camera quality rivals Samsung Galaxy at a lower price.",
+            "date": "2024-11-20"
+          }
         ]
       },
       {
@@ -439,11 +674,21 @@
         "delivery_estimate": "4-5 days",
         "seller": "OnePlus Myntra Store",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/oneplus-12.jpg",
+        "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/mobiles/oneplus/32819041",
         "reviews": [
-          { "author": "Gaurav T", "rating": 4, "text": "Fantastic phone for the price. 12GB RAM ensures smooth multitasking always.", "date": "2024-11-08" },
-          { "author": "Swati K", "rating": 5, "text": "Absolute beast of a phone. 100W charging changed how I use my phone.", "date": "2024-10-22" }
+          {
+            "author": "Gaurav T",
+            "rating": 4,
+            "text": "Fantastic phone for the price. 12GB RAM ensures smooth multitasking always.",
+            "date": "2024-11-08"
+          },
+          {
+            "author": "Swati K",
+            "rating": 5,
+            "text": "Absolute beast of a phone. 100W charging changed how I use my phone.",
+            "date": "2024-10-22"
+          }
         ]
       }
     ]
@@ -474,12 +719,27 @@
         "delivery_estimate": "3-4 days",
         "seller": "Nike Official",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71CGf8IHrVL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B07XNVMXSK",
         "reviews": [
-          { "author": "Ajay R", "rating": 5, "text": "Super comfortable for all-day wear. The Air unit cushioning is absolutely perfect for long walks.", "date": "2024-10-10" },
-          { "author": "Sunaina M", "rating": 4, "text": "Beautiful design and very comfortable. Sizing runs slightly big so order half size down.", "date": "2024-09-25" },
-          { "author": "Vinod K", "rating": 4, "text": "Great quality sneakers. Cushioning is amazing and they look premium. Very happy with purchase.", "date": "2024-11-15" }
+          {
+            "author": "Ajay R",
+            "rating": 5,
+            "text": "Super comfortable for all-day wear. The Air unit cushioning is absolutely perfect for long walks.",
+            "date": "2024-10-10"
+          },
+          {
+            "author": "Sunaina M",
+            "rating": 4,
+            "text": "Beautiful design and very comfortable. Sizing runs slightly big so order half size down.",
+            "date": "2024-09-25"
+          },
+          {
+            "author": "Vinod K",
+            "rating": 4,
+            "text": "Great quality sneakers. Cushioning is amazing and they look premium. Very happy with purchase.",
+            "date": "2024-11-15"
+          }
         ]
       },
       {
@@ -493,11 +753,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "Flipkart Fashion",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/nike-airmax270.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/nike-air-max-270/p/itm111",
         "reviews": [
-          { "author": "Rajesh P", "rating": 4, "text": "Comfortable shoes for everyday use. Looks stylish and the air cushion is very comfortable.", "date": "2024-10-22" },
-          { "author": "Kavitha N", "rating": 5, "text": "Love these shoes! Very comfortable for long commutes. The design gets many compliments.", "date": "2024-11-18" }
+          {
+            "author": "Rajesh P",
+            "rating": 4,
+            "text": "Comfortable shoes for everyday use. Looks stylish and the air cushion is very comfortable.",
+            "date": "2024-10-22"
+          },
+          {
+            "author": "Kavitha N",
+            "rating": 5,
+            "text": "Love these shoes! Very comfortable for long commutes. The design gets many compliments.",
+            "date": "2024-11-18"
+          }
         ]
       },
       {
@@ -511,12 +781,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Nike on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/nike-airmax270.jpg",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/sports-shoes/nike/15897432",
         "reviews": [
-          { "author": "Pooja T", "rating": 5, "text": "Ordered online and fit was perfect. Extremely comfortable and stylish for everyday use.", "date": "2024-11-05" },
-          { "author": "Rajan S", "rating": 4, "text": "Great sneakers for casual wear. The air cushion makes long standing days much easier.", "date": "2024-10-15" },
-          { "author": "Anita K", "rating": 3, "text": "Good shoes but slightly narrow for wide feet. Otherwise design and cushioning are excellent.", "date": "2024-09-28" }
+          {
+            "author": "Pooja T",
+            "rating": 5,
+            "text": "Ordered online and fit was perfect. Extremely comfortable and stylish for everyday use.",
+            "date": "2024-11-05"
+          },
+          {
+            "author": "Rajan S",
+            "rating": 4,
+            "text": "Great sneakers for casual wear. The air cushion makes long standing days much easier.",
+            "date": "2024-10-15"
+          },
+          {
+            "author": "Anita K",
+            "rating": 3,
+            "text": "Good shoes but slightly narrow for wide feet. Otherwise design and cushioning are excellent.",
+            "date": "2024-09-28"
+          }
         ]
       }
     ]
@@ -547,12 +832,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Adidas Official",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71rK3ghDuDL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B09L9M2PNZ",
         "reviews": [
-          { "author": "Marathon_Mike", "rating": 5, "text": "Best running shoes I have ever used. BOOST cushioning makes long runs feel easy. Highly recommend.", "date": "2024-10-05" },
-          { "author": "Deepti V", "rating": 5, "text": "These are absolutely incredible for running. Knit upper is breathable and BOOST return is unmatched.", "date": "2024-11-12" },
-          { "author": "Sridhar N", "rating": 4, "text": "Great running shoes. A bit pricey but the cushioning is worth every rupee for serious runners.", "date": "2024-09-20" }
+          {
+            "author": "Marathon_Mike",
+            "rating": 5,
+            "text": "Best running shoes I have ever used. BOOST cushioning makes long runs feel easy. Highly recommend.",
+            "date": "2024-10-05"
+          },
+          {
+            "author": "Deepti V",
+            "rating": 5,
+            "text": "These are absolutely incredible for running. Knit upper is breathable and BOOST return is unmatched.",
+            "date": "2024-11-12"
+          },
+          {
+            "author": "Sridhar N",
+            "rating": 4,
+            "text": "Great running shoes. A bit pricey but the cushioning is worth every rupee for serious runners.",
+            "date": "2024-09-20"
+          }
         ]
       },
       {
@@ -566,11 +866,21 @@
         "delivery_estimate": "3-4 days",
         "seller": "Adidas India",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/adidas-ultraboost22.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/adidas-ultraboost-22/p/itm222",
         "reviews": [
-          { "author": "Kishan R", "rating": 4, "text": "Good running shoes. BOOST sole is excellent for energy return during runs.", "date": "2024-10-28" },
-          { "author": "Pallavi S", "rating": 5, "text": "Perfect fit and amazing comfort. These are my go-to shoes for morning runs.", "date": "2024-11-08" }
+          {
+            "author": "Kishan R",
+            "rating": 4,
+            "text": "Good running shoes. BOOST sole is excellent for energy return during runs.",
+            "date": "2024-10-28"
+          },
+          {
+            "author": "Pallavi S",
+            "rating": 5,
+            "text": "Perfect fit and amazing comfort. These are my go-to shoes for morning runs.",
+            "date": "2024-11-08"
+          }
         ]
       },
       {
@@ -584,12 +894,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Adidas on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/adidas-ultraboost22.jpg",
+        "image_url": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/sports-shoes/adidas/16734891",
         "reviews": [
-          { "author": "Rohini M", "rating": 5, "text": "Worth every penny. BOOST cushioning and Primeknit upper make these the best running shoes.", "date": "2024-11-01" },
-          { "author": "Aditya G", "rating": 4, "text": "Great shoes but run slightly small. Ordered one size up and perfect fit.", "date": "2024-10-18" },
-          { "author": "Shalini K", "rating": 5, "text": "These shoes changed my running game. Energy return is incredible and they look beautiful too.", "date": "2024-12-02" }
+          {
+            "author": "Rohini M",
+            "rating": 5,
+            "text": "Worth every penny. BOOST cushioning and Primeknit upper make these the best running shoes.",
+            "date": "2024-11-01"
+          },
+          {
+            "author": "Aditya G",
+            "rating": 4,
+            "text": "Great shoes but run slightly small. Ordered one size up and perfect fit.",
+            "date": "2024-10-18"
+          },
+          {
+            "author": "Shalini K",
+            "rating": 5,
+            "text": "These shoes changed my running game. Energy return is incredible and they look beautiful too.",
+            "date": "2024-12-02"
+          }
         ]
       }
     ]
@@ -620,12 +945,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Amazon Fulfilled",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71SxJhIqGHL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B09KZPJQG7",
         "reviews": [
-          { "author": "Suresh T", "rating": 4, "text": "Great budget running shoes. SOFTRIDE foam is very comfortable for daily jogs.", "date": "2024-10-14" },
-          { "author": "Nandini P", "rating": 4, "text": "Comfortable and lightweight. Perfect for gym workouts and casual wear.", "date": "2024-11-05" },
-          { "author": "Rajiv K", "rating": 3, "text": "Good shoes for the price but sole wears out faster than expected. Comfortable though.", "date": "2024-09-22" }
+          {
+            "author": "Suresh T",
+            "rating": 4,
+            "text": "Great budget running shoes. SOFTRIDE foam is very comfortable for daily jogs.",
+            "date": "2024-10-14"
+          },
+          {
+            "author": "Nandini P",
+            "rating": 4,
+            "text": "Comfortable and lightweight. Perfect for gym workouts and casual wear.",
+            "date": "2024-11-05"
+          },
+          {
+            "author": "Rajiv K",
+            "rating": 3,
+            "text": "Good shoes for the price but sole wears out faster than expected. Comfortable though.",
+            "date": "2024-09-22"
+          }
         ]
       },
       {
@@ -634,16 +974,26 @@
         "price": 3699,
         "original_price": 5999,
         "discount_percent": 38,
-        "rating": 4.0,
+        "rating": 4,
         "review_count": 14289,
         "delivery_estimate": "3-4 days",
         "seller": "Puma Official",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/puma-softride-pro.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/puma-softride-pro/p/itm333",
         "reviews": [
-          { "author": "Anand M", "rating": 4, "text": "Lightweight and comfortable for running. Good value for money in this price range.", "date": "2024-10-30" },
-          { "author": "Latha R", "rating": 3, "text": "Decent shoes. Comfortable for short runs but sole could be more durable.", "date": "2024-11-15" }
+          {
+            "author": "Anand M",
+            "rating": 4,
+            "text": "Lightweight and comfortable for running. Good value for money in this price range.",
+            "date": "2024-10-30"
+          },
+          {
+            "author": "Latha R",
+            "rating": 3,
+            "text": "Decent shoes. Comfortable for short runs but sole could be more durable.",
+            "date": "2024-11-15"
+          }
         ]
       },
       {
@@ -657,12 +1007,27 @@
         "delivery_estimate": "2-4 days",
         "seller": "Puma on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/puma-softride-pro.jpg",
+        "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/sports-shoes/puma/14823619",
         "reviews": [
-          { "author": "Megha N", "rating": 4, "text": "Love the comfort of these shoes. Lightweight and perfect for daily workouts.", "date": "2024-11-10" },
-          { "author": "Saurabh V", "rating": 5, "text": "Best budget running shoes on Myntra. Extremely comfortable and stylish too.", "date": "2024-10-25" },
-          { "author": "Deepika S", "rating": 4, "text": "Great buy! Comfortable cushioning and breathable mesh makes it perfect for running.", "date": "2024-12-03" }
+          {
+            "author": "Megha N",
+            "rating": 4,
+            "text": "Love the comfort of these shoes. Lightweight and perfect for daily workouts.",
+            "date": "2024-11-10"
+          },
+          {
+            "author": "Saurabh V",
+            "rating": 5,
+            "text": "Best budget running shoes on Myntra. Extremely comfortable and stylish too.",
+            "date": "2024-10-25"
+          },
+          {
+            "author": "Deepika S",
+            "rating": 4,
+            "text": "Great buy! Comfortable cushioning and breathable mesh makes it perfect for running.",
+            "date": "2024-12-03"
+          }
         ]
       }
     ]
@@ -693,12 +1058,27 @@
         "delivery_estimate": "3-5 days",
         "seller": "Woodland Official",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71Y-QvKO5QL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B073RMT2WB",
         "reviews": [
-          { "author": "Ramesh G", "rating": 5, "text": "Excellent quality leather boots. Very durable and comfortable for outdoor activities.", "date": "2024-10-08" },
-          { "author": "Priya N", "rating": 4, "text": "Good quality boots. Leather is genuine and gets better with wear. Classic Woodland quality.", "date": "2024-09-18" },
-          { "author": "Ashok M", "rating": 4, "text": "Great boots for trekking and daily use. Sole is grippy and leather is very soft.", "date": "2024-11-12" }
+          {
+            "author": "Ramesh G",
+            "rating": 5,
+            "text": "Excellent quality leather boots. Very durable and comfortable for outdoor activities.",
+            "date": "2024-10-08"
+          },
+          {
+            "author": "Priya N",
+            "rating": 4,
+            "text": "Good quality boots. Leather is genuine and gets better with wear. Classic Woodland quality.",
+            "date": "2024-09-18"
+          },
+          {
+            "author": "Ashok M",
+            "rating": 4,
+            "text": "Great boots for trekking and daily use. Sole is grippy and leather is very soft.",
+            "date": "2024-11-12"
+          }
         ]
       },
       {
@@ -712,11 +1092,21 @@
         "delivery_estimate": "4-6 days",
         "seller": "Woodland Footwear",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/woodland-boots.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/woodland-leather-boots/p/itm444",
         "reviews": [
-          { "author": "Varun M", "rating": 4, "text": "Classic Woodland quality. Boots look premium and feel comfortable.", "date": "2024-10-20" },
-          { "author": "Kavitha S", "rating": 3, "text": "Good boots but took long to break in. Quality is definitely worth the price.", "date": "2024-11-05" }
+          {
+            "author": "Varun M",
+            "rating": 4,
+            "text": "Classic Woodland quality. Boots look premium and feel comfortable.",
+            "date": "2024-10-20"
+          },
+          {
+            "author": "Kavitha S",
+            "rating": 3,
+            "text": "Good boots but took long to break in. Quality is definitely worth the price.",
+            "date": "2024-11-05"
+          }
         ]
       },
       {
@@ -730,12 +1120,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Woodland on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/woodland-boots.jpg",
+        "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/boots/woodland/13741852",
         "reviews": [
-          { "author": "Sanjay R", "rating": 5, "text": "Authentic Woodland quality. These boots are built to last for years. Very satisfied.", "date": "2024-11-18" },
-          { "author": "Nisha K", "rating": 4, "text": "Great looking boots. Very comfortable after breaking in. Perfect for outdoor trips.", "date": "2024-10-30" },
-          { "author": "Aman T", "rating": 4, "text": "Classic Woodland reliability. Leather is soft and sole is very durable.", "date": "2024-12-01" }
+          {
+            "author": "Sanjay R",
+            "rating": 5,
+            "text": "Authentic Woodland quality. These boots are built to last for years. Very satisfied.",
+            "date": "2024-11-18"
+          },
+          {
+            "author": "Nisha K",
+            "rating": 4,
+            "text": "Great looking boots. Very comfortable after breaking in. Perfect for outdoor trips.",
+            "date": "2024-10-30"
+          },
+          {
+            "author": "Aman T",
+            "rating": 4,
+            "text": "Classic Woodland reliability. Leather is soft and sole is very durable.",
+            "date": "2024-12-01"
+          }
         ]
       }
     ]
@@ -766,12 +1171,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Levi's India",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/61yUiDL5bGL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B07MBP9BMD",
         "reviews": [
-          { "author": "Rahul T", "rating": 5, "text": "Perfect slim fit jeans. Size chart is accurate and quality is exactly what you expect from Levi's.", "date": "2024-10-12" },
-          { "author": "Ananya S", "rating": 4, "text": "Great jeans! Comfortable and fits well. Levi's quality is always consistent.", "date": "2024-11-08" },
-          { "author": "Varun K", "rating": 4, "text": "Good jeans for the price. Fit is slim but not too tight. Fabric quality is excellent.", "date": "2024-09-25" }
+          {
+            "author": "Rahul T",
+            "rating": 5,
+            "text": "Perfect slim fit jeans. Size chart is accurate and quality is exactly what you expect from Levi's.",
+            "date": "2024-10-12"
+          },
+          {
+            "author": "Ananya S",
+            "rating": 4,
+            "text": "Great jeans! Comfortable and fits well. Levi's quality is always consistent.",
+            "date": "2024-11-08"
+          },
+          {
+            "author": "Varun K",
+            "rating": 4,
+            "text": "Good jeans for the price. Fit is slim but not too tight. Fabric quality is excellent.",
+            "date": "2024-09-25"
+          }
         ]
       },
       {
@@ -785,11 +1205,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "Levi's Official Store",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/jeans/levis-511.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/levis-511-slim/p/itm555",
         "reviews": [
-          { "author": "Sandeep M", "rating": 4, "text": "Excellent jeans. Slim fit is perfect and fabric quality feels premium.", "date": "2024-10-22" },
-          { "author": "Priti R", "rating": 5, "text": "Love these jeans. Washed them multiple times and they still look new.", "date": "2024-11-15" }
+          {
+            "author": "Sandeep M",
+            "rating": 4,
+            "text": "Excellent jeans. Slim fit is perfect and fabric quality feels premium.",
+            "date": "2024-10-22"
+          },
+          {
+            "author": "Priti R",
+            "rating": 5,
+            "text": "Love these jeans. Washed them multiple times and they still look new.",
+            "date": "2024-11-15"
+          }
         ]
       },
       {
@@ -803,12 +1233,27 @@
         "delivery_estimate": "1-2 days",
         "seller": "Levi's on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/levis-511.jpg",
+        "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/jeans/levis/2483910",
         "reviews": [
-          { "author": "Kiran N", "rating": 5, "text": "Best jeans I've bought in years. Perfect slim fit, quality material, and great value.", "date": "2024-11-03" },
-          { "author": "Rohan S", "rating": 4, "text": "Classic Levi's quality. Fits exactly as expected and very comfortable for all day wear.", "date": "2024-10-19" },
-          { "author": "Asha M", "rating": 5, "text": "Totally worth the price. I've bought 3 pairs now. Quality never disappoints.", "date": "2024-12-05" }
+          {
+            "author": "Kiran N",
+            "rating": 5,
+            "text": "Best jeans I've bought in years. Perfect slim fit, quality material, and great value.",
+            "date": "2024-11-03"
+          },
+          {
+            "author": "Rohan S",
+            "rating": 4,
+            "text": "Classic Levi's quality. Fits exactly as expected and very comfortable for all day wear.",
+            "date": "2024-10-19"
+          },
+          {
+            "author": "Asha M",
+            "rating": 5,
+            "text": "Totally worth the price. I've bought 3 pairs now. Quality never disappoints.",
+            "date": "2024-12-05"
+          }
         ]
       }
     ]
@@ -838,12 +1283,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Amazon Fashion",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71klVJSbLCL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B07Q4JXSM2",
         "reviews": [
-          { "author": "Arun V", "rating": 4, "text": "Good quality polo t-shirt for the price. Fabric feels premium and fits well.", "date": "2024-10-08" },
-          { "author": "Pooja R", "rating": 4, "text": "Nice t-shirt. Color doesn't fade after washing. Good value for money.", "date": "2024-11-15" },
-          { "author": "Suresh N", "rating": 3, "text": "Decent quality but sizing runs small. Order one size up. Otherwise good product.", "date": "2024-09-28" }
+          {
+            "author": "Arun V",
+            "rating": 4,
+            "text": "Good quality polo t-shirt for the price. Fabric feels premium and fits well.",
+            "date": "2024-10-08"
+          },
+          {
+            "author": "Pooja R",
+            "rating": 4,
+            "text": "Nice t-shirt. Color doesn't fade after washing. Good value for money.",
+            "date": "2024-11-15"
+          },
+          {
+            "author": "Suresh N",
+            "rating": 3,
+            "text": "Decent quality but sizing runs small. Order one size up. Otherwise good product.",
+            "date": "2024-09-28"
+          }
         ]
       },
       {
@@ -852,16 +1312,26 @@
         "price": 899,
         "original_price": 1799,
         "discount_percent": 50,
-        "rating": 4.0,
+        "rating": 4,
         "review_count": 38247,
         "delivery_estimate": "3-4 days",
         "seller": "Flipkart Fashion",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/uspolo-polo.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/us-polo-polo-tshirt/p/itm666",
         "reviews": [
-          { "author": "Prashant K", "rating": 4, "text": "Good quality polo shirt. Comfortable cotton fabric and nice finish.", "date": "2024-10-25" },
-          { "author": "Meena S", "rating": 4, "text": "Nice looking polo shirt. Goes well with both jeans and chinos.", "date": "2024-11-10" }
+          {
+            "author": "Prashant K",
+            "rating": 4,
+            "text": "Good quality polo shirt. Comfortable cotton fabric and nice finish.",
+            "date": "2024-10-25"
+          },
+          {
+            "author": "Meena S",
+            "rating": 4,
+            "text": "Nice looking polo shirt. Goes well with both jeans and chinos.",
+            "date": "2024-11-10"
+          }
         ]
       },
       {
@@ -875,12 +1345,27 @@
         "delivery_estimate": "1-2 days",
         "seller": "US Polo on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/uspolo-polo.jpg",
+        "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/polo-tshirts/us-polo-assn/7182934",
         "reviews": [
-          { "author": "Rohan T", "rating": 5, "text": "Love this polo. Premium feel and doesn't shrink after washing. Great brand.", "date": "2024-11-08" },
-          { "author": "Kaveri S", "rating": 4, "text": "Nice fitting polo shirt. Soft fabric and looks quite premium for the price.", "date": "2024-10-20" },
-          { "author": "Manish K", "rating": 4, "text": "Good quality polo. Bought in blue and black. Both look great.", "date": "2024-12-02" }
+          {
+            "author": "Rohan T",
+            "rating": 5,
+            "text": "Love this polo. Premium feel and doesn't shrink after washing. Great brand.",
+            "date": "2024-11-08"
+          },
+          {
+            "author": "Kaveri S",
+            "rating": 4,
+            "text": "Nice fitting polo shirt. Soft fabric and looks quite premium for the price.",
+            "date": "2024-10-20"
+          },
+          {
+            "author": "Manish K",
+            "rating": 4,
+            "text": "Good quality polo. Bought in blue and black. Both look great.",
+            "date": "2024-12-02"
+          }
         ]
       }
     ]
@@ -906,17 +1391,32 @@
         "price": 1199,
         "original_price": 2499,
         "discount_percent": 52,
-        "rating": 4.0,
+        "rating": 4,
         "review_count": 24783,
         "delivery_estimate": "2-3 days",
         "seller": "Arrow Official",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71a8dxGsGCL._UL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B08LF1X73K",
         "reviews": [
-          { "author": "Ravi B", "rating": 4, "text": "Good formal shirt. Slim fit is accurate and fabric quality is nice. Great for office wear.", "date": "2024-10-14" },
-          { "author": "Anjali K", "rating": 4, "text": "Husband loves this shirt. Non-iron finish is very convenient for daily use.", "date": "2024-11-08" },
-          { "author": "Dilip M", "rating": 3, "text": "Decent shirt but buttons quality could be better. Overall fit and fabric is good.", "date": "2024-09-22" }
+          {
+            "author": "Ravi B",
+            "rating": 4,
+            "text": "Good formal shirt. Slim fit is accurate and fabric quality is nice. Great for office wear.",
+            "date": "2024-10-14"
+          },
+          {
+            "author": "Anjali K",
+            "rating": 4,
+            "text": "Husband loves this shirt. Non-iron finish is very convenient for daily use.",
+            "date": "2024-11-08"
+          },
+          {
+            "author": "Dilip M",
+            "rating": 3,
+            "text": "Decent shirt but buttons quality could be better. Overall fit and fabric is good.",
+            "date": "2024-09-22"
+          }
         ]
       },
       {
@@ -930,11 +1430,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "Arrow Lifestyle",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/arrow-formal.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/arrow-formal-shirt/p/itm777",
         "reviews": [
-          { "author": "Mahesh P", "rating": 4, "text": "Good formal shirt for office. Arrow quality is consistent and the fit is accurate.", "date": "2024-10-28" },
-          { "author": "Shalini R", "rating": 3, "text": "Fabric is good but finishing near collar could be better. Overall decent product.", "date": "2024-11-12" }
+          {
+            "author": "Mahesh P",
+            "rating": 4,
+            "text": "Good formal shirt for office. Arrow quality is consistent and the fit is accurate.",
+            "date": "2024-10-28"
+          },
+          {
+            "author": "Shalini R",
+            "rating": 3,
+            "text": "Fabric is good but finishing near collar could be better. Overall decent product.",
+            "date": "2024-11-12"
+          }
         ]
       },
       {
@@ -948,12 +1458,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Arrow on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/arrow-formal.jpg",
+        "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/formal-shirts/arrow/9823714",
         "reviews": [
-          { "author": "Nikhil T", "rating": 4, "text": "Classic Arrow formal shirt. Quality is great and fits slim without being too tight.", "date": "2024-11-02" },
-          { "author": "Deepa V", "rating": 5, "text": "Bought for husband and he loves it. Arrow formal shirts are always reliable.", "date": "2024-10-18" },
-          { "author": "Santosh K", "rating": 4, "text": "Good office shirt. Non-iron quality is very convenient. Bought 3 colors now.", "date": "2024-12-01" }
+          {
+            "author": "Nikhil T",
+            "rating": 4,
+            "text": "Classic Arrow formal shirt. Quality is great and fits slim without being too tight.",
+            "date": "2024-11-02"
+          },
+          {
+            "author": "Deepa V",
+            "rating": 5,
+            "text": "Bought for husband and he loves it. Arrow formal shirts are always reliable.",
+            "date": "2024-10-18"
+          },
+          {
+            "author": "Santosh K",
+            "rating": 4,
+            "text": "Good office shirt. Non-iron quality is very convenient. Bought 3 colors now.",
+            "date": "2024-12-01"
+          }
         ]
       }
     ]
@@ -986,13 +1511,33 @@
         "delivery_estimate": "3-5 days",
         "seller": "Atomberg Technologies",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/51c-taqRRoL._SL1200_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B08HR2GGPT",
         "reviews": [
-          { "author": "Shyam P", "rating": 5, "text": "The electricity savings are real! My bill dropped by ₹200/month after switching to this fan.", "date": "2024-10-10" },
-          { "author": "Kiran M", "rating": 5, "text": "Excellent BLDC fan. Very silent, powerful airflow, and remote makes it very convenient.", "date": "2024-11-05" },
-          { "author": "Rashmi S", "rating": 4, "text": "Good fan but remote range could be better. Otherwise installation was easy and fan works great.", "date": "2024-09-28" },
-          { "author": "Tarun K", "rating": 4, "text": "Worth every rupee. Sleek design and silent motor. Perfect for bedroom use.", "date": "2024-12-08" }
+          {
+            "author": "Shyam P",
+            "rating": 5,
+            "text": "The electricity savings are real! My bill dropped by ₹200/month after switching to this fan.",
+            "date": "2024-10-10"
+          },
+          {
+            "author": "Kiran M",
+            "rating": 5,
+            "text": "Excellent BLDC fan. Very silent, powerful airflow, and remote makes it very convenient.",
+            "date": "2024-11-05"
+          },
+          {
+            "author": "Rashmi S",
+            "rating": 4,
+            "text": "Good fan but remote range could be better. Otherwise installation was easy and fan works great.",
+            "date": "2024-09-28"
+          },
+          {
+            "author": "Tarun K",
+            "rating": 4,
+            "text": "Worth every rupee. Sleek design and silent motor. Perfect for bedroom use.",
+            "date": "2024-12-08"
+          }
         ]
       },
       {
@@ -1006,11 +1551,21 @@
         "delivery_estimate": "4-6 days",
         "seller": "Atomberg Official",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/fan/atomberg-renesa.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/atomberg-renesa-fan/p/itm888",
         "reviews": [
-          { "author": "Vinayak R", "rating": 4, "text": "Great BLDC fan. Silent operation and energy efficient. Remote is convenient.", "date": "2024-10-20" },
-          { "author": "Sudha M", "rating": 5, "text": "Best fan we have installed. Runs all day without heating up and saves electricity.", "date": "2024-11-15" }
+          {
+            "author": "Vinayak R",
+            "rating": 4,
+            "text": "Great BLDC fan. Silent operation and energy efficient. Remote is convenient.",
+            "date": "2024-10-20"
+          },
+          {
+            "author": "Sudha M",
+            "rating": 5,
+            "text": "Best fan we have installed. Runs all day without heating up and saves electricity.",
+            "date": "2024-11-15"
+          }
         ]
       },
       {
@@ -1024,11 +1579,21 @@
         "delivery_estimate": "5-7 days",
         "seller": "Atomberg on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/atomberg-renesa.jpg",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/fans/atomberg/41823947",
         "reviews": [
-          { "author": "Prithvi N", "rating": 4, "text": "Good energy efficient fan. Runs silently and the 5 speed settings are very useful.", "date": "2024-11-25" },
-          { "author": "Saritha K", "rating": 4, "text": "BLDC motor makes a big difference in power consumption. Very happy with this purchase.", "date": "2024-10-30" }
+          {
+            "author": "Prithvi N",
+            "rating": 4,
+            "text": "Good energy efficient fan. Runs silently and the 5 speed settings are very useful.",
+            "date": "2024-11-25"
+          },
+          {
+            "author": "Saritha K",
+            "rating": 4,
+            "text": "BLDC motor makes a big difference in power consumption. Very happy with this purchase.",
+            "date": "2024-10-30"
+          }
         ]
       }
     ]
@@ -1060,12 +1625,27 @@
         "delivery_estimate": "3-5 days",
         "seller": "Prestige Kitchen",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71FH0L1hg6L._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B07DHLNXB9",
         "reviews": [
-          { "author": "Nandita V", "rating": 4, "text": "Good microwave for daily use. Even heating and easy to clean. All preset menus work well.", "date": "2024-10-12" },
-          { "author": "Murali K", "rating": 5, "text": "Excellent microwave. Large capacity and even cooking. The auto cook menus are very convenient.", "date": "2024-11-08" },
-          { "author": "Savita R", "rating": 4, "text": "Good quality product from Prestige. Works perfectly for reheating and basic cooking.", "date": "2024-09-25" }
+          {
+            "author": "Nandita V",
+            "rating": 4,
+            "text": "Good microwave for daily use. Even heating and easy to clean. All preset menus work well.",
+            "date": "2024-10-12"
+          },
+          {
+            "author": "Murali K",
+            "rating": 5,
+            "text": "Excellent microwave. Large capacity and even cooking. The auto cook menus are very convenient.",
+            "date": "2024-11-08"
+          },
+          {
+            "author": "Savita R",
+            "rating": 4,
+            "text": "Good quality product from Prestige. Works perfectly for reheating and basic cooking.",
+            "date": "2024-09-25"
+          }
         ]
       },
       {
@@ -1079,11 +1659,21 @@
         "delivery_estimate": "4-6 days",
         "seller": "TTK Prestige Ltd",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/microwave/prestige-25l.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/prestige-25l-microwave/p/itm999",
         "reviews": [
-          { "author": "Gayatri M", "rating": 4, "text": "Decent microwave. Heats food evenly and build quality is good.", "date": "2024-10-25" },
-          { "author": "Ranjit T", "rating": 4, "text": "Good product. Easy to use and the 25L capacity is perfect for a family of 4.", "date": "2024-11-18" }
+          {
+            "author": "Gayatri M",
+            "rating": 4,
+            "text": "Decent microwave. Heats food evenly and build quality is good.",
+            "date": "2024-10-25"
+          },
+          {
+            "author": "Ranjit T",
+            "rating": 4,
+            "text": "Good product. Easy to use and the 25L capacity is perfect for a family of 4.",
+            "date": "2024-11-18"
+          }
         ]
       },
       {
@@ -1092,15 +1682,20 @@
         "price": 6999,
         "original_price": 10995,
         "discount_percent": 36,
-        "rating": 4.0,
+        "rating": 4,
         "review_count": 3841,
         "delivery_estimate": "5-7 days",
         "seller": "Prestige on Myntra",
         "in_stock": false,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/prestige-microwave.jpg",
+        "image_url": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/microwave/prestige/52847193",
         "reviews": [
-          { "author": "Lalitha N", "rating": 4, "text": "Good microwave for the price. Reliable Prestige quality as always.", "date": "2024-11-05" }
+          {
+            "author": "Lalitha N",
+            "rating": 4,
+            "text": "Good microwave for the price. Reliable Prestige quality as always.",
+            "date": "2024-11-05"
+          }
         ]
       }
     ]
@@ -1132,12 +1727,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Pigeon India",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/61sMF3SNOXL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1648546069-c6c5c2b2f7e6?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B091KTMZ4Z",
         "reviews": [
-          { "author": "Anilkumar P", "rating": 4, "text": "Great air fryer for the price. Makes crispy fries with very little oil. Very happy with it.", "date": "2024-10-10" },
-          { "author": "Rekha M", "rating": 5, "text": "Changed how I cook! Air fried everything now - chicken, vegetables, snacks. Works perfectly.", "date": "2024-11-12" },
-          { "author": "Gopal S", "rating": 3, "text": "Decent air fryer but plastic smell lingers for a while initially. Food comes out great though.", "date": "2024-09-22" }
+          {
+            "author": "Anilkumar P",
+            "rating": 4,
+            "text": "Great air fryer for the price. Makes crispy fries with very little oil. Very happy with it.",
+            "date": "2024-10-10"
+          },
+          {
+            "author": "Rekha M",
+            "rating": 5,
+            "text": "Changed how I cook! Air fried everything now - chicken, vegetables, snacks. Works perfectly.",
+            "date": "2024-11-12"
+          },
+          {
+            "author": "Gopal S",
+            "rating": 3,
+            "text": "Decent air fryer but plastic smell lingers for a while initially. Food comes out great though.",
+            "date": "2024-09-22"
+          }
         ]
       },
       {
@@ -1146,16 +1756,26 @@
         "price": 3699,
         "original_price": 7000,
         "discount_percent": 47,
-        "rating": 4.0,
+        "rating": 4,
         "review_count": 24893,
         "delivery_estimate": "3-5 days",
         "seller": "Pigeon Official Store",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/airfryer/pigeon-healthifry.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1648546069-c6c5c2b2f7e6?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/pigeon-air-fryer-4l/p/itmA01",
         "reviews": [
-          { "author": "Vimala K", "rating": 4, "text": "Good air fryer. Makes healthy food quickly. 4L capacity is good for family of 3-4.", "date": "2024-10-28" },
-          { "author": "Suresh P", "rating": 4, "text": "Excellent for making snacks and reheating. Digital controls are easy to use.", "date": "2024-11-20" }
+          {
+            "author": "Vimala K",
+            "rating": 4,
+            "text": "Good air fryer. Makes healthy food quickly. 4L capacity is good for family of 3-4.",
+            "date": "2024-10-28"
+          },
+          {
+            "author": "Suresh P",
+            "rating": 4,
+            "text": "Excellent for making snacks and reheating. Digital controls are easy to use.",
+            "date": "2024-11-20"
+          }
         ]
       },
       {
@@ -1169,11 +1789,21 @@
         "delivery_estimate": "4-6 days",
         "seller": "Pigeon on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/pigeon-airfryer.jpg",
+        "image_url": "https://images.unsplash.com/photo-1648546069-c6c5c2b2f7e6?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/air-fryer/pigeon/63947218",
         "reviews": [
-          { "author": "Mamta R", "rating": 4, "text": "Good air fryer for budget conscious buyers. Cooks food evenly and quickly.", "date": "2024-11-08" },
-          { "author": "Vijayalakshmi N", "rating": 4, "text": "Healthy cooking made easy. My family loves the air fried snacks.", "date": "2024-10-20" }
+          {
+            "author": "Mamta R",
+            "rating": 4,
+            "text": "Good air fryer for budget conscious buyers. Cooks food evenly and quickly.",
+            "date": "2024-11-08"
+          },
+          {
+            "author": "Vijayalakshmi N",
+            "rating": 4,
+            "text": "Healthy cooking made easy. My family loves the air fried snacks.",
+            "date": "2024-10-20"
+          }
         ]
       }
     ]
@@ -1205,12 +1835,27 @@
         "delivery_estimate": "2-3 days",
         "seller": "Wonderchef India",
         "in_stock": true,
-        "image_url": "https://m.media-amazon.com/images/I/71U0W1HvhXL._SL1500_.jpg",
+        "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.amazon.in/dp/B078H7LPRM",
         "reviews": [
-          { "author": "Reshma K", "rating": 5, "text": "Perfect personal blender. Makes smooth smoothies in seconds. Easy to clean and very compact.", "date": "2024-10-08" },
-          { "author": "Pradeep V", "rating": 4, "text": "Good blender for the price. Handles fruits and nuts well. Great for morning smoothies.", "date": "2024-11-05" },
-          { "author": "Sunita M", "rating": 4, "text": "Compact and powerful. The extra jar is very useful. Works perfectly for meal prepping.", "date": "2024-09-20" }
+          {
+            "author": "Reshma K",
+            "rating": 5,
+            "text": "Perfect personal blender. Makes smooth smoothies in seconds. Easy to clean and very compact.",
+            "date": "2024-10-08"
+          },
+          {
+            "author": "Pradeep V",
+            "rating": 4,
+            "text": "Good blender for the price. Handles fruits and nuts well. Great for morning smoothies.",
+            "date": "2024-11-05"
+          },
+          {
+            "author": "Sunita M",
+            "rating": 4,
+            "text": "Compact and powerful. The extra jar is very useful. Works perfectly for meal prepping.",
+            "date": "2024-09-20"
+          }
         ]
       },
       {
@@ -1224,11 +1869,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "Wonderchef Official",
         "in_stock": true,
-        "image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/blender/wonderchef-nutriblend.jpeg",
+        "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.flipkart.com/wonderchef-nutriblend/p/itmB01",
         "reviews": [
-          { "author": "Geeta P", "rating": 4, "text": "Good blender. Very convenient for making quick smoothies on busy mornings.", "date": "2024-10-22" },
-          { "author": "Kishore M", "rating": 5, "text": "Excellent product. Motor is powerful and blends everything smoothly. Love the compact design.", "date": "2024-11-18" }
+          {
+            "author": "Geeta P",
+            "rating": 4,
+            "text": "Good blender. Very convenient for making quick smoothies on busy mornings.",
+            "date": "2024-10-22"
+          },
+          {
+            "author": "Kishore M",
+            "rating": 5,
+            "text": "Excellent product. Motor is powerful and blends everything smoothly. Love the compact design.",
+            "date": "2024-11-18"
+          }
         ]
       },
       {
@@ -1242,11 +1897,21 @@
         "delivery_estimate": "3-5 days",
         "seller": "Wonderchef on Myntra",
         "in_stock": true,
-        "image_url": "https://assets.myntrassets.com/h_720,q_90,w_540/v1/assets/images/wonderchef-nutriblend.jpg",
+        "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
         "product_url": "https://www.myntra.com/blenders/wonderchef/74128394",
         "reviews": [
-          { "author": "Nalini S", "rating": 4, "text": "Nice compact blender. Makes smoothies and shakes very easily. Easy to wash too.", "date": "2024-11-10" },
-          { "author": "Ramu K", "rating": 5, "text": "Best personal blender at this price. Motor is strong and it blends everything smooth.", "date": "2024-10-25" }
+          {
+            "author": "Nalini S",
+            "rating": 4,
+            "text": "Nice compact blender. Makes smoothies and shakes very easily. Easy to wash too.",
+            "date": "2024-11-10"
+          },
+          {
+            "author": "Ramu K",
+            "rating": 5,
+            "text": "Best personal blender at this price. Motor is strong and it blends everything smooth.",
+            "date": "2024-10-25"
+          }
         ]
       }
     ]

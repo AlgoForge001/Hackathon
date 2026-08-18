@@ -1,81 +1,96 @@
 import React, { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import EditorialHero from "./components/hero/EditorialHero";
-import SolutionsOverview from "./components/landing/SolutionsOverview";
-import FeaturedGrid from "./components/products/FeaturedGrid";
-import CategoryRail from "./components/hero/CategoryRail";
+import Footer from "./components/layout/Footer";
 import FloatingAIChat from "./components/chat/FloatingAIChat";
 import ProductModal from "./components/products/ProductModal";
-import Footer from "./components/layout/Footer";
+
+// Pages
+import HomePage from "./pages/HomePage";
+import CategoryPage from "./pages/CategoryPage";
+import DealsPage from "./pages/DealsPage";
+import TrendingPage from "./pages/TrendingPage";
+import SearchResultsPage from "./pages/SearchResultsPage";
 
 export default function App() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const navigate = useNavigate();
 
   const handleSearch = (query) => {
-    setSearchQuery(query);
-    const element = document.getElementById("featured-grid");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (query?.trim()) {
+      navigate(`/search?q=${encodeURIComponent(query.trim())}`);
     }
   };
 
   const handleSelectCategory = (catId) => {
-    setSelectedCategory(catId);
-    setSearchQuery("");
-    const element = document.getElementById("featured-grid");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleExploreDeals = () => {
-    const element = document.getElementById("featured-grid");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (catId) {
+      navigate(`/category/${catId}`);
+    } else {
+      navigate("/");
     }
   };
 
   return (
     <div className="app-container" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      {/* Top Navbar */}
+      {/* Sticky Universal Navbar with Search & Navigation */}
       <Navbar
-        onSearch={handleSearch}
         onOpenChat={() => setIsChatOpen(true)}
-        activeCategory={selectedCategory}
-        onSelectCategory={handleSelectCategory}
       />
 
-      {/* Main Content Area */}
+      {/* Main Routed Content Area */}
       <main style={{ flex: 1 }}>
-        {/* 1. Editorial Hero */}
-        <EditorialHero
-          onSearch={handleSearch}
-          onOpenChat={() => setIsChatOpen(true)}
-          onSelectCategory={handleSelectCategory}
-        />
-
-        {/* 2. Solutions Overview & Problem vs Solution Matrix */}
-        <SolutionsOverview
-          onOpenChat={() => setIsChatOpen(true)}
-          onExploreDeals={handleExploreDeals}
-        />
-
-        {/* 3. Shop By Category Rail */}
-        <CategoryRail onSelectCategory={handleSelectCategory} />
-
-        {/* 4. Live Featured Products Grid */}
-        <FeaturedGrid
-          selectedCategory={selectedCategory}
-          onSelectCategory={setSelectedCategory}
-          searchQuery={searchQuery}
-          onSelectProduct={(p) => setSelectedProduct(p)}
-        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                onSearch={handleSearch}
+                onOpenChat={() => setIsChatOpen(true)}
+                onSelectProduct={(p) => setSelectedProduct(p)}
+                onSelectCategory={handleSelectCategory}
+              />
+            }
+          />
+          <Route
+            path="/category/:categoryId"
+            element={
+              <CategoryPage
+                onSelectProduct={(p) => setSelectedProduct(p)}
+                onOpenChat={() => setIsChatOpen(true)}
+              />
+            }
+          />
+          <Route
+            path="/deals"
+            element={
+              <DealsPage
+                onSelectProduct={(p) => setSelectedProduct(p)}
+              />
+            }
+          />
+          <Route
+            path="/trending"
+            element={
+              <TrendingPage
+                onSelectProduct={(p) => setSelectedProduct(p)}
+                onOpenChat={() => setIsChatOpen(true)}
+              />
+            }
+          />
+          <Route
+            path="/search"
+            element={
+              <SearchResultsPage
+                onSelectProduct={(p) => setSelectedProduct(p)}
+                onOpenChat={() => setIsChatOpen(true)}
+              />
+            }
+          />
+        </Routes>
       </main>
 
-      {/* Footer */}
+      {/* Universal Footer */}
       <Footer />
 
       {/* AI Assistant Modal Drawer */}
