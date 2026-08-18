@@ -20,16 +20,55 @@ import {
   USER_PERSONAS, 
   getGeminiPersonalizedRecommendations 
 } from "../../services/geminiRecommendationService";
+import { getFlashAccount, getFlashOrders } from "../../services/flashService";
 import { getCategoryFallbackImage } from "../../services/mockData";
 
 export default function PersonalizedHistorySection({ onSelectProduct }) {
   const [selectedPersonaId, setSelectedPersonaId] = useState("tech_audiophile");
+  const [flashAccount, setFlashAccount] = useState(null);
   const [loading, setLoading] = useState(true);
   const [recommendationsData, setRecommendationsData] = useState(null);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    setFlashAccount(getFlashAccount());
+  }, []);
+
   const fetchRecommendations = (personaId) => {
     setLoading(true);
+
+    if (personaId === "flash_live_sync") {
+      const flashOrders = getFlashOrders();
+      const flashPersona = {
+        id: "flash_live_sync",
+        name: `Flash.co Verified Orders (${flashAccount ? flashAccount.handle : "Live Inbox"})`,
+        tagline: "Live digital order receipts parsed from Amazon, Flipkart & Myntra",
+        history: {
+          pastOrders: flashOrders.map((o) => ({
+            title: o.productTitle,
+            brand: o.brand || "Top Brand",
+            price: o.price,
+            platform: o.platform,
+            date: o.orderDate || "Recent",
+          })),
+          priceRange: { min: 2000, max: 50000, preferredAvg: 15000 },
+          favoriteBrands: [...new Set(flashOrders.map((o) => o.brand).filter(Boolean))],
+          favoritePlatforms: [...new Set(flashOrders.map((o) => o.platform).filter(Boolean))],
+          interestCategories: ["electronics", "footwear", "home"],
+        },
+      };
+
+      getGeminiPersonalizedRecommendations(flashPersona)
+        .then((data) => {
+          setRecommendationsData(data);
+          setLoading(false);
+        })
+        .catch(() => {
+          setLoading(false);
+        });
+      return;
+    }
+
     getGeminiPersonalizedRecommendations(personaId)
       .then((data) => {
         setRecommendationsData(data);
@@ -44,7 +83,29 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
     fetchRecommendations(selectedPersonaId);
   }, [selectedPersonaId]);
 
-  const activePersona = USER_PERSONAS.find((p) => p.id === selectedPersonaId) || USER_PERSONAS[0];
+  let activePersona = USER_PERSONAS.find((p) => p.id === selectedPersonaId);
+  if (!activePersona && selectedPersonaId === "flash_live_sync") {
+    const flashOrders = getFlashOrders();
+    activePersona = {
+      id: "flash_live_sync",
+      name: `Flash.co Verified Orders (${flashAccount ? flashAccount.handle : "Live Inbox"})`,
+      tagline: "Live digital order receipts parsed from Amazon, Flipkart & Myntra",
+      history: {
+        pastOrders: flashOrders.map((o) => ({
+          title: o.productTitle,
+          brand: o.brand || "Top Brand",
+          price: o.price,
+          platform: o.platform,
+          date: o.orderDate || "Recent",
+        })),
+        priceRange: { min: 2000, max: 50000, preferredAvg: 15000 },
+        favoriteBrands: [...new Set(flashOrders.map((o) => o.brand).filter(Boolean))],
+        favoritePlatforms: [...new Set(flashOrders.map((o) => o.platform).filter(Boolean))],
+        interestCategories: ["electronics", "footwear", "home"],
+      },
+    };
+  }
+  if (!activePersona) activePersona = USER_PERSONAS[0];
 
   return (
     <section 
@@ -88,10 +149,10 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
                 }}
               >
                 <Sparkles size={13} color="var(--color-success)" />
-                Powered by Google Gemini AI
+                Powered by Google Gemini AI & Flash.co
               </span>
               <span style={{ fontSize: "12px", color: "var(--color-mute)", fontWeight: 500 }}>
-                • Purchase History & Affinity Engine
+                • Purchase History & Cross-Platform Receipts
               </span>
             </div>
 
@@ -99,7 +160,7 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
               RECOMMENDED FOR YOU · BASED ON YOUR SHOPPING HISTORY
             </h2>
             <p style={{ fontSize: "14px", color: "var(--color-mute)", marginTop: "4px", maxWidth: "680px" }}>
-              Gemini analyzes your past orders, preferred brands, budget sweet spot, and marketplace history to predict your highest-value next purchase.
+              Gemini & Flash.co analyze your verified order receipts across Amazon, Flipkart, and Myntra to predict your highest-value next upgrade.
             </p>
           </div>
 
@@ -133,8 +194,27 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
           {/* Persona Switcher Chips */}
           <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap", marginBottom: "16px" }}>
             <span style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", color: "var(--color-mute)", letterSpacing: "0.5px" }}>
-              Simulate Shopping Profile:
+              Shopping Profile:
             </span>
+
+            {/* ⚡ Flash.co Live Sync Chip */}
+            <button
+              onClick={() => setSelectedPersonaId("flash_live_sync")}
+              className={`filter-chip ${selectedPersonaId === "flash_live_sync" ? "active" : ""}`}
+              style={{
+                fontSize: "13px",
+                fontWeight: 700,
+                cursor: "pointer",
+                padding: "6px 14px",
+                backgroundColor: selectedPersonaId === "flash_live_sync" ? "var(--color-ink)" : "rgba(245, 158, 11, 0.12)",
+                color: selectedPersonaId === "flash_live_sync" ? "var(--color-canvas)" : "#d97706",
+                border: selectedPersonaId === "flash_live_sync" ? "1px solid var(--color-ink)" : "1px solid rgba(245, 158, 11, 0.35)",
+              }}
+            >
+              <span>⚡</span>
+              <span>Flash.co Live Receipts ({flashAccount ? flashAccount.handle : "Sync"})</span>
+            </button>
+
             {USER_PERSONAS.map((p) => {
               const isActive = selectedPersonaId === p.id;
               return (
@@ -170,7 +250,7 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
             {/* Past Orders */}
             <div>
               <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-mute)", textTransform: "uppercase", display: "block", marginBottom: "6px" }}>
-                Recent Order History:
+                Recent Order Receipts:
               </span>
               <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
                 {activePersona.history.pastOrders.map((order, i) => (
@@ -192,7 +272,7 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
               <div style={{ color: "var(--color-ink)" }}>
                 <div><strong>Budget Bracket:</strong> ₹{activePersona.history.priceRange.min.toLocaleString("en-IN")} – ₹{activePersona.history.priceRange.max.toLocaleString("en-IN")}</div>
                 <div style={{ marginTop: "4px" }}>
-                  <strong>Favorite Brands:</strong> {activePersona.history.favoriteBrands.join(", ")}
+                  <strong>Favorite Brands:</strong> {activePersona.history.favoriteBrands.join(", ") || "Top Brands"}
                 </div>
               </div>
             </div>
@@ -200,15 +280,15 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
             {/* Preferred Platforms */}
             <div>
               <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-mute)", textTransform: "uppercase", display: "block", marginBottom: "6px" }}>
-                Marketplace Preference:
+                Marketplace Receipts Verified:
               </span>
               <div style={{ display: "flex", gap: "8px", marginTop: "4px", flexWrap: "wrap" }}>
-                {activePersona.history.favoritePlatforms.map((plat) => (
+                {(activePersona.history.favoritePlatforms.length > 0 ? activePersona.history.favoritePlatforms : ["amazon", "flipkart", "myntra"]).map((plat) => (
                   <PlatformBadge key={plat} platform={plat} size="sm" />
                 ))}
               </div>
               <div style={{ fontSize: "11px", color: "var(--color-success)", fontWeight: 600, marginTop: "8px", display: "flex", alignItems: "center", gap: "4px" }}>
-                <CheckCircle2 size={13} /> Verified Amazon Prime & Myntra Luxe active
+                <CheckCircle2 size={13} /> Flash.co digital receipts verified
               </div>
             </div>
           </div>
@@ -245,7 +325,7 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
             </div>
             <div>
               <div style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--color-ink)", marginBottom: "3px" }}>
-                Gemini Personal Shopper Insight:
+                Personal Shopper Insight:
               </div>
               <p style={{ fontSize: "14px", color: "var(--color-charcoal)", lineHeight: 1.45 }}>
                 {recommendationsData.personaInsight}
@@ -258,7 +338,7 @@ export default function PersonalizedHistorySection({ onSelectProduct }) {
         {loading ? (
           <div style={{ textAlign: "center", padding: "64px 20px" }}>
             <div style={{ fontSize: "15px", fontWeight: 600, color: "var(--color-mute)" }}>
-              Gemini AI is analyzing order history and evaluating catalog matches...
+              Analyzing Flash.co order receipts and finding best deals...
             </div>
           </div>
         ) : (

@@ -80,8 +80,13 @@ export const USER_PERSONAS = [
 /**
  * Call Gemini 2.5 Flash API to synthesize personalized recommendations
  */
-export const getGeminiPersonalizedRecommendations = async (personaId = "tech_audiophile") => {
-  const persona = USER_PERSONAS.find((p) => p.id === personaId) || USER_PERSONAS[0];
+export const getGeminiPersonalizedRecommendations = async (personaOrId = "tech_audiophile") => {
+  let persona = null;
+  if (typeof personaOrId === "object" && personaOrId !== null) {
+    persona = personaOrId;
+  } else {
+    persona = USER_PERSONAS.find((p) => p.id === personaOrId) || USER_PERSONAS[0];
+  }
 
   // Prepare catalog snapshot for Gemini
   const catalogSummary = mockProducts

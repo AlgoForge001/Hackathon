@@ -3,22 +3,29 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Search, Sparkles, User, LogOut, ChevronRight, Zap, TrendingUp, X } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
 import { CATEGORY_DEFINITIONS, mockProducts } from "../../services/mockData";
+import { getFlashAccount } from "../../services/flashService";
+import FlashSyncModal from "../modals/FlashSyncModal";
 
 export default function Navbar({ onOpenChat }) {
   const [searchValue, setSearchValue] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [isSearchHovered, setIsSearchHovered] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+  const [flashModalOpen, setFlashModalOpen] = useState(false);
+  const [flashAccount, setFlashAccount] = useState(null);
   const searchContainerRef = useRef(null);
   const searchInputRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
   const { user, logout } = useAuth ? useAuth() : { user: null, logout: () => {} };
 
+  useEffect(() => {
+    setFlashAccount(getFlashAccount());
+  }, []);
+
   // Filter recommendations in real time as user types
   const searchSuggestions = React.useMemo(() => {
     if (!searchValue.trim()) {
-      // Show trending top picks when input is empty & focused
       return mockProducts.slice(0, 4);
     }
     const q = searchValue.toLowerCase().trim();
@@ -59,8 +66,6 @@ export default function Navbar({ onOpenChat }) {
     navigate(`/product/${targetId}`);
   };
 
-  // Determine dynamic width
-  const isExpanded = isSearchFocused || isSearchHovered;
   const searchWidth = isSearchFocused ? "460px" : isSearchHovered ? "330px" : "210px";
 
   return (
@@ -369,8 +374,32 @@ export default function Navbar({ onOpenChat }) {
             )}
           </div>
 
-          {/* 4. Action Buttons (Ask AI + Profile) */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
+          {/* 4. Action Buttons (Flash.co + Ask AI + Profile) */}
+          <div style={{ display: "flex", alignItems: "center", gap: "10px", flexShrink: 0 }}>
+            {/* Flash.co Sync Trigger Button */}
+            <button
+              onClick={() => setFlashModalOpen(true)}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                padding: "8px 14px",
+                backgroundColor: flashAccount ? "rgba(245, 158, 11, 0.12)" : "var(--color-soft-cloud)",
+                color: flashAccount ? "#d97706" : "var(--color-ink)",
+                border: flashAccount ? "1px solid rgba(245, 158, 11, 0.3)" : "1px solid var(--color-hairline)",
+                borderRadius: "var(--radius-pill)",
+                fontSize: "12px",
+                fontWeight: 700,
+                cursor: "pointer",
+                transition: "all 0.15s ease",
+              }}
+              title="Sync Orders & Products via Flash.co Shopping Intelligence"
+            >
+              <span style={{ fontSize: "14px" }}>⚡</span>
+              <span>{flashAccount ? "Flash.co Active" : "Flash.co"}</span>
+            </button>
+
+            {/* Ask AI Button */}
             <button
               onClick={onOpenChat}
               style={{
@@ -419,7 +448,7 @@ export default function Navbar({ onOpenChat }) {
                     position: "absolute",
                     right: 0,
                     top: "48px",
-                    width: "220px",
+                    width: "240px",
                     backgroundColor: "var(--color-canvas)",
                     borderRadius: "var(--radius-md)",
                     boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
@@ -433,9 +462,31 @@ export default function Navbar({ onOpenChat }) {
                       {user ? user.name : "Guest Shopper"}
                     </p>
                     <p style={{ fontSize: "11px", color: "var(--color-mute)", margin: 0 }}>
-                      {user ? user.email : "Sign in to sync alerts"}
+                      {flashAccount ? `⚡ ${flashAccount.handle}` : (user ? user.email : "Sign in to sync alerts")}
                     </p>
                   </div>
+
+                  <div
+                    onClick={() => {
+                      setProfileOpen(false);
+                      setFlashModalOpen(true);
+                    }}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      padding: "8px",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      color: "var(--color-ink)",
+                      borderRadius: "var(--radius-sm)",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <span>⚡</span>
+                    <span>{flashAccount ? "Manage Flash.co Receipts" : "Connect Flash.co Inbox"}</span>
+                  </div>
+
                   <Link
                     to="/trending"
                     onClick={() => setProfileOpen(false)}
@@ -485,6 +536,13 @@ export default function Navbar({ onOpenChat }) {
           </div>
         </div>
       </div>
+
+      {/* Flash.co Modal */}
+      <FlashSyncModal
+        isOpen={flashModalOpen}
+        onClose={() => setFlashModalOpen(false)}
+        onSyncComplete={(acc) => setFlashAccount(acc)}
+      />
     </header>
   );
 }
