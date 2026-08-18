@@ -1,66 +1,7 @@
-// Auto-generated synchronized mock product catalog (99 platform listings)
-export const CATEGORY_DEFINITIONS = [
-  {
-    id: "electronics",
-    label: "Electronics & Audio",
-    shortLabel: "Electronics",
-    tagline: "Compare verified tech listings across Amazon, Flipkart & Myntra",
-    coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    badge: "Verified Tech Deals",
-    subcategories: ["All", "Headphones", "TWS Earbuds", "Laptops", "Smartphones", "Smartwatches", "Gaming"],
-    quadrantPreviews: [
-      { title: "Headphones", subtext: "Sony & JBL", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80" },
-      { title: "Earbuds", subtext: "AirPods Pro 2", image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80" },
-      { title: "Smartphones", subtext: "Galaxy S24", image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80" },
-      { title: "Laptops", subtext: "MacBook Air", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80" },
-    ],
-  },
-  {
-    id: "footwear",
-    label: "Athletic & Lifestyle Footwear",
-    shortLabel: "Footwear",
-    tagline: "Performance running shoes, sneakers & trekking boots",
-    coverImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    badge: "Performance & Comfort",
-    subcategories: ["All", "Running", "Sneakers", "Clogs", "Trekking Boots", "Walking"],
-    quadrantPreviews: [
-      { title: "Air Max 270", subtext: "Lifestyle", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80" },
-      { title: "Ultraboost", subtext: "Marathon", image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80" },
-      { title: "Classic Clogs", subtext: "Waterproof", image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80" },
-      { title: "Trek Boots", subtext: "Nubuck Leather", image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80" },
-    ],
-  },
-  {
-    id: "fashion",
-    label: "Men's & Women's Fashion",
-    shortLabel: "Fashion",
-    tagline: "Denim, casual polos, jackets & traditional kurtas",
-    coverImage: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    badge: "Apparel & Accessories",
-    subcategories: ["All", "Jeans", "Polos", "Jackets", "Sunglasses", "Kurtas", "Trousers"],
-    quadrantPreviews: [
-      { title: "Slim Denim", subtext: "Levi's 511", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80" },
-      { title: "Pique Polo", subtext: "Tommy Hilfiger", image: "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80" },
-      { title: "Aviators", subtext: "Ray-Ban Polarized", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80" },
-      { title: "Biker Jacket", subtext: "Zara Luxe", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80" },
-    ],
-  },
-  {
-    id: "home",
-    label: "Smart Home & Appliances",
-    shortLabel: "Home & Living",
-    tagline: "Energy-saving BLDC fans, air fryers, vacuum cleaners & coffee machines",
-    coverImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    badge: "Kitchen & Home Upgrades",
-    subcategories: ["All", "Ceiling Fans", "Air Fryers", "Vacuums", "Coffee Machines", "Mixer Grinders", "Air Purifiers"],
-    quadrantPreviews: [
-      { title: "BLDC Fan", subtext: "Atomberg 28W", image: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80" },
-      { title: "Air Fryer", subtext: "Philips 4.1L", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80" },
-      { title: "Cordless Vac", subtext: "Dyson V8", image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80" },
-      { title: "Espresso Mini", subtext: "Nespresso 19-Bar", image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80" },
-    ],
-  },
-];
+// ─────────────────────────────────────────────────────────────────────────────
+// MOCK PRODUCT CATALOG — AI Personal Shopping Assistant
+// 33 Products across 4 Categories with Multiple Verified Neat High-Res Images
+// ─────────────────────────────────────────────────────────────────────────────
 
 export const getCategoryFallbackImage = (category) => {
   switch (category?.toLowerCase()) {
@@ -69,52 +10,30 @@ export const getCategoryFallbackImage = (category) => {
     case "footwear":
       return "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80";
     case "fashion":
-      return "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80";
+      return "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80";
     case "home":
-      return "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80";
+      return "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80";
     default:
-      return "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80";
+      return "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80";
   }
 };
 
-export const mockProducts = [
+const generateId = (group, platform) => `${group}-${platform}`;
+
+export const mockGroups = [
   {
-    "id": "sony-wh1000xm5-amazon",
-    "product_id": "sony-wh1000xm5-amazon",
     "groupId": "sony-wh1000xm5",
-    "group_id": "sony-wh1000xm5",
-    "title": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones (AMAZON)",
     "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-    "product_name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-    "brand": "Sony",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 24990,
-    "originalPrice": 29990,
-    "original_price": 29990,
-    "discountPercent": 17,
-    "discount_percent": 17,
-    "rating": 4.5,
-    "reviewCount": 12847,
-    "review_count": 12847,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "Over-ear",
+    "brand": "Sony",
     "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09XS7JWHH",
-    "product_url": "https://www.amazon.in/dp/B09XS7JWHH",
-    "seller": "Amazon Fulfilled",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 74,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 17% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 17% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "type": "Over-ear",
       "battery_life": "30 hours",
@@ -123,166 +42,101 @@ export const mockProducts = [
       "noise_cancellation": "Industry-leading ANC with 8 microphones",
       "multipoint_connection": true
     },
-    "reviews": [
-      {
-        "author": "Rahul K",
-        "rating": 5,
-        "text": "Best noise cancellation headphones. Sound quality is crystal clear.",
-        "date": "2024-10-15"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Sony with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 17% discount and verified platform fulfillment.",
+      "bestOverallScore": 80,
+      "isBestOverall": false
+    },
+    "platforms": {
+      "amazon": {
+        "price": 24990,
+        "originalPrice": 29990,
+        "discountPercent": 17,
+        "rating": 4.5,
+        "reviewCount": 12847,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Amazon Fulfilled",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09XS7JWHH",
+        "reviews": [
+          {
+            "author": "Rahul K",
+            "rating": 5,
+            "text": "Best noise cancellation headphones. Sound quality is crystal clear.",
+            "date": "2024-10-15"
+          },
+          {
+            "author": "Priya M",
+            "rating": 4,
+            "text": "Superb ANC and call quality. Slightly bulky carrying case.",
+            "date": "2024-09-22"
+          }
+        ]
       },
-      {
-        "author": "Priya M",
-        "rating": 4,
-        "text": "Superb ANC and call quality. Slightly bulky carrying case.",
-        "date": "2024-09-22"
+      "flipkart": {
+        "price": 25499,
+        "originalPrice": 29990,
+        "discountPercent": 15,
+        "rating": 4.4,
+        "reviewCount": 8230,
+        "deliveryEstimate": "3-4 days",
+        "seller": "SuperComNet (Flipkart Assured)",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/sony-wh-1000xm5",
+        "reviews": [
+          {
+            "author": "Karan B",
+            "rating": 5,
+            "text": "Awesome sound and very comfortable for long flights.",
+            "date": "2024-11-12"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 26990,
+        "originalPrice": 29990,
+        "discountPercent": 10,
+        "rating": 4.6,
+        "reviewCount": 1120,
+        "deliveryEstimate": "2-4 days",
+        "seller": "Myntra Premium Tech",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/headphones/sony-xm5",
+        "reviews": [
+          {
+            "author": "Tanvi S",
+            "rating": 5,
+            "text": "Fast delivery from Myntra, pristine packaging.",
+            "date": "2024-10-02"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "sony-wh1000xm5-flipkart",
-    "product_id": "sony-wh1000xm5-flipkart",
-    "groupId": "sony-wh1000xm5",
-    "group_id": "sony-wh1000xm5",
-    "title": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones (FLIPKART)",
-    "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-    "product_name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-    "brand": "Sony",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 25499,
-    "originalPrice": 29990,
-    "original_price": 29990,
-    "discountPercent": 15,
-    "discount_percent": 15,
-    "rating": 4.4,
-    "reviewCount": 8230,
-    "review_count": 8230,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/sony-wh-1000xm5",
-    "product_url": "https://www.flipkart.com/sony-wh-1000xm5",
-    "seller": "SuperComNet (Flipkart Assured)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 72,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "30 hours",
-      "weight": "250g",
-      "connectivity": "Bluetooth 5.2",
-      "noise_cancellation": "Industry-leading ANC with 8 microphones",
-      "multipoint_connection": true
-    },
-    "reviews": [
-      {
-        "author": "Karan B",
-        "rating": 5,
-        "text": "Awesome sound and very comfortable for long flights.",
-        "date": "2024-11-12"
-      }
-    ]
-  },
-  {
-    "id": "sony-wh1000xm5-myntra",
-    "product_id": "sony-wh1000xm5-myntra",
-    "groupId": "sony-wh1000xm5",
-    "group_id": "sony-wh1000xm5",
-    "title": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones (MYNTRA)",
-    "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-    "product_name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-    "brand": "Sony",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 26990,
-    "originalPrice": 29990,
-    "original_price": 29990,
-    "discountPercent": 10,
-    "discount_percent": 10,
-    "rating": 4.6,
-    "reviewCount": 1120,
-    "review_count": 1120,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/headphones/sony-xm5",
-    "product_url": "https://www.myntra.com/headphones/sony-xm5",
-    "seller": "Myntra Premium Tech",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 73,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 10% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 10% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "30 hours",
-      "weight": "250g",
-      "connectivity": "Bluetooth 5.2",
-      "noise_cancellation": "Industry-leading ANC with 8 microphones",
-      "multipoint_connection": true
-    },
-    "reviews": [
-      {
-        "author": "Tanvi S",
-        "rating": 5,
-        "text": "Fast delivery from Myntra, pristine packaging.",
-        "date": "2024-10-02"
-      }
-    ]
-  },
-  {
-    "id": "apple-airpods-pro-2-amazon",
-    "product_id": "apple-airpods-pro-2-amazon",
     "groupId": "apple-airpods-pro-2",
-    "group_id": "apple-airpods-pro-2",
-    "title": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case (AMAZON)",
     "name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
-    "product_name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
-    "brand": "Apple",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 19999,
-    "originalPrice": 24900,
-    "original_price": 24900,
-    "discountPercent": 20,
-    "discount_percent": 20,
-    "rating": 4.7,
-    "reviewCount": 24190,
-    "review_count": 24190,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "In-ear TWS",
+    "brand": "Apple",
     "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CHWRXH8B",
-    "product_url": "https://www.amazon.in/dp/B0CHWRXH8B",
-    "seller": "Appario Retail (Amazon Fulfilled)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 79,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 20% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 20% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "type": "In-ear TWS",
       "battery_life": "6h (30h with case)",
@@ -290,5010 +144,3225 @@ export const mockProducts = [
       "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
       "water_resistance": "IP54 dust, sweat, and water resistant"
     },
-    "reviews": [
-      {
-        "author": "Arjun V",
-        "rating": 5,
-        "text": "Transparency mode feels like magic. Spatial audio is phenomenal.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "apple-airpods-pro-2-flipkart",
-    "product_id": "apple-airpods-pro-2-flipkart",
-    "groupId": "apple-airpods-pro-2",
-    "group_id": "apple-airpods-pro-2",
-    "title": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case (FLIPKART)",
-    "name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
-    "product_name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
-    "brand": "Apple",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 20490,
-    "originalPrice": 24900,
-    "original_price": 24900,
-    "discountPercent": 18,
-    "discount_percent": 18,
-    "rating": 4.6,
-    "reviewCount": 14200,
-    "review_count": 14200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/apple-airpods-pro-2",
-    "product_url": "https://www.flipkart.com/apple-airpods-pro-2",
-    "seller": "IndiFlashMart (Flipkart Assured)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 76,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 18% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 18% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "specs": {
-      "type": "In-ear TWS",
-      "battery_life": "6h (30h with case)",
-      "chip": "Apple H2",
-      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
-      "water_resistance": "IP54 dust, sweat, and water resistant"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Apple with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 20% discount and verified platform fulfillment.",
+      "bestOverallScore": 83,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Meera K",
-        "rating": 5,
-        "text": "Seamless switching between iPhone and MacBook.",
-        "date": "2024-10-18"
+    "platforms": {
+      "amazon": {
+        "price": 19999,
+        "originalPrice": 24900,
+        "discountPercent": 20,
+        "rating": 4.7,
+        "reviewCount": 24190,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Appario Retail (Amazon Fulfilled)",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CHWRXH8B",
+        "reviews": [
+          {
+            "author": "Arjun V",
+            "rating": 5,
+            "text": "Transparency mode feels like magic. Spatial audio is phenomenal.",
+            "date": "2024-11-20"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 20490,
+        "originalPrice": 24900,
+        "discountPercent": 18,
+        "rating": 4.6,
+        "reviewCount": 14200,
+        "deliveryEstimate": "2-3 days",
+        "seller": "IndiFlashMart (Flipkart Assured)",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/apple-airpods-pro-2",
+        "reviews": [
+          {
+            "author": "Meera K",
+            "rating": 5,
+            "text": "Seamless switching between iPhone and MacBook.",
+            "date": "2024-10-18"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 21900,
+        "originalPrice": 24900,
+        "discountPercent": 12,
+        "rating": 4.7,
+        "reviewCount": 2150,
+        "deliveryEstimate": "1-3 days",
+        "seller": "Apple Authorised Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/apple-airpods-pro-2",
+        "reviews": [
+          {
+            "author": "Rohan D",
+            "rating": 5,
+            "text": "Authentic product with full Apple warranty.",
+            "date": "2024-12-01"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "apple-airpods-pro-2-myntra",
-    "product_id": "apple-airpods-pro-2-myntra",
-    "groupId": "apple-airpods-pro-2",
-    "group_id": "apple-airpods-pro-2",
-    "title": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case (MYNTRA)",
-    "name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
-    "product_name": "Apple AirPods Pro (2nd Generation) with USB-C MagSafe Case",
-    "brand": "Apple",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 21900,
-    "originalPrice": 24900,
-    "original_price": 24900,
-    "discountPercent": 12,
-    "discount_percent": 12,
-    "rating": 4.7,
-    "reviewCount": 2150,
-    "review_count": 2150,
-    "deliveryEstimate": "1-3 days",
-    "delivery_estimate": "1-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/apple-airpods-pro-2",
-    "product_url": "https://www.myntra.com/apple-airpods-pro-2",
-    "seller": "Apple Authorised Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 12% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 12% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "specs": {
-      "type": "In-ear TWS",
-      "battery_life": "6h (30h with case)",
-      "chip": "Apple H2",
-      "noise_cancellation": "Active Noise Cancellation + Adaptive Audio",
-      "water_resistance": "IP54 dust, sweat, and water resistant"
-    },
-    "reviews": [
-      {
-        "author": "Rohan D",
-        "rating": 5,
-        "text": "Authentic product with full Apple warranty.",
-        "date": "2024-12-01"
-      }
-    ]
-  },
-  {
-    "id": "boat-rockerz-550-amazon",
-    "product_id": "boat-rockerz-550-amazon",
     "groupId": "boat-rockerz-550",
-    "group_id": "boat-rockerz-550",
-    "title": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones (AMAZON)",
     "name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "brand": "boAt",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 1299,
-    "originalPrice": 4999,
-    "original_price": 4999,
-    "discountPercent": 74,
-    "discount_percent": 74,
-    "rating": 4.1,
-    "reviewCount": 67320,
-    "review_count": 67320,
-    "deliveryEstimate": "1 day",
-    "delivery_estimate": "1 day",
+    "subcategory": "Over-ear",
+    "brand": "boAt",
     "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0863TXGM3",
-    "product_url": "https://www.amazon.in/dp/B0863TXGM3",
-    "seller": "Imagine Marketing (Amazon Fulfilled)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 91,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 74% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 74% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for boAt build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "type": "Over-ear",
       "battery_life": "20 hours",
       "driver_size": "50mm dynamic drivers",
       "connectivity": "Bluetooth 5.0 + AUX"
     },
-    "reviews": [
-      {
-        "author": "Deepak S",
-        "rating": 4,
-        "text": "Great bass for EDM. Excellent value for ₹1299.",
-        "date": "2024-11-05"
-      }
-    ]
-  },
-  {
-    "id": "boat-rockerz-550-flipkart",
-    "product_id": "boat-rockerz-550-flipkart",
-    "groupId": "boat-rockerz-550",
-    "group_id": "boat-rockerz-550",
-    "title": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones (FLIPKART)",
-    "name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "brand": "boAt",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 1199,
-    "originalPrice": 4999,
-    "original_price": 4999,
-    "discountPercent": 76,
-    "discount_percent": 76,
-    "rating": 4,
-    "reviewCount": 51200,
-    "review_count": 51200,
-    "deliveryEstimate": "2 days",
-    "delivery_estimate": "2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/boat-rockerz-550",
-    "product_url": "https://www.flipkart.com/boat-rockerz-550",
-    "seller": "RetailNet (Flipkart Assured)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 81,
-    "best_overall_score": 90,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 76% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 76% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "20 hours",
-      "driver_size": "50mm dynamic drivers",
-      "connectivity": "Bluetooth 5.0 + AUX"
+    "aiData": {
+      "sentiment": "yellow",
+      "sentimentScore": 82,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by boAt with 4.1★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 76% discount and verified platform fulfillment.",
+      "bestOverallScore": 96,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Akash R",
+    "platforms": {
+      "amazon": {
+        "price": 1299,
+        "originalPrice": 4999,
+        "discountPercent": 74,
+        "rating": 4.1,
+        "reviewCount": 67320,
+        "deliveryEstimate": "1 day",
+        "seller": "Imagine Marketing (Amazon Fulfilled)",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0863TXGM3",
+        "reviews": [
+          {
+            "author": "Deepak S",
+            "rating": 4,
+            "text": "Great bass for EDM. Excellent value for ₹1299.",
+            "date": "2024-11-05"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 1199,
+        "originalPrice": 4999,
+        "discountPercent": 76,
         "rating": 4,
-        "text": "Battery backup is solid around 18-20 hours.",
-        "date": "2024-10-14"
+        "reviewCount": 51200,
+        "deliveryEstimate": "2 days",
+        "seller": "RetailNet (Flipkart Assured)",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/boat-rockerz-550",
+        "reviews": [
+          {
+            "author": "Akash R",
+            "rating": 4,
+            "text": "Battery backup is solid around 18-20 hours.",
+            "date": "2024-10-14"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 1399,
+        "originalPrice": 4999,
+        "discountPercent": 72,
+        "rating": 4.1,
+        "reviewCount": 8900,
+        "deliveryEstimate": "2-3 days",
+        "seller": "boAt Official Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/boat-rockerz-550",
+        "reviews": [
+          {
+            "author": "Sunil N",
+            "rating": 4,
+            "text": "Good cushioning around the ears.",
+            "date": "2024-09-30"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "boat-rockerz-550-myntra",
-    "product_id": "boat-rockerz-550-myntra",
-    "groupId": "boat-rockerz-550",
-    "group_id": "boat-rockerz-550",
-    "title": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones (MYNTRA)",
-    "name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "product_name": "boAt Rockerz 550 Bluetooth Wireless Over-Ear Headphones",
-    "brand": "boAt",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 1399,
-    "originalPrice": 4999,
-    "original_price": 4999,
-    "discountPercent": 72,
-    "discount_percent": 72,
-    "rating": 4.1,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/boat-rockerz-550",
-    "product_url": "https://www.myntra.com/boat-rockerz-550",
-    "seller": "boAt Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 90,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 72% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 72% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for boAt build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "20 hours",
-      "driver_size": "50mm dynamic drivers",
-      "connectivity": "Bluetooth 5.0 + AUX"
-    },
-    "reviews": [
-      {
-        "author": "Sunil N",
-        "rating": 4,
-        "text": "Good cushioning around the ears.",
-        "date": "2024-09-30"
-      }
-    ]
-  },
-  {
-    "id": "jbl-tune-770nc-amazon",
-    "product_id": "jbl-tune-770nc-amazon",
     "groupId": "jbl-tune-770nc",
-    "group_id": "jbl-tune-770nc",
-    "title": "JBL Tune 770NC Wireless Over-Ear ANC Headphones (AMAZON)",
     "name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "brand": "JBL",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 6999,
-    "originalPrice": 9999,
-    "original_price": 9999,
-    "discountPercent": 30,
-    "discount_percent": 30,
-    "rating": 4.3,
-    "reviewCount": 5410,
-    "review_count": 5410,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "Over-ear",
+    "brand": "JBL",
     "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CB8GLTYG",
-    "product_url": "https://www.amazon.in/dp/B0CB8GLTYG",
-    "seller": "Appario Retail",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 77,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 30% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 30% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for JBL build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "type": "Over-ear",
       "battery_life": "70 hours (44h with ANC)",
       "connectivity": "Bluetooth 5.3",
       "noise_cancellation": "Adaptive ANC with Smart Ambient"
     },
-    "reviews": [
-      {
-        "author": "Manish P",
-        "rating": 5,
-        "text": "Insane 70h battery life. Balanced JBL signature sound.",
-        "date": "2024-11-25"
-      }
-    ]
-  },
-  {
-    "id": "jbl-tune-770nc-flipkart",
-    "product_id": "jbl-tune-770nc-flipkart",
-    "groupId": "jbl-tune-770nc",
-    "group_id": "jbl-tune-770nc",
-    "title": "JBL Tune 770NC Wireless Over-Ear ANC Headphones (FLIPKART)",
-    "name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "brand": "JBL",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 7299,
-    "originalPrice": 9999,
-    "original_price": 9999,
-    "discountPercent": 27,
-    "discount_percent": 27,
-    "rating": 4.2,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/jbl-tune-770nc",
-    "product_url": "https://www.flipkart.com/jbl-tune-770nc",
-    "seller": "HARMAN Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 27% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 27% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "70 hours (44h with ANC)",
-      "connectivity": "Bluetooth 5.3",
-      "noise_cancellation": "Adaptive ANC with Smart Ambient"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 86,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by JBL with 4.3★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 30% discount and verified platform fulfillment.",
+      "bestOverallScore": 81,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Ravi G",
-        "rating": 4,
-        "text": "Solid ANC for this price range.",
-        "date": "2024-10-19"
+    "platforms": {
+      "amazon": {
+        "price": 6999,
+        "originalPrice": 9999,
+        "discountPercent": 30,
+        "rating": 4.3,
+        "reviewCount": 5410,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Appario Retail",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CB8GLTYG",
+        "reviews": [
+          {
+            "author": "Manish P",
+            "rating": 5,
+            "text": "Insane 70h battery life. Balanced JBL signature sound.",
+            "date": "2024-11-25"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 7299,
+        "originalPrice": 9999,
+        "discountPercent": 27,
+        "rating": 4.2,
+        "reviewCount": 3200,
+        "deliveryEstimate": "3-4 days",
+        "seller": "HARMAN Official Store",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/jbl-tune-770nc",
+        "reviews": [
+          {
+            "author": "Ravi G",
+            "rating": 4,
+            "text": "Solid ANC for this price range.",
+            "date": "2024-10-19"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 7499,
+        "originalPrice": 9999,
+        "discountPercent": 25,
+        "rating": 4.3,
+        "reviewCount": 850,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Myntra Electronics",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/jbl-tune-770nc",
+        "reviews": [
+          {
+            "author": "Snehal D",
+            "rating": 5,
+            "text": "Very lightweight and punchy bass.",
+            "date": "2024-11-08"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "jbl-tune-770nc-myntra",
-    "product_id": "jbl-tune-770nc-myntra",
-    "groupId": "jbl-tune-770nc",
-    "group_id": "jbl-tune-770nc",
-    "title": "JBL Tune 770NC Wireless Over-Ear ANC Headphones (MYNTRA)",
-    "name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "product_name": "JBL Tune 770NC Wireless Over-Ear ANC Headphones",
-    "brand": "JBL",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 7499,
-    "originalPrice": 9999,
-    "original_price": 9999,
-    "discountPercent": 25,
-    "discount_percent": 25,
-    "rating": 4.3,
-    "reviewCount": 850,
-    "review_count": 850,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/jbl-tune-770nc",
-    "product_url": "https://www.myntra.com/jbl-tune-770nc",
-    "seller": "Myntra Electronics",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for JBL build quality and performance.",
-    "specs": {
-      "type": "Over-ear",
-      "battery_life": "70 hours (44h with ANC)",
-      "connectivity": "Bluetooth 5.3",
-      "noise_cancellation": "Adaptive ANC with Smart Ambient"
-    },
-    "reviews": [
-      {
-        "author": "Snehal D",
-        "rating": 5,
-        "text": "Very lightweight and punchy bass.",
-        "date": "2024-11-08"
-      }
-    ]
-  },
-  {
-    "id": "apple-macbook-air-m2-amazon",
-    "product_id": "apple-macbook-air-m2-amazon",
     "groupId": "apple-macbook-air-m2",
-    "group_id": "apple-macbook-air-m2",
-    "title": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD) (AMAZON)",
     "name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
-    "product_name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
-    "brand": "Apple",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 84990,
-    "originalPrice": 99900,
-    "original_price": 99900,
-    "discountPercent": 15,
-    "discount_percent": 15,
-    "rating": 4.8,
-    "reviewCount": 9480,
-    "review_count": 9480,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "electronics",
+    "brand": "Apple",
     "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0B3C5Q8N1",
-    "product_url": "https://www.amazon.in/dp/B0B3C5Q8N1",
-    "seller": "Amazon Prime Seller",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 96,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "processor": "Apple M2 8-core CPU / 8-core GPU",
       "display": "13.6-inch Liquid Retina Display (500 nits)",
       "battery_life": "Up to 18 hours",
       "weight": "1.24 kg"
     },
-    "reviews": [
-      {
-        "author": "Kunal J",
-        "rating": 5,
-        "text": "Best laptop for developers and students. Battery is unbelievable.",
-        "date": "2024-11-10"
-      }
-    ]
-  },
-  {
-    "id": "apple-macbook-air-m2-flipkart",
-    "product_id": "apple-macbook-air-m2-flipkart",
-    "groupId": "apple-macbook-air-m2",
-    "group_id": "apple-macbook-air-m2",
-    "title": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD) (FLIPKART)",
-    "name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
-    "product_name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
-    "brand": "Apple",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 83990,
-    "originalPrice": 99900,
-    "original_price": 99900,
-    "discountPercent": 16,
-    "discount_percent": 16,
-    "rating": 4.7,
-    "reviewCount": 6720,
-    "review_count": 6720,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/apple-macbook-air-m2",
-    "product_url": "https://www.flipkart.com/apple-macbook-air-m2",
-    "seller": "SuperComNet",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 16% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 16% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "specs": {
-      "processor": "Apple M2 8-core CPU / 8-core GPU",
-      "display": "13.6-inch Liquid Retina Display (500 nits)",
-      "battery_life": "Up to 18 hours",
-      "weight": "1.24 kg"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 96,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Apple with 4.8★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 16% discount and verified platform fulfillment.",
+      "bestOverallScore": 83,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Ananya P",
-        "rating": 5,
-        "text": "Super sleek midnight color. Whisper quiet with no fan noise.",
-        "date": "2024-10-28"
+    "platforms": {
+      "amazon": {
+        "price": 84990,
+        "originalPrice": 99900,
+        "discountPercent": 15,
+        "rating": 4.8,
+        "reviewCount": 9480,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Amazon Prime Seller",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0B3C5Q8N1",
+        "reviews": [
+          {
+            "author": "Kunal J",
+            "rating": 5,
+            "text": "Best laptop for developers and students. Battery is unbelievable.",
+            "date": "2024-11-10"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 83990,
+        "originalPrice": 99900,
+        "discountPercent": 16,
+        "rating": 4.7,
+        "reviewCount": 6720,
+        "deliveryEstimate": "2-3 days",
+        "seller": "SuperComNet",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/apple-macbook-air-m2",
+        "reviews": [
+          {
+            "author": "Ananya P",
+            "rating": 5,
+            "text": "Super sleek midnight color. Whisper quiet with no fan noise.",
+            "date": "2024-10-28"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 87900,
+        "originalPrice": 99900,
+        "discountPercent": 12,
+        "rating": 4.8,
+        "reviewCount": 540,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Apple Official Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/laptops/apple-macbook-air-m2",
+        "reviews": [
+          {
+            "author": "Devendra R",
+            "rating": 5,
+            "text": "Received brand new sealed box with AppleCare eligibility.",
+            "date": "2024-11-15"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "apple-macbook-air-m2-myntra",
-    "product_id": "apple-macbook-air-m2-myntra",
-    "groupId": "apple-macbook-air-m2",
-    "group_id": "apple-macbook-air-m2",
-    "title": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD) (MYNTRA)",
-    "name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
-    "product_name": "Apple MacBook Air 13.6-inch with M2 Chip (8GB Unified Memory, 256GB SSD)",
-    "brand": "Apple",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 87900,
-    "originalPrice": 99900,
-    "original_price": 99900,
-    "discountPercent": 12,
-    "discount_percent": 12,
-    "rating": 4.8,
-    "reviewCount": 540,
-    "review_count": 540,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/laptops/apple-macbook-air-m2",
-    "product_url": "https://www.myntra.com/laptops/apple-macbook-air-m2",
-    "seller": "Apple Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 96,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 12% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 12% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "specs": {
-      "processor": "Apple M2 8-core CPU / 8-core GPU",
-      "display": "13.6-inch Liquid Retina Display (500 nits)",
-      "battery_life": "Up to 18 hours",
-      "weight": "1.24 kg"
-    },
-    "reviews": [
-      {
-        "author": "Devendra R",
-        "rating": 5,
-        "text": "Received brand new sealed box with AppleCare eligibility.",
-        "date": "2024-11-15"
-      }
-    ]
-  },
-  {
-    "id": "samsung-galaxy-s24-ultra-amazon",
-    "product_id": "samsung-galaxy-s24-ultra-amazon",
     "groupId": "samsung-galaxy-s24-ultra",
-    "group_id": "samsung-galaxy-s24-ultra",
-    "title": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage) (AMAZON)",
     "name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
-    "product_name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
-    "brand": "Samsung",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 119999,
-    "originalPrice": 134999,
-    "original_price": 134999,
-    "discountPercent": 11,
-    "discount_percent": 11,
-    "rating": 4.6,
-    "reviewCount": 4890,
-    "review_count": 4890,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "electronics",
+    "brand": "Samsung",
     "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CS5XNFXZ",
-    "product_url": "https://www.amazon.in/dp/B0CS5XNFXZ",
-    "seller": "STPL Exclusive",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 73,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 11% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 11% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
       "processor": "Snapdragon 8 Gen 3 for Galaxy",
       "camera": "200MP Quad Camera with Galaxy AI",
       "battery": "5000mAh with 45W Fast Charging"
     },
-    "reviews": [
-      {
-        "author": "Sameer N",
-        "rating": 5,
-        "text": "Galaxy AI features and zoom photography are jaw dropping.",
-        "date": "2024-11-18"
-      }
-    ]
-  },
-  {
-    "id": "samsung-galaxy-s24-ultra-flipkart",
-    "product_id": "samsung-galaxy-s24-ultra-flipkart",
-    "groupId": "samsung-galaxy-s24-ultra",
-    "group_id": "samsung-galaxy-s24-ultra",
-    "title": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage) (FLIPKART)",
-    "name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
-    "product_name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
-    "brand": "Samsung",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 118499,
-    "originalPrice": 134999,
-    "original_price": 134999,
-    "discountPercent": 12,
-    "discount_percent": 12,
-    "rating": 4.5,
-    "reviewCount": 3120,
-    "review_count": 3120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/samsung-galaxy-s24-ultra",
-    "product_url": "https://www.flipkart.com/samsung-galaxy-s24-ultra",
-    "seller": "FSAssured Mobile Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 72,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 12% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 12% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
-    "specs": {
-      "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
-      "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "camera": "200MP Quad Camera with Galaxy AI",
-      "battery": "5000mAh with 45W Fast Charging"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Samsung with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 12% discount and verified platform fulfillment.",
+      "bestOverallScore": 78,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Deepak G",
-        "rating": 5,
-        "text": "Anti-reflective screen is the best display ever made on a smartphone.",
-        "date": "2024-10-30"
+    "platforms": {
+      "amazon": {
+        "price": 119999,
+        "originalPrice": 134999,
+        "discountPercent": 11,
+        "rating": 4.6,
+        "reviewCount": 4890,
+        "deliveryEstimate": "1-2 days",
+        "seller": "STPL Exclusive",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CS5XNFXZ",
+        "reviews": [
+          {
+            "author": "Sameer N",
+            "rating": 5,
+            "text": "Galaxy AI features and zoom photography are jaw dropping.",
+            "date": "2024-11-18"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 118499,
+        "originalPrice": 134999,
+        "discountPercent": 12,
+        "rating": 4.5,
+        "reviewCount": 3120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "FSAssured Mobile Store",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/samsung-galaxy-s24-ultra",
+        "reviews": [
+          {
+            "author": "Deepak G",
+            "rating": 5,
+            "text": "Anti-reflective screen is the best display ever made on a smartphone.",
+            "date": "2024-10-30"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 122999,
+        "originalPrice": 134999,
+        "discountPercent": 9,
+        "rating": 4.6,
+        "reviewCount": 320,
+        "deliveryEstimate": "2-4 days",
+        "seller": "Samsung Luxe Authorised",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/smartphones/samsung-s24-ultra",
+        "reviews": [
+          {
+            "author": "Pradeep T",
+            "rating": 4,
+            "text": "Premium build, flat screen is much easier to write on with S-Pen.",
+            "date": "2024-11-04"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "samsung-galaxy-s24-ultra-myntra",
-    "product_id": "samsung-galaxy-s24-ultra-myntra",
-    "groupId": "samsung-galaxy-s24-ultra",
-    "group_id": "samsung-galaxy-s24-ultra",
-    "title": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage) (MYNTRA)",
-    "name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
-    "product_name": "Samsung Galaxy S24 Ultra 5G (Titanium Gray, 12GB RAM, 256GB Storage)",
-    "brand": "Samsung",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 122999,
-    "originalPrice": 134999,
-    "original_price": 134999,
-    "discountPercent": 9,
-    "discount_percent": 9,
-    "rating": 4.6,
-    "reviewCount": 320,
-    "review_count": 320,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/smartphones/samsung-s24-ultra",
-    "product_url": "https://www.myntra.com/smartphones/samsung-s24-ultra",
-    "seller": "Samsung Luxe Authorised",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 73,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 9% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 9% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Samsung build quality and performance.",
-    "specs": {
-      "display": "6.8-inch Dynamic AMOLED 2X 120Hz",
-      "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "camera": "200MP Quad Camera with Galaxy AI",
-      "battery": "5000mAh with 45W Fast Charging"
-    },
-    "reviews": [
-      {
-        "author": "Pradeep T",
-        "rating": 4,
-        "text": "Premium build, flat screen is much easier to write on with S-Pen.",
-        "date": "2024-11-04"
-      }
-    ]
-  },
-  {
-    "id": "oneplus-12-5g-amazon",
-    "product_id": "oneplus-12-5g-amazon",
     "groupId": "oneplus-12-5g",
-    "group_id": "oneplus-12-5g",
-    "title": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage) (AMAZON)",
     "name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "brand": "OnePlus",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 64999,
-    "originalPrice": 69999,
-    "original_price": 69999,
-    "discountPercent": 7,
-    "discount_percent": 7,
-    "rating": 4.6,
-    "reviewCount": 8120,
-    "review_count": 8120,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "electronics",
+    "brand": "OnePlus",
     "imageUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CQPPY23T",
-    "product_url": "https://www.amazon.in/dp/B0CQPPY23T",
-    "seller": "OnePlus Official India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 72,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 7% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 7% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
       "processor": "Snapdragon 8 Gen 3 Mobile Platform",
       "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
       "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
     },
-    "reviews": [
-      {
-        "author": "Rohit V",
-        "rating": 5,
-        "text": "100W fast charger charges 0 to 100% in 26 minutes. Phenomenal battery life.",
-        "date": "2024-11-19"
-      }
-    ]
-  },
-  {
-    "id": "oneplus-12-5g-flipkart",
-    "product_id": "oneplus-12-5g-flipkart",
-    "groupId": "oneplus-12-5g",
-    "group_id": "oneplus-12-5g",
-    "title": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage) (FLIPKART)",
-    "name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "brand": "OnePlus",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 64499,
-    "originalPrice": 69999,
-    "original_price": 69999,
-    "discountPercent": 8,
-    "discount_percent": 8,
-    "rating": 4.5,
-    "reviewCount": 4200,
-    "review_count": 4200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/oneplus-12",
-    "product_url": "https://www.flipkart.com/oneplus-12",
-    "seller": "FSAssured Mobiles",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 71,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 8% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 8% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "specs": {
-      "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
-      "processor": "Snapdragon 8 Gen 3 Mobile Platform",
-      "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
-      "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by OnePlus with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 8% discount and verified platform fulfillment.",
+      "bestOverallScore": 77,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Mayank S",
-        "rating": 5,
-        "text": "Smooth OxygenOS and the Hasselblad periscope portrait shots look like DSLR.",
-        "date": "2024-10-22"
+    "platforms": {
+      "amazon": {
+        "price": 64999,
+        "originalPrice": 69999,
+        "discountPercent": 7,
+        "rating": 4.6,
+        "reviewCount": 8120,
+        "deliveryEstimate": "1-2 days",
+        "seller": "OnePlus Official India",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CQPPY23T",
+        "reviews": [
+          {
+            "author": "Rohit V",
+            "rating": 5,
+            "text": "100W fast charger charges 0 to 100% in 26 minutes. Phenomenal battery life.",
+            "date": "2024-11-19"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 64499,
+        "originalPrice": 69999,
+        "discountPercent": 8,
+        "rating": 4.5,
+        "reviewCount": 4200,
+        "deliveryEstimate": "2-3 days",
+        "seller": "FSAssured Mobiles",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/oneplus-12",
+        "reviews": [
+          {
+            "author": "Mayank S",
+            "rating": 5,
+            "text": "Smooth OxygenOS and the Hasselblad periscope portrait shots look like DSLR.",
+            "date": "2024-10-22"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 66999,
+        "originalPrice": 69999,
+        "discountPercent": 4,
+        "rating": 4.6,
+        "reviewCount": 410,
+        "deliveryEstimate": "3-4 days",
+        "seller": "OnePlus Brand Hub",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/smartphones/oneplus-12",
+        "reviews": [
+          {
+            "author": "Kiran D",
+            "rating": 4,
+            "text": "Top notch flagship performance.",
+            "date": "2024-11-03"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "oneplus-12-5g-myntra",
-    "product_id": "oneplus-12-5g-myntra",
-    "groupId": "oneplus-12-5g",
-    "group_id": "oneplus-12-5g",
-    "title": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage) (MYNTRA)",
-    "name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "product_name": "OnePlus 12 5G (Silky Black, 16GB RAM, 512GB Storage)",
-    "brand": "OnePlus",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 66999,
-    "originalPrice": 69999,
-    "original_price": 69999,
-    "discountPercent": 4,
-    "discount_percent": 4,
-    "rating": 4.6,
-    "reviewCount": 410,
-    "review_count": 410,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/smartphones/oneplus-12",
-    "product_url": "https://www.myntra.com/smartphones/oneplus-12",
-    "seller": "OnePlus Brand Hub",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 71,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 4% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 4% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for OnePlus build quality and performance.",
-    "specs": {
-      "display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
-      "processor": "Snapdragon 8 Gen 3 Mobile Platform",
-      "camera": "4th Gen Hasselblad Camera System with 64MP 3X Periscope",
-      "charging": "100W SUPERVOOC + 50W AIRVOOC Wireless"
-    },
-    "reviews": [
-      {
-        "author": "Kiran D",
-        "rating": 4,
-        "text": "Top notch flagship performance.",
-        "date": "2024-11-03"
-      }
-    ]
-  },
-  {
-    "id": "asus-rog-zephyrus-g14-amazon",
-    "product_id": "asus-rog-zephyrus-g14-amazon",
     "groupId": "asus-rog-zephyrus-g14",
-    "group_id": "asus-rog-zephyrus-g14",
-    "title": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB) (AMAZON)",
     "name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
-    "product_name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
-    "brand": "ASUS",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 154990,
-    "originalPrice": 189990,
-    "original_price": 189990,
-    "discountPercent": 18,
-    "discount_percent": 18,
-    "rating": 4.7,
-    "reviewCount": 2410,
-    "review_count": 2410,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "electronics",
+    "brand": "ASUS",
     "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CSG6K8L1",
-    "product_url": "https://www.amazon.in/dp/B0CSG6K8L1",
-    "seller": "Appario Retail",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 18% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 18% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASUS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASUS build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "processor": "AMD Ryzen 9 8945HS Processor with Ryzen AI",
       "graphics": "NVIDIA GeForce RTX 4060 8GB GDDR6 (90W TGP)",
       "display": "14-inch 3K 120Hz 0.2ms ROG Nebula OLED (100% DCI-P3)",
       "weight": "1.50 kg ultra-portable CNC aluminum chassis"
     },
-    "reviews": [
-      {
-        "author": "Varun K",
-        "rating": 5,
-        "text": "The 3K OLED display is unmatched. Cyberpunk 2077 runs over 75fps with DLSS 3.5.",
-        "date": "2024-11-15"
-      }
-    ]
-  },
-  {
-    "id": "asus-rog-zephyrus-g14-flipkart",
-    "product_id": "asus-rog-zephyrus-g14-flipkart",
-    "groupId": "asus-rog-zephyrus-g14",
-    "group_id": "asus-rog-zephyrus-g14",
-    "title": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB) (FLIPKART)",
-    "name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
-    "product_name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
-    "brand": "ASUS",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 152990,
-    "originalPrice": 189990,
-    "original_price": 189990,
-    "discountPercent": 19,
-    "discount_percent": 19,
-    "rating": 4.6,
-    "reviewCount": 1890,
-    "review_count": 1890,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/asus-rog-zephyrus-g14",
-    "product_url": "https://www.flipkart.com/asus-rog-zephyrus-g14",
-    "seller": "SuperComNet Gaming",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 19% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 19% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASUS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASUS build quality and performance.",
-    "specs": {
-      "processor": "AMD Ryzen 9 8945HS Processor with Ryzen AI",
-      "graphics": "NVIDIA GeForce RTX 4060 8GB GDDR6 (90W TGP)",
-      "display": "14-inch 3K 120Hz 0.2ms ROG Nebula OLED (100% DCI-P3)",
-      "weight": "1.50 kg ultra-portable CNC aluminum chassis"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by ASUS with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 19% discount and verified platform fulfillment.",
+      "bestOverallScore": 83,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Aditya N",
-        "rating": 5,
-        "text": "CNC aluminum body feels as premium as a MacBook Pro.",
-        "date": "2024-10-25"
+    "platforms": {
+      "amazon": {
+        "price": 154990,
+        "originalPrice": 189990,
+        "discountPercent": 18,
+        "rating": 4.7,
+        "reviewCount": 2410,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Appario Retail",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CSG6K8L1",
+        "reviews": [
+          {
+            "author": "Varun K",
+            "rating": 5,
+            "text": "The 3K OLED display is unmatched. Cyberpunk 2077 runs over 75fps with DLSS 3.5.",
+            "date": "2024-11-15"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 152990,
+        "originalPrice": 189990,
+        "discountPercent": 19,
+        "rating": 4.6,
+        "reviewCount": 1890,
+        "deliveryEstimate": "3-4 days",
+        "seller": "SuperComNet Gaming",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/asus-rog-zephyrus-g14",
+        "reviews": [
+          {
+            "author": "Aditya N",
+            "rating": 5,
+            "text": "CNC aluminum body feels as premium as a MacBook Pro.",
+            "date": "2024-10-25"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 159990,
+        "originalPrice": 189990,
+        "discountPercent": 15,
+        "rating": 4.7,
+        "reviewCount": 180,
+        "deliveryEstimate": "3-5 days",
+        "seller": "ROG Exclusive Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/laptops/asus-rog-g14",
+        "reviews": [
+          {
+            "author": "Kunal M",
+            "rating": 5,
+            "text": "Slash lighting strip on lid looks stunning.",
+            "date": "2024-11-20"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "asus-rog-zephyrus-g14-myntra",
-    "product_id": "asus-rog-zephyrus-g14-myntra",
-    "groupId": "asus-rog-zephyrus-g14",
-    "group_id": "asus-rog-zephyrus-g14",
-    "title": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB) (MYNTRA)",
-    "name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
-    "product_name": "ASUS ROG Zephyrus G14 (2024) 3K OLED Gaming Laptop (AMD Ryzen 9, RTX 4060, 16GB/1TB)",
-    "brand": "ASUS",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 159990,
-    "originalPrice": 189990,
-    "original_price": 189990,
-    "discountPercent": 15,
-    "discount_percent": 15,
-    "rating": 4.7,
-    "reviewCount": 180,
-    "review_count": 180,
-    "deliveryEstimate": "3-5 days",
-    "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/laptops/asus-rog-g14",
-    "product_url": "https://www.myntra.com/laptops/asus-rog-g14",
-    "seller": "ROG Exclusive Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASUS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASUS build quality and performance.",
-    "specs": {
-      "processor": "AMD Ryzen 9 8945HS Processor with Ryzen AI",
-      "graphics": "NVIDIA GeForce RTX 4060 8GB GDDR6 (90W TGP)",
-      "display": "14-inch 3K 120Hz 0.2ms ROG Nebula OLED (100% DCI-P3)",
-      "weight": "1.50 kg ultra-portable CNC aluminum chassis"
-    },
-    "reviews": [
-      {
-        "author": "Kunal M",
-        "rating": 5,
-        "text": "Slash lighting strip on lid looks stunning.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "playstation-5-slim-amazon",
-    "product_id": "playstation-5-slim-amazon",
     "groupId": "playstation-5-slim",
-    "group_id": "playstation-5-slim",
-    "title": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD) (AMAZON)",
     "name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
-    "product_name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
-    "brand": "Sony",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 49990,
-    "originalPrice": 54990,
-    "original_price": 54990,
-    "discountPercent": 9,
-    "discount_percent": 9,
-    "rating": 4.9,
-    "reviewCount": 8700,
-    "review_count": 8700,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "electronics",
+    "brand": "Sony",
     "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CY5Q2N1W",
-    "product_url": "https://www.amazon.in/dp/B0CY5Q2N1W",
-    "seller": "Electronics Bazaar",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 98,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 9% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 9% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "storage": "1TB Ultra-High Speed NVMe SSD",
       "resolution": "4K 120Hz Gaming, Ray Tracing, HDR",
       "audio": "Tempest 3D AudioTech",
       "controller": "DualSense Wireless Controller with Haptic Feedback"
     },
-    "reviews": [
-      {
-        "author": "Nikhil K",
-        "rating": 5,
-        "text": "Spider-Man 2 and God of War Ragnarok look breathtaking in 4K 60fps.",
-        "date": "2024-11-14"
-      }
-    ]
-  },
-  {
-    "id": "playstation-5-slim-flipkart",
-    "product_id": "playstation-5-slim-flipkart",
-    "groupId": "playstation-5-slim",
-    "group_id": "playstation-5-slim",
-    "title": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD) (FLIPKART)",
-    "name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
-    "product_name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
-    "brand": "Sony",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 48990,
-    "originalPrice": 54990,
-    "original_price": 54990,
-    "discountPercent": 11,
-    "discount_percent": 11,
-    "rating": 4.8,
-    "reviewCount": 5400,
-    "review_count": 5400,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/sony-playstation-5-slim",
-    "product_url": "https://www.flipkart.com/sony-playstation-5-slim",
-    "seller": "RetailNet Gaming",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 96,
-    "best_overall_score": 76,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 11% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 11% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "specs": {
-      "storage": "1TB Ultra-High Speed NVMe SSD",
-      "resolution": "4K 120Hz Gaming, Ray Tracing, HDR",
-      "audio": "Tempest 3D AudioTech",
-      "controller": "DualSense Wireless Controller with Haptic Feedback"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 98,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Sony with 4.9★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 11% discount and verified platform fulfillment.",
+      "bestOverallScore": 83,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Siddharth B",
-        "rating": 5,
-        "text": "Much lighter and compact than original launch PS5.",
-        "date": "2024-10-25"
+    "platforms": {
+      "amazon": {
+        "price": 49990,
+        "originalPrice": 54990,
+        "discountPercent": 9,
+        "rating": 4.9,
+        "reviewCount": 8700,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Electronics Bazaar",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CY5Q2N1W",
+        "reviews": [
+          {
+            "author": "Nikhil K",
+            "rating": 5,
+            "text": "Spider-Man 2 and God of War Ragnarok look breathtaking in 4K 60fps.",
+            "date": "2024-11-14"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 48990,
+        "originalPrice": 54990,
+        "discountPercent": 11,
+        "rating": 4.8,
+        "reviewCount": 5400,
+        "deliveryEstimate": "2-4 days",
+        "seller": "RetailNet Gaming",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/sony-playstation-5-slim",
+        "reviews": [
+          {
+            "author": "Siddharth B",
+            "rating": 5,
+            "text": "Much lighter and compact than original launch PS5.",
+            "date": "2024-10-25"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 51990,
+        "originalPrice": 54990,
+        "discountPercent": 5,
+        "rating": 4.8,
+        "reviewCount": 450,
+        "deliveryEstimate": "3-5 days",
+        "seller": "Myntra Gaming Studio",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/gaming/sony-playstation-5-slim",
+        "reviews": [
+          {
+            "author": "Gaurav S",
+            "rating": 5,
+            "text": "Fast shipping with secure tamper-proof packaging.",
+            "date": "2024-11-20"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "playstation-5-slim-myntra",
-    "product_id": "playstation-5-slim-myntra",
-    "groupId": "playstation-5-slim",
-    "group_id": "playstation-5-slim",
-    "title": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD) (MYNTRA)",
-    "name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
-    "product_name": "Sony PlayStation 5 Console Slim (Disc Edition, 1TB SSD)",
-    "brand": "Sony",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 51990,
-    "originalPrice": 54990,
-    "original_price": 54990,
-    "discountPercent": 5,
-    "discount_percent": 5,
-    "rating": 4.8,
-    "reviewCount": 450,
-    "review_count": 450,
-    "deliveryEstimate": "3-5 days",
-    "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/gaming/sony-playstation-5-slim",
-    "product_url": "https://www.myntra.com/gaming/sony-playstation-5-slim",
-    "seller": "Myntra Gaming Studio",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 96,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 5% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 5% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Sony build quality and performance.",
-    "specs": {
-      "storage": "1TB Ultra-High Speed NVMe SSD",
-      "resolution": "4K 120Hz Gaming, Ray Tracing, HDR",
-      "audio": "Tempest 3D AudioTech",
-      "controller": "DualSense Wireless Controller with Haptic Feedback"
-    },
-    "reviews": [
-      {
-        "author": "Gaurav S",
-        "rating": 5,
-        "text": "Fast shipping with secure tamper-proof packaging.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "apple-watch-series-9-amazon",
-    "product_id": "apple-watch-series-9-amazon",
     "groupId": "apple-watch-series-9",
-    "group_id": "apple-watch-series-9",
-    "title": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band) (AMAZON)",
     "name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
-    "product_name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
-    "brand": "Apple",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 38999,
-    "originalPrice": 44900,
-    "original_price": 44900,
-    "discountPercent": 13,
-    "discount_percent": 13,
-    "rating": 4.7,
-    "reviewCount": 6120,
-    "review_count": 6120,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "electronics",
+    "brand": "Apple",
     "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CHWZ8H7H",
-    "product_url": "https://www.amazon.in/dp/B0CHWZ8H7H",
-    "seller": "Appario Retail",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 76,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 13% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 13% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "display": "Always-On Retina OLED (2000 nits)",
       "chip": "S9 SiP with Double Tap gesture",
       "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
       "battery": "18 hours all-day battery life (36h in Low Power Mode)"
     },
-    "reviews": [
-      {
-        "author": "Vishal M",
-        "rating": 5,
-        "text": "Double tap gesture to take calls is super convenient while cooking or driving.",
-        "date": "2024-11-09"
-      }
-    ]
-  },
-  {
-    "id": "apple-watch-series-9-flipkart",
-    "product_id": "apple-watch-series-9-flipkart",
-    "groupId": "apple-watch-series-9",
-    "group_id": "apple-watch-series-9",
-    "title": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band) (FLIPKART)",
-    "name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
-    "product_name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
-    "brand": "Apple",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 37990,
-    "originalPrice": 44900,
-    "original_price": 44900,
-    "discountPercent": 15,
-    "discount_percent": 15,
-    "rating": 4.6,
-    "reviewCount": 4200,
-    "review_count": 4200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/apple-watch-series-9",
-    "product_url": "https://www.flipkart.com/apple-watch-series-9",
-    "seller": "FSAssured Wearables",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 15% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "specs": {
-      "display": "Always-On Retina OLED (2000 nits)",
-      "chip": "S9 SiP with Double Tap gesture",
-      "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
-      "battery": "18 hours all-day battery life (36h in Low Power Mode)"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Apple with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 15% discount and verified platform fulfillment.",
+      "bestOverallScore": 81,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Kavita S",
-        "rating": 5,
-        "text": "Accurate fitness metrics and ECG capability give great peace of mind.",
-        "date": "2024-10-15"
+    "platforms": {
+      "amazon": {
+        "price": 38999,
+        "originalPrice": 44900,
+        "discountPercent": 13,
+        "rating": 4.7,
+        "reviewCount": 6120,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Appario Retail",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CHWZ8H7H",
+        "reviews": [
+          {
+            "author": "Vishal M",
+            "rating": 5,
+            "text": "Double tap gesture to take calls is super convenient while cooking or driving.",
+            "date": "2024-11-09"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 37990,
+        "originalPrice": 44900,
+        "discountPercent": 15,
+        "rating": 4.6,
+        "reviewCount": 4200,
+        "deliveryEstimate": "2-3 days",
+        "seller": "FSAssured Wearables",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/apple-watch-series-9",
+        "reviews": [
+          {
+            "author": "Kavita S",
+            "rating": 5,
+            "text": "Accurate fitness metrics and ECG capability give great peace of mind.",
+            "date": "2024-10-15"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 39900,
+        "originalPrice": 44900,
+        "discountPercent": 11,
+        "rating": 4.7,
+        "reviewCount": 980,
+        "deliveryEstimate": "2-4 days",
+        "seller": "Apple Official Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/smartwatches/apple-watch-s9",
+        "reviews": [
+          {
+            "author": "Varun P",
+            "rating": 4,
+            "text": "Battery lasts a day and a half easily on moderate use.",
+            "date": "2024-11-02"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "apple-watch-series-9-myntra",
-    "product_id": "apple-watch-series-9-myntra",
-    "groupId": "apple-watch-series-9",
-    "group_id": "apple-watch-series-9",
-    "title": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band) (MYNTRA)",
-    "name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
-    "product_name": "Apple Watch Series 9 GPS 45mm (Midnight Aluminum Case with Sport Band)",
-    "brand": "Apple",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 39900,
-    "originalPrice": 44900,
-    "original_price": 44900,
-    "discountPercent": 11,
-    "discount_percent": 11,
-    "rating": 4.7,
-    "reviewCount": 980,
-    "review_count": 980,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/smartwatches/apple-watch-s9",
-    "product_url": "https://www.myntra.com/smartwatches/apple-watch-s9",
-    "seller": "Apple Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 11% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 11% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Apple build quality and performance.",
-    "specs": {
-      "display": "Always-On Retina OLED (2000 nits)",
-      "chip": "S9 SiP with Double Tap gesture",
-      "health_sensors": "ECG, Blood Oxygen, Temperature sensing, Crash Detection",
-      "battery": "18 hours all-day battery life (36h in Low Power Mode)"
-    },
-    "reviews": [
-      {
-        "author": "Varun P",
-        "rating": 4,
-        "text": "Battery lasts a day and a half easily on moderate use.",
-        "date": "2024-11-02"
-      }
-    ]
-  },
-  {
-    "id": "marshall-kilburn-2-amazon",
-    "product_id": "marshall-kilburn-2-amazon",
     "groupId": "marshall-kilburn-2",
-    "group_id": "marshall-kilburn-2",
-    "title": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass) (AMAZON)",
     "name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "brand": "Marshall",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 24999,
-    "originalPrice": 31999,
-    "original_price": 31999,
-    "discountPercent": 22,
-    "discount_percent": 22,
-    "rating": 4.6,
-    "reviewCount": 3840,
-    "review_count": 3840,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "electronics",
+    "brand": "Marshall",
     "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B07H8VTFLT",
-    "product_url": "https://www.amazon.in/dp/B07H8VTFLT",
-    "seller": "Marshall Audio Direct",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated electronics pick with 22% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 22% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "battery_life": "20+ hours portable playtime",
       "connectivity": "Bluetooth 5.0 aptX",
       "water_resistance": "IPX2 water resistant design",
       "sound": "Multi-directional Blumlein Stereo sound"
     },
-    "reviews": [
-      {
-        "author": "Rishi T",
-        "rating": 5,
-        "text": "Vintage rock guitar amp design with thunderous bass and crystal highs.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "marshall-kilburn-2-flipkart",
-    "product_id": "marshall-kilburn-2-flipkart",
-    "groupId": "marshall-kilburn-2",
-    "group_id": "marshall-kilburn-2",
-    "title": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass) (FLIPKART)",
-    "name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "brand": "Marshall",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 23999,
-    "originalPrice": 31999,
-    "original_price": 31999,
-    "discountPercent": 25,
-    "discount_percent": 25,
-    "rating": 4.5,
-    "reviewCount": 2100,
-    "review_count": 2100,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/marshall-kilburn-2",
-    "product_url": "https://www.flipkart.com/marshall-kilburn-2",
-    "seller": "SoundKart SuperStore",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 25% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "specs": {
-      "battery_life": "20+ hours portable playtime",
-      "connectivity": "Bluetooth 5.0 aptX",
-      "water_resistance": "IPX2 water resistant design",
-      "sound": "Multi-directional Blumlein Stereo sound"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Marshall with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 25% discount and verified platform fulfillment.",
+      "bestOverallScore": 84,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Abhishek C",
-        "rating": 5,
-        "text": "Analogue knobs for bass and treble are tactile and satisfying.",
-        "date": "2024-10-18"
+    "platforms": {
+      "amazon": {
+        "price": 24999,
+        "originalPrice": 31999,
+        "discountPercent": 22,
+        "rating": 4.6,
+        "reviewCount": 3840,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Marshall Audio Direct",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B07H8VTFLT",
+        "reviews": [
+          {
+            "author": "Rishi T",
+            "rating": 5,
+            "text": "Vintage rock guitar amp design with thunderous bass and crystal highs.",
+            "date": "2024-11-20"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 23999,
+        "originalPrice": 31999,
+        "discountPercent": 25,
+        "rating": 4.5,
+        "reviewCount": 2100,
+        "deliveryEstimate": "3-4 days",
+        "seller": "SoundKart SuperStore",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/marshall-kilburn-2",
+        "reviews": [
+          {
+            "author": "Abhishek C",
+            "rating": 5,
+            "text": "Analogue knobs for bass and treble are tactile and satisfying.",
+            "date": "2024-10-18"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 26999,
+        "originalPrice": 31999,
+        "discountPercent": 16,
+        "rating": 4.6,
+        "reviewCount": 420,
+        "deliveryEstimate": "2-4 days",
+        "seller": "Myntra Audio Luxe",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/speakers/marshall-kilburn-2",
+        "reviews": [
+          {
+            "author": "Shruti D",
+            "rating": 5,
+            "text": "Stunning aesthetic on my living room bookshelf.",
+            "date": "2024-11-12"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "marshall-kilburn-2-myntra",
-    "product_id": "marshall-kilburn-2-myntra",
-    "groupId": "marshall-kilburn-2",
-    "group_id": "marshall-kilburn-2",
-    "title": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass) (MYNTRA)",
-    "name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "product_name": "Marshall Kilburn II Portable Bluetooth Speaker (Black and Brass)",
-    "brand": "Marshall",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 26999,
-    "originalPrice": 31999,
-    "original_price": 31999,
-    "discountPercent": 16,
-    "discount_percent": 16,
-    "rating": 4.6,
-    "reviewCount": 420,
-    "review_count": 420,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/speakers/marshall-kilburn-2",
-    "product_url": "https://www.myntra.com/speakers/marshall-kilburn-2",
-    "seller": "Myntra Audio Luxe",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 16% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 16% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Marshall build quality and performance.",
-    "specs": {
-      "battery_life": "20+ hours portable playtime",
-      "connectivity": "Bluetooth 5.0 aptX",
-      "water_resistance": "IPX2 water resistant design",
-      "sound": "Multi-directional Blumlein Stereo sound"
-    },
-    "reviews": [
-      {
-        "author": "Shruti D",
-        "rating": 5,
-        "text": "Stunning aesthetic on my living room bookshelf.",
-        "date": "2024-11-12"
-      }
-    ]
-  },
-  {
-    "id": "kindle-paperwhite-16gb-amazon",
-    "product_id": "kindle-paperwhite-16gb-amazon",
     "groupId": "kindle-paperwhite-16gb",
-    "group_id": "kindle-paperwhite-16gb",
-    "title": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light (AMAZON)",
     "name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
-    "product_name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
-    "brand": "Amazon",
     "category": "electronics",
-    "platform": "amazon",
-    "price": 13999,
-    "originalPrice": 14999,
-    "original_price": 14999,
-    "discountPercent": 7,
-    "discount_percent": 7,
-    "rating": 4.8,
-    "reviewCount": 18450,
-    "review_count": 18450,
-    "deliveryEstimate": "1 day",
-    "delivery_estimate": "1 day",
+    "subcategory": "electronics",
+    "brand": "Amazon",
     "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B08N41Y4Q2",
-    "product_url": "https://www.amazon.in/dp/B08N41Y4Q2",
-    "seller": "Amazon Device Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 96,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 7% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 7% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "display": "6.8-inch 300 ppi glare-free Paperwhite display",
       "battery_life": "Up to 10 weeks",
       "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
       "storage": "16 GB (holds thousands of books)"
     },
-    "reviews": [
-      {
-        "author": "Nandita S",
-        "rating": 5,
-        "text": "The warm light feature allows reading for hours at night without eye strain.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "kindle-paperwhite-16gb-flipkart",
-    "product_id": "kindle-paperwhite-16gb-flipkart",
-    "groupId": "kindle-paperwhite-16gb",
-    "group_id": "kindle-paperwhite-16gb",
-    "title": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light (FLIPKART)",
-    "name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
-    "product_name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
-    "brand": "Amazon",
-    "category": "electronics",
-    "platform": "flipkart",
-    "price": 14499,
-    "originalPrice": 14999,
-    "original_price": 14999,
-    "discountPercent": 3,
-    "discount_percent": 3,
-    "rating": 4.6,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/amazon-kindle-paperwhite",
-    "product_url": "https://www.flipkart.com/amazon-kindle-paperwhite",
-    "seller": "E-Reader Express",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 70,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 3% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 3% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
-    "specs": {
-      "display": "6.8-inch 300 ppi glare-free Paperwhite display",
-      "battery_life": "Up to 10 weeks",
-      "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
-      "storage": "16 GB (holds thousands of books)"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 96,
+      "sentimentPros": [
+        "Verified top rated performance in electronics",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended electronics choice by Amazon with 4.8★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in electronics with up to 7% discount and verified platform fulfillment.",
+      "bestOverallScore": 80,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Aman G",
-        "rating": 5,
-        "text": "Battery life is legendary. Haven't charged it in 3 weeks.",
-        "date": "2024-10-09"
+    "platforms": {
+      "amazon": {
+        "price": 13999,
+        "originalPrice": 14999,
+        "discountPercent": 7,
+        "rating": 4.8,
+        "reviewCount": 18450,
+        "deliveryEstimate": "1 day",
+        "seller": "Amazon Device Store",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B08N41Y4Q2",
+        "reviews": [
+          {
+            "author": "Nandita S",
+            "rating": 5,
+            "text": "The warm light feature allows reading for hours at night without eye strain.",
+            "date": "2024-11-22"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 14499,
+        "originalPrice": 14999,
+        "discountPercent": 3,
+        "rating": 4.6,
+        "reviewCount": 3200,
+        "deliveryEstimate": "3-4 days",
+        "seller": "E-Reader Express",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/amazon-kindle-paperwhite",
+        "reviews": [
+          {
+            "author": "Aman G",
+            "rating": 5,
+            "text": "Battery life is legendary. Haven't charged it in 3 weeks.",
+            "date": "2024-10-09"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 14999,
+        "originalPrice": 14999,
+        "discountPercent": 0,
+        "rating": 4.7,
+        "reviewCount": 380,
+        "deliveryEstimate": "3-5 days",
+        "seller": "Gadget Hub Myntra",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/gadgets/amazon-kindle-paperwhite",
+        "reviews": [
+          {
+            "author": "Prachi M",
+            "rating": 4,
+            "text": "Type C port makes charging super convenient.",
+            "date": "2024-11-01"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "kindle-paperwhite-16gb-myntra",
-    "product_id": "kindle-paperwhite-16gb-myntra",
-    "groupId": "kindle-paperwhite-16gb",
-    "group_id": "kindle-paperwhite-16gb",
-    "title": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light (MYNTRA)",
-    "name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
-    "product_name": "Amazon Kindle Paperwhite (16 GB) – 6.8-inch display with adjustable warm light",
-    "brand": "Amazon",
-    "category": "electronics",
-    "platform": "myntra",
-    "price": 14999,
-    "originalPrice": 14999,
-    "original_price": 14999,
-    "discountPercent": 0,
-    "discount_percent": 0,
-    "rating": 4.7,
-    "reviewCount": 380,
-    "review_count": 380,
-    "deliveryEstimate": "3-5 days",
-    "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/gadgets/amazon-kindle-paperwhite",
-    "product_url": "https://www.myntra.com/gadgets/amazon-kindle-paperwhite",
-    "seller": "Gadget Hub Myntra",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 71,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated electronics pick with 0% off and verified fast shipping.",
-    "why_buy": "Top rated electronics pick with 0% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Amazon build quality and performance.",
-    "specs": {
-      "display": "6.8-inch 300 ppi glare-free Paperwhite display",
-      "battery_life": "Up to 10 weeks",
-      "water_resistance": "IPX8 waterproof (2 meters fresh water for 60 mins)",
-      "storage": "16 GB (holds thousands of books)"
-    },
-    "reviews": [
-      {
-        "author": "Prachi M",
-        "rating": 4,
-        "text": "Type C port makes charging super convenient.",
-        "date": "2024-11-01"
-      }
-    ]
-  },
-  {
-    "id": "nike-air-max-270-amazon",
-    "product_id": "nike-air-max-270-amazon",
     "groupId": "nike-air-max-270",
-    "group_id": "nike-air-max-270",
-    "title": "Nike Air Max 270 Men's Running & Lifestyle Shoes (AMAZON)",
     "name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
-    "product_name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
-    "brand": "Nike",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 11495,
-    "originalPrice": 13995,
-    "original_price": 13995,
-    "discountPercent": 18,
-    "discount_percent": 18,
-    "rating": 4.5,
-    "reviewCount": 9450,
-    "review_count": 9450,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "Running & Lifestyle",
+    "brand": "Nike",
     "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B07C9L8ZXY",
-    "product_url": "https://www.amazon.in/dp/B07C9L8ZXY",
-    "seller": "Nike Authorized India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 75,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 18% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 18% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nike build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nike build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "type": "Running & Lifestyle",
       "cushioning": "Max Air 270 unit delivers all-day comfort",
       "upper_material": "Engineered breathable mesh",
       "closure": "Asymmetrical lacing for secure fit"
     },
-    "reviews": [
-      {
-        "author": "Rohit K",
-        "rating": 5,
-        "text": "Superb cushioning. Best looking lifestyle sneaker ever.",
-        "date": "2024-11-16"
-      }
-    ]
-  },
-  {
-    "id": "nike-air-max-270-flipkart",
-    "product_id": "nike-air-max-270-flipkart",
-    "groupId": "nike-air-max-270",
-    "group_id": "nike-air-max-270",
-    "title": "Nike Air Max 270 Men's Running & Lifestyle Shoes (FLIPKART)",
-    "name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
-    "product_name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
-    "brand": "Nike",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 11995,
-    "originalPrice": 13995,
-    "original_price": 13995,
-    "discountPercent": 14,
-    "discount_percent": 14,
-    "rating": 4.4,
-    "reviewCount": 6720,
-    "review_count": 6720,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/nike-air-max-270",
-    "product_url": "https://www.flipkart.com/nike-air-max-270",
-    "seller": "RetailNet Footwear",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 72,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 14% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 14% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nike build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nike build quality and performance.",
-    "specs": {
-      "type": "Running & Lifestyle",
-      "cushioning": "Max Air 270 unit delivers all-day comfort",
-      "upper_material": "Engineered breathable mesh",
-      "closure": "Asymmetrical lacing for secure fit"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Nike with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 21% discount and verified platform fulfillment.",
+      "bestOverallScore": 82,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Ajay S",
-        "rating": 4,
-        "text": "Slightly snug fit, recommend sizing half up.",
-        "date": "2024-10-24"
+    "platforms": {
+      "amazon": {
+        "price": 11495,
+        "originalPrice": 13995,
+        "discountPercent": 18,
+        "rating": 4.5,
+        "reviewCount": 9450,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Nike Authorized India",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B07C9L8ZXY",
+        "reviews": [
+          {
+            "author": "Rohit K",
+            "rating": 5,
+            "text": "Superb cushioning. Best looking lifestyle sneaker ever.",
+            "date": "2024-11-16"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 11995,
+        "originalPrice": 13995,
+        "discountPercent": 14,
+        "rating": 4.4,
+        "reviewCount": 6720,
+        "deliveryEstimate": "3-4 days",
+        "seller": "RetailNet Footwear",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/nike-air-max-270",
+        "reviews": [
+          {
+            "author": "Ajay S",
+            "rating": 4,
+            "text": "Slightly snug fit, recommend sizing half up.",
+            "date": "2024-10-24"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 10995,
+        "originalPrice": 13995,
+        "discountPercent": 21,
+        "rating": 4.6,
+        "reviewCount": 4890,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Nike Flagship Store (Myntra)",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/casual-shoes/nike-air-max-270",
+        "reviews": [
+          {
+            "author": "Vikas M",
+            "rating": 5,
+            "text": "Best deal on Myntra with bank offer discount.",
+            "date": "2024-11-28"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "nike-air-max-270-myntra",
-    "product_id": "nike-air-max-270-myntra",
-    "groupId": "nike-air-max-270",
-    "group_id": "nike-air-max-270",
-    "title": "Nike Air Max 270 Men's Running & Lifestyle Shoes (MYNTRA)",
-    "name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
-    "product_name": "Nike Air Max 270 Men's Running & Lifestyle Shoes",
-    "brand": "Nike",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 10995,
-    "originalPrice": 13995,
-    "original_price": 13995,
-    "discountPercent": 21,
-    "discount_percent": 21,
-    "rating": 4.6,
-    "reviewCount": 4890,
-    "review_count": 4890,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/nike-air-max-270",
-    "product_url": "https://www.myntra.com/casual-shoes/nike-air-max-270",
-    "seller": "Nike Flagship Store (Myntra)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 21% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 21% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nike build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nike build quality and performance.",
-    "specs": {
-      "type": "Running & Lifestyle",
-      "cushioning": "Max Air 270 unit delivers all-day comfort",
-      "upper_material": "Engineered breathable mesh",
-      "closure": "Asymmetrical lacing for secure fit"
-    },
-    "reviews": [
-      {
-        "author": "Vikas M",
-        "rating": 5,
-        "text": "Best deal on Myntra with bank offer discount.",
-        "date": "2024-11-28"
-      }
-    ]
-  },
-  {
-    "id": "adidas-ultraboost-light-amazon",
-    "product_id": "adidas-ultraboost-light-amazon",
     "groupId": "adidas-ultraboost-light",
-    "group_id": "adidas-ultraboost-light",
-    "title": "Adidas Ultraboost Light Men's Road Running Shoes (AMAZON)",
     "name": "Adidas Ultraboost Light Men's Road Running Shoes",
-    "product_name": "Adidas Ultraboost Light Men's Road Running Shoes",
-    "brand": "Adidas",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 12999,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 32,
-    "discount_percent": 32,
-    "rating": 4.6,
-    "reviewCount": 4210,
-    "review_count": 4210,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "footwear",
+    "brand": "Adidas",
     "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0BSLH9KV9",
-    "product_url": "https://www.amazon.in/dp/B0BSLH9KV9",
-    "seller": "Adidas India Direct",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 82,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 32% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 32% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
       "upper": "PRIMEKNIT+ textile upper with sock-like fit",
       "outsole": "Continental Better Rubber outsole",
       "drop": "10mm (heel: 30mm / forefoot: 20mm)"
     },
-    "reviews": [
-      {
-        "author": "Karthik R",
-        "rating": 5,
-        "text": "Light BOOST foam gives explosive energy return for 10k marathon runs.",
-        "date": "2024-11-19"
-      }
-    ]
-  },
-  {
-    "id": "adidas-ultraboost-light-flipkart",
-    "product_id": "adidas-ultraboost-light-flipkart",
-    "groupId": "adidas-ultraboost-light",
-    "group_id": "adidas-ultraboost-light",
-    "title": "Adidas Ultraboost Light Men's Road Running Shoes (FLIPKART)",
-    "name": "Adidas Ultraboost Light Men's Road Running Shoes",
-    "product_name": "Adidas Ultraboost Light Men's Road Running Shoes",
-    "brand": "Adidas",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 13499,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.5,
-    "reviewCount": 2890,
-    "review_count": 2890,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/adidas-ultraboost-light",
-    "product_url": "https://www.flipkart.com/adidas-ultraboost-light",
-    "seller": "FSAssured Sports",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 79,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
-    "specs": {
-      "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
-      "upper": "PRIMEKNIT+ textile upper with sock-like fit",
-      "outsole": "Continental Better Rubber outsole",
-      "drop": "10mm (heel: 30mm / forefoot: 20mm)"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Adidas with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 34% discount and verified platform fulfillment.",
+      "bestOverallScore": 89,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Suresh P",
-        "rating": 5,
-        "text": "Continental grip on wet asphalt is rock solid.",
-        "date": "2024-10-12"
+    "platforms": {
+      "amazon": {
+        "price": 12999,
+        "originalPrice": 18999,
+        "discountPercent": 32,
+        "rating": 4.6,
+        "reviewCount": 4210,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Adidas India Direct",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0BSLH9KV9",
+        "reviews": [
+          {
+            "author": "Karthik R",
+            "rating": 5,
+            "text": "Light BOOST foam gives explosive energy return for 10k marathon runs.",
+            "date": "2024-11-19"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 13499,
+        "originalPrice": 18999,
+        "discountPercent": 29,
+        "rating": 4.5,
+        "reviewCount": 2890,
+        "deliveryEstimate": "3-4 days",
+        "seller": "FSAssured Sports",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/adidas-ultraboost-light",
+        "reviews": [
+          {
+            "author": "Suresh P",
+            "rating": 5,
+            "text": "Continental grip on wet asphalt is rock solid.",
+            "date": "2024-10-12"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 12499,
+        "originalPrice": 18999,
+        "discountPercent": 34,
+        "rating": 4.7,
+        "reviewCount": 3120,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Adidas Official Partner",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/sports-shoes/adidas-ultraboost-light",
+        "reviews": [
+          {
+            "author": "Dheeraj S",
+            "rating": 5,
+            "text": "Unmatched step-in comfort. Feels like walking on clouds.",
+            "date": "2024-11-22"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "adidas-ultraboost-light-myntra",
-    "product_id": "adidas-ultraboost-light-myntra",
-    "groupId": "adidas-ultraboost-light",
-    "group_id": "adidas-ultraboost-light",
-    "title": "Adidas Ultraboost Light Men's Road Running Shoes (MYNTRA)",
-    "name": "Adidas Ultraboost Light Men's Road Running Shoes",
-    "product_name": "Adidas Ultraboost Light Men's Road Running Shoes",
-    "brand": "Adidas",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 12499,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.7,
-    "reviewCount": 3120,
-    "review_count": 3120,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/sports-shoes/adidas-ultraboost-light",
-    "product_url": "https://www.myntra.com/sports-shoes/adidas-ultraboost-light",
-    "seller": "Adidas Official Partner",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 84,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Adidas build quality and performance.",
-    "specs": {
-      "midsole": "Light BOOST cushioning (30% lighter than previous BOOST)",
-      "upper": "PRIMEKNIT+ textile upper with sock-like fit",
-      "outsole": "Continental Better Rubber outsole",
-      "drop": "10mm (heel: 30mm / forefoot: 20mm)"
-    },
-    "reviews": [
-      {
-        "author": "Dheeraj S",
-        "rating": 5,
-        "text": "Unmatched step-in comfort. Feels like walking on clouds.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "asics-gel-kayano-30-amazon",
-    "product_id": "asics-gel-kayano-30-amazon",
     "groupId": "asics-gel-kayano-30",
-    "group_id": "asics-gel-kayano-30",
-    "title": "ASICS Gel-Kayano 30 Stability Road Running Shoes (AMAZON)",
     "name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "brand": "ASICS",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 11999,
-    "originalPrice": 15999,
-    "original_price": 15999,
-    "discountPercent": 25,
-    "discount_percent": 25,
-    "rating": 4.7,
-    "reviewCount": 3150,
-    "review_count": 3150,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "footwear",
+    "brand": "ASICS",
     "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0C77G9KL8",
-    "product_url": "https://www.amazon.in/dp/B0C77G9KL8",
-    "seller": "ASICS India Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 81,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 25% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 25% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
       "stability": "4D GUIDANCE SYSTEM for adaptive stability",
       "heel_drop": "10mm",
       "surface": "Road / Track"
     },
-    "reviews": [
-      {
-        "author": "Ramanathan G",
-        "rating": 5,
-        "text": "The 4D guidance system completely fixed my overpronation issues.",
-        "date": "2024-11-15"
-      }
-    ]
-  },
-  {
-    "id": "asics-gel-kayano-30-flipkart",
-    "product_id": "asics-gel-kayano-30-flipkart",
-    "groupId": "asics-gel-kayano-30",
-    "group_id": "asics-gel-kayano-30",
-    "title": "ASICS Gel-Kayano 30 Stability Road Running Shoes (FLIPKART)",
-    "name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "brand": "ASICS",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 12499,
-    "originalPrice": 15999,
-    "original_price": 15999,
-    "discountPercent": 22,
-    "discount_percent": 22,
-    "rating": 4.6,
-    "reviewCount": 1820,
-    "review_count": 1820,
-    "deliveryEstimate": "3-5 days",
-    "delivery_estimate": "3-5 days",
-    "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/asics-gel-kayano-30",
-    "product_url": "https://www.flipkart.com/asics-gel-kayano-30",
-    "seller": "Marathon Gear Hub",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 22% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 22% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "specs": {
-      "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
-      "stability": "4D GUIDANCE SYSTEM for adaptive stability",
-      "heel_drop": "10mm",
-      "surface": "Road / Track"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by ASICS with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 27% discount and verified platform fulfillment.",
+      "bestOverallScore": 86,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Anil K",
-        "rating": 4,
-        "text": "Plush tongue and ankle collar. Perfect for long half-marathons.",
-        "date": "2024-10-31"
+    "platforms": {
+      "amazon": {
+        "price": 11999,
+        "originalPrice": 15999,
+        "discountPercent": 25,
+        "rating": 4.7,
+        "reviewCount": 3150,
+        "deliveryEstimate": "2-3 days",
+        "seller": "ASICS India Official",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0C77G9KL8",
+        "reviews": [
+          {
+            "author": "Ramanathan G",
+            "rating": 5,
+            "text": "The 4D guidance system completely fixed my overpronation issues.",
+            "date": "2024-11-15"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 12499,
+        "originalPrice": 15999,
+        "discountPercent": 22,
+        "rating": 4.6,
+        "reviewCount": 1820,
+        "deliveryEstimate": "3-5 days",
+        "seller": "Marathon Gear Hub",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/asics-gel-kayano-30",
+        "reviews": [
+          {
+            "author": "Anil K",
+            "rating": 4,
+            "text": "Plush tongue and ankle collar. Perfect for long half-marathons.",
+            "date": "2024-10-31"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 11699,
+        "originalPrice": 15999,
+        "discountPercent": 27,
+        "rating": 4.7,
+        "reviewCount": 940,
+        "deliveryEstimate": "2-3 days",
+        "seller": "ASICS Running Studio",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/sports-shoes/asics-gel-kayano-30",
+        "reviews": [
+          {
+            "author": "Harsh V",
+            "rating": 5,
+            "text": "Very smooth heel-to-toe transition. Highly recommended.",
+            "date": "2024-11-26"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "asics-gel-kayano-30-myntra",
-    "product_id": "asics-gel-kayano-30-myntra",
-    "groupId": "asics-gel-kayano-30",
-    "group_id": "asics-gel-kayano-30",
-    "title": "ASICS Gel-Kayano 30 Stability Road Running Shoes (MYNTRA)",
-    "name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "product_name": "ASICS Gel-Kayano 30 Stability Road Running Shoes",
-    "brand": "ASICS",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 11699,
-    "originalPrice": 15999,
-    "original_price": 15999,
-    "discountPercent": 27,
-    "discount_percent": 27,
-    "rating": 4.7,
-    "reviewCount": 940,
-    "review_count": 940,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/sports-shoes/asics-gel-kayano-30",
-    "product_url": "https://www.myntra.com/sports-shoes/asics-gel-kayano-30",
-    "seller": "ASICS Running Studio",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 27% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 27% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for ASICS build quality and performance.",
-    "specs": {
-      "cushioning": "FF BLAST PLUS ECO and PureGEL technology",
-      "stability": "4D GUIDANCE SYSTEM for adaptive stability",
-      "heel_drop": "10mm",
-      "surface": "Road / Track"
-    },
-    "reviews": [
-      {
-        "author": "Harsh V",
-        "rating": 5,
-        "text": "Very smooth heel-to-toe transition. Highly recommended.",
-        "date": "2024-11-26"
-      }
-    ]
-  },
-  {
-    "id": "new-balance-574-core-amazon",
-    "product_id": "new-balance-574-core-amazon",
     "groupId": "new-balance-574-core",
-    "group_id": "new-balance-574-core",
-    "title": "New Balance 574 Core Men's Classic Suede Sneakers (AMAZON)",
     "name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "brand": "New Balance",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 6499,
-    "originalPrice": 8999,
-    "original_price": 8999,
-    "discountPercent": 28,
-    "discount_percent": 28,
-    "rating": 4.4,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "footwear",
+    "brand": "New Balance",
     "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B00K5O2L9P",
-    "product_url": "https://www.amazon.in/dp/B00K5O2L9P",
-    "seller": "New Balance Authorized",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 77,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 28% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 28% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
       "upper": "Suede and mesh upper",
       "outsole": "Durable rubber outsole with classic lug pattern"
     },
-    "reviews": [
-      {
-        "author": "Naveen C",
-        "rating": 5,
-        "text": "Timeless grey suede sneaker. Goes with both jeans and shorts.",
-        "date": "2024-11-03"
-      }
-    ]
-  },
-  {
-    "id": "new-balance-574-core-flipkart",
-    "product_id": "new-balance-574-core-flipkart",
-    "groupId": "new-balance-574-core",
-    "group_id": "new-balance-574-core",
-    "title": "New Balance 574 Core Men's Classic Suede Sneakers (FLIPKART)",
-    "name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "brand": "New Balance",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 6799,
-    "originalPrice": 8999,
-    "original_price": 8999,
-    "discountPercent": 24,
-    "discount_percent": 24,
-    "rating": 4.3,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/new-balance-574",
-    "product_url": "https://www.flipkart.com/new-balance-574",
-    "seller": "FSAssured Lifestyle",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 24% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 24% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "specs": {
-      "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
-      "upper": "Suede and mesh upper",
-      "outsole": "Durable rubber outsole with classic lug pattern"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by New Balance with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 33% discount and verified platform fulfillment.",
+      "bestOverallScore": 85,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Girish M",
-        "rating": 4,
-        "text": "Great wide toe box, very supportive for daily walking.",
-        "date": "2024-10-17"
+    "platforms": {
+      "amazon": {
+        "price": 6499,
+        "originalPrice": 8999,
+        "discountPercent": 28,
+        "rating": 4.4,
+        "reviewCount": 5120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "New Balance Authorized",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B00K5O2L9P",
+        "reviews": [
+          {
+            "author": "Naveen C",
+            "rating": 5,
+            "text": "Timeless grey suede sneaker. Goes with both jeans and shorts.",
+            "date": "2024-11-03"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 6799,
+        "originalPrice": 8999,
+        "discountPercent": 24,
+        "rating": 4.3,
+        "reviewCount": 3200,
+        "deliveryEstimate": "3-4 days",
+        "seller": "FSAssured Lifestyle",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/new-balance-574",
+        "reviews": [
+          {
+            "author": "Girish M",
+            "rating": 4,
+            "text": "Great wide toe box, very supportive for daily walking.",
+            "date": "2024-10-17"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 5999,
+        "originalPrice": 8999,
+        "discountPercent": 33,
+        "rating": 4.5,
+        "reviewCount": 2450,
+        "deliveryEstimate": "1-2 days",
+        "seller": "New Balance Flagship",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/casual-shoes/new-balance-574",
+        "reviews": [
+          {
+            "author": "Soham D",
+            "rating": 5,
+            "text": "Best price on Myntra for genuine 574 Core.",
+            "date": "2024-11-14"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "new-balance-574-core-myntra",
-    "product_id": "new-balance-574-core-myntra",
-    "groupId": "new-balance-574-core",
-    "group_id": "new-balance-574-core",
-    "title": "New Balance 574 Core Men's Classic Suede Sneakers (MYNTRA)",
-    "name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "product_name": "New Balance 574 Core Men's Classic Suede Sneakers",
-    "brand": "New Balance",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 5999,
-    "originalPrice": 8999,
-    "original_price": 8999,
-    "discountPercent": 33,
-    "discount_percent": 33,
-    "rating": 4.5,
-    "reviewCount": 2450,
-    "review_count": 2450,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/new-balance-574",
-    "product_url": "https://www.myntra.com/casual-shoes/new-balance-574",
-    "seller": "New Balance Flagship",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 33% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 33% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for New Balance build quality and performance.",
-    "specs": {
-      "midsole": "ENCAP midsole cushioning combines lightweight foam with durable polyurethane rim",
-      "upper": "Suede and mesh upper",
-      "outsole": "Durable rubber outsole with classic lug pattern"
-    },
-    "reviews": [
-      {
-        "author": "Soham D",
-        "rating": 5,
-        "text": "Best price on Myntra for genuine 574 Core.",
-        "date": "2024-11-14"
-      }
-    ]
-  },
-  {
-    "id": "crocs-classic-clogs-amazon",
-    "product_id": "crocs-classic-clogs-amazon",
     "groupId": "crocs-classic-clogs",
-    "group_id": "crocs-classic-clogs",
-    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (AMAZON)",
     "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "brand": "Crocs",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 2495,
-    "originalPrice": 3495,
-    "original_price": 3495,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.4,
-    "reviewCount": 38900,
-    "review_count": 38900,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0014C5W7Q",
-    "product_url": "https://www.amazon.in/dp/B0014C5W7Q",
-    "seller": "Crocs India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
+    "subcategory": "footwear",
+    "brand": "Crocs",
+    "imageUrl": "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "material": "100% Croslite lightweight proprietary foam",
       "ventilation": "Ventilation ports add breathability and help shed water",
       "strap": "Pivoting heel straps for a more secure fit"
     },
-    "reviews": [
-      {
-        "author": "Deepa N",
-        "rating": 5,
-        "text": "Extremely comfortable for household chores and monsoon walks.",
-        "date": "2024-11-11"
-      }
-    ]
-  },
-  {
-    "id": "crocs-classic-clogs-flipkart",
-    "product_id": "crocs-classic-clogs-flipkart",
-    "groupId": "crocs-classic-clogs",
-    "group_id": "crocs-classic-clogs",
-    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (FLIPKART)",
-    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "brand": "Crocs",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 2295,
-    "originalPrice": 3495,
-    "original_price": 3495,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.3,
-    "reviewCount": 24100,
-    "review_count": 24100,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/crocs-classic-clog",
-    "product_url": "https://www.flipkart.com/crocs-classic-clog",
-    "seller": "RetailNet Footwear",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "specs": {
-      "material": "100% Croslite lightweight proprietary foam",
-      "ventilation": "Ventilation ports add breathability and help shed water",
-      "strap": "Pivoting heel straps for a more secure fit"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 88,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Crocs with 4.4★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 34% discount and verified platform fulfillment.",
+      "bestOverallScore": 84,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Manish B",
-        "rating": 4,
-        "text": "Easy to clean with just water and mild soap.",
-        "date": "2024-10-20"
+    "platforms": {
+      "amazon": {
+        "price": 2495,
+        "originalPrice": 3495,
+        "discountPercent": 29,
+        "rating": 4.4,
+        "reviewCount": 38900,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Crocs India",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0014C5W7Q",
+        "reviews": [
+          {
+            "author": "Deepa N",
+            "rating": 5,
+            "text": "Extremely comfortable for household chores and monsoon walks.",
+            "date": "2024-11-11"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 2295,
+        "originalPrice": 3495,
+        "discountPercent": 34,
+        "rating": 4.3,
+        "reviewCount": 24100,
+        "deliveryEstimate": "2-3 days",
+        "seller": "RetailNet Footwear",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/crocs-classic-clog",
+        "reviews": [
+          {
+            "author": "Manish B",
+            "rating": 4,
+            "text": "Easy to clean with just water and mild soap.",
+            "date": "2024-10-20"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 2395,
+        "originalPrice": 3495,
+        "discountPercent": 31,
+        "rating": 4.4,
+        "reviewCount": 14200,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Crocs Brand Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
+        "reviews": [
+          {
+            "author": "Pradeep G",
+            "rating": 5,
+            "text": "100% original Crocs with genuine tags.",
+            "date": "2024-11-27"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "crocs-classic-clogs-myntra",
-    "product_id": "crocs-classic-clogs-myntra",
-    "groupId": "crocs-classic-clogs",
-    "group_id": "crocs-classic-clogs",
-    "title": "Crocs Unisex-Adult Classic Slip-On Water Clogs (MYNTRA)",
-    "name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "product_name": "Crocs Unisex-Adult Classic Slip-On Water Clogs",
-    "brand": "Crocs",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 2395,
-    "originalPrice": 3495,
-    "original_price": 3495,
-    "discountPercent": 31,
-    "discount_percent": 31,
-    "rating": 4.4,
-    "reviewCount": 14200,
-    "review_count": 14200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
-    "product_url": "https://www.myntra.com/casual-shoes/crocs-classic-clog",
-    "seller": "Crocs Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 31% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 31% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Crocs build quality and performance.",
-    "specs": {
-      "material": "100% Croslite lightweight proprietary foam",
-      "ventilation": "Ventilation ports add breathability and help shed water",
-      "strap": "Pivoting heel straps for a more secure fit"
-    },
-    "reviews": [
-      {
-        "author": "Pradeep G",
-        "rating": 5,
-        "text": "100% original Crocs with genuine tags.",
-        "date": "2024-11-27"
-      }
-    ]
-  },
-  {
-    "id": "woodland-brown-boots-amazon",
-    "product_id": "woodland-brown-boots-amazon",
     "groupId": "woodland-brown-boots",
-    "group_id": "woodland-brown-boots",
-    "title": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots (AMAZON)",
     "name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
-    "product_name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
-    "brand": "Woodland",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 3499,
-    "originalPrice": 5495,
-    "original_price": 5495,
-    "discountPercent": 36,
-    "discount_percent": 36,
-    "rating": 4.2,
-    "reviewCount": 14320,
-    "review_count": 14320,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "footwear",
+    "brand": "Woodland",
     "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B00K52079M",
-    "product_url": "https://www.amazon.in/dp/B00K52079M",
-    "seller": "Aero Club (Woodland)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 77,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 36% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 36% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Woodland build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Woodland build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "upper_material": "Genuine Nubuck / Suede Leather",
       "sole": "Heavy-duty grooved rubber lug sole",
       "closure": "Rust-proof metallic eyelet lace-up",
       "terrain": "All-terrain / Off-road trekking"
     },
-    "reviews": [
-      {
-        "author": "Vikram S",
-        "rating": 5,
-        "text": "Tough as a tank. Have used it on 3 Himalayan treks without a scratch.",
-        "date": "2024-11-08"
-      }
-    ]
-  },
-  {
-    "id": "woodland-brown-boots-flipkart",
-    "product_id": "woodland-brown-boots-flipkart",
-    "groupId": "woodland-brown-boots",
-    "group_id": "woodland-brown-boots",
-    "title": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots (FLIPKART)",
-    "name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
-    "product_name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
-    "brand": "Woodland",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 3799,
-    "originalPrice": 5495,
-    "original_price": 5495,
-    "discountPercent": 31,
-    "discount_percent": 31,
-    "rating": 4.1,
-    "reviewCount": 9820,
-    "review_count": 9820,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/woodland-boots",
-    "product_url": "https://www.flipkart.com/woodland-boots",
-    "seller": "SuperComNet Footwear",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 31% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 31% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Woodland build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Woodland build quality and performance.",
-    "specs": {
-      "upper_material": "Genuine Nubuck / Suede Leather",
-      "sole": "Heavy-duty grooved rubber lug sole",
-      "closure": "Rust-proof metallic eyelet lace-up",
-      "terrain": "All-terrain / Off-road trekking"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 86,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Woodland with 4.3★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 36% discount and verified platform fulfillment.",
+      "bestOverallScore": 83,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Ankur J",
-        "rating": 4,
-        "text": "High ankle support prevents twisting on rocks.",
-        "date": "2024-10-15"
+    "platforms": {
+      "amazon": {
+        "price": 3499,
+        "originalPrice": 5495,
+        "discountPercent": 36,
+        "rating": 4.2,
+        "reviewCount": 14320,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Aero Club (Woodland)",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B00K52079M",
+        "reviews": [
+          {
+            "author": "Vikram S",
+            "rating": 5,
+            "text": "Tough as a tank. Have used it on 3 Himalayan treks without a scratch.",
+            "date": "2024-11-08"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 3799,
+        "originalPrice": 5495,
+        "discountPercent": 31,
+        "rating": 4.1,
+        "reviewCount": 9820,
+        "deliveryEstimate": "3-4 days",
+        "seller": "SuperComNet Footwear",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/woodland-boots",
+        "reviews": [
+          {
+            "author": "Ankur J",
+            "rating": 4,
+            "text": "High ankle support prevents twisting on rocks.",
+            "date": "2024-10-15"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 3649,
+        "originalPrice": 5495,
+        "discountPercent": 34,
+        "rating": 4.3,
+        "reviewCount": 5120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Woodland Official",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/boots/woodland-leather-boots",
+        "reviews": [
+          {
+            "author": "Devashish T",
+            "rating": 5,
+            "text": "Premium nubuck leather finish looks very stylish.",
+            "date": "2024-11-20"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "woodland-brown-boots-myntra",
-    "product_id": "woodland-brown-boots-myntra",
-    "groupId": "woodland-brown-boots",
-    "group_id": "woodland-brown-boots",
-    "title": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots (MYNTRA)",
-    "name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
-    "product_name": "Woodland Men's Camel Brown Leather Outdoor Trekking Boots",
-    "brand": "Woodland",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 3649,
-    "originalPrice": 5495,
-    "original_price": 5495,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.3,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/boots/woodland-leather-boots",
-    "product_url": "https://www.myntra.com/boots/woodland-leather-boots",
-    "seller": "Woodland Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Woodland build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Woodland build quality and performance.",
-    "specs": {
-      "upper_material": "Genuine Nubuck / Suede Leather",
-      "sole": "Heavy-duty grooved rubber lug sole",
-      "closure": "Rust-proof metallic eyelet lace-up",
-      "terrain": "All-terrain / Off-road trekking"
-    },
-    "reviews": [
-      {
-        "author": "Devashish T",
-        "rating": 5,
-        "text": "Premium nubuck leather finish looks very stylish.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "puma-softride-pro-amazon",
-    "product_id": "puma-softride-pro-amazon",
     "groupId": "puma-softride-pro",
-    "group_id": "puma-softride-pro",
-    "title": "Puma Softride Pro Men's Cushioned Running Shoes (AMAZON)",
     "name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "brand": "Puma",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 3499,
-    "originalPrice": 5999,
-    "original_price": 5999,
-    "discountPercent": 42,
-    "discount_percent": 42,
-    "rating": 4.1,
-    "reviewCount": 8200,
-    "review_count": 8200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "footwear",
+    "brand": "Puma",
     "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09WJ98X7N",
-    "product_url": "https://www.amazon.in/dp/B09WJ98X7N",
-    "seller": "Puma Sports India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Puma build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
       "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
       "upper": "Breathable knit upper with zoned rubber traction"
     },
-    "reviews": [
-      {
-        "author": "Rakesh D",
-        "rating": 4,
-        "text": "Memory foam insole is very soft. Great for gym and daily jogs.",
-        "date": "2024-11-05"
-      }
-    ]
-  },
-  {
-    "id": "puma-softride-pro-flipkart",
-    "product_id": "puma-softride-pro-flipkart",
-    "groupId": "puma-softride-pro",
-    "group_id": "puma-softride-pro",
-    "title": "Puma Softride Pro Men's Cushioned Running Shoes (FLIPKART)",
-    "name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "brand": "Puma",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 3699,
-    "originalPrice": 5999,
-    "original_price": 5999,
-    "discountPercent": 38,
-    "discount_percent": 38,
-    "rating": 4,
-    "reviewCount": 5400,
-    "review_count": 5400,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/puma-softride-pro",
-    "product_url": "https://www.flipkart.com/puma-softride-pro",
-    "seller": "RetailNet Puma",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 81,
-    "best_overall_score": 75,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 38% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 38% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "specs": {
-      "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
-      "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
-      "upper": "Breathable knit upper with zoned rubber traction"
+    "aiData": {
+      "sentiment": "yellow",
+      "sentimentScore": 82,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Puma with 4.1★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 42% discount and verified platform fulfillment.",
+      "bestOverallScore": 82,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Kishan M",
+    "platforms": {
+      "amazon": {
+        "price": 3499,
+        "originalPrice": 5999,
+        "discountPercent": 42,
+        "rating": 4.1,
+        "reviewCount": 8200,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Puma Sports India",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09WJ98X7N",
+        "reviews": [
+          {
+            "author": "Rakesh D",
+            "rating": 4,
+            "text": "Memory foam insole is very soft. Great for gym and daily jogs.",
+            "date": "2024-11-05"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 3699,
+        "originalPrice": 5999,
+        "discountPercent": 38,
         "rating": 4,
-        "text": "Lightweight and flexible sole.",
-        "date": "2024-10-18"
+        "reviewCount": 5400,
+        "deliveryEstimate": "3-4 days",
+        "seller": "RetailNet Puma",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/puma-softride-pro",
+        "reviews": [
+          {
+            "author": "Kishan M",
+            "rating": 4,
+            "text": "Lightweight and flexible sole.",
+            "date": "2024-10-18"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 3599,
+        "originalPrice": 5999,
+        "discountPercent": 40,
+        "rating": 4.1,
+        "reviewCount": 3900,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Puma Official Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/sports-shoes/puma-softride-pro",
+        "reviews": [
+          {
+            "author": "Sameer A",
+            "rating": 4,
+            "text": "True to size and very comfortable for standing long hours.",
+            "date": "2024-11-22"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "puma-softride-pro-myntra",
-    "product_id": "puma-softride-pro-myntra",
-    "groupId": "puma-softride-pro",
-    "group_id": "puma-softride-pro",
-    "title": "Puma Softride Pro Men's Cushioned Running Shoes (MYNTRA)",
-    "name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "product_name": "Puma Softride Pro Men's Cushioned Running Shoes",
-    "brand": "Puma",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 3599,
-    "originalPrice": 5999,
-    "original_price": 5999,
-    "discountPercent": 40,
-    "discount_percent": 40,
-    "rating": 4.1,
-    "reviewCount": 3900,
-    "review_count": 3900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/sports-shoes/puma-softride-pro",
-    "product_url": "https://www.myntra.com/sports-shoes/puma-softride-pro",
-    "seller": "Puma Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Puma build quality and performance.",
-    "specs": {
-      "midsole": "SOFTRIDE foam technology for extreme cushioning and all-day comfort",
-      "sockliner": "SOFTFOAM+ step-in comfort sockliner with extra thick heel",
-      "upper": "Breathable knit upper with zoned rubber traction"
-    },
-    "reviews": [
-      {
-        "author": "Sameer A",
-        "rating": 4,
-        "text": "True to size and very comfortable for standing long hours.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "red-tape-casual-sneaker-amazon",
-    "product_id": "red-tape-casual-sneaker-amazon",
     "groupId": "red-tape-casual-sneaker",
-    "group_id": "red-tape-casual-sneaker",
-    "title": "Red Tape Men's Classic White Low-Top Casual Sneakers (AMAZON)",
     "name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "brand": "Red Tape",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 1399,
-    "originalPrice": 5399,
-    "original_price": 5399,
-    "discountPercent": 74,
-    "discount_percent": 74,
-    "rating": 4.1,
-    "reviewCount": 18450,
-    "review_count": 18450,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "footwear",
+    "brand": "Red Tape",
     "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B08K5Q89LM",
-    "product_url": "https://www.amazon.in/dp/B08K5Q89LM",
-    "seller": "Red Tape India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 91,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 74% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 74% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "upper": "Premium PU leather upper with perforated toe box",
       "sole": "EVA sole for lightweight cushioning and grip",
       "closure": "Lace-Up"
     },
-    "reviews": [
-      {
-        "author": "Prashant R",
-        "rating": 5,
-        "text": "Insane value for ₹1399. Looks exactly like premium Stan Smiths.",
-        "date": "2024-11-19"
-      }
-    ]
-  },
-  {
-    "id": "red-tape-casual-sneaker-flipkart",
-    "product_id": "red-tape-casual-sneaker-flipkart",
-    "groupId": "red-tape-casual-sneaker",
-    "group_id": "red-tape-casual-sneaker",
-    "title": "Red Tape Men's Classic White Low-Top Casual Sneakers (FLIPKART)",
-    "name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "brand": "Red Tape",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 1299,
-    "originalPrice": 5399,
-    "original_price": 5399,
-    "discountPercent": 76,
-    "discount_percent": 76,
-    "rating": 4,
-    "reviewCount": 24120,
-    "review_count": 24120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/red-tape-white-sneaker",
-    "product_url": "https://www.flipkart.com/red-tape-white-sneaker",
-    "seller": "RetailNet Footwear",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 81,
-    "best_overall_score": 90,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 76% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 76% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "specs": {
-      "upper": "Premium PU leather upper with perforated toe box",
-      "sole": "EVA sole for lightweight cushioning and grip",
-      "closure": "Lace-Up"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 84,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Red Tape with 4.2★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 76% discount and verified platform fulfillment.",
+      "bestOverallScore": 98,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Karthik D",
+    "platforms": {
+      "amazon": {
+        "price": 1399,
+        "originalPrice": 5399,
+        "discountPercent": 74,
+        "rating": 4.1,
+        "reviewCount": 18450,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Red Tape India",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B08K5Q89LM",
+        "reviews": [
+          {
+            "author": "Prashant R",
+            "rating": 5,
+            "text": "Insane value for ₹1399. Looks exactly like premium Stan Smiths.",
+            "date": "2024-11-19"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 1299,
+        "originalPrice": 5399,
+        "discountPercent": 76,
         "rating": 4,
-        "text": "Very easy to wipe clean with damp cloth.",
-        "date": "2024-10-28"
+        "reviewCount": 24120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "RetailNet Footwear",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/red-tape-white-sneaker",
+        "reviews": [
+          {
+            "author": "Karthik D",
+            "rating": 4,
+            "text": "Very easy to wipe clean with damp cloth.",
+            "date": "2024-10-28"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 1449,
+        "originalPrice": 5399,
+        "discountPercent": 73,
+        "rating": 4.2,
+        "reviewCount": 11200,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Red Tape Official Brand Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/casual-shoes/red-tape-sneakers",
+        "reviews": [
+          {
+            "author": "Nikhil P",
+            "rating": 5,
+            "text": "Great everyday college sneaker.",
+            "date": "2024-11-22"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "red-tape-casual-sneaker-myntra",
-    "product_id": "red-tape-casual-sneaker-myntra",
-    "groupId": "red-tape-casual-sneaker",
-    "group_id": "red-tape-casual-sneaker",
-    "title": "Red Tape Men's Classic White Low-Top Casual Sneakers (MYNTRA)",
-    "name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "product_name": "Red Tape Men's Classic White Low-Top Casual Sneakers",
-    "brand": "Red Tape",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 1449,
-    "originalPrice": 5399,
-    "original_price": 5399,
-    "discountPercent": 73,
-    "discount_percent": 73,
-    "rating": 4.2,
-    "reviewCount": 11200,
-    "review_count": 11200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/red-tape-sneakers",
-    "product_url": "https://www.myntra.com/casual-shoes/red-tape-sneakers",
-    "seller": "Red Tape Official Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 92,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 73% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 73% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Red Tape build quality and performance.",
-    "specs": {
-      "upper": "Premium PU leather upper with perforated toe box",
-      "sole": "EVA sole for lightweight cushioning and grip",
-      "closure": "Lace-Up"
-    },
-    "reviews": [
-      {
-        "author": "Nikhil P",
-        "rating": 5,
-        "text": "Great everyday college sneaker.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "skechers-go-walk-max-amazon",
-    "product_id": "skechers-go-walk-max-amazon",
     "groupId": "skechers-go-walk-max",
-    "group_id": "skechers-go-walk-max",
-    "title": "Skechers Men's Go Walk Max Slip-On Walking Shoes (AMAZON)",
     "name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "brand": "Skechers",
     "category": "footwear",
-    "platform": "amazon",
-    "price": 3299,
-    "originalPrice": 5499,
-    "original_price": 5499,
-    "discountPercent": 40,
-    "discount_percent": 40,
-    "rating": 4.5,
-    "reviewCount": 12400,
-    "review_count": 12400,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "footwear",
+    "brand": "Skechers",
     "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B073WP8N91",
-    "product_url": "https://www.amazon.in/dp/B073WP8N91",
-    "seller": "Skechers South Asia",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 84,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
       "insole": "Goga Max high-rebound cushioning insole",
       "upper": "Super lightweight mesh fabric upper with padded heel collar"
     },
-    "reviews": [
-      {
-        "author": "Mahesh B",
-        "rating": 5,
-        "text": "The best walking shoe for senior citizens and daily 5km evening walks.",
-        "date": "2024-11-14"
-      }
-    ]
-  },
-  {
-    "id": "skechers-go-walk-max-flipkart",
-    "product_id": "skechers-go-walk-max-flipkart",
-    "groupId": "skechers-go-walk-max",
-    "group_id": "skechers-go-walk-max",
-    "title": "Skechers Men's Go Walk Max Slip-On Walking Shoes (FLIPKART)",
-    "name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "brand": "Skechers",
-    "category": "footwear",
-    "platform": "flipkart",
-    "price": 3499,
-    "originalPrice": 5499,
-    "original_price": 5499,
-    "discountPercent": 36,
-    "discount_percent": 36,
-    "rating": 4.4,
-    "reviewCount": 7890,
-    "review_count": 7890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/skechers-go-walk-max",
-    "product_url": "https://www.flipkart.com/skechers-go-walk-max",
-    "seller": "SuperComNet Sports",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 80,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 36% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 36% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "specs": {
-      "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
-      "insole": "Goga Max high-rebound cushioning insole",
-      "upper": "Super lightweight mesh fabric upper with padded heel collar"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in footwear",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended footwear choice by Skechers with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in footwear with up to 42% discount and verified platform fulfillment.",
+      "bestOverallScore": 90,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Sunita G",
-        "rating": 5,
-        "text": "Slip-on design is effortless to wear. Very soft on heel spurs.",
-        "date": "2024-10-21"
+    "platforms": {
+      "amazon": {
+        "price": 3299,
+        "originalPrice": 5499,
+        "discountPercent": 40,
+        "rating": 4.5,
+        "reviewCount": 12400,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Skechers South Asia",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B073WP8N91",
+        "reviews": [
+          {
+            "author": "Mahesh B",
+            "rating": 5,
+            "text": "The best walking shoe for senior citizens and daily 5km evening walks.",
+            "date": "2024-11-14"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 3499,
+        "originalPrice": 5499,
+        "discountPercent": 36,
+        "rating": 4.4,
+        "reviewCount": 7890,
+        "deliveryEstimate": "2-3 days",
+        "seller": "SuperComNet Sports",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/skechers-go-walk-max",
+        "reviews": [
+          {
+            "author": "Sunita G",
+            "rating": 5,
+            "text": "Slip-on design is effortless to wear. Very soft on heel spurs.",
+            "date": "2024-10-21"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 3199,
+        "originalPrice": 5499,
+        "discountPercent": 42,
+        "rating": 4.6,
+        "reviewCount": 5120,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Skechers Flagship Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/casual-shoes/skechers-go-walk",
+        "reviews": [
+          {
+            "author": "Vijay R",
+            "rating": 5,
+            "text": "Extremely breathable mesh, zero foot odor even after 8 hours.",
+            "date": "2024-11-25"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "skechers-go-walk-max-myntra",
-    "product_id": "skechers-go-walk-max-myntra",
-    "groupId": "skechers-go-walk-max",
-    "group_id": "skechers-go-walk-max",
-    "title": "Skechers Men's Go Walk Max Slip-On Walking Shoes (MYNTRA)",
-    "name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "product_name": "Skechers Men's Go Walk Max Slip-On Walking Shoes",
-    "brand": "Skechers",
-    "category": "footwear",
-    "platform": "myntra",
-    "price": 3199,
-    "originalPrice": 5499,
-    "original_price": 5499,
-    "discountPercent": 42,
-    "discount_percent": 42,
-    "rating": 4.6,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/casual-shoes/skechers-go-walk",
-    "product_url": "https://www.myntra.com/casual-shoes/skechers-go-walk",
-    "seller": "Skechers Flagship Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 86,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "why_buy": "Top rated footwear pick with 42% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Skechers build quality and performance.",
-    "specs": {
-      "sole": "5GEN lightweight injection-molded compound midsole with memory retention",
-      "insole": "Goga Max high-rebound cushioning insole",
-      "upper": "Super lightweight mesh fabric upper with padded heel collar"
-    },
-    "reviews": [
-      {
-        "author": "Vijay R",
-        "rating": 5,
-        "text": "Extremely breathable mesh, zero foot odor even after 8 hours.",
-        "date": "2024-11-25"
-      }
-    ]
-  },
-  {
-    "id": "levis-511-slim-fit-jeans-amazon",
-    "product_id": "levis-511-slim-fit-jeans-amazon",
     "groupId": "levis-511-slim-fit-jeans",
-    "group_id": "levis-511-slim-fit-jeans",
-    "title": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo) (AMAZON)",
     "name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
-    "product_name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
-    "brand": "Levi's",
     "category": "fashion",
-    "platform": "amazon",
-    "price": 2199,
-    "originalPrice": 3999,
-    "original_price": 3999,
-    "discountPercent": 45,
-    "discount_percent": 45,
-    "rating": 4.3,
-    "reviewCount": 14200,
-    "review_count": 14200,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "Slim from hip to ankle",
+    "brand": "Levi's",
     "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B00K5Q28L1",
-    "product_url": "https://www.amazon.in/dp/B00K5Q28L1",
-    "seller": "Levi's Authorized Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 83,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 45% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 45% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "fit": "Slim from hip to ankle",
       "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
       "rise": "Sits below waist",
       "leg_opening": "14.5 inch slim leg"
     },
-    "reviews": [
-      {
-        "author": "Alok N",
-        "rating": 5,
-        "text": "Classic 511 fit. Perfect stretch and doesn't lose shape after washes.",
-        "date": "2024-11-12"
-      }
-    ]
-  },
-  {
-    "id": "levis-511-slim-fit-jeans-flipkart",
-    "product_id": "levis-511-slim-fit-jeans-flipkart",
-    "groupId": "levis-511-slim-fit-jeans",
-    "group_id": "levis-511-slim-fit-jeans",
-    "title": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo) (FLIPKART)",
-    "name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
-    "product_name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
-    "brand": "Levi's",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 2399,
-    "originalPrice": 3999,
-    "original_price": 3999,
-    "discountPercent": 40,
-    "discount_percent": 40,
-    "rating": 4.2,
-    "reviewCount": 9800,
-    "review_count": 9800,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/levis-511-slim-fit",
-    "product_url": "https://www.flipkart.com/levis-511-slim-fit",
-    "seller": "RetailNet Denim",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 79,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "specs": {
-      "fit": "Slim from hip to ankle",
-      "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
-      "rise": "Sits below waist",
-      "leg_opening": "14.5 inch slim leg"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 88,
+      "sentimentPros": [
+        "Verified top rated performance in fashion",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended fashion choice by Levi's with 4.4★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in fashion with up to 50% discount and verified platform fulfillment.",
+      "bestOverallScore": 90,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Harish S",
-        "rating": 4,
-        "text": "Deep indigo color that looks great with white sneakers.",
-        "date": "2024-10-29"
+    "platforms": {
+      "amazon": {
+        "price": 2199,
+        "originalPrice": 3999,
+        "discountPercent": 45,
+        "rating": 4.3,
+        "reviewCount": 14200,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Levi's Authorized Store",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B00K5Q28L1",
+        "reviews": [
+          {
+            "author": "Alok N",
+            "rating": 5,
+            "text": "Classic 511 fit. Perfect stretch and doesn't lose shape after washes.",
+            "date": "2024-11-12"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 2399,
+        "originalPrice": 3999,
+        "discountPercent": 40,
+        "rating": 4.2,
+        "reviewCount": 9800,
+        "deliveryEstimate": "3-4 days",
+        "seller": "RetailNet Denim",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/levis-511-slim-fit",
+        "reviews": [
+          {
+            "author": "Harish S",
+            "rating": 4,
+            "text": "Deep indigo color that looks great with white sneakers.",
+            "date": "2024-10-29"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 1999,
+        "originalPrice": 3999,
+        "discountPercent": 50,
+        "rating": 4.4,
+        "reviewCount": 18400,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Levi's Brand Flagship",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/jeans/levis-511-slim-fit",
+        "reviews": [
+          {
+            "author": "Yash P",
+            "rating": 5,
+            "text": "Massive 50% discount on Myntra. 100% authentic red tab jeans.",
+            "date": "2024-11-24"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "levis-511-slim-fit-jeans-myntra",
-    "product_id": "levis-511-slim-fit-jeans-myntra",
-    "groupId": "levis-511-slim-fit-jeans",
-    "group_id": "levis-511-slim-fit-jeans",
-    "title": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo) (MYNTRA)",
-    "name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
-    "product_name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans (Dark Indigo)",
-    "brand": "Levi's",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 1999,
-    "originalPrice": 3999,
-    "original_price": 3999,
-    "discountPercent": 50,
-    "discount_percent": 50,
-    "rating": 4.4,
-    "reviewCount": 18400,
-    "review_count": 18400,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/jeans/levis-511-slim-fit",
-    "product_url": "https://www.myntra.com/jeans/levis-511-slim-fit",
-    "seller": "Levi's Brand Flagship",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 86,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Levi's build quality and performance.",
-    "specs": {
-      "fit": "Slim from hip to ankle",
-      "fabric": "99% Cotton, 1% Elastane (Levi's Flex stretch)",
-      "rise": "Sits below waist",
-      "leg_opening": "14.5 inch slim leg"
-    },
-    "reviews": [
-      {
-        "author": "Yash P",
-        "rating": 5,
-        "text": "Massive 50% discount on Myntra. 100% authentic red tab jeans.",
-        "date": "2024-11-24"
-      }
-    ]
-  },
-  {
-    "id": "tommy-hilfiger-classic-polo-amazon",
-    "product_id": "tommy-hilfiger-classic-polo-amazon",
     "groupId": "tommy-hilfiger-classic-polo",
-    "group_id": "tommy-hilfiger-classic-polo",
-    "title": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt (AMAZON)",
     "name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "brand": "Tommy Hilfiger",
     "category": "fashion",
-    "platform": "amazon",
-    "price": 2499,
-    "originalPrice": 4599,
-    "original_price": 4599,
-    "discountPercent": 46,
-    "discount_percent": 46,
-    "rating": 4.4,
-    "reviewCount": 4890,
-    "review_count": 4890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "Custom Regular Fit",
+    "brand": "Tommy Hilfiger",
     "imageUrl": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09KL897N4",
-    "product_url": "https://www.amazon.in/dp/B09KL897N4",
-    "seller": "Cloudtail Apparel",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 84,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 46% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 46% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "fabric": "100% Organic Pique Cotton",
       "fit": "Custom Regular Fit",
       "collar": "Ribbed polo collar with 2-button placket",
       "embroidery": "Signature Tommy Hilfiger flag logo on chest"
     },
-    "reviews": [
-      {
-        "author": "Chetan B",
-        "rating": 5,
-        "text": "High quality pique cotton that stays crisp throughout the day.",
-        "date": "2024-11-17"
-      }
-    ]
-  },
-  {
-    "id": "tommy-hilfiger-classic-polo-flipkart",
-    "product_id": "tommy-hilfiger-classic-polo-flipkart",
-    "groupId": "tommy-hilfiger-classic-polo",
-    "group_id": "tommy-hilfiger-classic-polo",
-    "title": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt (FLIPKART)",
-    "name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "brand": "Tommy Hilfiger",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 2799,
-    "originalPrice": 4599,
-    "original_price": 4599,
-    "discountPercent": 39,
-    "discount_percent": 39,
-    "rating": 4.2,
-    "reviewCount": 2410,
-    "review_count": 2410,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/tommy-hilfiger-polo",
-    "product_url": "https://www.flipkart.com/tommy-hilfiger-polo",
-    "seller": "FSAssured Fashion",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 79,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "specs": {
-      "fabric": "100% Organic Pique Cotton",
-      "fit": "Custom Regular Fit",
-      "collar": "Ribbed polo collar with 2-button placket",
-      "embroidery": "Signature Tommy Hilfiger flag logo on chest"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in fashion",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended fashion choice by Tommy Hilfiger with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in fashion with up to 50% discount and verified platform fulfillment.",
+      "bestOverallScore": 92,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Deepak V",
-        "rating": 4,
-        "text": "Rich navy blue shade and comfortable fit.",
-        "date": "2024-10-18"
+    "platforms": {
+      "amazon": {
+        "price": 2499,
+        "originalPrice": 4599,
+        "discountPercent": 46,
+        "rating": 4.4,
+        "reviewCount": 4890,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Cloudtail Apparel",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09KL897N4",
+        "reviews": [
+          {
+            "author": "Chetan B",
+            "rating": 5,
+            "text": "High quality pique cotton that stays crisp throughout the day.",
+            "date": "2024-11-17"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 2799,
+        "originalPrice": 4599,
+        "discountPercent": 39,
+        "rating": 4.2,
+        "reviewCount": 2410,
+        "deliveryEstimate": "3-4 days",
+        "seller": "FSAssured Fashion",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/tommy-hilfiger-polo",
+        "reviews": [
+          {
+            "author": "Deepak V",
+            "rating": 4,
+            "text": "Rich navy blue shade and comfortable fit.",
+            "date": "2024-10-18"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 2299,
+        "originalPrice": 4599,
+        "discountPercent": 50,
+        "rating": 4.5,
+        "reviewCount": 8900,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Tommy Hilfiger Flagship",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/tshirts/tommy-hilfiger-polo",
+        "reviews": [
+          {
+            "author": "Sahil G",
+            "rating": 5,
+            "text": "Premium finish and comfortable fabric for summer.",
+            "date": "2024-11-20"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "tommy-hilfiger-classic-polo-myntra",
-    "product_id": "tommy-hilfiger-classic-polo-myntra",
-    "groupId": "tommy-hilfiger-classic-polo",
-    "group_id": "tommy-hilfiger-classic-polo",
-    "title": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt (MYNTRA)",
-    "name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "product_name": "Tommy Hilfiger Men's Regular Fit Pique Cotton Polo T-Shirt",
-    "brand": "Tommy Hilfiger",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 2299,
-    "originalPrice": 4599,
-    "original_price": 4599,
-    "discountPercent": 50,
-    "discount_percent": 50,
-    "rating": 4.5,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/tshirts/tommy-hilfiger-polo",
-    "product_url": "https://www.myntra.com/tshirts/tommy-hilfiger-polo",
-    "seller": "Tommy Hilfiger Flagship",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 88,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 50% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Tommy Hilfiger build quality and performance.",
-    "specs": {
-      "fabric": "100% Organic Pique Cotton",
-      "fit": "Custom Regular Fit",
-      "collar": "Ribbed polo collar with 2-button placket",
-      "embroidery": "Signature Tommy Hilfiger flag logo on chest"
-    },
-    "reviews": [
-      {
-        "author": "Sahil G",
-        "rating": 5,
-        "text": "Premium finish and comfortable fabric for summer.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "rayban-aviator-classic-amazon",
-    "product_id": "rayban-aviator-classic-amazon",
     "groupId": "rayban-aviator-classic",
-    "group_id": "rayban-aviator-classic",
-    "title": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens) (AMAZON)",
     "name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
-    "product_name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
-    "brand": "Ray-Ban",
     "category": "fashion",
-    "platform": "amazon",
-    "price": 8490,
-    "originalPrice": 10490,
-    "original_price": 10490,
-    "discountPercent": 19,
-    "discount_percent": 19,
-    "rating": 4.6,
-    "reviewCount": 7210,
-    "review_count": 7210,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "fashion",
+    "brand": "Ray-Ban",
     "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B00080FGVO",
-    "product_url": "https://www.amazon.in/dp/B00080FGVO",
-    "seller": "Luxottica India Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 77,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 19% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 19% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "frame_material": "Corrosion-resistant Metal alloy",
       "lens_technology": "Polarized G-15 Green Crystal Lens",
       "uv_protection": "100% UV400 protection",
       "size": "58mm standard lens width"
     },
-    "reviews": [
-      {
-        "author": "Aditya S",
-        "rating": 5,
-        "text": "The iconic pilot aviators. Glare reduction while driving is unmatched.",
-        "date": "2024-11-21"
-      }
-    ]
-  },
-  {
-    "id": "rayban-aviator-classic-flipkart",
-    "product_id": "rayban-aviator-classic-flipkart",
-    "groupId": "rayban-aviator-classic",
-    "group_id": "rayban-aviator-classic",
-    "title": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens) (FLIPKART)",
-    "name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
-    "product_name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
-    "brand": "Ray-Ban",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 8890,
-    "originalPrice": 10490,
-    "original_price": 10490,
-    "discountPercent": 15,
-    "discount_percent": 15,
-    "rating": 4.5,
-    "reviewCount": 3890,
-    "review_count": 3890,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/ray-ban-aviator",
-    "product_url": "https://www.flipkart.com/ray-ban-aviator",
-    "seller": "Optics SuperStore",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 15% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 15% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
-    "specs": {
-      "frame_material": "Corrosion-resistant Metal alloy",
-      "lens_technology": "Polarized G-15 Green Crystal Lens",
-      "uv_protection": "100% UV400 protection",
-      "size": "58mm standard lens width"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in fashion",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended fashion choice by Ray-Ban with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in fashion with up to 22% discount and verified platform fulfillment.",
+      "bestOverallScore": 84,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Kunal M",
-        "rating": 5,
-        "text": "Came with original leather case and microfiber cloth.",
-        "date": "2024-10-14"
+    "platforms": {
+      "amazon": {
+        "price": 8490,
+        "originalPrice": 10490,
+        "discountPercent": 19,
+        "rating": 4.6,
+        "reviewCount": 7210,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Luxottica India Official",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B00080FGVO",
+        "reviews": [
+          {
+            "author": "Aditya S",
+            "rating": 5,
+            "text": "The iconic pilot aviators. Glare reduction while driving is unmatched.",
+            "date": "2024-11-21"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 8890,
+        "originalPrice": 10490,
+        "discountPercent": 15,
+        "rating": 4.5,
+        "reviewCount": 3890,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Optics SuperStore",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/ray-ban-aviator",
+        "reviews": [
+          {
+            "author": "Kunal M",
+            "rating": 5,
+            "text": "Came with original leather case and microfiber cloth.",
+            "date": "2024-10-14"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 8190,
+        "originalPrice": 10490,
+        "discountPercent": 22,
+        "rating": 4.7,
+        "reviewCount": 5120,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Ray-Ban Brand Boutique",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/sunglasses/ray-ban-aviator",
+        "reviews": [
+          {
+            "author": "Tarun D",
+            "rating": 5,
+            "text": "Authentic Luxottica barcode and warranty registration verified.",
+            "date": "2024-11-26"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "rayban-aviator-classic-myntra",
-    "product_id": "rayban-aviator-classic-myntra",
-    "groupId": "rayban-aviator-classic",
-    "group_id": "rayban-aviator-classic",
-    "title": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens) (MYNTRA)",
-    "name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
-    "product_name": "Ray-Ban Aviator Classic Polarized Sunglasses (Gold Frame / Green G-15 Lens)",
-    "brand": "Ray-Ban",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 8190,
-    "originalPrice": 10490,
-    "original_price": 10490,
-    "discountPercent": 22,
-    "discount_percent": 22,
-    "rating": 4.7,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/sunglasses/ray-ban-aviator",
-    "product_url": "https://www.myntra.com/sunglasses/ray-ban-aviator",
-    "seller": "Ray-Ban Brand Boutique",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 79,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 22% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 22% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Ray-Ban build quality and performance.",
-    "specs": {
-      "frame_material": "Corrosion-resistant Metal alloy",
-      "lens_technology": "Polarized G-15 Green Crystal Lens",
-      "uv_protection": "100% UV400 protection",
-      "size": "58mm standard lens width"
-    },
-    "reviews": [
-      {
-        "author": "Tarun D",
-        "rating": 5,
-        "text": "Authentic Luxottica barcode and warranty registration verified.",
-        "date": "2024-11-26"
-      }
-    ]
-  },
-  {
-    "id": "zara-faux-leather-jacket-amazon",
-    "product_id": "zara-faux-leather-jacket-amazon",
     "groupId": "zara-faux-leather-jacket",
-    "group_id": "zara-faux-leather-jacket",
-    "title": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip (AMAZON)",
     "name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "brand": "Zara",
     "category": "fashion",
-    "platform": "amazon",
-    "price": 4990,
-    "originalPrice": 6990,
-    "original_price": 6990,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.3,
-    "reviewCount": 2180,
-    "review_count": 2180,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "fashion",
+    "brand": "Zara",
     "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B0CY78L91P",
-    "product_url": "https://www.amazon.in/dp/B0CY78L91P",
-    "seller": "Urban Trendsetters",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 76,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Zara build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1548883354-7622d03aca27?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "material": "100% Polyurethane leather finish with viscose lining",
       "closure": "Asymmetric silver metallic zip",
       "pockets": "3 functional zip pockets with coin flap",
       "collar": "Notched lapel collar with snap buttons"
     },
-    "reviews": [
-      {
-        "author": "Ishaan B",
-        "rating": 5,
-        "text": "Looks like real leather. Perfect slim fit jacket for winter nights.",
-        "date": "2024-11-13"
-      }
-    ]
-  },
-  {
-    "id": "zara-faux-leather-jacket-flipkart",
-    "product_id": "zara-faux-leather-jacket-flipkart",
-    "groupId": "zara-faux-leather-jacket",
-    "group_id": "zara-faux-leather-jacket",
-    "title": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip (FLIPKART)",
-    "name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "brand": "Zara",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 5290,
-    "originalPrice": 6990,
-    "original_price": 6990,
-    "discountPercent": 24,
-    "discount_percent": 24,
-    "rating": 4.2,
-    "reviewCount": 1420,
-    "review_count": 1420,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/zara-biker-jacket",
-    "product_url": "https://www.flipkart.com/zara-biker-jacket",
-    "seller": "EuroFashion Outlet",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 73,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 24% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 24% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "specs": {
-      "material": "100% Polyurethane leather finish with viscose lining",
-      "closure": "Asymmetric silver metallic zip",
-      "pockets": "3 functional zip pockets with coin flap",
-      "collar": "Notched lapel collar with snap buttons"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in fashion",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended fashion choice by Zara with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in fashion with up to 33% discount and verified platform fulfillment.",
+      "bestOverallScore": 85,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Rahul P",
-        "rating": 4,
-        "text": "Good stitching and heavy quality zippers.",
-        "date": "2024-10-22"
+    "platforms": {
+      "amazon": {
+        "price": 4990,
+        "originalPrice": 6990,
+        "discountPercent": 29,
+        "rating": 4.3,
+        "reviewCount": 2180,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Urban Trendsetters",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B0CY78L91P",
+        "reviews": [
+          {
+            "author": "Ishaan B",
+            "rating": 5,
+            "text": "Looks like real leather. Perfect slim fit jacket for winter nights.",
+            "date": "2024-11-13"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 5290,
+        "originalPrice": 6990,
+        "discountPercent": 24,
+        "rating": 4.2,
+        "reviewCount": 1420,
+        "deliveryEstimate": "3-4 days",
+        "seller": "EuroFashion Outlet",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/zara-biker-jacket",
+        "reviews": [
+          {
+            "author": "Rahul P",
+            "rating": 4,
+            "text": "Good stitching and heavy quality zippers.",
+            "date": "2024-10-22"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 4690,
+        "originalPrice": 6990,
+        "discountPercent": 33,
+        "rating": 4.5,
+        "reviewCount": 3840,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Myntra Studio Luxe",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/jackets/zara-biker-jacket",
+        "reviews": [
+          {
+            "author": "Siddharth N",
+            "rating": 5,
+            "text": "Incredible silhouette. Elevates any basic white tee and jeans outfit.",
+            "date": "2024-11-25"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "zara-faux-leather-jacket-myntra",
-    "product_id": "zara-faux-leather-jacket-myntra",
-    "groupId": "zara-faux-leather-jacket",
-    "group_id": "zara-faux-leather-jacket",
-    "title": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip (MYNTRA)",
-    "name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "product_name": "Zara Men's Faux Leather Biker Jacket with Asymmetric Zip",
-    "brand": "Zara",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 4690,
-    "originalPrice": 6990,
-    "original_price": 6990,
-    "discountPercent": 33,
-    "discount_percent": 33,
-    "rating": 4.5,
-    "reviewCount": 3840,
-    "review_count": 3840,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/jackets/zara-biker-jacket",
-    "product_url": "https://www.myntra.com/jackets/zara-biker-jacket",
-    "seller": "Myntra Studio Luxe",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 33% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 33% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Zara build quality and performance.",
-    "specs": {
-      "material": "100% Polyurethane leather finish with viscose lining",
-      "closure": "Asymmetric silver metallic zip",
-      "pockets": "3 functional zip pockets with coin flap",
-      "collar": "Notched lapel collar with snap buttons"
-    },
-    "reviews": [
-      {
-        "author": "Siddharth N",
-        "rating": 5,
-        "text": "Incredible silhouette. Elevates any basic white tee and jeans outfit.",
-        "date": "2024-11-25"
-      }
-    ]
-  },
-  {
-    "id": "fabindia-printed-cotton-kurta-amazon",
-    "product_id": "fabindia-printed-cotton-kurta-amazon",
     "groupId": "fabindia-printed-cotton-kurta",
-    "group_id": "fabindia-printed-cotton-kurta",
-    "title": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta (AMAZON)",
     "name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "brand": "FabIndia",
     "category": "fashion",
-    "platform": "amazon",
-    "price": 1499,
-    "originalPrice": 2490,
-    "original_price": 2490,
-    "discountPercent": 40,
-    "discount_percent": 40,
-    "rating": 4.4,
-    "reviewCount": 3890,
-    "review_count": 3890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "fashion",
+    "brand": "FabIndia",
     "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09L7X89W1",
-    "product_url": "https://www.amazon.in/dp/B09L7X89W1",
-    "seller": "FabIndia Overseas",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 82,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 40% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 40% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "fabric": "100% Breathable Khadi Cotton",
       "craft": "Traditional Hand Block Floral Print",
       "neck": "Mandarin Collar with button placket",
       "sleeves": "Full Sleeves with roll-up tab"
     },
-    "reviews": [
-      {
-        "author": "Manish K",
-        "rating": 5,
-        "text": "Super light pure cotton fabric for festive occasions and casual Fridays.",
-        "date": "2024-11-09"
-      }
-    ]
-  },
-  {
-    "id": "fabindia-printed-cotton-kurta-flipkart",
-    "product_id": "fabindia-printed-cotton-kurta-flipkart",
-    "groupId": "fabindia-printed-cotton-kurta",
-    "group_id": "fabindia-printed-cotton-kurta",
-    "title": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta (FLIPKART)",
-    "name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "brand": "FabIndia",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 1699,
-    "originalPrice": 2490,
-    "original_price": 2490,
-    "discountPercent": 32,
-    "discount_percent": 32,
-    "rating": 4.3,
-    "reviewCount": 2150,
-    "review_count": 2150,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/fabindia-cotton-kurta",
-    "product_url": "https://www.flipkart.com/fabindia-cotton-kurta",
-    "seller": "Ethnic Weaves India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 32% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 32% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "specs": {
-      "fabric": "100% Breathable Khadi Cotton",
-      "craft": "Traditional Hand Block Floral Print",
-      "neck": "Mandarin Collar with button placket",
-      "sleeves": "Full Sleeves with roll-up tab"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in fashion",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended fashion choice by FabIndia with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in fashion with up to 44% discount and verified platform fulfillment.",
+      "bestOverallScore": 90,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Suraj G",
-        "rating": 4,
-        "text": "Natural dye colors look rich and authentic.",
-        "date": "2024-10-18"
+    "platforms": {
+      "amazon": {
+        "price": 1499,
+        "originalPrice": 2490,
+        "discountPercent": 40,
+        "rating": 4.4,
+        "reviewCount": 3890,
+        "deliveryEstimate": "2-3 days",
+        "seller": "FabIndia Overseas",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09L7X89W1",
+        "reviews": [
+          {
+            "author": "Manish K",
+            "rating": 5,
+            "text": "Super light pure cotton fabric for festive occasions and casual Fridays.",
+            "date": "2024-11-09"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 1699,
+        "originalPrice": 2490,
+        "discountPercent": 32,
+        "rating": 4.3,
+        "reviewCount": 2150,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Ethnic Weaves India",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/fabindia-cotton-kurta",
+        "reviews": [
+          {
+            "author": "Suraj G",
+            "rating": 4,
+            "text": "Natural dye colors look rich and authentic.",
+            "date": "2024-10-18"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 1399,
+        "originalPrice": 2490,
+        "discountPercent": 44,
+        "rating": 4.5,
+        "reviewCount": 6720,
+        "deliveryEstimate": "1-2 days",
+        "seller": "FabIndia Official Brand Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/kurtas/fabindia-printed-kurta",
+        "reviews": [
+          {
+            "author": "Deepak S",
+            "rating": 5,
+            "text": "Perfect fit around shoulders and chest.",
+            "date": "2024-11-21"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "fabindia-printed-cotton-kurta-myntra",
-    "product_id": "fabindia-printed-cotton-kurta-myntra",
-    "groupId": "fabindia-printed-cotton-kurta",
-    "group_id": "fabindia-printed-cotton-kurta",
-    "title": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta (MYNTRA)",
-    "name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "product_name": "FabIndia Men's Pure Cotton Hand Block Printed Short Kurta",
-    "brand": "FabIndia",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 1399,
-    "originalPrice": 2490,
-    "original_price": 2490,
-    "discountPercent": 44,
-    "discount_percent": 44,
-    "rating": 4.5,
-    "reviewCount": 6720,
-    "review_count": 6720,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kurtas/fabindia-printed-kurta",
-    "product_url": "https://www.myntra.com/kurtas/fabindia-printed-kurta",
-    "seller": "FabIndia Official Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 85,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 44% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 44% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for FabIndia build quality and performance.",
-    "specs": {
-      "fabric": "100% Breathable Khadi Cotton",
-      "craft": "Traditional Hand Block Floral Print",
-      "neck": "Mandarin Collar with button placket",
-      "sleeves": "Full Sleeves with roll-up tab"
-    },
-    "reviews": [
-      {
-        "author": "Deepak S",
-        "rating": 5,
-        "text": "Perfect fit around shoulders and chest.",
-        "date": "2024-11-21"
-      }
-    ]
-  },
-  {
-    "id": "allen-solly-formal-trousers-amazon",
-    "product_id": "allen-solly-formal-trousers-amazon",
     "groupId": "allen-solly-formal-trousers",
-    "group_id": "allen-solly-formal-trousers",
-    "title": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers (AMAZON)",
     "name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "brand": "Allen Solly",
     "category": "fashion",
-    "platform": "amazon",
-    "price": 1399,
-    "originalPrice": 2299,
-    "original_price": 2299,
-    "discountPercent": 39,
-    "discount_percent": 39,
-    "rating": 4.3,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "Contemporary Slim Fit with flat front",
+    "brand": "Allen Solly",
     "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B07K9L8P3M",
-    "product_url": "https://www.amazon.in/dp/B07K9L8P3M",
-    "seller": "Aditya Birla Fashion (Amazon)",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 80,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 39% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
       "fit": "Contemporary Slim Fit with flat front",
       "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
     },
-    "reviews": [
-      {
-        "author": "Naveen P",
-        "rating": 5,
-        "text": "Wrinkle-free material is great for long office workdays.",
-        "date": "2024-11-12"
-      }
-    ]
-  },
-  {
-    "id": "allen-solly-formal-trousers-flipkart",
-    "product_id": "allen-solly-formal-trousers-flipkart",
-    "groupId": "allen-solly-formal-trousers",
-    "group_id": "allen-solly-formal-trousers",
-    "title": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers (FLIPKART)",
-    "name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "brand": "Allen Solly",
-    "category": "fashion",
-    "platform": "flipkart",
-    "price": 1499,
-    "originalPrice": 2299,
-    "original_price": 2299,
-    "discountPercent": 35,
-    "discount_percent": 35,
-    "rating": 4.2,
-    "reviewCount": 3840,
-    "review_count": 3840,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/allen-solly-formal-trouser",
-    "product_url": "https://www.flipkart.com/allen-solly-formal-trouser",
-    "seller": "FormalWear Express",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 77,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 35% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 35% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "specs": {
-      "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
-      "fit": "Contemporary Slim Fit with flat front",
-      "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 88,
+      "sentimentPros": [
+        "Verified top rated performance in fashion",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended fashion choice by Allen Solly with 4.4★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in fashion with up to 43% discount and verified platform fulfillment.",
+      "bestOverallScore": 88,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Ravi M",
-        "rating": 4,
-        "text": "True to waist size. Clean charcoal grey color.",
-        "date": "2024-10-25"
+    "platforms": {
+      "amazon": {
+        "price": 1399,
+        "originalPrice": 2299,
+        "discountPercent": 39,
+        "rating": 4.3,
+        "reviewCount": 5120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Aditya Birla Fashion (Amazon)",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B07K9L8P3M",
+        "reviews": [
+          {
+            "author": "Naveen P",
+            "rating": 5,
+            "text": "Wrinkle-free material is great for long office workdays.",
+            "date": "2024-11-12"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 1499,
+        "originalPrice": 2299,
+        "discountPercent": 35,
+        "rating": 4.2,
+        "reviewCount": 3840,
+        "deliveryEstimate": "3-4 days",
+        "seller": "FormalWear Express",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/allen-solly-formal-trouser",
+        "reviews": [
+          {
+            "author": "Ravi M",
+            "rating": 4,
+            "text": "True to waist size. Clean charcoal grey color.",
+            "date": "2024-10-25"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 1299,
+        "originalPrice": 2299,
+        "discountPercent": 43,
+        "rating": 4.4,
+        "reviewCount": 8900,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Allen Solly Brand Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/trousers/allen-solly-formal-trousers",
+        "reviews": [
+          {
+            "author": "Aniket T",
+            "rating": 5,
+            "text": "Excellent tailoring and comfortable fabric.",
+            "date": "2024-11-26"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "allen-solly-formal-trousers-myntra",
-    "product_id": "allen-solly-formal-trousers-myntra",
-    "groupId": "allen-solly-formal-trousers",
-    "group_id": "allen-solly-formal-trousers",
-    "title": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers (MYNTRA)",
-    "name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "product_name": "Allen Solly Men's Slim Fit Poly-Viscose Formal Office Trousers",
-    "brand": "Allen Solly",
-    "category": "fashion",
-    "platform": "myntra",
-    "price": 1299,
-    "originalPrice": 2299,
-    "original_price": 2299,
-    "discountPercent": 43,
-    "discount_percent": 43,
-    "rating": 4.4,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/trousers/allen-solly-formal-trousers",
-    "product_url": "https://www.myntra.com/trousers/allen-solly-formal-trousers",
-    "seller": "Allen Solly Brand Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 83,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated fashion pick with 43% off and verified fast shipping.",
-    "why_buy": "Top rated fashion pick with 43% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Allen Solly build quality and performance.",
-    "specs": {
-      "fabric": "65% Polyester, 35% Viscose wrinkle-resistant blend",
-      "fit": "Contemporary Slim Fit with flat front",
-      "pockets": "2 side slash pockets, 2 back welt buttoned pockets"
-    },
-    "reviews": [
-      {
-        "author": "Aniket T",
-        "rating": 5,
-        "text": "Excellent tailoring and comfortable fabric.",
-        "date": "2024-11-26"
-      }
-    ]
-  },
-  {
-    "id": "atomberg-renesa-bldc-fan-amazon",
-    "product_id": "atomberg-renesa-bldc-fan-amazon",
     "groupId": "atomberg-renesa-bldc-fan",
-    "group_id": "atomberg-renesa-bldc-fan",
-    "title": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote (AMAZON)",
     "name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
-    "product_name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
-    "brand": "Atomberg",
     "category": "home",
-    "platform": "amazon",
-    "price": 3699,
-    "originalPrice": 4990,
-    "original_price": 4990,
-    "discountPercent": 26,
-    "discount_percent": 26,
-    "rating": 4.5,
-    "reviewCount": 42100,
-    "review_count": 42100,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B07P8N9KLM",
-    "product_url": "https://www.amazon.in/dp/B07P8N9KLM",
-    "seller": "Atomberg Technologies Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 26% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 26% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
+    "subcategory": "home",
+    "brand": "Atomberg",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "power_consumption": "28W at highest speed (saves 65% electricity)",
       "motor": "Energy efficient BLDC motor",
       "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
       "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
     },
-    "reviews": [
-      {
-        "author": "Manish R",
-        "rating": 5,
-        "text": "Completely silent and electric bill dropped noticeably.",
-        "date": "2024-11-14"
-      }
-    ]
-  },
-  {
-    "id": "atomberg-renesa-bldc-fan-flipkart",
-    "product_id": "atomberg-renesa-bldc-fan-flipkart",
-    "groupId": "atomberg-renesa-bldc-fan",
-    "group_id": "atomberg-renesa-bldc-fan",
-    "title": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote (FLIPKART)",
-    "name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
-    "product_name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
-    "brand": "Atomberg",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 3549,
-    "originalPrice": 4990,
-    "original_price": 4990,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.4,
-    "reviewCount": 28400,
-    "review_count": 28400,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/atomberg-renesa",
-    "product_url": "https://www.flipkart.com/atomberg-renesa",
-    "seller": "RetailNet Home",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
-    "specs": {
-      "power_consumption": "28W at highest speed (saves 65% electricity)",
-      "motor": "Energy efficient BLDC motor",
-      "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
-      "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in home",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended home choice by Atomberg with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in home with up to 29% discount and verified platform fulfillment.",
+      "bestOverallScore": 84,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Sunil K",
-        "rating": 5,
-        "text": "Remote control works from anywhere in the bedroom.",
-        "date": "2024-10-18"
+    "platforms": {
+      "amazon": {
+        "price": 3699,
+        "originalPrice": 4990,
+        "discountPercent": 26,
+        "rating": 4.5,
+        "reviewCount": 42100,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Atomberg Technologies Official",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B07P8N9KLM",
+        "reviews": [
+          {
+            "author": "Manish R",
+            "rating": 5,
+            "text": "Completely silent and electric bill dropped noticeably.",
+            "date": "2024-11-14"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 3549,
+        "originalPrice": 4990,
+        "discountPercent": 29,
+        "rating": 4.4,
+        "reviewCount": 28400,
+        "deliveryEstimate": "2-3 days",
+        "seller": "RetailNet Home",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/atomberg-renesa",
+        "reviews": [
+          {
+            "author": "Sunil K",
+            "rating": 5,
+            "text": "Remote control works from anywhere in the bedroom.",
+            "date": "2024-10-18"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 3890,
+        "originalPrice": 4990,
+        "discountPercent": 22,
+        "rating": 4.5,
+        "reviewCount": 1200,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Home Decor Studio",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/home-appliances/atomberg-fan",
+        "reviews": [
+          {
+            "author": "Archana S",
+            "rating": 4,
+            "text": "Modern minimalist look that fits false ceiling aesthetics.",
+            "date": "2024-11-09"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "atomberg-renesa-bldc-fan-myntra",
-    "product_id": "atomberg-renesa-bldc-fan-myntra",
-    "groupId": "atomberg-renesa-bldc-fan",
-    "group_id": "atomberg-renesa-bldc-fan",
-    "title": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote (MYNTRA)",
-    "name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
-    "product_name": "Atomberg Renesa 1200mm BLDC Motor Smart Ceiling Fan with Remote",
-    "brand": "Atomberg",
-    "category": "home",
-    "platform": "myntra",
-    "price": 3890,
-    "originalPrice": 4990,
-    "original_price": 4990,
-    "discountPercent": 22,
-    "discount_percent": 22,
-    "rating": 4.5,
-    "reviewCount": 1200,
-    "review_count": 1200,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/home-appliances/atomberg-fan",
-    "product_url": "https://www.myntra.com/home-appliances/atomberg-fan",
-    "seller": "Home Decor Studio",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 76,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 22% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 22% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Atomberg build quality and performance.",
-    "specs": {
-      "power_consumption": "28W at highest speed (saves 65% electricity)",
-      "motor": "Energy efficient BLDC motor",
-      "blade_sweep": "1200mm (48 inch) with aerodynamic blades",
-      "control": "Smart IR Remote with Boost, Sleep, and Timer modes"
-    },
-    "reviews": [
-      {
-        "author": "Archana S",
-        "rating": 4,
-        "text": "Modern minimalist look that fits false ceiling aesthetics.",
-        "date": "2024-11-09"
-      }
-    ]
-  },
-  {
-    "id": "philips-digital-airfryer-xl-amazon",
-    "product_id": "philips-digital-airfryer-xl-amazon",
     "groupId": "philips-digital-airfryer-xl",
-    "group_id": "philips-digital-airfryer-xl",
-    "title": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology) (AMAZON)",
     "name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
-    "product_name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
-    "brand": "Philips",
     "category": "home",
-    "platform": "amazon",
-    "price": 7999,
-    "originalPrice": 11995,
-    "original_price": 11995,
-    "discountPercent": 33,
-    "discount_percent": 33,
-    "rating": 4.5,
-    "reviewCount": 19800,
-    "review_count": 19800,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09B1Y8TKL",
-    "product_url": "https://www.amazon.in/dp/B09B1Y8TKL",
-    "seller": "Philips Domestic Appliances",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 33% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 33% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Philips build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Philips build quality and performance.",
+    "subcategory": "home",
+    "brand": "Philips",
+    "imageUrl": "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=800&auto=format&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "capacity": "4.1 Litres XL Basket",
       "technology": "Rapid Air Technology (up to 90% less fat)",
       "controls": "Digital Touch Screen with 7 preset cooking modes",
       "power": "1400W powerful heating element"
     },
-    "reviews": [
-      {
-        "author": "Pooja V",
-        "rating": 5,
-        "text": "French fries and chicken tikka turn out crispy with just 1 spoon oil.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "philips-digital-airfryer-xl-flipkart",
-    "product_id": "philips-digital-airfryer-xl-flipkart",
-    "groupId": "philips-digital-airfryer-xl",
-    "group_id": "philips-digital-airfryer-xl",
-    "title": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology) (FLIPKART)",
-    "name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
-    "product_name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
-    "brand": "Philips",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 7699,
-    "originalPrice": 11995,
-    "original_price": 11995,
-    "discountPercent": 36,
-    "discount_percent": 36,
-    "rating": 4.4,
-    "reviewCount": 12400,
-    "review_count": 12400,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/philips-digital-airfryer",
-    "product_url": "https://www.flipkart.com/philips-digital-airfryer",
-    "seller": "SuperComNet Kitchen",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 80,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 36% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 36% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Philips build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Philips build quality and performance.",
-    "specs": {
-      "capacity": "4.1 Litres XL Basket",
-      "technology": "Rapid Air Technology (up to 90% less fat)",
-      "controls": "Digital Touch Screen with 7 preset cooking modes",
-      "power": "1400W powerful heating element"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in home",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended home choice by Philips with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in home with up to 36% discount and verified platform fulfillment.",
+      "bestOverallScore": 86,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Rohan M",
-        "rating": 5,
-        "text": "Easy to clean non-stick basket. Dishwasher safe.",
-        "date": "2024-10-24"
+    "platforms": {
+      "amazon": {
+        "price": 7999,
+        "originalPrice": 11995,
+        "discountPercent": 33,
+        "rating": 4.5,
+        "reviewCount": 19800,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Philips Domestic Appliances",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09B1Y8TKL",
+        "reviews": [
+          {
+            "author": "Pooja V",
+            "rating": 5,
+            "text": "French fries and chicken tikka turn out crispy with just 1 spoon oil.",
+            "date": "2024-11-20"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 7699,
+        "originalPrice": 11995,
+        "discountPercent": 36,
+        "rating": 4.4,
+        "reviewCount": 12400,
+        "deliveryEstimate": "2-3 days",
+        "seller": "SuperComNet Kitchen",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/philips-digital-airfryer",
+        "reviews": [
+          {
+            "author": "Rohan M",
+            "rating": 5,
+            "text": "Easy to clean non-stick basket. Dishwasher safe.",
+            "date": "2024-10-24"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 8490,
+        "originalPrice": 11995,
+        "discountPercent": 29,
+        "rating": 4.5,
+        "reviewCount": 850,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Philips Luxe Appliances",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/kitchen/philips-air-fryer",
+        "reviews": [
+          {
+            "author": "Komal D",
+            "rating": 4,
+            "text": "Very convenient for healthy everyday snacking.",
+            "date": "2024-11-15"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "philips-digital-airfryer-xl-myntra",
-    "product_id": "philips-digital-airfryer-xl-myntra",
-    "groupId": "philips-digital-airfryer-xl",
-    "group_id": "philips-digital-airfryer-xl",
-    "title": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology) (MYNTRA)",
-    "name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
-    "product_name": "Philips Digital Air Fryer XL (4.1L Capacity, 1400W Rapid Air Technology)",
-    "brand": "Philips",
-    "category": "home",
-    "platform": "myntra",
-    "price": 8490,
-    "originalPrice": 11995,
-    "original_price": 11995,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.5,
-    "reviewCount": 850,
-    "review_count": 850,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kitchen/philips-air-fryer",
-    "product_url": "https://www.myntra.com/kitchen/philips-air-fryer",
-    "seller": "Philips Luxe Appliances",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 79,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Philips build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Philips build quality and performance.",
-    "specs": {
-      "capacity": "4.1 Litres XL Basket",
-      "technology": "Rapid Air Technology (up to 90% less fat)",
-      "controls": "Digital Touch Screen with 7 preset cooking modes",
-      "power": "1400W powerful heating element"
-    },
-    "reviews": [
-      {
-        "author": "Komal D",
-        "rating": 4,
-        "text": "Very convenient for healthy everyday snacking.",
-        "date": "2024-11-15"
-      }
-    ]
-  },
-  {
-    "id": "dyson-v8-absolute-vacuum-amazon",
-    "product_id": "dyson-v8-absolute-vacuum-amazon",
     "groupId": "dyson-v8-absolute-vacuum",
-    "group_id": "dyson-v8-absolute-vacuum",
-    "title": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner (AMAZON)",
     "name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
-    "product_name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
-    "brand": "Dyson",
     "category": "home",
-    "platform": "amazon",
-    "price": 29900,
-    "originalPrice": 43900,
-    "original_price": 43900,
-    "discountPercent": 32,
-    "discount_percent": 32,
-    "rating": 4.6,
-    "reviewCount": 8940,
-    "review_count": 8940,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "home",
+    "brand": "Dyson",
     "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09V7N8L92",
-    "product_url": "https://www.amazon.in/dp/B09V7N8L92",
-    "seller": "Dyson India Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 82,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 32% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 32% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Dyson build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Dyson build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "suction_power": "115 AW powerful fade-free suction",
       "runtime": "Up to 40 minutes continuous cleaning",
       "filtration": "Advanced whole-machine filtration captures 99.99% particles",
       "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
     },
-    "reviews": [
-      {
-        "author": "Vivek G",
-        "rating": 5,
-        "text": "Deep cleans carpets and sofas effortlessly. Worth every penny.",
-        "date": "2024-11-18"
-      }
-    ]
-  },
-  {
-    "id": "dyson-v8-absolute-vacuum-flipkart",
-    "product_id": "dyson-v8-absolute-vacuum-flipkart",
-    "groupId": "dyson-v8-absolute-vacuum",
-    "group_id": "dyson-v8-absolute-vacuum",
-    "title": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner (FLIPKART)",
-    "name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
-    "product_name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
-    "brand": "Dyson",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 28990,
-    "originalPrice": 43900,
-    "original_price": 43900,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.5,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/dyson-v8-absolute",
-    "product_url": "https://www.flipkart.com/dyson-v8-absolute",
-    "seller": "FSAssured Appliances",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 81,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Dyson build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Dyson build quality and performance.",
-    "specs": {
-      "suction_power": "115 AW powerful fade-free suction",
-      "runtime": "Up to 40 minutes continuous cleaning",
-      "filtration": "Advanced whole-machine filtration captures 99.99% particles",
-      "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 92,
+      "sentimentPros": [
+        "Verified top rated performance in home",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended home choice by Dyson with 4.6★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in home with up to 34% discount and verified platform fulfillment.",
+      "bestOverallScore": 87,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Ananya B",
-        "rating": 5,
-        "text": "Picks up pet hair with zero tangling on the brush roll.",
-        "date": "2024-10-30"
+    "platforms": {
+      "amazon": {
+        "price": 29900,
+        "originalPrice": 43900,
+        "discountPercent": 32,
+        "rating": 4.6,
+        "reviewCount": 8940,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Dyson India Official",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09V7N8L92",
+        "reviews": [
+          {
+            "author": "Vivek G",
+            "rating": 5,
+            "text": "Deep cleans carpets and sofas effortlessly. Worth every penny.",
+            "date": "2024-11-18"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 28990,
+        "originalPrice": 43900,
+        "discountPercent": 34,
+        "rating": 4.5,
+        "reviewCount": 5120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "FSAssured Appliances",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/dyson-v8-absolute",
+        "reviews": [
+          {
+            "author": "Ananya B",
+            "rating": 5,
+            "text": "Picks up pet hair with zero tangling on the brush roll.",
+            "date": "2024-10-30"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 31900,
+        "originalPrice": 43900,
+        "discountPercent": 27,
+        "rating": 4.6,
+        "reviewCount": 620,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Dyson Premium Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/home-appliances/dyson-v8-vacuum",
+        "reviews": [
+          {
+            "author": "Karan T",
+            "rating": 5,
+            "text": "Very lightweight for cleaning ceiling fans and AC vents.",
+            "date": "2024-11-22"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "dyson-v8-absolute-vacuum-myntra",
-    "product_id": "dyson-v8-absolute-vacuum-myntra",
-    "groupId": "dyson-v8-absolute-vacuum",
-    "group_id": "dyson-v8-absolute-vacuum",
-    "title": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner (MYNTRA)",
-    "name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
-    "product_name": "Dyson V8 Absolute Cordless Stick Vacuum Cleaner",
-    "brand": "Dyson",
-    "category": "home",
-    "platform": "myntra",
-    "price": 31900,
-    "originalPrice": 43900,
-    "original_price": 43900,
-    "discountPercent": 27,
-    "discount_percent": 27,
-    "rating": 4.6,
-    "reviewCount": 620,
-    "review_count": 620,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/home-appliances/dyson-v8-vacuum",
-    "product_url": "https://www.myntra.com/home-appliances/dyson-v8-vacuum",
-    "seller": "Dyson Premium Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 80,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 27% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 27% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Dyson build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Dyson build quality and performance.",
-    "specs": {
-      "suction_power": "115 AW powerful fade-free suction",
-      "runtime": "Up to 40 minutes continuous cleaning",
-      "filtration": "Advanced whole-machine filtration captures 99.99% particles",
-      "accessories": "Motorbar cleaner head, Fluffy cleaner head, Mini motorized tool"
-    },
-    "reviews": [
-      {
-        "author": "Karan T",
-        "rating": 5,
-        "text": "Very lightweight for cleaning ceiling fans and AC vents.",
-        "date": "2024-11-22"
-      }
-    ]
-  },
-  {
-    "id": "nespresso-essenza-mini-amazon",
-    "product_id": "nespresso-essenza-mini-amazon",
     "groupId": "nespresso-essenza-mini",
-    "group_id": "nespresso-essenza-mini",
-    "title": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black) (AMAZON)",
     "name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "brand": "Nespresso",
     "category": "home",
-    "platform": "amazon",
-    "price": 13999,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 26,
-    "discount_percent": 26,
-    "rating": 4.6,
-    "reviewCount": 5120,
-    "review_count": 5120,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
+    "subcategory": "home",
+    "brand": "Nespresso",
     "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B079L7N9K1",
-    "product_url": "https://www.amazon.in/dp/B079L7N9K1",
-    "seller": "Nespresso Official Distributor",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 92,
-    "best_overall_score": 79,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 26% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 26% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "pressure": "19-bar high-pressure extraction pump",
       "heat_up_time": "Ultra-fast 25-second heat-up",
       "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
       "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
     },
-    "reviews": [
-      {
-        "author": "Gautam M",
-        "rating": 5,
-        "text": "Makes rich crema espresso like an Italian cafe in 30 seconds.",
-        "date": "2024-11-16"
-      }
-    ]
-  },
-  {
-    "id": "nespresso-essenza-mini-flipkart",
-    "product_id": "nespresso-essenza-mini-flipkart",
-    "groupId": "nespresso-essenza-mini",
-    "group_id": "nespresso-essenza-mini",
-    "title": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black) (FLIPKART)",
-    "name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "brand": "Nespresso",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 14499,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 24,
-    "discount_percent": 24,
-    "rating": 4.4,
-    "reviewCount": 2400,
-    "review_count": 2400,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/nespresso-essenza-mini",
-    "product_url": "https://www.flipkart.com/nespresso-essenza-mini",
-    "seller": "CoffeeCrafters India",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 76,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 24% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 24% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "specs": {
-      "pressure": "19-bar high-pressure extraction pump",
-      "heat_up_time": "Ultra-fast 25-second heat-up",
-      "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
-      "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 94,
+      "sentimentPros": [
+        "Verified top rated performance in home",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended home choice by Nespresso with 4.7★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in home with up to 29% discount and verified platform fulfillment.",
+      "bestOverallScore": 87,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Sonia P",
-        "rating": 4,
-        "text": "Tiny footprint on kitchen counter. Super easy to use.",
-        "date": "2024-10-21"
+    "platforms": {
+      "amazon": {
+        "price": 13999,
+        "originalPrice": 18999,
+        "discountPercent": 26,
+        "rating": 4.6,
+        "reviewCount": 5120,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Nespresso Official Distributor",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B079L7N9K1",
+        "reviews": [
+          {
+            "author": "Gautam M",
+            "rating": 5,
+            "text": "Makes rich crema espresso like an Italian cafe in 30 seconds.",
+            "date": "2024-11-16"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 14499,
+        "originalPrice": 18999,
+        "discountPercent": 24,
+        "rating": 4.4,
+        "reviewCount": 2400,
+        "deliveryEstimate": "3-4 days",
+        "seller": "CoffeeCrafters India",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/nespresso-essenza-mini",
+        "reviews": [
+          {
+            "author": "Sonia P",
+            "rating": 4,
+            "text": "Tiny footprint on kitchen counter. Super easy to use.",
+            "date": "2024-10-21"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 13499,
+        "originalPrice": 18999,
+        "discountPercent": 29,
+        "rating": 4.7,
+        "reviewCount": 890,
+        "deliveryEstimate": "2-3 days",
+        "seller": "Gourmet Kitchen Studio",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/kitchen/nespresso-essenza-mini",
+        "reviews": [
+          {
+            "author": "Rahul K",
+            "rating": 5,
+            "text": "Came with 14 complimentary coffee capsules. Great taste!",
+            "date": "2024-11-28"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "nespresso-essenza-mini-myntra",
-    "product_id": "nespresso-essenza-mini-myntra",
-    "groupId": "nespresso-essenza-mini",
-    "group_id": "nespresso-essenza-mini",
-    "title": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black) (MYNTRA)",
-    "name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "product_name": "Nespresso Essenza Mini Compact Espresso Coffee Machine (Piano Black)",
-    "brand": "Nespresso",
-    "category": "home",
-    "platform": "myntra",
-    "price": 13499,
-    "originalPrice": 18999,
-    "original_price": 18999,
-    "discountPercent": 29,
-    "discount_percent": 29,
-    "rating": 4.7,
-    "reviewCount": 890,
-    "review_count": 890,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kitchen/nespresso-essenza-mini",
-    "product_url": "https://www.myntra.com/kitchen/nespresso-essenza-mini",
-    "seller": "Gourmet Kitchen Studio",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 94,
-    "best_overall_score": 82,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 29% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 29% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Nespresso build quality and performance.",
-    "specs": {
-      "pressure": "19-bar high-pressure extraction pump",
-      "heat_up_time": "Ultra-fast 25-second heat-up",
-      "cup_sizes": "2 programmable cup sizes (Espresso 40ml / Lungo 110ml)",
-      "energy_saving": "Eco mode turns off after 9 minutes of inactivity"
-    },
-    "reviews": [
-      {
-        "author": "Rahul K",
-        "rating": 5,
-        "text": "Came with 14 complimentary coffee capsules. Great taste!",
-        "date": "2024-11-28"
-      }
-    ]
-  },
-  {
-    "id": "bajaj-rex-500w-mixer-amazon",
-    "product_id": "bajaj-rex-500w-mixer-amazon",
     "groupId": "bajaj-rex-500w-mixer",
-    "group_id": "bajaj-rex-500w-mixer",
-    "title": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars (AMAZON)",
     "name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "brand": "Bajaj",
     "category": "home",
-    "platform": "amazon",
-    "price": 1999,
-    "originalPrice": 3200,
-    "original_price": 3200,
-    "discountPercent": 38,
-    "discount_percent": 38,
-    "rating": 4.2,
-    "reviewCount": 64200,
-    "review_count": 64200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "home",
+    "brand": "Bajaj",
     "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B009P2LM9K",
-    "product_url": "https://www.amazon.in/dp/B009P2LM9K",
-    "seller": "Bajaj Electricals Official",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 85,
-    "best_overall_score": 78,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 38% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 38% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "power": "500 Watts 100% Copper Motor",
       "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
       "speed_control": "3 speed control with incher for momentary operation",
       "overload_protection": "Motor overload protection with auto cut-off"
     },
-    "reviews": [
-      {
-        "author": "Sunita D",
-        "rating": 5,
-        "text": "Chutney and dry masalas grind into fine paste within seconds.",
-        "date": "2024-11-10"
-      }
-    ]
-  },
-  {
-    "id": "bajaj-rex-500w-mixer-flipkart",
-    "product_id": "bajaj-rex-500w-mixer-flipkart",
-    "groupId": "bajaj-rex-500w-mixer",
-    "group_id": "bajaj-rex-500w-mixer",
-    "title": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars (FLIPKART)",
-    "name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "brand": "Bajaj",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 1899,
-    "originalPrice": 3200,
-    "original_price": 3200,
-    "discountPercent": 41,
-    "discount_percent": 41,
-    "rating": 4.1,
-    "reviewCount": 48900,
-    "review_count": 48900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/bajaj-rex-mixer",
-    "product_url": "https://www.flipkart.com/bajaj-rex-mixer",
-    "seller": "RetailNet Kitchen",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 83,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 41% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 41% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "specs": {
-      "power": "500 Watts 100% Copper Motor",
-      "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
-      "speed_control": "3 speed control with incher for momentary operation",
-      "overload_protection": "Motor overload protection with auto cut-off"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 86,
+      "sentimentPros": [
+        "Verified top rated performance in home",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended home choice by Bajaj with 4.3★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in home with up to 41% discount and verified platform fulfillment.",
+      "bestOverallScore": 85,
+      "isBestOverall": false
     },
-    "reviews": [
-      {
-        "author": "Kishore M",
-        "rating": 4,
-        "text": "Value for money kitchen appliance for small families.",
-        "date": "2024-10-14"
+    "platforms": {
+      "amazon": {
+        "price": 1999,
+        "originalPrice": 3200,
+        "discountPercent": 38,
+        "rating": 4.2,
+        "reviewCount": 64200,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Bajaj Electricals Official",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B009P2LM9K",
+        "reviews": [
+          {
+            "author": "Sunita D",
+            "rating": 5,
+            "text": "Chutney and dry masalas grind into fine paste within seconds.",
+            "date": "2024-11-10"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 1899,
+        "originalPrice": 3200,
+        "discountPercent": 41,
+        "rating": 4.1,
+        "reviewCount": 48900,
+        "deliveryEstimate": "2-3 days",
+        "seller": "RetailNet Kitchen",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/bajaj-rex-mixer",
+        "reviews": [
+          {
+            "author": "Kishore M",
+            "rating": 4,
+            "text": "Value for money kitchen appliance for small families.",
+            "date": "2024-10-14"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 2099,
+        "originalPrice": 3200,
+        "discountPercent": 34,
+        "rating": 4.3,
+        "reviewCount": 3200,
+        "deliveryEstimate": "2-4 days",
+        "seller": "Home Utilities Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/kitchen/bajaj-rex-mixer",
+        "reviews": [
+          {
+            "author": "Meenakshi R",
+            "rating": 4,
+            "text": "Sturdy vacuum suction feet keep it steady.",
+            "date": "2024-11-20"
+          }
+        ]
       }
-    ]
+    }
   },
   {
-    "id": "bajaj-rex-500w-mixer-myntra",
-    "product_id": "bajaj-rex-500w-mixer-myntra",
-    "groupId": "bajaj-rex-500w-mixer",
-    "group_id": "bajaj-rex-500w-mixer",
-    "title": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars (MYNTRA)",
-    "name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "product_name": "Bajaj Rex 500W Nutri-Pro Mixer Grinder with 3 Stainless Steel Jars",
-    "brand": "Bajaj",
-    "category": "home",
-    "platform": "myntra",
-    "price": 2099,
-    "originalPrice": 3200,
-    "original_price": 3200,
-    "discountPercent": 34,
-    "discount_percent": 34,
-    "rating": 4.3,
-    "reviewCount": 3200,
-    "review_count": 3200,
-    "deliveryEstimate": "2-4 days",
-    "delivery_estimate": "2-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/kitchen/bajaj-rex-mixer",
-    "product_url": "https://www.myntra.com/kitchen/bajaj-rex-mixer",
-    "seller": "Home Utilities Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "yellow",
-    "sentimentScore": 87,
-    "best_overall_score": 78,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 34% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 34% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Bajaj build quality and performance.",
-    "specs": {
-      "power": "500 Watts 100% Copper Motor",
-      "jars": "3 SS Jars (1.2L Liquidizing, 0.8L Multi-purpose, 0.3L Chutney jar)",
-      "speed_control": "3 speed control with incher for momentary operation",
-      "overload_protection": "Motor overload protection with auto cut-off"
-    },
-    "reviews": [
-      {
-        "author": "Meenakshi R",
-        "rating": 4,
-        "text": "Sturdy vacuum suction feet keep it steady.",
-        "date": "2024-11-20"
-      }
-    ]
-  },
-  {
-    "id": "mi-smart-air-purifier-4-amazon",
-    "product_id": "mi-smart-air-purifier-4-amazon",
     "groupId": "mi-smart-air-purifier-4",
-    "group_id": "mi-smart-air-purifier-4",
-    "title": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google) (AMAZON)",
     "name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "brand": "Xiaomi",
     "category": "home",
-    "platform": "amazon",
-    "price": 13999,
-    "originalPrice": 16999,
-    "original_price": 16999,
-    "discountPercent": 18,
-    "discount_percent": 18,
-    "rating": 4.5,
-    "reviewCount": 14200,
-    "review_count": 14200,
-    "deliveryEstimate": "1-2 days",
-    "delivery_estimate": "1-2 days",
+    "subcategory": "home",
+    "brand": "Xiaomi",
     "imageUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.amazon.in/dp/B09WJ78L91",
-    "product_url": "https://www.amazon.in/dp/B09WJ78L91",
-    "seller": "Xiaomi India Authorized",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 75,
-    "is_best_overall": true,
-    "isBestOverall": true,
-    "whyBuy": "Top rated home pick with 18% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 18% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
+    "images": [
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
+    ],
     "specs": {
       "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
       "coverage_area": "Up to 516 sq. ft. room coverage",
       "cadr": "400 m³/h Clean Air Delivery Rate",
       "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
     },
-    "reviews": [
-      {
-        "author": "Tarun B",
-        "rating": 5,
-        "text": "Brings AQI from 350 to under 25 in 20 minutes in Delhi winters.",
-        "date": "2024-11-24"
-      }
-    ]
-  },
-  {
-    "id": "mi-smart-air-purifier-4-flipkart",
-    "product_id": "mi-smart-air-purifier-4-flipkart",
-    "groupId": "mi-smart-air-purifier-4",
-    "group_id": "mi-smart-air-purifier-4",
-    "title": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google) (FLIPKART)",
-    "name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "brand": "Xiaomi",
-    "category": "home",
-    "platform": "flipkart",
-    "price": 13499,
-    "originalPrice": 16999,
-    "original_price": 16999,
-    "discountPercent": 21,
-    "discount_percent": 21,
-    "rating": 4.4,
-    "reviewCount": 8900,
-    "review_count": 8900,
-    "deliveryEstimate": "2-3 days",
-    "delivery_estimate": "2-3 days",
-    "imageUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.flipkart.com/mi-smart-air-purifier-4",
-    "product_url": "https://www.flipkart.com/mi-smart-air-purifier-4",
-    "seller": "FSAssured Electronics",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 89,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 21% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 21% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "specs": {
-      "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
-      "coverage_area": "Up to 516 sq. ft. room coverage",
-      "cadr": "400 m³/h Clean Air Delivery Rate",
-      "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
+    "aiData": {
+      "sentiment": "green",
+      "sentimentScore": 90,
+      "sentimentPros": [
+        "Verified top rated performance in home",
+        "High build quality and user satisfaction",
+        "Multi-platform competitive pricing available"
+      ],
+      "sentimentCons": [
+        "High demand with fluctuating seller pricing",
+        "Stock sells out fast during sale events"
+      ],
+      "reviewSummary": "Highly recommended home choice by Xiaomi with 4.5★ average across Amazon, Flipkart, and Myntra.",
+      "whyBuy": "Top value in home with up to 21% discount and verified platform fulfillment.",
+      "bestOverallScore": 80,
+      "isBestOverall": true
     },
-    "reviews": [
-      {
-        "author": "Deepak N",
-        "rating": 5,
-        "text": "Night mode is whisper quiet. Real-time PM2.5 display is accurate.",
-        "date": "2024-10-29"
+    "platforms": {
+      "amazon": {
+        "price": 13999,
+        "originalPrice": 16999,
+        "discountPercent": 18,
+        "rating": 4.5,
+        "reviewCount": 14200,
+        "deliveryEstimate": "1-2 days",
+        "seller": "Xiaomi India Authorized",
+        "inStock": true,
+        "productUrl": "https://www.amazon.in/dp/B09WJ78L91",
+        "reviews": [
+          {
+            "author": "Tarun B",
+            "rating": 5,
+            "text": "Brings AQI from 350 to under 25 in 20 minutes in Delhi winters.",
+            "date": "2024-11-24"
+          }
+        ]
+      },
+      "flipkart": {
+        "price": 13499,
+        "originalPrice": 16999,
+        "discountPercent": 21,
+        "rating": 4.4,
+        "reviewCount": 8900,
+        "deliveryEstimate": "2-3 days",
+        "seller": "FSAssured Electronics",
+        "inStock": true,
+        "productUrl": "https://www.flipkart.com/mi-smart-air-purifier-4",
+        "reviews": [
+          {
+            "author": "Deepak N",
+            "rating": 5,
+            "text": "Night mode is whisper quiet. Real-time PM2.5 display is accurate.",
+            "date": "2024-10-29"
+          }
+        ]
+      },
+      "myntra": {
+        "price": 14299,
+        "originalPrice": 16999,
+        "discountPercent": 16,
+        "rating": 4.5,
+        "reviewCount": 940,
+        "deliveryEstimate": "3-4 days",
+        "seller": "Xiaomi Official Store",
+        "inStock": true,
+        "productUrl": "https://www.myntra.com/appliances/mi-air-purifier-4",
+        "reviews": [
+          {
+            "author": "Sangeeta P",
+            "rating": 5,
+            "text": "Helps tremendously with dust allergy and pet dander.",
+            "date": "2024-11-18"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "id": "mi-smart-air-purifier-4-myntra",
-    "product_id": "mi-smart-air-purifier-4-myntra",
-    "groupId": "mi-smart-air-purifier-4",
-    "group_id": "mi-smart-air-purifier-4",
-    "title": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google) (MYNTRA)",
-    "name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "product_name": "Xiaomi Smart Air Purifier 4 (OLED Touch Display, True HEPA Filter, Alexa & Google)",
-    "brand": "Xiaomi",
-    "category": "home",
-    "platform": "myntra",
-    "price": 14299,
-    "originalPrice": 16999,
-    "original_price": 16999,
-    "discountPercent": 16,
-    "discount_percent": 16,
-    "rating": 4.5,
-    "reviewCount": 940,
-    "review_count": 940,
-    "deliveryEstimate": "3-4 days",
-    "delivery_estimate": "3-4 days",
-    "imageUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop&q=80",
-    "productUrl": "https://www.myntra.com/appliances/mi-air-purifier-4",
-    "product_url": "https://www.myntra.com/appliances/mi-air-purifier-4",
-    "seller": "Xiaomi Official Store",
-    "inStock": true,
-    "in_stock": true,
-    "sentiment": "green",
-    "sentimentScore": 91,
-    "best_overall_score": 74,
-    "is_best_overall": false,
-    "isBestOverall": false,
-    "whyBuy": "Top rated home pick with 16% off and verified fast shipping.",
-    "why_buy": "Top rated home pick with 16% off and verified fast shipping.",
-    "reviewSummary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "review_summary": "Customer sentiment is strongly positive for Xiaomi build quality and performance.",
-    "specs": {
-      "filtration": "3-in-1 True HEPA filter eliminates 99.97% of 0.3μm particles",
-      "coverage_area": "Up to 516 sq. ft. room coverage",
-      "cadr": "400 m³/h Clean Air Delivery Rate",
-      "smart_control": "Voice control with Alexa & Google Assistant, Mi Home App"
-    },
-    "reviews": [
-      {
-        "author": "Sangeeta P",
-        "rating": 5,
-        "text": "Helps tremendously with dust allergy and pet dander.",
-        "date": "2024-11-18"
-      }
-    ]
+    }
   }
 ];
 
-export const searchMockProducts = ({ query = "", category = "", minPrice = 0, maxPrice = 10000000, platforms = [], sortBy = "relevance" }) => {
-  let filtered = [...mockProducts];
+const flattenProducts = () => {
+  const products = [];
+  mockGroups.forEach((group) => {
+    const platformKeys = Object.keys(group.platforms);
+    platformKeys.forEach((platform) => {
+      const p = group.platforms[platform];
+      if (!p.inStock && p.price === 0) return;
+      products.push({
+        id: generateId(group.groupId, platform),
+        product_id: generateId(group.groupId, platform),
+        groupId: group.groupId,
+        group_id: group.groupId,
+        title: group.name,
+        brand: group.brand,
+        category: group.category,
+        subcategory: group.subcategory,
+        imageUrl: group.imageUrl,
+        image_url: group.imageUrl,
+        images: group.images || [group.imageUrl],
+        specs: group.specs,
+        platform,
+        price: p.price,
+        originalPrice: p.originalPrice,
+        original_price: p.originalPrice,
+        discountPercent: p.discountPercent,
+        discount_percent: p.discountPercent,
+        rating: p.rating,
+        reviewCount: p.reviewCount,
+        review_count: p.reviewCount,
+        deliveryEstimate: p.deliveryEstimate,
+        delivery_estimate: p.deliveryEstimate,
+        seller: p.seller,
+        inStock: p.inStock,
+        in_stock: p.inStock,
+        productUrl: p.productUrl,
+        product_url: p.productUrl,
+        reviews: p.reviews || [],
+        // AI Data
+        sentiment: group.aiData.sentiment,
+        sentimentScore: group.aiData.sentimentScore,
+        sentiment_score: group.aiData.sentimentScore,
+        sentimentPros: group.aiData.sentimentPros,
+        sentimentCons: group.aiData.sentimentCons,
+        reviewSummary: group.aiData.reviewSummary,
+        review_summary: group.aiData.reviewSummary,
+        whyBuy: group.aiData.whyBuy,
+        why_buy: group.aiData.whyBuy,
+        bestOverallScore: group.aiData.bestOverallScore,
+        best_overall_score: group.aiData.bestOverallScore,
+        isBestOverall: group.aiData.isBestOverall,
+        is_best_overall: group.aiData.isBestOverall,
+      });
+    });
+  });
+  return products;
+};
 
-  if (category) {
-    filtered = filtered.filter((p) => p.category.toLowerCase() === category.toLowerCase());
-  }
+export const mockProducts = flattenProducts();
+export const mockGroups_ = mockGroups;
 
-  if (query) {
+export const searchMockProducts = ({ query = "", category = "", minPrice = 0, maxPrice = Infinity, platforms = [], sortBy = "best_value" }) => {
+  let results = [...mockProducts];
+
+  if (query && query.trim()) {
     const q = query.toLowerCase();
-    filtered = filtered.filter((p) =>
-      p.title.toLowerCase().includes(q) ||
-      p.brand.toLowerCase().includes(q) ||
-      p.category.toLowerCase().includes(q)
+    results = results.filter(
+      (p) =>
+        p.title.toLowerCase().includes(q) ||
+        p.brand.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q) ||
+        (p.subcategory && String(p.subcategory).toLowerCase().includes(q))
     );
   }
 
-  if (minPrice) {
-    filtered = filtered.filter((p) => p.price >= minPrice);
+  if (category && category !== "all" && category !== "") {
+    results = results.filter((p) => p.category === category);
   }
-  if (maxPrice && maxPrice !== 10000000) {
-    filtered = filtered.filter((p) => p.price <= maxPrice);
-  }
+
+  results = results.filter((p) => p.price >= minPrice && p.price <= maxPrice);
 
   if (platforms && platforms.length > 0) {
-    filtered = filtered.filter((p) => platforms.includes(p.platform));
+    results = results.filter((p) => platforms.includes(p.platform));
   }
 
-  if (sortBy === "price_asc") filtered.sort((a, b) => a.price - b.price);
-  else if (sortBy === "price_desc") filtered.sort((a, b) => b.price - a.price);
-  else if (sortBy === "rating") filtered.sort((a, b) => b.rating - a.rating);
-  else if (sortBy === "discount") filtered.sort((a, b) => b.discount_percent - a.discount_percent);
+  switch (sortBy) {
+    case "price_asc":
+      results.sort((a, b) => a.price - b.price);
+      break;
+    case "price_desc":
+      results.sort((a, b) => b.price - a.price);
+      break;
+    case "rating":
+      results.sort((a, b) => b.rating - a.rating);
+      break;
+    case "discount":
+      results.sort((a, b) => b.discount_percent - a.discount_percent);
+      break;
+    case "best_value":
+    case "relevance":
+    default:
+      results.sort((a, b) => b.best_overall_score - a.best_overall_score);
+      break;
+  }
 
-  return {
-    success: true,
-    count: filtered.length,
-    results: filtered,
-    bestOverallId: filtered.find((p) => p.is_best_overall)?.id || filtered[0]?.id,
-  };
+  const bestOverallId = results.length > 0 ? results.find((p) => p.is_best_overall)?.id || results[0].id : null;
+  return { results, bestOverallId, count: results.length };
 };
 
 export const getAlternatives = (productId) => {
-  const current = mockProducts.find((p) => p.id === productId || p.product_id === productId) || mockProducts[0];
-  const sameCategory = mockProducts.filter((p) => p.category === current.category && p.groupId !== current.groupId);
+  const product = mockProducts.find((p) => p.id === productId || p.product_id === productId);
+  if (!product) return { cheaper: [], similar: [], premium: [] };
 
-  const cheaper = sameCategory.filter((p) => p.price < current.price * 0.85).slice(0, 3);
-  const similar = sameCategory.filter((p) => p.price >= current.price * 0.85 && p.price <= current.price * 1.15).slice(0, 3);
-  const premium = sameCategory.filter((p) => p.price > current.price * 1.15).slice(0, 3);
+  const sameCat = mockProducts.filter(
+    (p) => p.category === product.category && p.groupId !== product.groupId
+  );
 
-  return { currentProduct: current, cheaper, similar, premium };
+  const cheaper = sameCat.filter((p) => p.price < product.price).sort((a, b) => b.best_overall_score - a.best_overall_score).slice(0, 2);
+  const premium = sameCat.filter((p) => p.price > product.price).sort((a, b) => b.best_overall_score - a.best_overall_score).slice(0, 2);
+  const similar = sameCat.filter((p) => !cheaper.includes(p) && !premium.includes(p)).sort((a, b) => b.best_overall_score - a.best_overall_score).slice(0, 2);
+
+  return { cheaper, similar, premium };
 };
 
 export const budgetExplorer = (productId, extraBudget) => {
-  const current = mockProducts.find((p) => p.id === productId || p.product_id === productId) || mockProducts[0];
-  const newBudgetCeiling = current.price + Number(extraBudget);
+  const product = mockProducts.find((p) => p.id === productId || p.product_id === productId);
+  if (!product) return { currentProduct: null, upgradedOptions: [] };
 
+  const maxPrice = product.price + extraBudget;
   const upgradedOptions = mockProducts
-    .filter((p) => p.category === current.category && p.price > current.price && p.price <= newBudgetCeiling)
-    .slice(0, 4)
-    .map((p) => ({
-      ...p,
-      priceDifference: p.price - current.price,
-      upgradeReason: `For +₹${p.price - current.price}, get ${p.brand} with superior specs and higher ratings.`,
+    .filter((p) => p.category === product.category && p.price > product.price && p.price <= maxPrice && p.groupId !== product.groupId)
+    .sort((a, b) => b.best_overall_score - a.best_overall_score)
+    .slice(0, 3)
+    .map((up) => ({
+      ...up,
+      upgradeReason: `Unlocks ${up.title} with higher rating (${up.rating}★) and +${up.best_overall_score - product.best_overall_score} AI score for ₹${Number(up.price - product.price).toLocaleString("en-IN")} more.`,
     }));
 
-  return {
-    success: true,
-    currentProduct: current,
-    extraBudget: Number(extraBudget),
-    newBudgetCeiling,
-    upgradedOptions,
-  };
+  return { currentProduct: product, upgradedOptions };
 };
+
+export const CATEGORY_DEFINITIONS = [
+  {
+    id: "electronics",
+    label: "Audio & Electronics",
+    shortLabel: "Electronics",
+    tagline: "Active Noise Cancelling, TWS Earbuds, Smartphones & Computing",
+    coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+    badge: "Up to 45% Off",
+    subcategories: ["All", "Headphones", "Earbuds", "Smartphones", "Laptops", "Gaming"],
+    quadrantPreviews: [
+      { title: "Sony WH-1000XM5", price: "₹24,990", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&auto=format&fit=crop&q=80" },
+      { title: "AirPods Pro 2", price: "₹19,900", image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&auto=format&fit=crop&q=80" },
+      { title: "MacBook Air M2", price: "₹94,990", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=80" },
+      { title: "Galaxy S24 Ultra", price: "₹1,19,999", image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400&auto=format&fit=crop&q=80" },
+    ],
+  },
+  {
+    id: "footwear",
+    label: "Athletic & Footwear",
+    shortLabel: "Footwear",
+    tagline: "Performance Road Runners, Street Classics & All-Terrain Boots",
+    coverImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+    badge: "Up to 50% Off",
+    subcategories: ["All", "Running", "Sneakers", "Boots", "Clogs", "Walking"],
+    quadrantPreviews: [
+      { title: "Nike Air Max 270", price: "₹7,795", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&auto=format&fit=crop&q=80" },
+      { title: "Adidas Ultraboost", price: "₹11,999", image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=400&auto=format&fit=crop&q=80" },
+      { title: "ASICS Gel-Kayano 30", price: "₹12,499", image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&auto=format&fit=crop&q=80" },
+      { title: "Woodland Leather Boots", price: "₹3,995", image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=400&auto=format&fit=crop&q=80" },
+    ],
+  },
+  {
+    id: "fashion",
+    label: "Denim & Apparel",
+    shortLabel: "Fashion",
+    tagline: "Slim Fit Indigo Jeans, Luxury Polos & Wrinkle-Free Formals",
+    coverImage: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+    badge: "Min 40% Off",
+    subcategories: ["All", "Denim", "Polo T-Shirts", "Sunglasses", "Biker Jackets", "Ethnic Kurtas", "Formal Trousers"],
+    quadrantPreviews: [
+      { title: "Levi's 511 Slim", price: "₹1,999", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&auto=format&fit=crop&q=80" },
+      { title: "Tommy Hilfiger Polo", price: "₹2,499", image: "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=400&auto=format&fit=crop&q=80" },
+      { title: "Ray-Ban Aviator", price: "₹6,890", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&auto=format&fit=crop&q=80" },
+      { title: "Zara Leather Jacket", price: "₹5,990", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&auto=format&fit=crop&q=80" },
+    ],
+  },
+  {
+    id: "home",
+    label: "Smart Home & Living",
+    shortLabel: "Home & Living",
+    tagline: "BLDC Smart Ceiling Fans, Rapid Air Fryers & Espresso Machines",
+    coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
+    badge: "Up to 50% Off",
+    subcategories: ["All", "Ceiling Fans", "Air Fryers", "Vacuums", "Coffee Makers", "Mixer Grinders", "Air Purifiers"],
+    quadrantPreviews: [
+      { title: "Atomberg Ceiling Fan", price: "₹3,699", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=80" },
+      { title: "Philips Air Fryer XL", price: "₹7,999", image: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=400&auto=format&fit=crop&q=80" },
+      { title: "Dyson V8 Vacuum", price: "₹28,990", image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400&auto=format&fit=crop&q=80" },
+      { title: "Nespresso Coffee Maker", price: "₹14,999", image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&auto=format&fit=crop&q=80" },
+    ],
+  },
+];
+
+export default mockProducts;
